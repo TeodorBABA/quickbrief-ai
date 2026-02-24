@@ -3,114 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBrief Pro | Intelligence</title>
+    <title>Briefly | Executive Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #fafafa; }
-        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; }
-        .news-card { background: #0f0f0f; border: 1px solid #1a1a1a; transition: all 0.25s ease; }
-        .news-card:hover { border-color: #3b82f6; transform: translateY(-2px); box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2); }
-        .filter-btn { transition: all 0.2s; color: #737373; border-color: #262626; }
-        .filter-btn:hover { color: #fff; border-color: #404040; }
-        .filter-btn.active { background: #3b82f6; color: #fff; border-color: #3b82f6; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
-        .summary-list li::before { content: "→"; color: #3b82f6; font-weight: bold; display: inline-block; width: 1.5em; margin-left: -1.5em; }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        .nav-glass { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid #111; }
+        .news-card { border-bottom: 1px solid #111; transition: background 0.2s; }
+        .news-card:hover { background: #050505; }
+        .category-tag { font-size: 10px; font-weight: 800; tracking-widest: 0.1em; color: #3b82f6; }
+        .filter-btn { color: #555; transition: 0.2s; font-size: 12px; font-weight: 600; }
+        .filter-btn:hover { color: #fff; }
+        .filter-btn.active { color: #fff; border-bottom: 2px solid #3b82f6; border-radius: 0; }
+        ul li::before { content: "•"; color: #3b82f6; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
     </style>
 </head>
 <body>
 
-    <nav class="glass-nav sticky top-0 z-50 p-4">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tighter flex items-center gap-2">
-                <span class="bg-blue-600 w-6 h-6 rounded flex items-center justify-center text-[14px]">Q</span>
-                QUICKBRIEF<span class="text-blue-500 underline decoration-2">PRO</span>
-            </h1>
-            <div class="hidden md:flex space-x-2" id="filter-container">
-                <button onclick="changeFilter('All', this)" class="filter-btn active px-4 py-1.5 text-xs font-bold rounded-full border">All</button>
-                <button onclick="changeFilter('Markets', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Markets</button>
-                <button onclick="changeFilter('Tech', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Tech</button>
-                <button onclick="changeFilter('Finance', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Finance</button>
-                <button onclick="changeFilter('Business', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Business</button>
+    <nav class="nav-glass sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-800 tracking-tighter">BRIEFLY<span class="text-blue-600">.</span></h1>
+            <div class="flex gap-6" id="filters">
+                <button onclick="changeFilter('All', this)" class="filter-btn active py-1">All</button>
+                <button onclick="changeFilter('Markets', this)" class="filter-btn py-1">Markets</button>
+                <button onclick="changeFilter('Tech', this)" class="filter-btn py-1">Tech</button>
+                <button onclick="changeFilter('Finance', this)" class="filter-btn py-1">Finance</button>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-2xl mx-auto p-4 pt-12">
-        <div class="mb-10 flex justify-between items-end border-b border-white/5 pb-6">
-            <div>
-                <h2 class="text-sm font-bold text-neutral-500 uppercase tracking-[0.2em]">Global Intelligence</h2>
-                <p class="text-xs text-neutral-600 mt-1">Real-time AI curated financial updates</p>
-            </div>
-            <div id="live-indicator" class="flex items-center gap-2 text-[10px] font-bold text-green-500 uppercase tracking-widest">
-                <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-ping"></span> Live
-            </div>
+    <main class="max-w-2xl mx-auto px-6 py-12">
+        <div class="mb-12 border-l-2 border-blue-600 pl-4">
+            <p class="text-neutral-500 text-sm font-medium italic">"Intelligence is the ability to adapt to change."</p>
+            <p class="text-[10px] text-neutral-700 font-bold uppercase tracking-widest mt-1">Updated every 15 minutes</p>
         </div>
 
-        <div id="news-feed" class="space-y-8 pb-20">
-            <div class="text-center py-20 text-neutral-600 animate-pulse">Syncing with global terminals...</div>
-        </div>
+        <div id="feed" class="space-y-2">
+            </div>
     </main>
 
     <script>
-        let newsData = [];
-
-        async function init() {
+        let allNews = [];
+        async function load() {
             try {
-                const response = await fetch('news_data.json?t=' + Date.now());
-                newsData = await response.json();
-                renderNews('All');
-            } catch (err) {
-                console.error("Failed to load news:", err);
-                document.getElementById('news-feed').innerHTML = "<div class='text-red-500 text-center'>Connection error.</div>";
+                const r = await fetch('news_data.json?t=' + Date.now());
+                allNews = await r.json();
+                render('All');
+            } catch (e) {
+                document.getElementById('feed').innerHTML = "Connecting to global feed...";
             }
         }
 
-        function renderNews(filter) {
-            const container = document.getElementById('news-feed');
+        function render(cat) {
+            const container = document.getElementById('feed');
             container.innerHTML = '';
+            const filtered = cat === 'All' ? allNews : allNews.filter(n => n.category === cat);
             
-            const filtered = filter === 'All' ? newsData : newsData.filter(n => n.category === filter);
-
-            if (filtered.length === 0) {
-                container.innerHTML = `<div class="text-center py-10 text-neutral-500 text-sm italic">No data in ${filter} section.</div>`;
-                return;
-            }
-
-            filtered.forEach(item => {
-                const card = document.createElement('div');
-                card.className = "news-card p-6 rounded-2xl";
-                
-                const points = item.summary.split('\n').filter(p => p.trim() !== '');
+            filtered.forEach(n => {
+                const points = n.summary.split('\n').filter(p => p.trim() !== '');
                 const listHtml = points.map(p => `<li class="mb-2">${p.replace(/^[•*-]\s*/, '')}</li>`).join('');
 
-                card.innerHTML = `
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-blue-600/10 text-blue-400 border border-blue-500/20 uppercase tracking-widest">${item.category}</span>
-                        <span class="text-neutral-500 text-[10px] font-bold uppercase tracking-widest">${item.date}</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 leading-snug tracking-tight text-white/90">${item.title}</h3>
-                    <ul class="summary-list text-neutral-400 text-sm leading-relaxed mb-6 ml-6">
-                        ${listHtml}
-                    </ul>
-                    <div class="pt-4 border-t border-white/5">
-                        <a href="${item.link}" target="_blank" class="inline-flex items-center text-[10px] font-bold text-neutral-600 hover:text-blue-500 uppercase tracking-widest transition-colors">
-                            Read Full Report
-                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
+                container.innerHTML += `
+                    <div class="news-card py-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <span class="category-tag uppercase">${n.category}</span>
+                            <span class="text-neutral-700 text-[10px] font-bold">${n.date}</span>
+                        </div>
+                        <h2 class="text-xl font-600 mb-4 leading-tight text-neutral-200 hover:text-white transition-colors cursor-default">${n.title}</h2>
+                        <ul class="text-neutral-400 text-sm ml-4 mb-6 leading-relaxed">
+                            ${listHtml}
+                        </ul>
+                        <a href="${n.link}" target="_blank" class="text-[10px] font-bold text-neutral-600 hover:text-blue-500 tracking-widest uppercase transition-all">Source Material →</a>
                     </div>
                 `;
-                container.appendChild(card);
             });
         }
 
-        function changeFilter(category, btn) {
+        function changeFilter(cat, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            renderNews(category);
+            render(cat);
         }
 
-        init();
-        setInterval(init, 300000);
+        load();
+        setInterval(load, 300000);
     </script>
 </body>
 </html>
