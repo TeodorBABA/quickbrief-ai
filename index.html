@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBrief AI | Smart News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-tight">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 p-4">
+        <div class="max-w-xl mx-auto flex justify-between items-center">
+            <span class="text-xl font-extrabold tracking-tight text-blue-600">QUICKBRIEF<span class="text-slate-900">.AI</span></span>
+            <div id="status-dot" class="flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span> Live Update
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-xl mx-auto p-4 pt-8">
+        <header class="mb-10 text-center">
+            <h1 class="text-3xl font-extrabold mb-2 tracking-tight">Focus on what matters.</h1>
+            <p class="text-slate-500">Știri complexe explicate scurt și clar de inteligența artificială.</p>
+        </header>
+
+        <div id="news-feed" class="space-y-6">
+            <div class="animate-pulse flex flex-col space-y-4">
+                <div class="h-48 bg-slate-200 rounded-2xl"></div>
+                <div class="h-48 bg-slate-200 rounded-2xl"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function fetchNews() {
+            try {
+                const response = await fetch('news_data.json?t=' + new Date().getTime());
+                const data = await response.json();
+                renderNews(data);
+            } catch (err) {
+                console.error("Fetch error:", err);
+            }
+        }
+
+        function renderNews(news) {
+            const feed = document.getElementById('news-feed');
+            feed.innerHTML = '';
+
+            news.forEach(item => {
+                const card = document.createElement('article');
+                card.className = "bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300";
+                
+                // Formatare summary din string în bullet points
+                const summaryHtml = item.summary.split('\n').map(line => {
+                    if(line.trim() === '') return '';
+                    return `<li class="mb-2 pl-1">${line.replace(/^[•*-]\s*/, '')}</li>`;
+                }).join('');
+
+                card.innerHTML = `
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">${item.source}</span>
+                        <span class="text-slate-400 text-xs">${item.date}</span>
+                    </div>
+                    <h2 class="text-xl font-extrabold mb-4 leading-snug text-slate-800">${item.title}</h2>
+                    <ul class="text-slate-600 text-sm list-disc list-inside space-y-1 mb-6">
+                        ${summaryHtml}
+                    </ul>
+                    <div class="pt-4 border-t border-slate-50">
+                        <a href="${item.link}" target="_blank" class="text-xs font-bold text-slate-400 hover:text-blue-600 flex items-center gap-1 transition-colors uppercase tracking-widest">
+                            Read Original Source
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                `;
+                feed.appendChild(card);
+            });
+        }
+
+        fetchNews();
+        // Refresh la 60 de secunde
+        setInterval(fetchNews, 60000);
+    </script>
+</body>
+</html>
