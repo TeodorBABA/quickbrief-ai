@@ -1,5 +1,77 @@
 [
     {
+        "id": 1771955760,
+        "category": "Tech",
+        "source": "Global Source",
+        "title": "Marquis sues firewall provider SonicWall, alleges security failings with its firewall backup led to ransomware attack",
+        "link": "https://techcrunch.com/2026/02/24/marquis-sonicwall-lawsuit-ransomware-firewall-breach/",
+        "summary": "- **High-Stakes Legal Battle**: Fintech firm Marquis is suing SonicWall for alleged security negligence, claiming a breach in SonicWall\u2019s firewall service enabled a ransomware attack that compromised sensitive customer data, indicating significant accountability issues in cybersecurity partnerships.\n\n- **Widespread Data Compromise**: The ransomware attack resulted in the theft of personally identifiable information from over 400,000 customers, raising concerns about data privacy and security not just for Marquis, but across the fintech sector relying on SonicWall\u2019s technology.\n\n- **Looming Repercussions**: Marquis anticipates extensive reputational and financial damage from this incident, spotlighting potential vulnerabilities in firewall security and prompting others to reassess their cybersecurity measures to prevent similar breaches in a rapidly evolving threat landscape.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955765,
+        "category": "Tech",
+        "source": "Global Source",
+        "title": "Ukraine\u2019s startups keep building",
+        "link": "https://techcrunch.com/2026/02/24/ukraines-startups-keep-building/",
+        "summary": "- **Resilience and Innovation**: Ukrainian startups, exemplified by Preply's recent unicorn status, are not just surviving amid war; they're actively expanding, hiring key talent, and pivoting to address pressing societal needs, such as mental health care through innovation.\n\n- **Strategic Support Amid Conflict**: Special statuses for startups enable key employees to be shielded from military mobilization, facilitating the continued growth and contribution of tech firms like Aspichi, which provides vital mental health support to those affected by the conflict.\n\n- **Thriving Ecosystem Despite Adversity**: Despite external challenges such as power cuts and security threats, tech hubs in Kyiv and Lviv are witnessing a surge in community engagement and venture capital investment, reinforcing Ukraine\u2019s position as a resilient and emerging startup ecosystem on the global stage.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955772,
+        "category": "Tech",
+        "source": "Global Source",
+        "title": "Meta strikes up to $100B AMD chip deal as it chases \u2018personal superintelligence\u2019",
+        "link": "https://techcrunch.com/2026/02/24/meta-strikes-up-to-100b-amd-chip-deal-as-it-chases-personal-superintelligence/",
+        "summary": "- **Strategic Shift in AI Infrastructure**: Meta's $100 billion deal with AMD for advanced chips marks a pivotal shift towards self-sufficiency in AI technology, reducing its reliance on Nvidia and positioning itself to lead in the race for \u2018personal superintelligence\u2019\u2014AI tailored for individual user empowerment.\n\n- **Stock Incentives and Performance-Linked Growth**: The agreement includes performance-based warrants, effectively tying Meta's benefits to AMD's stock performance, thus aligning both companies' growth strategies and interests in the burgeoning AI and data center market.\n\n- **Massive Investment in AI Ecosystem**: With a commitment of $600 billion towards U.S. data centers and infrastructure growth, Meta is not only securing critical computing power but also solidifying its stance as a key player in the rapidly expanding AI landscape, demonstrating ambitious long-term vision and investment in transformative technologies.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955777,
+        "category": "Finance",
+        "source": "Global Source",
+        "title": "Ferrovial SE (FER) Lands \u00a380 Million Contract To Upgrade the Slough Sewage Treatment Works",
+        "link": "https://finance.yahoo.com/news/ferrovial-se-fer-lands-80-174249794.html",
+        "summary": "- Ferrovial SE secures an \u00a380 million contract to upgrade the Slough Sewage Treatment Works, positioning itself as a leader in modernizing UK infrastructure amid stricter environmental regulations.\n  \n- This joint venture with Cadagua focuses on improving wastewater quality, enhancing capacity, and ensuring sustainability\u2014key moves that align with the growing demand for eco-friendly projects.\n\n- By integrating advanced solutions for wastewater management, Ferrovial not only boosts its market reputation but also paves the way for cleaner ecosystems and potentially significant long-term returns for investors.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955783,
+        "category": "Finance",
+        "source": "Global Source",
+        "title": "Wells Fargo Lowers PT on PayPal Holdings, Inc. (PYPL)",
+        "link": "https://finance.yahoo.com/news/wells-fargo-lowers-pt-paypal-174228164.html",
+        "summary": "- **Earnings Underperformance**: PayPal's recent Q4 earnings missed revenue and EPS forecasts, underscoring execution challenges rather than a broader industry decline, prompting analysts to downgrade stock ratings and price targets.\n\n- **Leadership Transition**: The appointment of new CEO Enrique Lores signals a pivotal shift; however, Wells Fargo anticipates stock volatility as management seeks to strengthen execution and regain investor confidence.\n\n- **Investment Perspective**: While PayPal is highlighted as a potential buy in a growing market, investors may find greater upside in specific AI stocks, which are perceived to have more favorable risk profiles amid current market conditions.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955789,
+        "category": "Finance",
+        "source": "Global Source",
+        "title": "Telefonaktiebolaget LM Ericsson (ERIC) Partners With Mastercard",
+        "link": "https://finance.yahoo.com/news/telefonaktiebolaget-lm-ericsson-eric-partners-174208156.html",
+        "summary": "- **Strategic Collaboration**: Ericsson's partnership with Mastercard leverages their fintech capabilities to streamline international money transfers, enhancing digital wallet and payment service offerings for telecoms and banks, especially aiding unbanked populations.\n\n- **Market Expansion**: Targeting the emerging markets of the Middle East and Africa, this alliance significantly improves access and connectivity in regions undergoing rapid digitization, positioning both companies for growth in a competitive fintech landscape.\n\n- **Competitive Edge**: By integrating Ericsson\u2019s scalable platform with Mastercard Move, the partnership allows for faster, secure payment solutions, providing a crucial advantage over rivals in delivering essential financial services to underserved markets.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955796,
+        "category": "Finance",
+        "source": "Global Source",
+        "title": "Cognizant Technology Solutions (CTSH) Expands its Partnership With Wallenius Wilhelmsen",
+        "link": "https://finance.yahoo.com/news/cognizant-technology-solutions-ctsh-expands-174101992.html",
+        "summary": "- **Strategic Expansion**: Cognizant Technology Solutions has strengthened its collaboration with Wallenius Wilhelmsen, transitioning from outsourcing to a comprehensive partnership that emphasizes technology modernization and AI integration for enhanced supply chain efficiency.\n\n- **Solid Financial Growth**: In Q4 2025, Cognizant reported a 4.94% year-over-year revenue increase to $5.33 billion, exceeding earnings expectations and highlighting strong demand in North America, particularly in the financial services sector.\n\n- **AI-Focused Future**: Cognizant's commitment to leveraging its Cognizant Neuro AI platform signifies a strategic shift towards using advanced technologies to empower business transformations, positioning it as a crucial player in the evolving logistics landscape.",
+        "date": "Just now"
+    },
+    {
+        "id": 1771955803,
+        "category": "Finance",
+        "source": "Global Source",
+        "title": "Expand Energy Corporation (EXE) Releases FQ4 2025 Earnings",
+        "link": "https://finance.yahoo.com/news/expand-energy-corporation-exe-releases-174020160.html",
+        "summary": "- **Strong Earnings Growth**: Expand Energy Corporation reported $2.31 billion in revenue for FQ4 2025, a 44.5% year-over-year increase that exceeded analyst expectations, positioning the company favorably for continued investment attraction.\n\n- **Operational Efficiency and Future Production**: With an average of 12 rigs and a significant focus on natural gas (92% of production), EXE plans to maintain robust operations into 2026, targeting a production rate of 7.5 Bcfe/d, supported by a planned $2.85 billion investment.\n\n- **Investment Sentiment Amid Challenges**: Despite recent pressures from declining natural gas prices, analysts maintain a bullish outlook, although some have modestly adjusted price targets. Investors may want to weigh the potential of EXE against emerging AI stocks that promise higher returns with lower risk.",
+        "date": "Just now"
+    },
+    {
         "id": 1771955347,
         "category": "Markets",
         "source": "Global Source",
@@ -271,69 +343,5 @@
         "link": "https://techcrunch.com/2026/02/24/music-generator-producerai-joins-google-labs/",
         "summary": "- **Strategic Integration**: ProducerAI's incorporation into Google Labs enhances Google\u2019s AI music-generation capabilities, positioning the company as a leader in this rapidly growing market, particularly with backing from top artists like The Chainsmokers and Wyclef Jean, which boosts credibility and user engagement.\n\n- **Market Differentiation**: By offering a collaborative AI platform, ProducerAI not only elevates user experience but also addresses artistic concerns, positioning Google as a viable partner in creative expression rather than just a tech provider, thereby attracting diverse user demographics in the music sector.\n\n- **Financial Implications**: As generative AI in music gains traction, resisting legal challenges could lead to significant revenue opportunities. The market is expanding; as seen with successful cases like Paul McCartney's AI-enhanced track and emerging artists utilizing AI, this may create lucrative ventures and partnerships for Google that surpass traditional music production revenues.",
         "date": "Feb 24, 18:59"
-    },
-    {
-        "id": 1771952371,
-        "source": "CNBC Top News",
-        "title": "Warner Bros. Discovery says Paramount made higher bid, board will weigh offer against Netflix deal",
-        "link": "https://www.cnbc.com/2026/02/24/warner-bros-discovery-paramount-higher-bid-netflix.html",
-        "summary": "- **Competitive Bidding Situation**: Warner Bros. Discovery (WBD) is evaluating a higher bid from Paramount Skydance amidst an existing agreement with Netflix. If Paramount's bid is deemed superior, it would trigger a four-day negotiation window for Netflix to enhance its $27.75 per share offer, potentially impacting a deal valued at $72 billion.\n\n- **Financial Implications**: WBD's acceptance of Paramount's offer could lead to a significant breakup fee of $2.8 billion for Netflix, funded by Paramount, underscoring the financial stakes involved. The resultant combined entity of WBD and Paramount could dominate the content landscape, merging two of the largest studios in revenue, along with major cable networks.\n\n- **Regulatory Scrutiny Ahead**: Both the Netflix-WBD transaction and the potential Paramount merger face antitrust challenges from regulatory bodies in the U.S. and Europe, which could complicate the execution of either deal and affect WBD's strategic positioning in the competitive media market.",
-        "date": "Feb 24, 18:59"
-    },
-    {
-        "id": 1771952364,
-        "source": "CNBC Top News",
-        "title": "Epstein files: DOJ may have withheld FBI interviews with Trump accuser, Rep. Garcia says",
-        "link": "https://www.cnbc.com/2026/02/24/epstein-trump-doj-garcia.html",
-        "summary": "- **Legal and Reputational Risk**: The DOJ's alleged illegal withholding of FBI interviews related to serious accusations against President Trump could expose the department and the administration to significant legal challenges and heightened scrutiny, potentially undermining public confidence.\n\n- **Political Ramifications**: This move by Oversight Democrats to initiate an investigation signifies a possible escalation in political tensions, affecting the GOP\u2019s strategy and leading to increased polarization ahead of future elections.\n\n- **Impact on Financial Markets**: The unfolding situation may lead to volatility in public markets, especially for firms tied to Trump or those influenced by bipartisan investigations, as uncertainty typically spurs investor caution and shifts in capital allocation.",
-        "date": "Feb 24, 18:59"
-    },
-    {
-        "id": 1771952015,
-        "source": "Yahoo Finance",
-        "title": "Flying High with Erik Prince: Swarmer IPO Brings Combat-Tested Tech To Public Markets \u2013 Initiation Report",
-        "link": "https://finance.yahoo.com/news/flying-high-erik-prince-swarmer-163024943.html",
-        "summary": "- **Strategic Investment Opportunity**: Swarmer Inc. (SWMR), led by Erik Prince, is poised for its IPO, aiming to capitalize on its innovative AI-driven drone technology that has been combat-tested with substantial traction in the defense sector, generating strong institutional interest and a projected revenue of $20 million by 2026.\n\n- **High-Margin Commercial Model**: The company employs a B2B2G strategy with a software licensing fee structure based on drone deployment, promising healthy profit margins linked to partner shipment volumes. This capital-light model positions Swarmer for scalable growth amidst increasing demand for advanced unmanned combat operations.\n\n- **Robust Revenue Visibility**: With $16.3 million in firm commitments from defense contracts and over 300 missions conducted daily across 42 armed forces, Swarmer offers strong earnings potential in the next 12-24 months, positioning itself favorably within the expanding defense market landscape.",
-        "date": "Feb 24, 18:52"
-    },
-    {
-        "id": 1771952007,
-        "source": "Yahoo Finance",
-        "title": "Anthropic Mends Fences At Enterprise Event. Software Stocks Gain.",
-        "link": "https://www.investors.com/news/technology/software-stock-nemesis-anthropic-enterprise-market-event-news/?src=A00220&yptr=yahoo",
-        "summary": "- **Stock Upgrade Boost**: Wells Fargo has upgraded Google to an 'overweight' rating, highlighting its strong positioning in the AI sector, which could lead to significant capital appreciation and bolster investor confidence.\n\n- **Market Response**: Following the upgrade, software stocks have seen a notable uptick, signaling a positive sentiment in the tech sector that may attract increased investment and market activity.\n\n- **Strategic Implications**: This move underscores the growing importance of AI technologies in driving financial performance and competitive advantage, making it crucial for businesses to adapt and align with AI-driven strategies to secure future growth.",
-        "date": "Feb 24, 18:52"
-    },
-    {
-        "id": 1771952001,
-        "source": "Yahoo Finance",
-        "title": "Tesla must face lawsuit alleging anti-American bias in hiring, US judge rules",
-        "link": "https://finance.yahoo.com/news/tesla-must-face-lawsuit-alleging-163317741.html",
-        "summary": "- A U.S. District judge has allowed a lawsuit against Tesla to proceed, alleging discrimination in hiring practices favoring foreign workers over American citizens, which could signal increasing scrutiny on corporate hiring policies and potential regulatory changes impacting labor costs.\n\n- The lawsuit claims Tesla systematically prefers H-1B visa holders, raising concerns about a workforce management strategy that could lead to reputational damage and additional legislative challenges that might affect operational flexibility and recruitment costs.\n\n- With Tesla reportedly hiring significantly more foreign visa holders while conducting substantial layoffs of U.S. workers, the case could exacerbate tensions in the labor market and prompt further legal ramifications, thereby influencing shareholder confidence and the company\u2019s long-term talent acquisition strategy.",
-        "date": "Feb 24, 18:52"
-    },
-    {
-        "id": 1771951994,
-        "source": "CNBC Top News",
-        "title": "Spirit Airlines plans to slash flights, fleet in bid to emerge from bankruptcy as early as spring",
-        "link": "https://www.cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html",
-        "summary": "- **Strategic Fleet Reduction:** Spirit Airlines plans to significantly downsize its fleet, cutting annualized fleet costs by $550 million (65% lower than pre-bankruptcy levels), as part of its restructuring strategy to emerge from bankruptcy by late spring or early summer. This move is aimed at restoring financial stability amidst fierce market competition. \n\n- **Liquidity Injection from Creditors:** The airline has secured commitments from creditors to provide essential liquidity through released cash collateral, which is crucial for enabling operations during the reorganization phase, highlighting the importance of financial backing in navigating bankruptcy.\n\n- **Competitive Landscape Challenges:** As Spirit shrinks, it faces the daunting task of competing against larger rivals in a post-COVID market characterized by rising operational costs and changing consumer preferences, making its path to recovery and future transactions more complex and pivotal for long-term sustainability.",
-        "date": "Feb 24, 18:52"
-    },
-    {
-        "id": 1771951988,
-        "source": "CNBC Top News",
-        "title": "Data center expansion reaches an \u2018inflection point\u2019",
-        "link": "https://www.cnbc.com/2026/02/24/data-center-expansion-reaches-an-inflection-point.html",
-        "summary": "- **Market Shift and Expansion**: North America's data center sector is rapidly expanding, with Texas poised to become the largest market, signaling a critical shift away from traditional hubs like Virginia. This evolution reflects a broader trend as 64% of new constructions move into emerging markets, indicating significant opportunities for investment.\n\n- **Unprecedented Demand and Low Vacancies**: With data center vacancies at an unprecedented low of 1%, sustained for two years, the market is demonstrating strong resilience against bubble risks. The 92% pre-commitment rate of ongoing projects highlights the robust demand from hyperscalers and AI, suggesting long-term occupancy stability is likely.\n\n- **Strategic Financing Amid Risks**: Record financing of $75 billion in 2022 for data center developments underscores lender confidence, while the top five hyperscalers are set to invest $710 billion in infrastructure by 2026. However, developers face risks related to power infrastructure constraints, prompting innovative solutions like onsite power generation to ensure sustained growth and competitiveness.",
-        "date": "Feb 24, 18:52"
-    },
-    {
-        "id": 1771951981,
-        "source": "CNBC Top News",
-        "title": "Meta strikes AI chip deal with AMD days after committing to deploy millions of Nvidia GPUs",
-        "link": "https://www.cnbc.com/2026/02/24/meta-to-use-6gw-of-amd-gpus-days-after-expanded-nvidia-ai-chip-deal.html",
-        "summary": "- **Strategic AI Investment**: Meta's multi-year deal with AMD for up to 6 gigawatts of AI processing power highlights its aggressive strategy to enhance AI capabilities, following a significant commitment to Nvidia. This dual investment places Meta at the forefront of AI innovation, crucial for maintaining competitive advantage.\n\n- **Market Response**: AMD's stock surged 7% post-announcement, demonstrating investor confidence in its potential growth trajectory via this deal. While Meta\u2019s shares dipped, the long-term financial implications of securing AI resources may drive future valuation.\n\n- **Warrant Structure**: The performance-based warrant allowing Meta to acquire 160 million shares of AMD aligns both companies' interests and supports AMD\u2019s ambitious expansion plans. This structure incentivizes strong performance and could yield substantial financial returns for both firms, indicating a well-calibrated partnership for future growth in AI.",
-        "date": "Feb 24, 18:52"
     }
 ]
