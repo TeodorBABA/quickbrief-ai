@@ -3,79 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBrief Pro | Intelligence</title>
+    <title>QuickBrief Pro | Financial Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
-        .nav-blur { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #262626; }
-        .card-news { background: #171717; border: 1px solid #262626; transition: all 0.3s; }
-        .card-news:hover { border-color: #3b82f6; transform: translateY(-2px); }
-        .filter-btn.active { background-color: #3b82f6; color: white; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #fafafa; }
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; }
+        .news-card { background: #0f0f0f; border: 1px solid #1a1a1a; transition: all 0.25s ease; }
+        .news-card:hover { border-color: #3b82f6; transform: translateY(-2px); box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2); }
+        .filter-btn { transition: all 0.2s; color: #737373; border-color: #262626; }
+        .filter-btn:hover { color: #fff; border-color: #404040; }
+        .filter-btn.active { background: #3b82f6; color: #fff; border-color: #3b82f6; shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+        .summary-list li::before { content: "→"; color: #3b82f6; font-weight: bold; display: inline-block; width: 1.5em; margin-left: -1.5em; }
     </style>
 </head>
 <body>
 
-    <nav class="nav-blur sticky top-0 z-50 p-4">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tighter text-blue-500">QUICKBRIEF PRO</h1>
-            <div class="hidden md:flex space-x-2" id="filters">
-                <button onclick="filterNews('All')" class="filter-btn active px-3 py-1 text-xs rounded-full border border-neutral-700">All</button>
-                <button onclick="filterNews('Tech')" class="filter-btn px-3 py-1 text-xs rounded-full border border-neutral-700">Tech</button>
-                <button onclick="filterNews('Markets')" class="filter-btn px-3 py-1 text-xs rounded-full border border-neutral-700">Markets</button>
-                <button onclick="filterNews('Finance')" class="filter-btn px-3 py-1 text-xs rounded-full border border-neutral-700">Finance</button>
+    <nav class="glass-nav sticky top-0 z-50 p-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter flex items-center gap-2">
+                <span class="bg-blue-600 w-6 h-6 rounded flex items-center justify-center text-[14px]">Q</span>
+                QUICKBRIEF<span class="text-blue-500 underline decoration-2">PRO</span>
+            </h1>
+            <div class="hidden md:flex space-x-2" id="filter-container">
+                <button onclick="changeFilter('All', this)" class="filter-btn active px-4 py-1.5 text-xs font-bold rounded-full border">All</button>
+                <button onclick="changeFilter('Markets', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Markets</button>
+                <button onclick="changeFilter('Tech', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Tech</button>
+                <button onclick="changeFilter('Finance', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Finance</button>
+                <button onclick="changeFilter('Business', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Business</button>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-2xl mx-auto p-4 py-10">
-        <section class="mb-16 p-8 rounded-3xl bg-gradient-to-br from-blue-900/20 to-transparent border border-blue-500/20 text-center">
-            <h2 class="text-2xl font-bold mb-2">The Morning Brief</h2>
-            <p class="text-neutral-400 mb-6 text-sm">Get 5 minutes of intelligence in your inbox every day.</p>
-            <form action="https://formspree.io/f/YOUR_ID" method="POST" class="flex flex-col md:flex-row gap-2">
-                <input type="email" name="email" placeholder="Your work email" required class="flex-1 bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-2 outline-none focus:border-blue-500 text-sm">
-                <button type="submit" class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-xl text-sm font-bold transition">Join Pro</button>
-            </form>
+    <main class="max-w-2xl mx-auto p-4 pt-12">
+        <section class="mb-16 p-8 rounded-3xl bg-blue-600/5 border border-blue-500/20 relative overflow-hidden">
+            <div class="relative z-10 text-center">
+                <h2 class="text-2xl font-bold mb-2">The 5-Minute Executive Brief</h2>
+                <p class="text-neutral-400 mb-8 text-sm max-w-sm mx-auto">Join 2,000+ professionals getting curated global intelligence daily.</p>
+                
+                <form action="https://formspree.io/f/maqdaepr" method="POST" class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+                    <input type="email" name="email" placeholder="Enter your business email" required 
+                        class="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 text-sm transition-all">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-blue-600/20">
+                        Subscribe Free
+                    </button>
+                </form>
+            </div>
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-blue-600/10 rounded-full blur-3xl"></div>
         </section>
 
-        <div id="feed" class="space-y-6"></div>
+        <div id="news-feed" class="space-y-8">
+            <div class="text-center py-20 text-neutral-600 animate-pulse">Scanning global markets...</div>
+        </div>
     </main>
 
     <script>
-        let allNews = [];
-        async function load() {
-            const r = await fetch('news_data.json?t=' + Date.now());
-            allNews = await r.json();
-            render('All');
+        let newsData = [];
+
+        async function init() {
+            try {
+                const response = await fetch('news_data.json?t=' + Date.now());
+                newsData = await response.json();
+                renderNews('All');
+            } catch (err) {
+                console.error("Failed to load news:", err);
+                document.getElementById('news-feed').innerHTML = "<div class='text-red-500 text-center'>Connection error. Please refresh.</div>";
+            }
         }
 
-        function render(cat) {
-            const container = document.getElementById('feed');
+        function renderNews(filter) {
+            const container = document.getElementById('news-feed');
             container.innerHTML = '';
-            const filtered = cat === 'All' ? allNews : allNews.filter(n => n.category === cat);
             
-            filtered.forEach(n => {
-                container.innerHTML += `
-                    <div class="card-news p-6 rounded-2xl">
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="text-[10px] font-bold py-1 px-2 rounded bg-blue-500/10 text-blue-400 uppercase tracking-widest">${n.category}</span>
-                            <span class="text-neutral-600 text-[10px] uppercase font-bold tracking-widest">${n.date}</span>
-                        </div>
-                        <h3 class="text-lg font-bold mb-4 leading-tight">${n.title}</h3>
-                        <div class="text-neutral-400 text-sm space-y-2 mb-6 opacity-80">${n.summary.replace(/\n/g, '<br>')}</div>
-                        <a href="${n.link}" target="_blank" class="text-[10px] font-bold text-blue-500 uppercase tracking-widest hover:underline">Full Report →</a>
+            const filtered = filter === 'All' ? newsData : newsData.filter(n => n.category === filter);
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="text-center py-10 text-neutral-500 text-sm italic">No new updates in ${filter} yet.</div>`;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "news-card p-6 rounded-2xl";
+                
+                // Formatează summary în listă
+                const points = item.summary.split('\n').filter(p => p.trim() !== '');
+                const listHtml = points.map(p => `<li class="mb-2">${p.replace(/^[•*-]\s*/, '')}</li>`).join('');
+
+                card.innerHTML = `
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-blue-600/20 text-blue-400 border border-blue-500/30 uppercase tracking-widest">${item.category}</span>
+                        <span class="text-neutral-500 text-[10px] font-bold uppercase tracking-widest">${item.date}</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 leading-snug tracking-tight text-white/95">${item.title}</h3>
+                    <ul class="summary-list text-neutral-400 text-sm leading-relaxed mb-6 ml-6">
+                        ${listHtml}
+                    </ul>
+                    <div class="pt-4 border-t border-white/5">
+                        <a href="${item.link}" target="_blank" class="inline-flex items-center text-[10px] font-bold text-neutral-500 hover:text-blue-500 uppercase tracking-widest transition-colors">
+                            Original Report
+                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
                     </div>
                 `;
+                container.appendChild(card);
             });
         }
 
-        function filterNews(cat) {
+        function changeFilter(category, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
-            render(cat);
+            btn.classList.add('active');
+            renderNews(category);
         }
 
-        load();
+        init();
+        // Refresh automat la 5 minute
+        setInterval(init, 300000);
     </script>
 </body>
 </html>
