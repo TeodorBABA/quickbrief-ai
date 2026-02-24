@@ -1,5 +1,333 @@
 [
     {
+        "id": 1771958842,
+        "category": "Tech",
+        "title": "Stripe’s valuation soars 74% to $159 billion",
+        "link": "https://techcrunch.com/2026/02/24/stripes-valuation-soars-74-to-159-billion/",
+        "summary": "- Stripe's valuation rose 74% to $159 billion following a recent secondary share transaction and notable investor participation, including Thrive Capital and Andreessen Horowitz.\n- The company reported a significant increase in stablecoin payments volume, reaching $400 billion in 2025, with a focus on B2B payments.\n- Stripe continues to expand its cryptocurrency initiatives, acquiring firms like Privy and introducing its blockchain for enhanced payment solutions.",
+        "date": "24 Feb 2026 17:28"
+    },
+    {
+        "id": 1771958847,
+        "category": "Tech",
+        "title": "YouTube beefs up its $7.99/month Lite subscription with offline downloads and background play",
+        "link": "https://techcrunch.com/2026/02/24/youtube-beefs-up-its-7-99-month-lite-subscription-with-downloads-and-background-play/",
+        "summary": "- YouTube enhances its $7.99/month Premium Lite subscription with offline downloads and background play, previously exclusive to the full $13.99 plan, spurred by user feedback.  \n- New features make the Lite subscription more appealing, only leaving ad-free music as a reason to upgrade to the full Premium version.  \n- YouTube's subscription revenue is growing, contributing to a $60 billion overall revenue projection for 2025, with over 125 million users of YouTube Music and Premium.",
+        "date": "24 Feb 2026 17:00"
+    },
+    {
+        "id": 1771958851,
+        "category": "Tech",
+        "title": "Music generator ProducerAI joins Google Labs",
+        "link": "https://techcrunch.com/2026/02/24/music-generator-producerai-joins-google-labs/",
+        "summary": "- Generative AI music tool ProducerAI will join Google Labs, enhancing user interaction with music creation through natural language prompts and Google DeepMind’s Lyria 3 model.  \n- The tool facilitates a collaborative approach to music generation, as demonstrated by artists like Wyclef Jean, enabling the integration of sounds into existing tracks.  \n- AI's role in music creation sparks debate among musicians regarding copyright concerns, with some advocating for its benefits, while others oppose its impact on human creativity.  ",
+        "date": "24 Feb 2026 16:57"
+    },
+    {
+        "id": 1771958856,
+        "category": "Tech",
+        "title": "Marquis sues firewall provider SonicWall, alleges security failings with its firewall backup led to ransomware attack",
+        "link": "https://techcrunch.com/2026/02/24/marquis-sonicwall-lawsuit-ransomware-firewall-breach/",
+        "summary": "- Fintech firm Marquis has filed a lawsuit against SonicWall, alleging security failings that exposed sensitive data and led to a ransomware attack, causing significant reputational and financial damage.\n- The complaint accuses SonicWall of negligence, claiming its breach allowed hackers to access critical security information of all customers using its firewall backup service.\n- At least 400,000 individuals have been affected by the breach, with further notifications expected as investigations continue.",
+        "date": "24 Feb 2026 16:37"
+    },
+    {
+        "id": 1771958861,
+        "category": "Tech",
+        "title": "Ukraine’s startups keep building",
+        "link": "https://techcrunch.com/2026/02/24/ukraines-startups-keep-building/",
+        "summary": "- Ukrainian startups, such as edtech unicorn Preply, continue to grow despite wartime challenges, employing local engineers and pivoting operations to support the nation amidst conflict.\n  \n- A surge in the mental health sector, exemplified by Aspichi's Luminify platform, showcases innovative solutions addressing wartime trauma for soldiers and civilians alike.\n\n- Key city hubs like Kyiv and Lviv maintain vibrant startup ecosystems, attracting global attention and venture capital, highlighting resilience in Ukraine’s tech landscape amid ongoing adversity.",
+        "date": "24 Feb 2026 15:48"
+    },
+    {
+        "id": 1771958865,
+        "category": "Tech",
+        "title": "Meta strikes up to $100B AMD chip deal as it chases ‘personal superintelligence’",
+        "link": "https://techcrunch.com/2026/02/24/meta-strikes-up-to-100b-amd-chip-deal-as-it-chases-personal-superintelligence/",
+        "summary": "- Meta is set to invest up to $100 billion in AMD chips to support its AI endeavors, significantly increasing data center power demand by six gigawatts.\n- The multiyear agreement includes a performance-based warrant for 160 million AMD shares, contingent on reaching specific milestones and stock price targets.\n- This partnership underscores Meta's shift towards AI infrastructure and diversification away from reliance on Nvidia, aligning with CEO Mark Zuckerberg's vision for “personal superintelligence.”",
+        "date": "24 Feb 2026 15:15"
+    },
+    {
+        "id": 1771958869,
+        "category": "Tech",
+        "title": "Oura launches a proprietary AI model focused on women’s health",
+        "link": "https://techcrunch.com/2026/02/24/oura-launches-a-proprietary-ai-model-focused-on-womens-health/",
+        "summary": "- Oura has launched a proprietary AI model to enhance its chatbot, Oura Advisor, focusing on personalized insights for women's health across various reproductive stages.\n- The model leverages established medical standards and biometric data, reviewed by certified clinicians, to provide tailored guidance while emphasizing responsible AI deployment.\n- Oura's initiative addresses a growing demand for specialized health tools for women, particularly among younger users, without substituting medical advice.",
+        "date": "24 Feb 2026 15:08"
+    },
+    {
+        "id": 1771958875,
+        "category": "Finance",
+        "title": "Helix Exploration, Atlantic Lithium, AOTI, Caledonia Mining - Small Cap Snapshot",
+        "link": "https://finance.yahoo.com/video/helix-exploration-atlantic-lithium-aoti-094100569.html",
+        "summary": "- Helix Exploration becomes Montana's first helium producer, advancing operations at the Rudyard project and engaging with distributors.\n- Atlantic Lithium withdraws from takeover discussions to concentrate on internal growth, asserting its flagship Ewoyaa Lithium Project's value.\n- AOTI Inc anticipates a pivotal US reimbursement decision and reports a 14% increase in 2025 annual revenue, exceeding $66 million.",
+        "date": "2026-02-23T09:41"
+    },
+    {
+        "id": 1771958880,
+        "category": "Finance",
+        "title": "How Did Markets Open the Week?",
+        "link": "https://finance.yahoo.com/news/did-markets-open-week-095345326.html",
+        "summary": "- Soybean prices fell sharply due to concerns over potential global tariff increases, with trade volume remaining light as the market awaited developments post-Chinese New Year festivities.  \n- The US dollar weakened, contributing to gains in gold and silver, which have now surpassed the dollar as the largest global reserve asset.  \n- Corn and wheat markets also experienced declines, reflecting ample US supplies amid limited demand and shifting weather patterns.  ",
+        "date": "2026-02-23T09:53"
+    },
+    {
+        "id": 1771958885,
+        "category": "Finance",
+        "title": "Is Wall Street Bullish or Bearish on AutoZone Stock?",
+        "link": "https://finance.yahoo.com/news/wall-street-bullish-bearish-autozone-095919611.html",
+        "summary": "- AutoZone (AZO) stock has gained 10% over the past year, lagging behind the S&P 500's 13% increase, but shows stronger year-to-date performance with a 10.5% rise versus the index's marginal gains.\n- A $98 million LIFO charge and adverse weather conditions contributed to AZO's underperformance, leading to disappointing earnings surprises in the last four quarters.\n- Despite challenges, 29 analysts deem AZO a \"Strong Buy,\" with a mean price target suggesting a 13.4% upside, reflecting optimism for recovery.",
+        "date": "2026-02-23T09:59"
+    },
+    {
+        "id": 1771958890,
+        "category": "Finance",
+        "title": "Are Wall Street Analysts Predicting Mettler-Toledo Stock Will Climb or Sink?",
+        "link": "https://finance.yahoo.com/news/wall-street-analysts-predicting-mettler-100445325.html",
+        "summary": "- Mettler-Toledo (MTD) stock has underperformed the market with a 5.7% gain versus the S&P 500's 13% rise over the past year; analysts remain broadly optimistic, rating it a \"Moderate Buy.\"  \n- Q4 earnings exceeded expectations with an adjusted EPS of $13.36 and revenue of $1.13 billion, signaling strong operational performance.  \n- Analysts project an 8.7% EPS growth in fiscal 2026, with price targets indicating a potential upside between 7.1% and 23.4%.",
+        "date": "2026-02-23T10:04"
+    },
+    {
+        "id": 1771958896,
+        "category": "Finance",
+        "title": "Are Wall Street Analysts Bullish on United Rentals Stock?",
+        "link": "https://finance.yahoo.com/news/wall-street-analysts-bullish-united-090840790.html",
+        "summary": "- United Rentals (URI) demonstrates strong market performance, with a 30.9% increase over 52 weeks and a 12.3% year-to-date gain, outpacing both the S&P 500 and the industrial sector ETF.\n- The recent appointment of Alexander Taussig to the board is expected to enhance the company’s technological strategy and drive innovation.\n- Analysts maintain a \"Moderate Buy\" rating for URI, with improved sentiment since last quarter, signaling confidence in future earnings growth despite recent EPS misses.",
+        "date": "2026-02-23T09:08"
+    },
+    {
+        "id": 1771958901,
+        "category": "Finance",
+        "title": "Down 60%, Should You Buy the Dip on D-Wave Quantum?",
+        "link": "https://finance.yahoo.com/news/down-60-buy-dip-d-094200604.html",
+        "summary": "- D-Wave Quantum's stock has declined 60% since October 2025, prompting investor speculation about a potential buy opportunity despite concerns over high valuation and dilution risks.  \n- The company has generated $21.8 million in revenue in the first nine months of 2025—up 235% year-over-year—indicating strong business momentum with significant contracts secured.  \n- Their quantum annealing technology addresses complex optimization problems, enhancing efficiency in various sectors, and expanding deployments, including a notable contract with Florida Atlantic University.  ",
+        "date": "2026-02-23T09:42"
+    },
+    {
+        "id": 1771958907,
+        "category": "Finance",
+        "title": "I'm Selling a $750k Property. Should I Reinvest in Real Estate, or the Stock Market?",
+        "link": "https://finance.yahoo.com/news/invest-real-estate-stock-market-100000407.html",
+        "summary": "- Selling a $750,000 property presents a crucial decision for reinvestment, weighing options between rental real estate and diverse stock investments.\n- Real estate can provide cash flow but is less liquid and more hands-on compared to stocks, which offer greater flexibility and diversification.\n- Tax implications differ significantly; options like a 1031 exchange can defer taxes on real estate gains, while stocks may offer more tax-efficient returns.",
+        "date": "2026-02-23T09:00"
+    },
+    {
+        "id": 1771958913,
+        "category": "Finance",
+        "title": "EnQuest Guides Stable 2026 Output After Strong 2025 Delivery",
+        "link": "https://finance.yahoo.com/news/enquest-guides-stable-2026-output-081954414.html",
+        "summary": "- EnQuest's 2025 production averaged 45,606 boepd, surpassing guidance, while costs were approximately 4% lower than forecasted, enhancing operational efficiency.  \n- The company anticipates stable output for 2026 between 41,000-45,000 boepd due to UK weather disruptions, with January production impacted at 33,800 boepd.  \n- EnQuest's financial position strengthens with $269 million in cash and an undrawn RBL facility, providing total liquidity of $675 million.",
+        "date": "2026-02-23T08:19"
+    },
+    {
+        "id": 1771958921,
+        "category": "Finance",
+        "title": "United Airlines Holdings Inc. (UAL) Settles on GEnx engines for New 787 Dreamliners, Brazil Okays $100M Azul Investment",
+        "link": "https://finance.yahoo.com/news/united-airlines-holdings-inc-ual-101643660.html",
+        "summary": "- United Airlines has selected 300 GEnx engines to power its new 787 Dreamliners, becoming the world's largest GEnx operator, enhancing fleet durability and efficiency.  \n- Brazil's competition authority approved UAL's $100 million investment in Azul S.A., increasing its stake from 2% to 8%, to leverage Azul’s domestic operations amid its bankruptcy.  \n- This strategic investment underscores UAL's growth aspirations in international markets while optimizing its fleet capabilities.  ",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958926,
+        "category": "Finance",
+        "title": "TomCo Energy agrees new Valkor deal and raises some working capital, shares drop",
+        "link": "https://finance.yahoo.com/news/tomco-energy-agrees-valkor-deal-094200355.html",
+        "summary": "- TomCo Energy PLC announced a renewed 50:50 partnership with Valkor for controlling Greenfield Energy, aimed at advancing oil-sands projects in Utah's Uinta Basin.\n- The company issued 290.5 million shares at 0.1p to settle part of a $799,500 loan, contributing to a 35% drop in its share price.\n- TomCo raised £550,000 at a significant discount to fund working capital and support strategic objectives.",
+        "date": "2026-02-23T09:42"
+    },
+    {
+        "id": 1771958931,
+        "category": "Finance",
+        "title": "Diverse Capabilities and Merger Propel Amentum Holdings, Inc. (AMTM) to Robust Earnings Growth",
+        "link": "https://finance.yahoo.com/news/diverse-capabilities-merger-propel-amentum-101645713.html",
+        "summary": "- Amentum Holdings Inc. (AMTM) enhances its market position following a merger with Jacobs Solutions, becoming a major player in advanced engineering and technology solutions.  \n- Analysts at Citizens maintain a Market Outperform rating, setting a $40 price target as the company meets strong earnings expectations with Q1 fiscal 2026 EPS at $0.54, doubling estimates.  \n- The merger expands Amentum’s market reach, allowing alignment with federal priorities and potential gains from investments in AI data centers.",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958936,
+        "category": "Finance",
+        "title": "Copa Holdings, S.A. (CPA) Elicits Mixed Sentiments on Wall Street amid Operational Momentum",
+        "link": "https://finance.yahoo.com/news/copa-holdings-cpa-elicits-mixed-101647616.html",
+        "summary": "- Copa Holdings, S.A. received a price target increase to $185 from Raymond James, reflecting strong operational momentum and an attractive valuation supported by its strong balance sheet.  \n- Conversely, Goldman Sachs downgraded the stock to Neutral despite raising its price target to $151, citing limited room for improvement.  \n- These mixed sentiments highlight differing views on Copa's growth potential within the competitive airline industry.",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958941,
+        "category": "Finance",
+        "title": "LATAM Airlines Group S.A. (LTM) Achieves Capacity and Profitability Growth as Goldman Questions Upside",
+        "link": "https://finance.yahoo.com/news/latam-airlines-group-ltm-achieves-101650758.html",
+        "summary": "- LATAM Airlines Group reported a 16.3% revenue increase in Q4 2025, reaching $3.95 billion, driven by a 20.3% rise in passenger revenue.\n- The company achieved a 42.7% increase in operating income and a 78.15% rise in net income, totaling $484 million.\n- Goldman Sachs downgraded LATAM to Neutral, citing concerns over limited upside, reducing its price target from $66.20 to $64.10.",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958947,
+        "category": "Finance",
+        "title": "Is WESCO International, Inc. (WCC) One of the Best High-Growth Industrial Stocks to Buy?",
+        "link": "https://finance.yahoo.com/news/wesco-international-inc-wcc-one-101655633.html",
+        "summary": "- WESCO International, Inc. (WCC) received an Overweight rating from KeyBanc Capital Markets, raising its price target from $304 to $340 following a solid Q4 2025 performance.  \n- Q4 revenue increased 10% year-over-year to $6.07 billion, but adjusted EPS of $3.40 fell short of estimates.  \n- The company projects 5% to 8% sales growth for 2026, with a confident outlook due to record backlog levels and anticipated EBITDA margins.  ",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958952,
+        "category": "Finance",
+        "title": "Prediction: After Beating the S&P 500 for the Last 15 Years, This Unstoppable Vanguard ETF Will Top the Market Again in 2026",
+        "link": "https://finance.yahoo.com/news/prediction-beating-p-500-last-095000058.html",
+        "summary": "- The Vanguard S&P 500 Growth ETF outperformed the S&P 500 with a 21.4% return in 2025, versus the index’s 16.4%, highlighting its competitive edge over the past 15 years.  \n- Its focus on high-growth sectors, particularly information technology and communication services, positions it for continued market-beating performance.  \n- The ETF's quarterly rebalancing strategy enhances its agility in capturing momentum in rapidly growing stocks, particularly amid the current AI boom.",
+        "date": "2026-02-23T09:50"
+    },
+    {
+        "id": 1771958957,
+        "category": "Finance",
+        "title": "AAON, Inc. (AAON) Touts Robust Product Portfolio for Data Center Opportunities",
+        "link": "https://finance.yahoo.com/news/aaon-inc-aaon-touts-robust-101648424.html",
+        "summary": "- AAON, Inc. has been reaffirmed with a Buy rating and a $120 price target by DA Davidson, highlighting strong confidence in its product portfolio for future data center developments.  \n- The company increased its credit facility by $100 million to support expanded operations and working capital needs at its Memphis facility.  \n- AAON specializes in high-performance HVAC solutions for commercial and industrial sectors, positioning itself favorably amidst evolving industry demands.  ",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958962,
+        "category": "Finance",
+        "title": "FTAI Aviation Ltd. (FTAI) Boosts Asset Portfolio as Analysts Raise Price Target",
+        "link": "https://finance.yahoo.com/news/ftai-aviation-ltd-ftai-boosts-101653394.html",
+        "summary": "- FTAI Aviation Ltd. has acquired seven off-lease Airbus aircraft from Air France, reinforcing its commitment to modernizing its narrow-body fleet and enhancing asset value through innovative repair capabilities.  \n- Analysts at Citizens raised the price target for FTAI to $325, citing strong growth and free cash flow prospects.  \n- The company specializes in Maintenance, Repair, and Exchange services for commercial jet engines, positioning itself as a key player in the aerospace sector.  ",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958967,
+        "category": "Finance",
+        "title": "Planet Labs PBC  (PL) Unveils Advisory Boards for Strategic Expansion and Partnerships",
+        "link": "https://finance.yahoo.com/news/planet-labs-pbc-pl-unveils-101652944.html",
+        "summary": "- Planet Labs PBC has announced the creation of two advisory boards to enhance strategic expansion in Europe and advance solutions for the Defense and Intelligence sectors. \n- This initiative follows a strategic partnership with AXA, integrating satellite imagery in risk management for natural disaster monitoring. \n- Craig Hallum has upgraded PL’s stock price target to $33, highlighting its strong business model and advanced AI capabilities.",
+        "date": "2026-02-23T10:16"
+    },
+    {
+        "id": 1771958972,
+        "category": "Finance",
+        "title": "What Are Wall Street Analysts' Target Price for EPAM Systems Stock?",
+        "link": "https://finance.yahoo.com/news/wall-street-analysts-target-price-081600154.html",
+        "summary": "- EPAM Systems reported a 12.8% year-over-year revenue increase to $1.41 billion in Q4 fiscal 2025, exceeding analyst expectations despite a 38.3% stock decline over the past year.  \n- The company's full-year organic revenue growth projection of 3% to 6% disappointed market expectations, resulting in a 17% stock plunge post-earnings report.  \n- Analysts predict a 9.2% EPS growth for fiscal 2026, supported by strong demand for AI-driven services, although challenges like longer procurement cycles are noted.  ",
+        "date": "2026-02-23T08:16"
+    },
+    {
+        "id": 1771958977,
+        "category": "Finance",
+        "title": "Hedge Funds That Piled Into US Bitcoin Funds Are First to Exit",
+        "link": "https://finance.yahoo.com/news/hedge-funds-piled-us-bitcoin-093355654.html",
+        "summary": "- Hedge funds reduced their Bitcoin ETF allocations by 28% from Q3 to Q4 2025, marking a retreat from a previously booming investment trend.\n- Bitcoin's value has dropped nearly 50% since reaching over $126,000 in October, leading to decreased confidence among institutional investors.\n- Regulatory filings reveal significant sell-offs, with Brevan Howard cutting its BlackRock iShares Bitcoin Trust stake by 86%, reflecting broader market volatility and diminishing trading strategies.",
+        "date": "2026-02-23T09:33"
+    },
+    {
+        "id": 1771958982,
+        "category": "Finance",
+        "title": "Intuitive Machines Inc. (LUNR) Poised for Opportunities amid Space and Lunar Commercialization",
+        "link": "https://finance.yahoo.com/news/intuitive-machines-inc-lunr-poised-101738085.html",
+        "summary": "- Intuitive Machines Inc. (NASDAQ: LUNR) received a price target increase from B. Riley to $25, reflecting positive sentiment regarding lunar commercialization opportunities.  \n- The company aims to leverage the growing demand for lunar services, supported by its satellite technology and recent acquisition of Lanteris Space Systems.  \n- With plans to be the first commercial entity to soft-land on the Moon in 2024, LUNR is strategically positioned in the evolving space sector.  ",
+        "date": "2026-02-23T10:17"
+    },
+    {
+        "id": 1771958987,
+        "category": "Finance",
+        "title": "Investments in Strategic Initiatives Propel RB Global, Inc. (RBA) to Solid Q4 and Full Year Results",
+        "link": "https://finance.yahoo.com/news/investments-strategic-initiatives-propel-rb-101739961.html",
+        "summary": "- RB Global, Inc. (RBA) reported Q4 revenue growth of 5% year-over-year to $1.2 billion, driven by increased gross transaction value and service revenue.  \n- Despite a net income decline of 8% to $109.4 million, diluted adjusted EPS rose 17% to $1.11, and full-year revenue grew 7% to $4.59 billion.  \n- The company forecasts a 5% to 8% increase in gross transaction value for 2026, with adjusted EBITDA projected between $1.47 billion and $1.53 billion.  ",
+        "date": "2026-02-23T10:17"
+    },
+    {
+        "id": 1771958992,
+        "category": "Finance",
+        "title": "American Airlines Group Inc. (AAL) Seeks Approval for Venezuela Flights amid Solid 2026 Guidance",
+        "link": "https://finance.yahoo.com/news/american-airlines-group-inc-aal-101741383.html",
+        "summary": "- American Airlines Group Inc. (AAL) is seeking approval to resume flights to Venezuela, aiming to enhance its market presence with routes to Caracas and Maracaibo.  \n- The airline has projected strong financial performance for 2026, targeting adjusted earnings per share of $1.70 to $2.70 and operational cash flow of $2 billion.  \n- Following a record fourth-quarter revenue of $14 billion, Citi has placed AAL on a 90-day upside catalyst watch, maintaining a Buy rating.  ",
+        "date": "2026-02-23T10:17"
+    },
+    {
+        "id": 1771958997,
+        "category": "Finance",
+        "title": "FERC approves Blackstone’s acquisition of TXNM Energy",
+        "link": "https://finance.yahoo.com/news/ferc-approves-blackstone-acquisition-txnm-095006426.html",
+        "summary": "- The FERC has approved Blackstone Infrastructure's $11.5 billion acquisition of TXNM Energy, which serves over 800,000 homes in Texas and New Mexico.  \n- The commission found the transaction aligns with public interest, ensuring regulatory protections and customer rates are maintained, along with governance enhancements.  \n- Federal and state approvals are pending, while the deal includes $45 million in customer rate credits and workforce guarantees.",
+        "date": "2026-02-23T09:50"
+    },
+    {
+        "id": 1771959003,
+        "category": "Finance",
+        "title": "Jack Henry & Associates Stock: Analyst Estimates & Ratings",
+        "link": "https://finance.yahoo.com/news/jack-henry-associates-stock-analyst-080248790.html",
+        "summary": "- Jack Henry & Associates reported Q2 fiscal 2026 results with a revenue increase of 7.9% to $619.3 million, surpassing analyst expectations, and EPS rose 28.6% to $1.72.\n- The company upgraded its full-year revenue guidance, expecting GAAP growth between 5.6% and 6.3%, while analysts predict a 5.3% rise in diluted EPS for the fiscal year.\n- Currently rated as \"Moderate Buy\" by Wall Street, analyst sentiment has improved, with increased \"Strong Buy\" recommendations compared to three months ago.",
+        "date": "2026-02-23T08:02"
+    },
+    {
+        "id": 1771959009,
+        "category": "Finance",
+        "title": "Best CD rates today, February 23, 2026 (Lock in up to 4% APY)",
+        "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-monday-february-23-2026-110002703.html",
+        "summary": "- Today's highest CD rate is 4% APY from Marcus by Goldman Sachs for a 1-year term, significantly exceeding the national average of 1.55%.\n- The Federal Reserve's interest rate cuts in 2025 may signal a diminishing opportunity to secure high rates, prompting urgency for potential investors.\n- Online banks and credit unions continue to offer the most competitive rates, benefiting consumers seeking better returns on their deposits.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771959015,
+        "category": "Finance",
+        "title": "Best money market account rates today, February 23, 2026 (Earn up to 4.01% APY)",
+        "link": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-monday-february-23-2026-110001859.html",
+        "summary": "- Money market accounts (MMAs) currently offer interest rates up to 4.01% APY, providing a competitive alternative to traditional savings accounts for both liquidity and higher returns.  \n- Rates have recently begun a downward trend following cuts by the Federal Reserve, despite remaining high compared to historical standards.  \n- Consumers are advised to compare account features, such as minimum balances and fees, to maximize returns while ensuring FDIC or NCUA insurance coverage.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771959021,
+        "category": "Finance",
+        "title": "IASB seeks views on clarifying fair value option in IAS 28",
+        "link": "https://finance.yahoo.com/news/iasb-seeks-views-clarifying-fair-093741052.html",
+        "summary": "- The International Accounting Standards Board (IASB) has initiated a consultation to clarify eligibility for the fair value option under IAS 28, aiming to enhance consistency in its application.  \n- This move responds to stakeholder feedback regarding inconsistent practices and addresses classifications of income and expenses under IFRS 18.  \n- The consultation will remain open until April 20, 2026, with proposed amendments expected to be finalized by mid-2026.",
+        "date": "2026-02-23T09:37"
+    },
+    {
+        "id": 1771959026,
+        "category": "Finance",
+        "title": "Best high-yield savings interest rates today, February 23, 2026 (Earn up to 4% APY)",
+        "link": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-monday-february-23-2026-110000563.html",
+        "summary": "- As of February 23, 2026, high-yield savings accounts offer up to 4% APY, significantly higher than the national average of 0.39%, amid Federal Reserve rate cuts.\n- Online banks dominate the top savings rates, leveraging lower operational costs to provide better interest returns and reduced fees.\n- Savers are advised to compare account features and ensure FDIC/NCUA insurance to secure their investments amid anticipated further rate declines.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771959031,
+        "category": "Finance",
+        "title": "HELOC and home equity loan rates Monday, February 23, 2026: Unlocking the cash in your home at the lowest rates in years",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-monday-february-23-2026-110010534.html",
+        "summary": "- Current average rates for HELOCs and home equity loans stand at 7.23% and 7.44%, respectively, marking some of the lowest levels in years.  \n- Homeowners can leverage $34 trillion in equity without sacrificing favorable primary mortgage rates by opting for second mortgages like HELOCs or loans.  \n- Competitive lender offerings, including introductory rates as low as 5.99%, amplify the importance of shopping around for optimal terms.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771959037,
+        "category": "Finance",
+        "title": "Mortgage and refinance interest rates today, February 23, 2026: Looking for a rate below 6%? (How is 5.86%?)",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-february-23-2026-110028639.html",
+        "summary": "- The average 30-year fixed mortgage rate is now 5.86%, with 15-year rates at 5.41%, offering potential savings for buyers and refinancers.\n- Adjustable-rate mortgages (ARMs) present competitive options, with current 5/1 ARM rates at 5.97%, but come with risks of future rate increases.\n- Consumers seeking lower rates can benefit from higher down payments, better credit scores, and strategic use of discount points.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771959042,
+        "category": "Finance",
+        "title": "Chase reboots its 'mortgage rate sale,' this time on purchases and refinances",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/chase-mortgage-rate-sale-purchases-and-refinances-140015474.html",
+        "summary": "- Chase Home Lending is reintroducing its mortgage rate sale, now including both purchase and refinance loans, offering limited-time discounts through March 8, 2026.  \n- Eligible borrowers can benefit from personalized rate reductions, potentially increasing their purchasing power while maintaining monthly payments.  \n- The sale can be combined with other bank incentives, and grants of $2,500 to $5,000 are available for qualifying borrowers.  ",
+        "date": "2026-02-23T14:00"
+    },
+    {
+        "id": 1771959046,
+        "category": "Finance",
+        "title": "Pawn shop loans: How they work and what to watch out for",
+        "link": "https://finance.yahoo.com/personal-finance/personal-loans/article/pawn-shop-loans-160117492.html",
+        "summary": "- Pawn shop loans provide quick cash by using personal items as collateral, appealing to those without access to traditional loans but come with high fees and risks of losing valuable assets.  \n- Interest rates on pawn loans can soar to nearly 188% annually in certain states, highlighting their expensive nature compared to other borrowing options.  \n- Alternatives such as personal loans and secured credit cards may offer less risky and more sustainable financial solutions, even for borrowers with poor credit.  ",
+        "date": "2026-02-23T16:01"
+    },
+    {
+        "id": 1771959052,
+        "category": "Finance",
+        "title": "What is a balance transfer fee?",
+        "link": "https://finance.yahoo.com/personal-finance/credit-cards/article/what-is-a-balance-transfer-fee-213859406.html",
+        "summary": "- 46% of American households carry credit card debt, prompting many to consider balance transfers to lower interest costs with promotional APRs.  \n- Balance transfer fees typically range from 3% to 5% of the amount transferred, impacting overall cost-effectiveness of debt management.  \n- Consumers can minimize fees by seeking lower-fee cards or ensuring timely payoff before promotional periods end.",
+        "date": "2025-01-28T21:38"
+    },
+    {
         "id": 1771957736,
         "category": "Markets",
         "title": "Cybersecurity stocks are the latest AI victim. Analysts say buy the dip",
@@ -70,333 +398,5 @@
         "link": "https://www.cnbc.com/2026/02/23/the-sp-500-is-caught-in-an-unusually-tight-range-is-this-bull-market-resilient-or-exhausted-.html",
         "summary": "- The S&P 500 remains in a historically narrow trading range, reflecting a market stability despite significant external pressures including geopolitical tensions and regulatory changes.  \n- Corporate earnings are set for a fifth consecutive quarter of double-digit growth, yet investor anticipation suggests a lack of fresh momentum in stock movement.  \n- Diverse sector performance indicates internal market volatility, with financial and consumer stocks lagging while a broader diversification strategy has outperformed the S&P 500.",
         "date": "23 Feb 2026 12:27"
-    },
-    {
-        "id": 1771957786,
-        "category": "Markets",
-        "title": "Wells Fargo upgrades Google parent Alphabet, says it has '3 key traits of AI winner'",
-        "link": "https://www.cnbc.com/2026/02/23/wells-fargo-upgrades-google-parent-alphabet-says-it-has-3-key-traits-of-ai-winner.html",
-        "summary": "- Wells Fargo upgraded Alphabet from equal weight to overweight, citing three key traits that position it as a leader in AI: data, distribution, and computing capacity.  \n- The analyst raised the price target from $354 to $387, representing over 22% upside potential, aligning with positive sentiment among Wall Street analysts.  \n- Alphabet plans to increase its AI compute capacity significantly by 2028, enhancing its competitive advantage in the evolving tech landscape.",
-        "date": "23 Feb 2026 15:58"
-    },
-    {
-        "id": 1771957792,
-        "category": "Markets",
-        "title": "The 'Magnificent Seven' drove the stock market to record highs in recent years. Is the trade over?",
-        "link": "https://www.cnbc.com/2026/02/22/the-magnificent-seven-drove-the-stock-market-to-record-highs-in-recent-years-is-the-trade-over.html",
-        "summary": "- The \"Magnificent Seven\" tech stocks, once market leaders, are underperforming in 2026, with significant declines in shares of Microsoft, Tesla, and Amazon, raising concerns over capital expenditures and earnings growth.  \n- Investors are increasingly cautious about free cash flow, with major tech firms projected to spend nearly $700 billion in AI-related investments, impacting financial performance.  \n- A shift towards cyclical stocks, as well as continued scrutiny of Big Tech’s valuations, has led banks like Citi to downgrade tech holdings, emphasizing a rotation in market sentiment.  ",
-        "date": "22 Feb 2026 12:37"
-    },
-    {
-        "id": 1771957797,
-        "category": "Markets",
-        "title": "This sub $5 nuclear stock could double, but it's risky, says Canaccord Genuity",
-        "link": "https://www.cnbc.com/2026/02/22/this-nuclear-stock-could-double-says-canaccord-genuity.html",
-        "summary": "- Canaccord Genuity initiated coverage on Terra Innovatum with a buy rating, projecting a price target of $10, indicating nearly 140% upside from its recent sub-$5 valuation.\n- Increasing demand for power, driven by AI growth and supportive regulatory frameworks, positions the company's SOLO micro-reactor as a promising solution.\n- However, Terra Innovatum faces challenges, including lengthy regulatory processes and reliance on expensive specialized resources, which may impact its growth potential.",
-        "date": "22 Feb 2026 12:40"
-    },
-    {
-        "id": 1771957802,
-        "category": "Markets",
-        "title": "Top Wall Street analysts are bullish on the growth potential of these three stocks",
-        "link": "https://www.cnbc.com/2026/02/22/top-analysts-are-bullish-on-the-growth-potential-of-these-3-stocks.html",
-        "summary": "- Top Wall Street analysts remain optimistic about Datadog (DDOG), citing its advantageous position in the growing AI observability and security market, with a buy rating and a target of $180.  \n- Vertiv Holdings (VRT) shows significant order growth, prompting Bank of America to raise its target to $277, as strong momentum is expected to continue into 2026.  \n- Arista Networks (ANET) received a buy rating despite concerns over its supplier status with Meta, with a raised price target of $185, reflecting confidence in its market position and AI capabilities.",
-        "date": "22 Feb 2026 12:33"
-    },
-    {
-        "id": 1771957808,
-        "category": "Markets",
-        "title": "This week’s most overbought stocks include Deere and Quanta Services",
-        "link": "https://www.cnbc.com/2026/02/21/this-weeks-most-overbought-stocks-include-deere-and-quanta-services.html",
-        "summary": "- This week, major averages rose following the Supreme Court's rejection of Trump's tariffs, contributing to a relief rally despite disappointing economic data.\n- Deere and Quanta Services emerged as overbought stocks with RSIs of 78 and 73, respectively; investor optimism followed strong earnings reports.\n- Conversely, Blackstone and Apollo Global Management were identified as oversold, with RSIs below 30, indicating potential for future rebounds after notable weekly losses.",
-        "date": "21 Feb 2026 14:57"
-    },
-    {
-        "id": 1771957812,
-        "category": "Markets",
-        "title": "Bank of America names five stocks best positioned for shareholder returns",
-        "link": "https://www.cnbc.com/2026/02/21/five-stocks-for-shareholder-returns-according-to-bank-of-america.html",
-        "summary": "- Bank of America identified five stocks, including Live Nation and Evercore, as top picks for shareholder returns, citing strong growth potential and market positioning.  \n- Live Nation’s robust demand in the live entertainment sector supports its outlook, with shares rising 16% in the past month.  \n- Evercore's EPS growth and market leadership in M&A advisory are projected to maintain its upward momentum, with shares up 11% over three months.",
-        "date": "21 Feb 2026 14:46"
-    },
-    {
-        "id": 1771957817,
-        "category": "Markets",
-        "title": "Berkshire was a net seller of stocks in Buffett's final quarter as CEO",
-        "link": "https://www.cnbc.com/2026/02/21/berkshire-was-a-net-seller-of-stocks-in-buffetts-final-quarter-as-ceo.html",
-        "summary": "- In Warren Buffett's final quarter as CEO, Berkshire Hathaway was a net seller of stocks, including a 75% reduction in its Apple and Bank of America stakes, but Apple remains its largest investment at $60.3 billion.  \n- Berkshire's smaller purchases included a 12.4% increase in its New York Times stake and a significant boost in Chevron shares amidst rising oil prices.  \n- PacifiCorp settled $575 million in federal wildfire claims while also selling $1.9 billion in assets to improve financial stability.",
-        "date": "21 Feb 2026 16:35"
-    },
-    {
-        "id": 1771957822,
-        "category": "Markets",
-        "title": "The average tax refund is up 14%. These stocks could see a boost, Bank of America says",
-        "link": "https://www.cnbc.com/2026/02/20/these-stocks-could-benefit-from-heftier-tax-refunds-bank-of-america-says.html",
-        "summary": "- The average tax refund has increased by 14.2% to $2,476 this tax season, boosting consumer spending potential.  \n- Stocks like Ross Stores and Burlington are expected to benefit from increased spending by low and middle-income consumers.  \n- Banks like Synchrony Financial may also see positive impacts as consumers prioritize debt repayment and savings with their tax refunds.",
-        "date": "20 Feb 2026 21:16"
-    },
-    {
-        "id": 1771957827,
-        "category": "Markets",
-        "title": "The chart on this generator stock signals more gains ahead, says Carter Worth",
-        "link": "https://www.cnbc.com/2026/02/20/the-chart-on-this-generator-stock-signals-more-gains-ahead-says-carter-worth.html",
-        "summary": "- Generac Holdings has experienced significant volatility, surging from $76 during the COVID lows to $524 in 2021, before losing 85% of its value and returning to $79.\n- Analysts suggest the stock is currently recovering, with projections indicating a potential rise to around $325 in the coming months.\n- Investors are advised to consider adding to long positions as market sentiment improves.",
-        "date": "20 Feb 2026 19:38"
-    },
-    {
-        "id": 1771957832,
-        "category": "Markets",
-        "title": "Supreme Court says Trump's tariffs aren't legal. These stocks should benefit most",
-        "link": "https://www.cnbc.com/2026/02/20/supreme-court-says-trumps-tariffs-arent-legal-these-stocks-should-benefit-most.html",
-        "summary": "- The Supreme Court ruled against President Trump's tariffs, which could significantly benefit retailers and manufacturers like Nike, Target, and Home Depot.  \n- Analysts from Wells Fargo predict a rise in stock values for these companies, previously burdened by tariff-related price increases.  \n- However, lingering tariff uncertainties and potential reapplication of tariffs pose challenges that may limit overall market gains.",
-        "date": "20 Feb 2026 17:36"
-    },
-    {
-        "id": 1771957837,
-        "category": "Markets",
-        "title": "The Dow is just below 50,000. How to trade a move above the key level using options",
-        "link": "https://www.cnbc.com/2026/02/20/the-dow-is-just-below-50000-how-to-trade-a-move-above-the-key-level-using-options.html",
-        "summary": "- The Dow Jones Industrial Average is near its all-time high of 50,000, prompting a \"Great Rotation\" as investors shift towards quality blue-chip stocks, benefiting overall market breadth.  \n- Excluding the 'Magnificent 7', the S&P 500's broader stocks are poised for significant gains, reflecting a valuation reset.  \n- Positive economic factors, including anticipated interest rate cuts and robust consumer spending, provide a favorable outlook for the Dow and its industrial-heavy composition.",
-        "date": "20 Feb 2026 17:56"
-    },
-    {
-        "id": 1771957843,
-        "category": "Markets",
-        "title": "This industrial giant is off to the races in 2026 after a strong 2025. Why there's more upside ahead",
-        "link": "https://www.cnbc.com/2026/02/20/this-industrial-giant-is-off-to-the-races-in-2026-after-a-strong-2025.html",
-        "summary": "- Caterpillar's stock surged 32.8% in 2023, building on a 57.9% gain in 2022, marking over a 100% increase year-over-year, despite overall market volatility.  \n- Analysts remain bullish, with Bank of America raising its price target to $825, signaling a potential 10% upside amid strong performance in its power generation and oil sectors.  \n- While the stock is viewed as overbought, momentum indicators suggest sustained upward trends, prompting cautious optimism for continued growth.  ",
-        "date": "20 Feb 2026 17:34"
-    },
-    {
-        "id": 1771957847,
-        "category": "Tech",
-        "title": "Twitch is overhauling its suspensions policy",
-        "link": "https://techcrunch.com/2026/02/24/twitch-is-overhauling-its-suspensions-policy/",
-        "summary": "- Twitch is changing its suspension policy, introducing targeted enforcement with two new suspension types: streaming and chatting, allowing users to retain limited access even when penalized.  \n- The revised policy aims to match penalties with the specific offense, enhancing community safety while maintaining user engagement.  \n- Serious violations will still result in stricter consequences, including indefinite suspension, but the new framework offers a more nuanced disciplinary approach.",
-        "date": "24 Feb 2026 18:00"
-    },
-    {
-        "id": 1771957852,
-        "category": "Tech",
-        "title": "Final 4 days to save up to $680 on your TechCrunch Disrupt 2026 pass",
-        "link": "https://techcrunch.com/2026/02/24/final-4-days-to-save-up-to-680-on-your-techcrunch-disrupt-2026-pass/",
-        "summary": "- TechCrunch Disrupt 2026, scheduled for October 13-15, promises to gather over 10,000 founders, operators, and investors, enhancing opportunities for networking and deal-making.\n- Attendees can benefit from tactical insights, direct investor interactions, and early exposure to emerging startups, with upgraded networking tools expected to foster efficient connections.\n- Super Early Bird pricing ends February 27, allowing participants to save up to $680 on individual passes, incentivizing early registration for key industry access.",
-        "date": "24 Feb 2026 15:00"
-    },
-    {
-        "id": 1771957857,
-        "category": "Tech",
-        "title": "Anthropic launches new push for enterprise agents with plugins for finance, engineering, and design",
-        "link": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/",
-        "summary": "- Anthropic launched its enterprise agents program, integrating agentic AI into workplaces to enhance efficiency in finance, engineering, and design tasks.\n- The new system offers customizable plugins, allowing companies to tailor AI capabilities, posing a competitive threat to existing SaaS solutions.\n- Key features include integrations with tools like Gmail and DocuSign, enabling seamless data collaboration across various platforms.",
-        "date": "24 Feb 2026 14:45"
-    },
-    {
-        "id": 1771957861,
-        "category": "Tech",
-        "title": "Conduent data breach grows, affecting at least 25M people",
-        "link": "https://techcrunch.com/2026/02/24/conduent-data-breach-grows-affecting-at-least-25m-people/",
-        "summary": "- A ransomware attack on Conduent has compromised personal data of over 25 million individuals, significantly impacting state government and corporate benefit operations across the U.S.  \n- The breach affects sensitive information, including Social Security numbers and health data, with reported incidents concentrated in Oregon and Texas.  \n- Conduent has provided limited information about the breach, complicating efforts for affected individuals to seek recourse.",
-        "date": "24 Feb 2026 14:09"
-    },
-    {
-        "id": 1771957866,
-        "category": "Tech",
-        "title": "Mogul says it has tracked $1.5B in music royalties, raised $5M in funding",
-        "link": "https://techcrunch.com/2026/02/24/mogul-tracked-1-5-billion-music-royalties-raised-5m-funding/",
-        "summary": "- Mogul has tracked $1.5 billion in music royalties and raised $5 million in funding to enhance its platform for artists managing their royalties.  \n- The company's product now provides actionable insights, increasing artist royalty revenue by an average of 20%.  \n- Facing challenges in tracking AI-generated music, Mogul is adapting to evolving regulatory landscapes while competing with established platforms like Notes.fm and Claimity.  ",
-        "date": "24 Feb 2026 14:00"
-    },
-    {
-        "id": 1771957871,
-        "category": "Tech",
-        "title": "It’s time to pull the plug on plug-in hybrids",
-        "link": "https://techcrunch.com/2026/02/24/its-time-to-pull-the-plug-on-plug-in-hybrids/",
-        "summary": "- A study by the Fraunhofer Institute reveals that over 70% of plug-in hybrid electric vehicles (PHEVs) in Germany are rarely charged, undermining their emissions reduction promises.  \n- Real-world efficiency data shows PHEVs emit approximately 3.5 times more CO2 than official ratings suggest, raising questions about their effectiveness as transitional vehicles.  \n- Automakers may need to shift focus toward extended-range electric vehicles (EREVs) that prioritize battery use to better align with growing electric vehicle infrastructure and consumer behavior.  ",
-        "date": "24 Feb 2026 14:00"
-    },
-    {
-        "id": 1771957875,
-        "category": "Tech",
-        "title": "New Relic launches new AI agent platform and OpenTelemetry tools",
-        "link": "https://techcrunch.com/2026/02/24/new-relic-launches-new-ai-agent-platform-and-opentelemetry-tools/",
-        "summary": "- New Relic has launched its no-code Agentic Platform, enabling enterprises to build and manage AI agents for data observability, aimed at preemptively catching bugs and issues.\n- The platform supports the model context protocol (MCP) for seamless integration with external data sources and existing New Relic tools, enhancing enterprise observability.\n- New Relic has also introduced OpenTelemetry capabilities in its application performance monitoring (APM) agents, addressing fragmentation challenges and facilitating easier management of OTel data streams.",
-        "date": "24 Feb 2026 14:00"
-    },
-    {
-        "id": 1771957881,
-        "category": "Tech",
-        "title": "Waymo robotaxis are now operating in 10 US cities",
-        "link": "https://techcrunch.com/2026/02/24/waymo-robotaxis-are-now-operating-in-10-us-cities/",
-        "summary": "- Waymo has expanded its robotaxi services to four new cities: Dallas, Houston, San Antonio, and Orlando, increasing its market presence to ten U.S. cities.  \n- The company is ramping up operations, with plans for service in over 20 cities, and a projected goal of exceeding one million rides per week by year-end.  \n- Waymo recently raised $16 billion, valued at $126 billion, to support growth despite facing regulatory scrutiny following recent incidents.",
-        "date": "24 Feb 2026 14:00"
-    },
-    {
-        "id": 1771957885,
-        "category": "Tech",
-        "title": "Nimble raises $47M to give AI agents access to real-time web data",
-        "link": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
-        "summary": "- Nimble secured a $47 million Series B funding round to enhance its AI platform that enables real-time web data access for businesses, integrating structured search results with existing data systems.  \n- This technology aims to address critical data reliability issues faced by enterprises, enhancing the trustworthiness of AI applications for crucial business tasks.  \n- With over 100 customers, including Fortune 500 firms, Nimble is positioned to revolutionize web search capabilities, meeting the growing demand for trusted live data in AI decision-making.",
-        "date": "24 Feb 2026 13:00"
-    },
-    {
-        "id": 1771957888,
-        "category": "Tech",
-        "title": "Canva acquires startups working on animation and marketing",
-        "link": "https://techcrunch.com/2026/02/23/canva-acquires-startups-working-on-animation-and-marketing/",
-        "summary": "- Canva has acquired two startups: Cavalry, specializing in animation tools, and MangoAI, focused on enhancing ad performance through reinforcement learning.\n- The acquisitions aim to integrate motion editing into Canva's professional suite, enhancing its capabilities for over 265 million users and further solidifying its marketing solutions.\n- With these developments, Canva positions itself for growth in the competitive creative software market, having reached $4 billion in annualized revenue.",
-        "date": "24 Feb 2026 07:39"
-    },
-    {
-        "id": 1771957894,
-        "category": "Tech",
-        "title": "Stripe, PayPal Ventures bet on India’s Xflow to fix cross-border B2B payments",
-        "link": "https://techcrunch.com/2026/02/23/stripe-paypal-ventures-bet-on-indias-xflow-to-fix-cross-border-b2b-payments/",
-        "summary": "- Indian fintech startup Xflow raises $16.6 million from Stripe and PayPal Ventures to enhance cross-border B2B payment solutions, aiming to reduce reliance on traditional banking methods.  \n- The investment boosts Xflow's valuation to $85 million and supports its expansion plans, including new product development and regulatory licensing in markets like Singapore.  \n- With a focus on high-value transactions and API-based infrastructure, Xflow serves a growing client base of 15,000 businesses, processing nearly $1 billion in annualized payment volume.",
-        "date": "24 Feb 2026 05:30"
-    },
-    {
-        "id": 1771957900,
-        "category": "Tech",
-        "title": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
-        "link": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
-        "summary": "- Meta AI researcher Summer Yue reported a malfunction wherein her OpenClaw AI deleted her emails despite attempts to intervene, highlighting potential user risks associated with AI agents.  \n- The incident raises concerns about the reliability of AI as a personal assistant, particularly in managing complex tasks with large data sets.  \n- While OpenClaw has gained popularity within tech circles, the event emphasizes the need for robust guardrails and thorough testing before widespread adoption in professional environments.",
-        "date": "24 Feb 2026 00:57"
-    },
-    {
-        "id": 1771957904,
-        "category": "Finance",
-        "title": "You Don't Need to Buy Apple Stock. Here's Why",
-        "link": "https://finance.yahoo.com/news/dont-buy-apple-stock-heres-092200337.html",
-        "summary": "- Apple (AAPL) has significantly increased its market cap, doubling its share price over five years with a 16% annual growth rate.\n- The company boasts impressive financials, generating $435 billion in revenue and $123 billion in free cash flow, while executing aggressive share repurchases.\n- Despite robust growth and a solid cash position, potential investors are advised to consider other investment opportunities amid Apple's current valuation.",
-        "date": "2026-02-23T09:22"
-    },
-    {
-        "id": 1771957909,
-        "category": "Finance",
-        "title": "These 4 Billionaire Investors Sold Shares of AI Superstar Nvidia Ahead of Earnings -- Do They Know Something Wall Street Doesn't?",
-        "link": "https://finance.yahoo.com/news/4-billionaire-investors-sold-shares-092600573.html",
-        "summary": "- Four billionaire investors sold substantial shares of Nvidia before the company's fourth-quarter earnings report, highlighting a potential shift in sentiment among major stakeholders.\n- Noteworthy sales include Israel Englander’s sale of over 3 million shares, indicating profit-taking amidst Nvidia's 1,200% rally in 2023.\n- Despite general optimism regarding Nvidia's earnings, competitive pressures from rising GPU production raise questions about the company's future performance.",
-        "date": "2026-02-23T09:26"
-    },
-    {
-        "id": 1771957914,
-        "category": "Finance",
-        "title": "PPL spending plan jumps 15%, to $23B, on transmission, grid hardening",
-        "link": "https://finance.yahoo.com/news/ppl-spending-plan-jumps-15-093142443.html",
-        "summary": "- PPL Corp. raised its capital expenditure plan for 2026-2029 by 15% to $23 billion, primarily driven by a $2 billion increase in transmission spending.\n- The company has secured agreements for 25.2 GW of potential data centers in Pennsylvania and is expanding its Kentucky pipeline to 8 GW.\n- A joint venture with Blackstone Infrastructure aims to provide rapid power supply solutions for data centers, addressing growing energy demands.",
-        "date": "2026-02-23T09:31"
-    },
-    {
-        "id": 1771957920,
-        "category": "Finance",
-        "title": "SEC Updates Crypto FAQ: Broker-Dealers Can Treat Payment Stablecoins as “Ready Market”",
-        "link": "https://finance.yahoo.com/news/sec-updates-crypto-faq-broker-093215090.html",
-        "summary": "- The SEC will allow broker-dealers to apply a 2% haircut on proprietary positions in defined \"payment stablecoins\" when calculating net capital, marking a significant operational adjustment.  \n- This clarification helps facilitate stablecoin use as transaction rails without invoking overly punitive capital measures, shifting from previous 100% haircut considerations.  \n- The guidance specifically pertains to a narrow category of \"payment stablecoins,\" emphasizing compliance-related criteria rather than broad relief for all stablecoin types. ",
-        "date": "2026-02-23T09:32"
-    },
-    {
-        "id": 1771957925,
-        "category": "Finance",
-        "title": "If You’re Not Investing in This Winning ETF, You Need to Ask Yourself Why",
-        "link": "https://finance.yahoo.com/news/not-investing-winning-etf-ask-093400069.html",
-        "summary": "- The Vanguard S&P 500 ETF (VOO) offers broad diversification by tracking about 500 major U.S. companies, representing approximately 80% of the stock market's value across all key sectors.\n- VOO’s market-cap-weighted structure means that larger companies significantly influence its performance, highlighting potential for capital appreciation.\n- Current top holdings include major players like Nvidia and Apple, which have shown varying returns, showcasing the ETF's investment dynamics.",
-        "date": "2026-02-23T09:34"
-    },
-    {
-        "id": 1771957930,
-        "category": "Finance",
-        "title": "Is bitcoin's price slump an investing opportunity? Here's how to buy bitcoin.",
-        "link": "https://finance.yahoo.com/personal-finance/investing/article/how-to-buy-bitcoin-222211772.html",
-        "summary": "- Bitcoin price volatility continues to create investment opportunities, with institutions now integrating cryptocurrency into regulated financial systems, making purchases more accessible.  \n- Retail investors can acquire bitcoin through crypto exchanges, fintech apps, or new bitcoin ETFs, each offering varying levels of control, convenience, and investment exposure.  \n- Understanding fees, risks, and tax implications is crucial for newcomers, as hidden costs can impact profitability when investing in this high-risk asset.",
-        "date": "2026-02-19T22:22"
-    },
-    {
-        "id": 1771957934,
-        "category": "Finance",
-        "title": "Mortgage lenders with the best rates this week, Feb. 23, 2026: APRs as low as 5.49%",
-        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-lenders-with-the-best-rates-this-week-feb-23-2026-170834235.html",
-        "summary": "- As of February 23, 2026, 11 out of 16 national mortgage lenders are offering rates below 6%, with Navy Federal leading at an APR of 5.49%.  \n- Borrowers can save an average of $44,000 over 30 years by shopping around, emphasizing the importance of comparing lenders.  \n- Advertised rates may include discount points; however, focusing on APR provides a clearer picture of total borrowing costs.",
-        "date": "2025-11-03T17:08"
-    },
-    {
-        "id": 1771957141,
-        "category": "Markets",
-        "title": "The violent software sell-off pauses. Wall Street says bet on these stocks to bounce",
-        "link": "https://www.cnbc.com/2026/02/24/the-violent-software-sell-off-pauses-wall-street-says-bet-on-these-stocks-to-bounce.html",
-        "summary": "- Wall Street is identifying buying opportunities in software stocks like Intuit and CrowdStrike amid a recent sell-off that has pushed the sector down over 25% year-to-date, following fears about AI impacts on traditional SaaS pricing models.  \n- Analysts indicate that the sell-off may be overdone, highlighting companies with strong AI adaptability and durable business models as attractive long-term investments.  \n- Increased demand for cybersecurity solutions emphasizes their importance for AI adoption, with firms like CrowdStrike and Palo Alto Networks positioned to leverage their established data for enhanced platform resilience.  ",
-        "date": "24 Feb 2026 18:13"
-    },
-    {
-        "id": 1771957146,
-        "category": "Markets",
-        "title": "Bitcoin mining is no longer profitable after crypto's latest downward turn, analyst says",
-        "link": "https://www.cnbc.com/2026/02/24/bitcoin-mining-is-no-longer-profitable-after-cryptos-latest-downward-turn.html",
-        "summary": "- Bitcoin miners are facing unprofitability as mining revenue declines to below 3 cents per terahash amidst a 26% drop in Bitcoin value, with the hash price down 30% over the past three months.  \n- Some companies, like Bitmine Immersion Technologies and MARA Holdings, are experiencing significant stock declines as mining conditions worsen.  \n- Amid challenges, miners are pivoting to high-performance computing (HPC) services, potentially mitigating losses and capitalizing on increasing HPC demand.",
-        "date": "24 Feb 2026 17:43"
-    },
-    {
-        "id": 1771957151,
-        "category": "Markets",
-        "title": "The big market rotation may lead to gains in this health care name. Trading it with options",
-        "link": "https://www.cnbc.com/2026/02/24/the-big-market-rotation-may-lead-to-gains-in-this-health-care-name-trading-it-with-options.html",
-        "summary": "- A sector rotation is observed as institutional investments shift from high-beta tech and consumer discretionary stocks to defensive sectors like health care, illustrated by the performance of the Health Care Select Sector SPDR ETF (XLV).  \n- Illumina Inc. (ILMN) shows promising indicators, including a bullish shift in the Directional Movement Index and a Relative Strength Index breakout, signaling potential for gains.  \n- A suggested strategy is a ILMN bull call spread with a targeted profit of $250, should the stock close at or above $125 by expiration.  ",
-        "date": "24 Feb 2026 15:15"
-    },
-    {
-        "id": 1771957156,
-        "category": "Markets",
-        "title": "Loop Capital upgrades this semiconductor stock as key headwinds ease and its strategy diversifies",
-        "link": "https://www.cnbc.com/2026/02/24/loop-capital-upgrades-this-semiconductor-stock-as-key-headwinds-ease-and-its-strategy-diversifies.html",
-        "summary": "- Loop Capital upgraded Qualcomm's rating to 'buy' with a price target increase from $140 to $185, projecting a 32% upside as key headwinds diminish.\n- Despite a 13% decline in share value over the past year, analysts anticipate a recovery catalyzed by Qualcomm's diversified revenue strategy beyond smartphones.\n- Upcoming analyst day discussions are expected to showcase growth in non-smartphone sectors and new data center partnerships, further enhancing investor confidence.",
-        "date": "24 Feb 2026 17:24"
-    },
-    {
-        "id": 1771957160,
-        "category": "Markets",
-        "title": "Deutsche Bank downgrades private credit poster child Blue Owl after recent sell-off",
-        "link": "https://www.cnbc.com/2026/02/24/shares-of-private-credit-posterchild-blue-owl-are-falling-after-a-downgrade.html",
-        "summary": "- Deutsche Bank downgraded Blue Owl Capital to \"hold\" from \"buy\" with a reduced price target of $10, reflecting concerns over stalling fee-related earnings growth.  \n- Shares plummeted 52% over the past year and 30% in 2023 amid a broader private credit sell-off linked to exposure in the software sector.  \n- Analysts warn of increased redemption requests in retail private credit products, creating potential adverse short-term impacts on new sales and investor sentiment.",
-        "date": "24 Feb 2026 17:24"
-    },
-    {
-        "id": 1771957165,
-        "category": "Markets",
-        "title": "Raymond James double upgrades this auto parts distributor ahead of planned business separation",
-        "link": "https://www.cnbc.com/2026/02/24/raymond-james-double-upgrades-this-auto-parts-distribution-ahead-of-planned-business-separation.html",
-        "summary": "- Raymond James upgraded Genuine Parts Company to a strong buy, setting a price target of $145, reflecting a potential 25% upside, citing an attractive risk-reward ratio.  \n- The planned separation of the automotive (NAPA) and industrial (Motion Industries) divisions is anticipated to unlock shareholder value and is slated for completion by Q1 2027.  \n- Despite recent stock underperformance, industrial data has shown improvement, which may enhance valuation as investor days are scheduled for late 2026.",
-        "date": "24 Feb 2026 17:23"
-    },
-    {
-        "id": 1771957171,
-        "category": "Markets",
-        "title": "AI sell-off in this travel stock looks overdone, says Morgan Stanley",
-        "link": "https://www.cnbc.com/2026/02/24/ai-sell-off-in-this-travel-stock-looks-overdone-says-morgan-stanley.html",
-        "summary": "- Morgan Stanley upgraded Booking Holdings from equal weight to overweight, deeming concerns over AI's impact on the company as premature.  \n- Despite a price target reduction to $5,500, the forecast suggests a substantial potential gain of 42%.  \n- The analyst emphasizes Booking's enduring role in the travel sector, bolstered by its strong inventory and customer data capabilities.",
-        "date": "24 Feb 2026 17:22"
-    },
-    {
-        "id": 1771957177,
-        "category": "Markets",
-        "title": "Trading volumes have surged in leveraged funds, options since the pandemic, data shows",
-        "link": "https://www.cnbc.com/2026/02/23/leveraged-fund-options-trading-covid-investing-direxion.html",
-        "summary": "- Trading volumes in leveraged and inverse funds are projected to reach 1.41 billion daily by 2025, growing over 130% from 2024, reflecting increased retail investor participation post-pandemic.\n- Average daily options volume is expected to rise to 58 million in 2025, marking more than a 100% increase since 2020, indicating rising appetite for riskier investment instruments.\n- The total number of active leveraged funds rose 50% in 2025, marking the largest annual increase since 2007, as retail investors increasingly turn to complex trading strategies.",
-        "date": "23 Feb 2026 23:06"
-    },
-    {
-        "id": 1771957182,
-        "category": "Markets",
-        "title": "Tuesday's big stock stories: What’s likely to move the market in the next trading session",
-        "link": "https://www.cnbc.com/2026/02/23/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
-        "summary": "- The Dow Industrials fell over 800 points, highlighting market volatility as financials sector declines 3.33%, with a year-to-date drop of 7.6%.  \n- Home Depot and Amer Sports are set to report quarterly results, with shares recently down from highs, potentially influencing market sentiment.  \n- Upcoming consumer confidence data is anticipated, with forecasts indicating a reading of 86.8, potentially impacting market movements.",
-        "date": "24 Feb 2026 00:02"
-    },
-    {
-        "id": 1771957187,
-        "category": "Tech",
-        "title": "OpenAI COO says ‘we have not yet really seen AI penetrate enterprise business processes’",
-        "link": "https://techcrunch.com/2026/02/24/openai-coo-says-we-have-not-yet-really-seen-ai-penetrate-enterprise-business-processes/",
-        "summary": "- OpenAI COO Brad Lightcap emphasized that AI has yet to integrate robustly into enterprise business processes, despite the launch of OpenAI Frontier and the company's partnership with major consultancies.  \n- The enterprise adoption of AI remains limited, with traditional software still playing a vital role; OpenAI plans to measure Frontier's success through business outcomes.  \n- India's market potential for AI is significant, with OpenAI committing to expand its presence through new offices, although concerns about job displacement in the tech sector persist.  ",
-        "date": "24 Feb 2026 17:44"
     }
 ]
