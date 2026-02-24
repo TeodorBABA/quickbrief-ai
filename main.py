@@ -53,7 +53,7 @@ def save_data(data):
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 def fetch_all_news():
-    """Funcția principală de colectare și filtrare"""
+    """Funcția principală: Colectează știri, extrage ora SUA și rezumă cu AI"""
     news_list = load_existing_data()
     
     # Seturi pentru filtrare duplicate (titlu normalizat și link)
@@ -61,59 +61,78 @@ def fetch_all_news():
     processed_links = {item['link'] for item in news_list}
     
     new_found = False
-    timestamp_now = datetime.now().strftime("%b %d, %H:%M")
 
     for name, url in SOURCES.items():
         print(f"Scanning {name}...")
         feed = feedparser.parse(url)
         
-        # Luăm ultimele 5 știri din fiecare feed pentru verificare
+        # Luăm primele 5 știri din fiecare sursă
         for entry in feed.entries[:5]:
             title = entry.title.strip()
             norm_title = title.lower().strip().strip('!?.')
             link = entry.link
             
-            # Verificăm dacă știrea e deja procesată
+            # 1. Filtrare: Verificăm dacă știrea e deja în baza noastră
             if norm_title not in processed_titles and link not in processed_links:
-                print(f"   --> Found New: {title[:50]}...")
+                print(f"   --> New Global Story: {title[:50]}...")
+                
+                # 2. Extragere dată originală (Ora SUA/Sursă)
+                # Majoritatea feed-urilor folosesc 'published' sau 'updated'
+                raw_date = "Recent"
+                if hasattr(entry, 'published'):
+                    raw_date = entry.published
+                elif hasattr(entry, 'updated'):
+                    raw_date = entry.updated
+                
+                # Curățăm data: Din "Tue, 24 Feb 2026 15:30:00 GMT" în "Feb 24, 15:30"
+                # Luăm doar partea relevantă pentru cititor
                 try:
+                    if "," in raw_date: # Format standard RSS
+                        clean_date = raw_date.split(',')[1].strip()
+                        clean_date = " ".join(clean_date.split()[:3]) + " " + ":".join(clean_date.split()[3].split(':')[:2])
+                    else:
+                        clean_date = raw_date[:16]
+                except:
+                    clean_date = raw_date
+
+                try:
+                    # 3. Procesare conținut articol
                     article = Article(link)
                     article.download()
                     article.parse()
                     
-                    # Verificăm dacă am reușit să extragem text (minim 200 caractere)
-                    if len(article.text) < 200:
+                    if len(article.text) < 250: # Sărim peste articolele prea scurte
                         continue
 
+                    # 4. Rezumare AI
                     summary = summarize_with_ai(title, article.text)
                     
+                    # 5. Creare obiect știre pentru JSON
                     new_item = {
                         "id": int(time.time()),
                         "source": name,
                         "title": title,
                         "link": link,
                         "summary": summary,
-                        "date": timestamp_now
+                        "date": clean_date # Acum avem ora reală a sursei
                     }
                     
-                    news_list.insert(0, new_item) # Cele mai noi apar primele
+                    news_list.insert(0, new_item)
                     processed_titles.add(norm_title)
                     processed_links.add(link)
                     new_found = True
                     
-                    # Mică pauză între cereri pentru a fi "politicoși" cu serverele
-                    time.sleep(1)
+                    time.sleep(1) # Politicos cu serverele
                     
                 except Exception as e:
-                    print(f"       Error processing article: {e}")
+                    print(f"       Error: {e}")
 
     if new_found:
-        # Păstrăm un istoric de 30 de știri pentru a menține site-ul rapid
+        # Păstrăm ultimele 30 de știri pentru viteză
         save_data(news_list[:30])
-        print(">>> JSON file updated with new summaries.")
+        print(">>> Success: Database updated with US timestamps.")
     else:
-        print(">>> No new updates found at this time.")
-
+        print(">>> No new stories found.")
 if __name__ == "__main__":
     # Verificăm dacă avem cheia API setată în mediu
     if not api_key:
