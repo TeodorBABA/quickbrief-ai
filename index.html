@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Briefly | Executive Intelligence</title>
+    <title>briefly.life | Executive Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #fafafa; }
-        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; }
+        .glass-nav { background: rgba(5, 5, 5, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; }
         
-        /* Efectul de hover pe care l-ai cerut inapoi */
+        /* Logo Stilizat cu .LIFE Albastru */
+        .logo-text { font-weight: 800; letter-spacing: -0.05em; font-size: 1.5rem; color: #fff; }
+        .logo-dot { color: #3b82f6; }
+        .logo-ext { color: #3b82f6; font-weight: 700; } /* Albastru aprins pentru .LIFE */
+
+        /* Efecte Premium */
         .news-card { 
             background: #0f0f0f; 
             border: 1px solid #1a1a1a; 
-            transition: all 0.25s ease; 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
         }
         .news-card:hover { 
             border-color: #3b82f6; 
-            transform: translateY(-2px); 
-            box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.3); 
+            transform: translateY(-4px); 
+            box-shadow: 0 20px 40px -20px rgba(59, 130, 246, 0.4); 
+            background: #111111;
         }
         
-        .filter-btn { transition: all 0.2s; color: #737373; border-color: #262626; }
+        .filter-btn { transition: all 0.2s; color: #525252; border-color: #262626; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
         .filter-btn:hover { color: #fff; border-color: #404040; }
         .filter-btn.active { 
             background: #3b82f6; 
             color: #fff; 
             border-color: #3b82f6; 
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); 
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); 
         }
         
+        .summary-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; }
         .summary-list li::before { 
             content: "→"; 
+            position: absolute;
+            left: 0;
             color: #3b82f6; 
-            font-weight: bold; 
-            display: inline-block; 
-            width: 1.5em; 
-            margin-left: -1.5em; 
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,33 +51,37 @@
 
     <nav class="glass-nav sticky top-0 z-50 p-4">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tighter flex items-center gap-2">
-                <span class="bg-blue-600 w-6 h-6 rounded flex items-center justify-center text-[14px]">B</span>
-                BRIEFLY<span class="text-blue-500 underline decoration-2">PRO</span>
-            </h1>
-            <div class="hidden md:flex space-x-2" id="filter-container">
-                <button onclick="changeFilter('All', this)" class="filter-btn active px-4 py-1.5 text-xs font-bold rounded-full border">All</button>
-                <button onclick="changeFilter('Markets', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Markets</button>
-                <button onclick="changeFilter('Tech', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Tech</button>
-                <button onclick="changeFilter('Finance', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Finance</button>
-                <button onclick="changeFilter('Business', this)" class="filter-btn px-4 py-1.5 text-xs font-bold rounded-full border">Business</button>
+            <div class="logo-text">
+                BRIEFLY<span class="logo-dot">.</span><span class="logo-ext">LIFE</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-3" id="filter-container">
+                <button onclick="changeFilter('All', this)" class="filter-btn active px-5 py-2 rounded-full border">All</button>
+                <button onclick="changeFilter('Markets', this)" class="filter-btn px-5 py-2 rounded-full border">Markets</button>
+                <button onclick="changeFilter('Tech', this)" class="filter-btn px-5 py-2 rounded-full border">Tech</button>
+                <button onclick="changeFilter('Finance', this)" class="filter-btn px-5 py-2 rounded-full border">Finance</button>
+                <button onclick="changeFilter('Business', this)" class="filter-btn px-5 py-2 rounded-full border">Business</button>
             </div>
         </div>
     </nav>
 
     <main class="max-w-2xl mx-auto p-4 pt-12">
-        <div class="mb-10 flex justify-between items-end border-b border-white/5 pb-6">
+        <div class="mb-12 flex justify-between items-center border-b border-white/5 pb-8">
             <div>
-                <h2 class="text-sm font-bold text-neutral-500 uppercase tracking-[0.2em]">Executive Intelligence</h2>
-                <p class="text-xs text-neutral-600 mt-1">AI-curated financial terminal</p>
+                <h2 class="text-[10px] font-extrabold text-blue-500 uppercase tracking-[0.3em] mb-1">Executive Intelligence</h2>
+                <p class="text-neutral-400 text-sm font-light italic">Your digital edge in a fast-paced world.</p>
             </div>
-            <div class="flex items-center gap-2 text-[10px] font-bold text-green-500 uppercase tracking-widest">
-                <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-ping"></span> Live
+            <div class="text-right">
+                <div class="flex items-center justify-end gap-2 text-[10px] font-bold text-green-500 uppercase tracking-widest">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Terminal Live
+                </div>
             </div>
         </div>
 
-        <div id="news-feed" class="space-y-8 pb-20">
-            <div class="text-center py-20 text-neutral-600 animate-pulse">Connecting to briefly.life nodes...</div>
+        <div id="news-feed" class="space-y-10 pb-24">
+            <div class="text-center py-20 text-neutral-700 animate-pulse text-sm font-bold tracking-widest uppercase">
+                Syncing briefly.life feed...
+            </div>
         </div>
     </main>
 
@@ -84,41 +94,40 @@
                 newsData = await response.json();
                 renderNews('All');
             } catch (err) {
-                document.getElementById('news-feed').innerHTML = "<div class='text-red-500 text-center text-xs'>Failed to sync. Check connection.</div>";
+                document.getElementById('news-feed').innerHTML = "<div class='text-red-500/50 text-center text-xs uppercase font-bold tracking-widest'>Sync Failed</div>";
             }
         }
 
         function renderNews(filter) {
             const container = document.getElementById('news-feed');
             container.innerHTML = '';
-            
             const filtered = filter === 'All' ? newsData : newsData.filter(n => n.category === filter);
 
             if (filtered.length === 0) {
-                container.innerHTML = `<div class="text-center py-10 text-neutral-500 text-sm italic">Section empty for now.</div>`;
+                container.innerHTML = `<div class="text-center py-10 text-neutral-600 text-xs font-bold uppercase tracking-widest">No data for ${filter}</div>`;
                 return;
             }
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
-                card.className = "news-card p-6 rounded-2xl";
-                
+                card.className = "news-card p-8 rounded-3xl";
                 const points = item.summary.split('\n').filter(p => p.trim() !== '');
-                const listHtml = points.map(p => `<li class="mb-2">${p.replace(/^[•*-]\s*/, '')}</li>`).join('');
+                const listHtml = points.map(p => `<li>${p.replace(/^[•*-]\s*/, '')}</li>`).join('');
 
                 card.innerHTML = `
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-blue-600/10 text-blue-400 border border-blue-500/20 uppercase tracking-widest">${item.category}</span>
-                        <span class="text-neutral-500 text-[10px] font-bold uppercase tracking-widest">${item.date}</span>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-[9px] font-black px-3 py-1 rounded-lg bg-blue-600/10 text-blue-400 border border-blue-500/20 uppercase tracking-[0.15em]">${item.category}</span>
+                        <div class="h-px flex-1 bg-white/5"></div>
+                        <span class="text-neutral-600 text-[10px] font-bold uppercase tracking-widest">${item.date}</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 leading-snug tracking-tight text-white/90">${item.title}</h3>
-                    <ul class="summary-list text-neutral-400 text-sm leading-relaxed mb-6 ml-6">
-                        ${listHtml}
-                    </ul>
-                    <div class="pt-4 border-t border-white/5">
-                        <a href="${item.link}" target="_blank" class="inline-flex items-center text-[10px] font-bold text-neutral-600 hover:text-blue-500 uppercase tracking-widest transition-colors">
-                            Original Report
-                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <h3 class="text-2xl font-bold mb-6 leading-tight tracking-tight text-white/95">${item.title}</h3>
+                    <ul class="summary-list text-neutral-400 text-sm leading-relaxed mb-8">${listHtml}</ul>
+                    <div class="flex justify-between items-center">
+                        <a href="${item.link}" target="_blank" class="inline-flex items-center text-[10px] font-black text-neutral-500 hover:text-blue-500 uppercase tracking-widest transition-all group">
+                            Full Report 
+                            <svg class="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
                         </a>
                     </div>
                 `;
