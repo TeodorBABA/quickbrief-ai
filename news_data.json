@@ -1,5 +1,37 @@
 [
     {
+        "id": 1771953654,
+        "source": "Yahoo Finance",
+        "title": "US software stocks climb as Anthropic announcement sparks relief rally",
+        "link": "https://finance.yahoo.com/news/us-software-stocks-climb-anthropic-164557375.html",
+        "summary": "- U.S. software stocks experienced a significant rebound following partnerships with AI startup Anthropic, alleviating previous market fears and contributing to a broader sector rally amidst concerns of AI disruption. \n\n- Notable partners, including LSEG and Salesforce's Slack, saw share prices increase between 0.4% and 5.3%, indicating renewed investor confidence and potential growth opportunities stemming from new AI tools designed for various business functions. \n\n- The S&P 500 software & services index rose 1.4%, signaling a recovery from its 10-month low, as the market adjusts to the anticipated long-term impacts of AI integration rather than immediate disruptions.",
+        "date": "Feb 24, 17:20"
+    },
+    {
+        "id": 1771953649,
+        "source": "Yahoo Finance",
+        "title": "'Notorious for causing fires': How space heaters could void your insurance and leave you paying big claims out of pocket",
+        "link": "https://finance.yahoo.com/news/notorious-causing-fires-space-heaters-170000683.html",
+        "summary": "- **Increased Liability Risk**: As reliance on space heaters grows during colder months, homeowners could face heightened scrutiny from insurers, potentially voiding coverage on claims related to fires caused by these devices.\n\n- **Claim Denial Factors**: Insurers are likely to investigate claims involving space heaters for safety compliance, with misuse—such as improper placement or failure to follow manufacturer instructions—leading to significant out-of-pocket expenses for homeowners.\n\n- **Fire Hazard Awareness**: Space heaters significantly contribute to home fire incidents, prompting insurance providers to enforce stricter guidelines that could adversely affect claims processing and consumer financial liability.",
+        "date": "Feb 24, 17:20"
+    },
+    {
+        "id": 1771953644,
+        "source": "Yahoo Finance",
+        "title": "Why Shares of Thomson Reuters Are Surging Today (Hint: It Has to do With Artificial Intelligence)",
+        "link": "https://finance.yahoo.com/news/why-shares-thomson-reuters-surging-170335303.html",
+        "summary": "- **Significant Stock Surge**: Thomson Reuters shares rose nearly 12% following the announcement that 1 million legal professionals have adopted its AI-powered solution, CoCounsel, a key driver in a sector facing intense scrutiny over AI capabilities.\n\n- **AI Adoption and Validation**: The success of CoCounsel highlights Thomson Reuters’ competitive edge with a trusted AI solution, leveraging 175 years of refined content and emphasizing customer data protection, addressing professionals' dual concerns of performance and confidentiality.\n\n- **Market Positioning Post-Decline**: Despite a 49% decline over the past year, the stock is currently trading below its historical average, suggesting potential value as the company adapts to AI advancements, though investors should exercise caution in evaluating the long-term value amidst evolving industry dynamics.",
+        "date": "Feb 24, 17:20"
+    },
+    {
+        "id": 1771953638,
+        "source": "TechCrunch",
+        "title": "YouTube beefs up its $7.99/month Lite subscription with offline downloads and background play",
+        "link": "https://techcrunch.com/2026/02/24/youtube-beefs-up-its-7-99-month-lite-subscription-with-downloads-and-background-play/",
+        "summary": "- YouTube enhances its $7.99/month Premium Lite subscription by introducing offline downloads and background play, aiming to attract users who previously preferred the $13.99 full plan, thereby potentially increasing subscription adoption. \n\n- The expanded features respond directly to user feedback, positioning the Lite tier as a more competitive alternative, reducing reliance on the full subscription primarily for ad-free music content.\n\n- With YouTube's subscription revenue growth contributing to a $60 billion overall revenue target for 2025, these strategic enhancements may further bolster its position in the rapidly expanding digital content market.",
+        "date": "Feb 24, 17:20"
+    },
+    {
         "id": 1771952407,
         "source": "Yahoo Finance",
         "title": "Datadog, Inc. (DDOG): A Bull Case Theory",
