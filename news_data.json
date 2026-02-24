@@ -1,5 +1,373 @@
 [
     {
+        "id": 1771968974,
+        "category": "Markets",
+        "title": "BlackRock’s Rick Rieder is locking in attractive yields in this corner of the bond market before the opportunity slips away",
+        "link": "https://www.cnbc.com/2026/02/24/blackrocks-rick-rieder-is-locking-in-attractive-yields-in-this-corner-of-the-bond-market.html",
+        "summary": "- BlackRock's Rick Rieder emphasizes emerging market bonds for attractive double-digit yields, indicating a growing demand as global interest rates stabilize.\n- His iShares Flexible Income Active ETF now allocates nearly 15% to emerging market debt, with significant holdings in Brazil and Mexico.\n- Rieder predicts stable yields in the near term but anticipates rate cuts from the Federal Reserve, which may shift investment opportunities in the coming months.",
+        "date": "24 Feb 2026 20:28"
+    },
+    {
+        "id": 1771968979,
+        "category": "Markets",
+        "title": "The violent software sell-off pauses. Wall Street says bet on these stocks to bounce",
+        "link": "https://www.cnbc.com/2026/02/24/the-violent-software-sell-off-pauses-wall-street-says-bet-on-these-stocks-to-bounce.html",
+        "summary": "- Wall Street is identifying buying opportunities in software stocks, particularly Intuit and CrowdStrike, following a significant sell-off that pushed the sector into bear market territory, raising concerns over AI's impact on pricing power.  \n- The iShares Expanded Tech-Software Sector ETF saw a modest recovery, gaining nearly 1.8%, although it remains down over 25% year-to-date.  \n- Analysts are optimistic about security software stocks, highlighting CrowdStrike and Palo Alto Networks as resilient players amidst fears of AI disruption, with increased investment interest observed across the sector.  ",
+        "date": "24 Feb 2026 18:13"
+    },
+    {
+        "id": 1771968984,
+        "category": "Markets",
+        "title": "Bitcoin mining is no longer profitable after crypto's latest downward turn, analyst says",
+        "link": "https://www.cnbc.com/2026/02/24/bitcoin-mining-is-no-longer-profitable-after-cryptos-latest-downward-turn.html",
+        "summary": "- Bitcoin mining has become unprofitable for most operators as the cryptocurrency's value dropped 26% YTD, falling below $63,000.\n- The bitcoin hash price has decreased nearly 30% in three months, putting considerable financial pressure on miners, with some firms facing significant losses.\n- To mitigate losses, miners like Cipher Mining and TeraWulf are pivoting towards high-performance computing services, as demand in this area increases.",
+        "date": "24 Feb 2026 18:45"
+    },
+    {
+        "id": 1771968989,
+        "category": "Markets",
+        "title": "The big market rotation may lead to gains in this health care name. Trading it with options",
+        "link": "https://www.cnbc.com/2026/02/24/the-big-market-rotation-may-lead-to-gains-in-this-health-care-name-trading-it-with-options.html",
+        "summary": "- February has historically been a weak month for the S&P 500, prompting a sector rotation as institutional money shifts from high-beta tech to more defensive sectors like health care.\n  \n- Illumina Inc. (ILMN) shows promising bullish signals with indicators such as the Directional Movement Index, Relative Strength Index, and MACD pointing towards a potential upward momentum.\n\n- A targeted bull call spread trade for ILMN is suggested, aiming for a profit if the stock reaches or exceeds $125 by March 20.",
+        "date": "24 Feb 2026 15:15"
+    },
+    {
+        "id": 1771968994,
+        "category": "Markets",
+        "title": "Loop Capital upgrades this semiconductor stock as key headwinds ease and its strategy diversifies",
+        "link": "https://www.cnbc.com/2026/02/24/loop-capital-upgrades-this-semiconductor-stock-as-key-headwinds-ease-and-its-strategy-diversifies.html",
+        "summary": "- Loop Capital upgraded Qualcomm from hold to buy, raising its price target from $140 to $185, indicating a potential 32% upside as key headwinds ease.\n- The firm anticipates Qualcomm's diversification strategy, particularly in automotive and IoT sectors, will bolster revenue, reducing reliance on smartphone sales.\n- Significant catalysts, including an upcoming analyst day and stabilization of sales to major clients like Samsung and Apple, are expected to support the stock's recovery.",
+        "date": "24 Feb 2026 17:24"
+    },
+    {
+        "id": 1771968999,
+        "category": "Markets",
+        "title": "Deutsche Bank downgrades private credit poster child Blue Owl after recent sell-off",
+        "link": "https://www.cnbc.com/2026/02/24/shares-of-private-credit-posterchild-blue-owl-are-falling-after-a-downgrade.html",
+        "summary": "- Deutsche Bank downgraded Blue Owl Capital's stock from buy to hold, lowering its price target from $15 to $10 amid slower fee-related earnings growth predictions.\n- The company's shares have dropped 52% over the past year, influenced by a broader sell-off in private credit linked to exposure to the struggling software industry.\n- Analysts anticipate potential redemption increases in retail wealth products, which may further hinder sales and continue negative sentiment in the near term.",
+        "date": "24 Feb 2026 17:24"
+    },
+    {
+        "id": 1771969004,
+        "category": "Markets",
+        "title": "Raymond James double upgrades this auto parts distributor ahead of planned business separation",
+        "link": "https://www.cnbc.com/2026/02/24/raymond-james-double-upgrades-this-auto-parts-distribution-ahead-of-planned-business-separation.html",
+        "summary": "- Raymond James upgraded Genuine Parts Company to a \"strong buy\" rating, citing a planned business separation that aims to unlock shareholder value.\n- The analyst set a price target of $145, suggesting a potential upside of 25%, despite the stock's 20% decline since the separation announcement.\n- Completion of the separation by Q1 2027 and upcoming investor days may enhance valuation, although present sentiment reflects challenges from a weak automotive market.",
+        "date": "24 Feb 2026 17:23"
+    },
+    {
+        "id": 1771969009,
+        "category": "Markets",
+        "title": "AI sell-off in this travel stock looks overdone, says Morgan Stanley",
+        "link": "https://www.cnbc.com/2026/02/24/ai-sell-off-in-this-travel-stock-looks-overdone-says-morgan-stanley.html",
+        "summary": "- Morgan Stanley upgraded Booking Holdings to overweight, citing that concerns about AI's impact are overstated, despite lowering the price target to $5,500.  \n- The stock has declined 23% over the past year and 28% this year, but the firm forecasts a 42% potential upside.  \n- Analyst Brian Nowak emphasizes Booking's essential role in the travel industry, leveraging customer data and inventory to adapt in the evolving market.",
+        "date": "24 Feb 2026 17:22"
+    },
+    {
+        "id": 1771969015,
+        "category": "Markets",
+        "title": "Trading volumes have surged in leveraged funds, options since the pandemic, data shows",
+        "link": "https://www.cnbc.com/2026/02/23/leveraged-fund-options-trading-covid-investing-direxion.html",
+        "summary": "- Leveraged and inverse funds' average daily trading volume is projected to reach 1.41 billion in 2025, growing over 130% from 2024 and 250% since 2020, signaling heightened retail trader participation.  \n- Daily options volume is expected to hit 58 million in 2025, reflecting a 26% annual increase and more than doubling since 2020.\n- The number of active leveraged funds grew by 50% in 2025, the largest annual increase since 2007, highlighting rising demand for riskier investment instruments.",
+        "date": "23 Feb 2026 23:06"
+    },
+    {
+        "id": 1771969020,
+        "category": "Markets",
+        "title": "UBS upgrades real estate stock hit by AI fears: 'Rare buying opportunity'",
+        "link": "https://www.cnbc.com/2026/02/23/ubs-upgrades-real-estate-stock-hit-by-ai-fears-rare-opportunity.html",
+        "summary": "- UBS has upgraded CBRE's stock from neutral to buy, raising its price target to $185, suggesting a potential 21% increase from recent closing prices.  \n- The upgrade responds to recent concerns over AI's impact on office space demand, which caused CBRE shares to plunge 20%.  \n- UBS believes CBRE's strong fundamentals and market position will mitigate AI disruptions, forecasting 14-19% year-over-year growth by FY26.  ",
+        "date": "23 Feb 2026 15:59"
+    },
+    {
+        "id": 1771969026,
+        "category": "Markets",
+        "title": "Buy this coffee and peanut butter maker as risks ease, says Bank of America",
+        "link": "https://www.cnbc.com/2026/02/23/buy-this-coffee-and-peanut-butter-maker-as-risks-ease-says-bank-of-america.html",
+        "summary": "- Bank of America upgraded J.M. Smucker's stock to \"buy\" with a new price target of $130, reflecting an estimated 17.7% upside, as risks from the Hostess Brands acquisition have eased.  \n- The company’s recent strategies suggest improved profitability, with strong fundamentals in core segments like Coffee and Peanut Butter.  \n- Most analysts remain neutral, with 12 out of 19 recommending a hold, indicating mixed market sentiment despite Bank of America's bullish outlook.",
+        "date": "23 Feb 2026 15:59"
+    },
+    {
+        "id": 1771969031,
+        "category": "Markets",
+        "title": "The S&P 500 is caught in an unusually tight range. Is this bull market resilient or exhausted?",
+        "link": "https://www.cnbc.com/2026/02/23/the-sp-500-is-caught-in-an-unusually-tight-range-is-this-bull-market-resilient-or-exhausted-.html",
+        "summary": "- The S&P 500 is experiencing extreme stasis, trading in the narrowest range for February in 60 years, indicating uncertainty as geopolitical and economic pressures persist.  \n- Corporate earnings continue to show growth, aiding investor sentiment, while the Federal Reserve is expected to maintain policy stability through mid-2026 amid modest inflation.  \n- Divergence in stock performance is notable, with non-U.S. equities outperforming and 60/40 stock/bond strategies yielding higher returns than the S&P 500 this year.",
+        "date": "23 Feb 2026 12:27"
+    },
+    {
+        "id": 1771969035,
+        "category": "Tech",
+        "title": "Google’s new 1.9GW clean energy deal includes massive 100-hour battery",
+        "link": "https://techcrunch.com/2026/02/24/googles-new-1-9gw-clean-energy-deal-includes-massive-100-hour-battery/",
+        "summary": "- Google is developing its first data center in Minnesota, supported by a 1.9GW clean energy deal, incorporating a groundbreaking 300MW iron-air battery from Form Energy.  \n- The project aims to utilize 1.4GW of wind and 200MW of solar energy, with the battery providing power for up to 100 hours, significantly enhancing renewable energy reliability.  \n- A new fee structure facilitates utility adoption of innovative energy technologies, ensuring regulatory compliance while incentivizing clean energy investments.",
+        "date": "24 Feb 2026 21:32"
+    },
+    {
+        "id": 1771969039,
+        "category": "Tech",
+        "title": "CarGurus data breach affects 12.5 million accounts",
+        "link": "https://techcrunch.com/2026/02/24/cargurus-data-breach-affects-12-5-million-accounts/",
+        "summary": "- CarGurus suffered a data breach affecting 12.5 million accounts, compromising names, email addresses, phone numbers, and physical addresses.  \n- The breach was attributed to the ShinyHunters hacking group, known for their effective social engineering tactics.  \n- This incident marks the second automotive-related data breach reported this year, highlighting ongoing vulnerabilities in the sector.  ",
+        "date": "24 Feb 2026 21:27"
+    },
+    {
+        "id": 1771969044,
+        "category": "Tech",
+        "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
+        "link": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+        "summary": "- Anthropic faces ultimatum from the Pentagon to provide unrestricted access to its AI model or risk being labeled a \"supply chain risk\" under national defense regulations.  \n- The Defense Production Act may be invoked, highlighting a possible expansion of its use and raising concerns about government overreach in tech policy.  \n- The situation underscores a critical dependency on Anthropic amid broader instability in U.S. business regulations, posing risks to national security and global competitiveness.  ",
+        "date": "24 Feb 2026 21:18"
+    },
+    {
+        "id": 1771969048,
+        "category": "Tech",
+        "title": "Instagram’s TV app is launching on Google TV devices",
+        "link": "https://techcrunch.com/2026/02/24/instagrams-tv-app-is-launching-on-google-tv-devices/",
+        "summary": "- Instagram is launching its TV app on Google TV devices in the U.S., expanding its Reels-viewing features beyond mobile since December's release on Amazon Fire TV.  \n- The app is designed to enhance competition with YouTube by allowing users to browse personalized content directly on TVs, including categorization into channels.  \n- Reels autoplay and support for multiple accounts aim to improve user engagement, mirroring traditional TV browsing experiences.",
+        "date": "24 Feb 2026 19:13"
+    },
+    {
+        "id": 1771969053,
+        "category": "Tech",
+        "title": "Treasury sanctions Russian zero-day broker accused of buying exploits stolen from US defense contractor",
+        "link": "https://techcrunch.com/2026/02/24/treasury-sanctions-russian-zero-day-broker-accused-of-buying-exploits-stolen-from-u-s-defense-contractor/",
+        "summary": "- The U.S. Treasury has sanctioned Russian firm Operation Zero and its founder, Sergey Zelenyuk, for acquiring and reselling stolen zero-day exploits, posing significant risks to national security.\n- Operation Zero is linked to the unauthorized sale of proprietary cyber tools originally developed for U.S. defense and intelligence entities.\n- Additionally, an affiliate company in the UAE and associated individuals were sanctioned under a law targeting significant thefts of trade secrets.",
+        "date": "24 Feb 2026 19:01"
+    },
+    {
+        "id": 1771969057,
+        "category": "Tech",
+        "title": "Google adds a way to create automated workflows to Opal",
+        "link": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
+        "summary": "- Google enhances its Opal app with a new feature allowing users to create automated workflows through text prompts, utilizing the Gemini 3 Flash model for task execution.\n- This update enables users without technical skills to build complex workflows, broadening access to app development tools.\n- The growth of app-building capabilities through natural language prompts is also mirrored by several startups, indicating a significant trend in the tech industry.",
+        "date": "24 Feb 2026 19:00"
+    },
+    {
+        "id": 1771969063,
+        "category": "Finance",
+        "title": "Stablecoins Set to Scoop Up $1T in T-Bills by 2028: Standard Chartered",
+        "link": "https://finance.yahoo.com/news/stablecoins-set-scoop-1t-t-131502462.html",
+        "summary": "- Standard Chartered projects stablecoin market cap to grow to $2 trillion by 2028, leading to $1 trillion demand for U.S. Treasury bills as issuers hold short-term debt as reserves.\n- Total T-bill demand, including Federal Reserve purchases, could reach $2.2 trillion, highlighting a potential $0.9 trillion excess demand if issuance isn't increased.\n- Slowed stablecoin growth observed amid market adjustments, yet long-term forecasts remain optimistic, with a potential $500 billion shift from bank deposits to stablecoins by 2028.",
+        "date": "2026-02-23T13:15"
+    },
+    {
+        "id": 1771969069,
+        "category": "Finance",
+        "title": "Ethereum Co-Founder Vitalik Buterin Warns Prediction Markets Are On Path To Becoming 'Corposlop'",
+        "link": "https://finance.yahoo.com/news/ethereum-co-founder-vitalik-buterin-131154926.html",
+        "summary": "- Vitalik Buterin cautions that prediction markets risk becoming \"corposlop\" by prioritizing short-term speculations like sports betting over their intended purpose of providing societal value.\n- He emphasizes the need for prediction markets to utilize yield-bearing assets, such as Ethereum, to promote user confidence and sustainability.\n- Buterin advocates for building community and brand around prediction markets to prevent exploitation of naive traders during market downturns.",
+        "date": "2026-02-23T13:11"
+    },
+    {
+        "id": 1771969075,
+        "category": "Finance",
+        "title": "RS Large Cap Value Strategy’s Analysis on Eaton Corporation (ETN)",
+        "link": "https://finance.yahoo.com/news/rs-large-cap-value-strategy-132131136.html",
+        "summary": "- RS Investments reported a strong Q4 2025, with its Large Cap Value Strategy returning 5.77%, outperforming the Russell 1000® Value Index by nearly two percentage points, primarily due to strategic selections in Health Care and Financials.\n- Eaton Corporation (ETN) emerged as a notable holding, showing a robust one-month return of 12.37% and a remarkable 28.82% increase over the past year.\n- The firm highlights the growing appeal of value-oriented stocks despite existing risks, suggesting potential opportunities for investors in the current market landscape.",
+        "date": "2026-02-23T13:21"
+    },
+    {
+        "id": 1771969080,
+        "category": "Finance",
+        "title": "Do Wall Street Analysts Like Axon Enterprise Stock?",
+        "link": "https://finance.yahoo.com/news/wall-street-analysts-axon-enterprise-124818307.html",
+        "summary": "- Axon Enterprise, with a market cap of $34.2 billion, has seen its stock decline 19.9% over the past year, significantly lagging behind market and industry benchmarks.  \n- Analysts maintain a consensus “Strong Buy” rating, with a current mean price target of $811.22, indicating an 87% upside potential.  \n- Factors contributing to its underperformance include valuation compression and rising operational costs, leading to an expected 90.4% drop in adjusted EPS for the year.",
+        "date": "2026-02-23T12:48"
+    },
+    {
+        "id": 1771969085,
+        "category": "Finance",
+        "title": "5 Things to Know Before the Stock Market Opens",
+        "link": "https://finance.yahoo.com/news/5-things-know-stock-market-131153421.html",
+        "summary": "- U.S. stock futures indicate a lower market opening as President Trump announces a new 15% global tariff following the Supreme Court's striking down of previous tariffs, raising concerns about ongoing trade uncertainty.  \n- Major companies, including Nvidia and Home Depot, will report earnings this week amidst the tariff developments.  \n- Novo Nordisk shares decline after unfavorable clinical trial results for its weight-loss drug, contributing to broader market volatility.  ",
+        "date": "2026-02-23T13:11"
+    },
+    {
+        "id": 1771969090,
+        "category": "Finance",
+        "title": "Topo Chico mineral water temporarily unavailable in US",
+        "link": "https://finance.yahoo.com/news/topo-chico-mineral-water-temporarily-131100935.html",
+        "summary": "- Topo Chico mineral water is currently unavailable in the U.S. as Coca-Cola halts production for upgrades to its Mexican water source and manufacturing facilities, with a return expected later this year.  \n- The suspension follows a previous contamination issue last summer, impacting consumer trust and availability.  \n- Flavored sparkling waters and hard seltzers remain available, as Coca-Cola continues to experience growth in non-sugary beverage categories.",
+        "date": "2026-02-23T13:11"
+    },
+    {
+        "id": 1771969096,
+        "category": "Finance",
+        "title": "Strong Results with 38.1% Revenue Growth Lifted Glaukos (GKOS) in Q4",
+        "link": "https://finance.yahoo.com/news/strong-results-38-1-revenue-132810674.html",
+        "summary": "- Glaukos Corporation (GKOS) reported a notable 38.1% revenue growth in Q4 2025, signaling strong performance in the ophthalmic pharmaceutical sector.  \n- Despite this growth, GKOS experienced a 3.20% decline in share value over the past year, culminating in a market cap of approximately $6.91 billion.  \n- The Brown Capital Management Small Company Fund's Q4 performance lagged behind benchmarks, reflecting broader challenges in the small-cap sector.",
+        "date": "2026-02-23T13:28"
+    },
+    {
+        "id": 1771969101,
+        "category": "Finance",
+        "title": "Veeva Systems (VEEV) Traded Lower Despite Impressive Results",
+        "link": "https://finance.yahoo.com/news/veeva-systems-veev-traded-lower-133018048.html",
+        "summary": "- Veeva Systems Inc. (NYSE: VEEV) shares fell 19.57% in one month and 20.26% over the past year, closing at $180.31 on February 20, 2026, despite strong company fundamentals.\n- The Brown Capital Management Small Company Fund’s performance lagged behind the Russell 2000® Growth index, down 11.46% in 2025 versus the index's 13.01% gain.\n- The fund emphasizes investments based on company performance indicators, with successful holdings contributing to revenue and earnings growth in 2025.",
+        "date": "2026-02-23T13:30"
+    },
+    {
+        "id": 1771969108,
+        "category": "Finance",
+        "title": "3 Stocks Warren Buffett and Berkshire Were Gobbling Up in Q4",
+        "link": "https://finance.yahoo.com/news/3-stocks-warren-buffett-berkshire-123002187.html",
+        "summary": "- In Q4, Berkshire Hathaway significantly increased stakes in Domino’s Pizza, Chevron, and Chubb, reflecting confidence in their cash flows and growth prospects despite market challenges.\n- Domino’s reported a 6.2% YoY revenue increase to $1.14 billion with stable margins, while Chevron showcased strong dividends and production capabilities amid volatile oil prices.\n- Chubb achieved a 25% YoY profit increase, driven by disciplined underwriting and expanding in emerging markets, aligning with Buffett's value investment philosophy.",
+        "date": "2026-02-23T12:30"
+    },
+    {
+        "id": 1771969114,
+        "category": "Finance",
+        "title": "Why Prime Movers’ Reliability Is Critical to Power Uptime",
+        "link": "https://finance.yahoo.com/news/why-prime-movers-reliability-critical-122845049.html",
+        "summary": "- South Africa's recent Stage 3 load-shedding highlighted vulnerabilities in Eskom's ageing infrastructure, exceeding 14,000 MW in unplanned outages, while notable recovery efforts led to over 100 consecutive days without load-shedding by late 2025.\n- Globally, AI-driven demand is expected to significantly strain electricity grids, emphasizing the urgency of improving reliability through strategic maintenance of existing thermal assets.\n- Boiler and gas turbine integrity are critical for reducing forced outages and enhancing grid stability, as proactive maintenance can lead to predictable generation and improved operational resilience.",
+        "date": "2026-02-23T12:28"
+    },
+    {
+        "id": 1771969120,
+        "category": "Finance",
+        "title": "Novo Nordisk's next obesity drug falls short of Lilly rival, wiping billions off its market value",
+        "link": "https://finance.yahoo.com/news/novo-nordisks-next-obesity-drug-130900424.html",
+        "summary": "- Novo Nordisk's experimental obesity drug, CagriSema, failed to demonstrate non-inferiority to Eli Lilly's tirzepatide, resulting in a significant drop in Novo's shares by up to 15%.  \n- CagriSema patients experienced an average weight loss of 23%, compared to 25.5% with tirzepatide, impacting Novo’s competitive position in the obesity treatment market.  \n- The setback compounds pressures on Novo Nordisk, which had already signaled potential sales and profit growth slowdowns due to market competition and product exclusivity issues.",
+        "date": "2026-02-23T13:09"
+    },
+    {
+        "id": 1771969125,
+        "category": "Finance",
+        "title": "Corn Slipping to Start Monday",
+        "link": "https://finance.yahoo.com/news/corn-slipping-start-monday-133339793.html",
+        "summary": "- Corn prices saw a fractional decline of 1.5 cents on Monday, following a prior week of mix performance amidst shifts in open interest and market dynamics. \n- Export sales remained strong, with old and new crop corn totaling 1.53 MMT, supported predominantly by Japanese and Mexican demand. \n- Brazil’s corn harvest is lagging, with only 28% completed, impacting global supply estimates and market outlooks.",
+        "date": "2026-02-23T13:33"
+    },
+    {
+        "id": 1771969130,
+        "category": "Finance",
+        "title": "Wheat Falling Back to Kick Off Monday",
+        "link": "https://finance.yahoo.com/news/wheat-falling-back-kick-off-133339224.html",
+        "summary": "- Wheat prices experienced losses of 2 to 6 cents on Monday, following a strong rally last week, with Chicago SRW futures gaining 24 ¾ cents overall.\n- Export sales for wheat dropped significantly, down 40.99% from the previous week, with Mexico as the leading buyer.\n- Speculative funds reduced their net short positions in Chicago and Kansas City wheat, indicating a shift in market sentiment ahead of anticipated dry weather in U.S. HRW regions.",
+        "date": "2026-02-23T13:33"
+    },
+    {
+        "id": 1771969135,
+        "category": "Finance",
+        "title": "Soybeans Falling Early on Monday",
+        "link": "https://finance.yahoo.com/news/soybeans-falling-early-monday-133339491.html",
+        "summary": "- Soybean futures fell 2 to 6 cents, while cash prices rose slightly to $10.76 1/2, highlighting market volatility amid ongoing crop insurance price discovery.  \n- The US Supreme Court ruling limits presidential tariff powers, prompting President Trump to propose a temporary 10% tariff, potentially affecting trade relations, especially with China.  \n- Soybean sales surged to 798,216 MT, driven largely by significant purchases from China, marking a 66.2% increase from last year.",
+        "date": "2026-02-23T13:33"
+    },
+    {
+        "id": 1771969140,
+        "category": "Finance",
+        "title": "OpenAI deepens partnerships with consulting giants to push enterprise AI beyond pilot",
+        "link": "https://finance.yahoo.com/news/openai-deepens-partnerships-consulting-giants-133507621.html",
+        "summary": "- OpenAI has launched the \"Frontier Alliance\" program in collaboration with BCG, McKinsey, Accenture, and Capgemini, aiming to advance enterprise AI adoption beyond pilot projects.  \n- The initiative integrates OpenAI engineers with consulting teams to embed AI into core business processes, addressing common obstacles to deployment.  \n- This strategic shift supports OpenAI’s focus on enterprise clients, boosting their self-sufficiency while navigating real-world AI challenges.",
+        "date": "2026-02-23T13:35"
+    },
+    {
+        "id": 1771969145,
+        "category": "Finance",
+        "title": "Gilead pays $7.8bn to take full control of promising multiple myeloma therapy",
+        "link": "https://finance.yahoo.com/news/gilead-pays-7-8bn-full-131600311.html",
+        "summary": "- Gilead Sciences has agreed to acquire Arcellx for $7.8 billion, gaining full control of a promising CAR T-cell therapy for multiple myeloma, with a potential FDA approval expected by December 2026. \n\n- The acquisition includes a $115 per share offer, a 68% premium, and a contingent value right tied to future sales performance of the drug.\n\n- The deal is projected to enhance Gilead's earnings per share starting in 2028 and leverages Arcellx’s innovative CAR technology for broader oncology applications.",
+        "date": "2026-02-23T13:16"
+    },
+    {
+        "id": 1771969151,
+        "category": "Finance",
+        "title": "Option Volatility And Earnings Report For February 23 - 27",
+        "link": "https://finance.yahoo.com/news/option-volatility-earnings-report-february-120002562.html",
+        "summary": "- Nvidia (NVDA) earnings report on Wednesday is highly anticipated, potentially influencing market trends.\n- Other significant companies reporting include Salesforce (CRM), Home Depot (HD), and Discovery (WBD), each with varying expected price moves post-announcement.\n- Implied volatility is elevated pre-earnings, providing traders with opportunities for various strategies, highlighting the importance of risk management.",
+        "date": "2026-02-23T12:00"
+    },
+    {
+        "id": 1771969156,
+        "category": "Finance",
+        "title": "Don’t retire yet if these 5 warning signs apply to you (even if you think you have enough cash)",
+        "link": "https://finance.yahoo.com/news/don-t-retire-yet-5-120000309.html",
+        "summary": "- Job satisfaction is high among older workers, with 67% of those over 65 expressing significant contentment, suggesting that continued work can enhance quality of life.\n- Retiring without a clear purpose may lead to boredom or loneliness; prospective retirees should identify meaningful activities before making the transition.\n- Financial planning is crucial, as nearly 31% of retirees exceed their budgets, indicating the dangers of inadequate financial preparation before retirement.",
+        "date": "2026-02-23T12:00"
+    },
+    {
+        "id": 1771969161,
+        "category": "Finance",
+        "title": "This couple cut the cost of their home build in half by making it a DIY. How to balance the risks and rewards",
+        "link": "https://finance.yahoo.com/news/couple-cut-cost-home-build-120000421.html",
+        "summary": "- A Texas couple reduced their tiny home construction costs from $63,000-$97,000 to approximately $33,000 by undertaking a DIY approach, demonstrating significant potential savings amid high renovation prices.\n\n- The average home construction expenditure is forecasted to top $524 billion in 2026, reflecting ongoing high demand despite modest year-over-year growth.\n\n- However, DIY projects carry hidden costs, such as permits, which can significantly impact overall budgets and present financial risks.",
+        "date": "2026-02-23T12:00"
+    },
+    {
+        "id": 1771969166,
+        "category": "Finance",
+        "title": "1 Incredible Artificial Intelligence (AI) Infrastructure Stock to Buy With $150 Right Now",
+        "link": "https://finance.yahoo.com/news/1-incredible-artificial-intelligence-ai-130600370.html",
+        "summary": "- Big tech companies plan to invest over $700 billion in AI-related capital expenditures, largely for data center infrastructure, boosting semiconductor demand and enabling high-speed networking needs.\n- Arista Networks (NYSE: ANET) has captured a 39% market share in high-speed Ethernet switches, positioning itself as the leader in this critical segment.\n- Arista's revenue growth forecast for 2026 has been raised to 25%, driven by a significant increase in AI-related revenue expected to surpass $3.25 billion this year.",
+        "date": "2026-02-23T13:06"
+    },
+    {
+        "id": 1771969172,
+        "category": "Finance",
+        "title": "2026: The year TL carriers turn the tide?",
+        "link": "https://finance.yahoo.com/news/2026-tl-carriers-turn-tide-120000743.html",
+        "summary": "- The trucking industry faces regulatory constraints that could significantly impact capacity, as up to 400,000 drivers may be forced out and 7,000 driver schools face closure due to noncompliance.  \n\n- Major carriers are focusing on dedicated contracts over one-way operations, leading to improved fleet utilization and stability but potentially tighter capacity for shippers in the future.  \n\n- Expectations for mid-single-digit contractual rate increases in 2026 reflect a market shift, with some carriers expecting more pressure on prices amid ongoing supply-demand challenges.",
+        "date": "2026-02-23T12:00"
+    },
+    {
+        "id": 1771969177,
+        "category": "Finance",
+        "title": "Are Wall Street Analysts Bullish on Deckers Outdoor Stock?",
+        "link": "https://finance.yahoo.com/news/wall-street-analysts-bullish-deckers-115742904.html",
+        "summary": "- Deckers Outdoor Corp (DECK) has a market cap of $16.8 billion, with shares declining 20.9% over the past year despite a 14.5% year-to-date increase.\n- Following a strong Q3 2026 earnings report, DECK's shares surged 19.5%, with analysts forecasting an 8.7% rise in adjusted EPS to $6.88 for the fiscal year.\n- The stock holds a \"Moderate Buy\" consensus rating, with price targets suggesting a potential upside of 7.1% to 55% based on analyst estimates.",
+        "date": "2026-02-23T11:57"
+    },
+    {
+        "id": 1771969182,
+        "category": "Finance",
+        "title": "Chase reboots its 'mortgage rate sale,' this time on purchases and refinances",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/chase-mortgage-rate-sale-purchases-and-refinances-140015474.html",
+        "summary": "- Chase Home Lending is reintroducing its mortgage rate sale, offering limited-time discounts on purchase and refinance loans until March 8, 2026, with no extra fees or points.  \n- The sale aims to enhance affordability, potentially enabling buyers to afford homes of greater value with lower monthly payments.  \n- Discounted rates can be combined with bank benefits for further savings; however, borrowers are advised to carefully assess market fluctuations before refinancing.",
+        "date": "2026-02-23T14:00"
+    },
+    {
+        "id": 1771969187,
+        "category": "Finance",
+        "title": "Mortgage and refinance interest rates today, February 23, 2026: Looking for a rate below 6%? (How is 5.86%?)",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-february-23-2026-110028639.html",
+        "summary": "- The average 30-year mortgage rate is currently 5.86%, while the 15-year rate stands at 5.41%, making home financing more accessible.  \n- Mortgage refinance rates are slightly higher, with the average 30-year fixed rate at 5.99%, influencing borrower decisions.  \n- Forecasts suggest mortgage rates may stabilize around 6% through 2026, impacting housing market dynamics.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771969191,
+        "category": "Finance",
+        "title": "Visteon posts record gross margin and operating profit in 2025",
+        "link": "https://finance.yahoo.com/news/visteon-posts-record-gross-margin-130440199.html",
+        "summary": "- Visteon achieved record net sales of $3.768 billion in 2025, with an adjusted EBITDA of $492 million, driven by strong operational performance and new product launches across major markets.\n- The company reported a gross margin of $532 million, leading to net income of $201 million, despite challenges in battery management systems and market headwinds.\n- For 2026, Visteon projects sales between $3.625 billion and $3.825 billion, focusing on scaling next-generation cockpit platforms and expanding customer engagement.",
+        "date": "2026-02-23T13:04"
+    },
+    {
+        "id": 1771969196,
+        "category": "Finance",
+        "title": "HELOC and home equity loan rates Monday, February 23, 2026: Unlocking the cash in your home at the lowest rates in years",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-monday-february-23-2026-110010534.html",
+        "summary": "- As of February 23, 2026, average home equity line of credit (HELOC) rates are 7.23% and home equity loan rates are 7.44%, marking some of the lowest rates available in years.\n- Homeowners can leverage their home equity without refinancing existing low-rate mortgages, accessing up to $34 trillion in potential equity for various financial needs.\n- The flexibility in pricing for HELOCs and home equity loans encourages homeowners to shop around for optimal rates and terms.",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771969202,
+        "category": "Finance",
+        "title": "Best high-yield savings interest rates today, February 23, 2026 (Earn up to 4% APY)",
+        "link": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-monday-february-23-2026-110000563.html",
+        "summary": "- High-yield savings accounts currently offer rates up to 4% APY, significantly above the national average of 0.39% for traditional accounts, following recent Federal Reserve rate cuts.  \n- Online banks dominate the highest rates due to lower operational costs, enabling them to offer better terms to consumers.  \n- Consumers are urged to compare rates and account features to maximize savings and ensure FDIC insurance for security.  ",
+        "date": "2026-02-23T11:00"
+    },
+    {
+        "id": 1771969207,
+        "category": "Finance",
+        "title": "Best money market account rates today, February 23, 2026 (Earn up to 4.01% APY)",
+        "link": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-monday-february-23-2026-110001859.html",
+        "summary": "- As of February 23, 2026, top money market accounts offer rates exceeding 4% APY, despite a general decline following recent Federal Reserve rate cuts.  \n- Higher yields, previously driven by aggressive Fed interest hikes, have made MMAs appealing for both liquidity and competitive returns.  \n- When selecting an MMA, factors like minimum balance requirements, fees, and federal insurance should be carefully evaluated.",
+        "date": "2026-02-23T11:00"
+    },
+    {
         "id": 1771966809,
         "category": "Markets",
         "title": "Watch these chart formations for clues into what's next for market volatility",
@@ -30,373 +398,5 @@
         "link": "https://www.cnbc.com/2026/02/23/dividend-paying-real-estate-stocks-outperform-as-ai-fears-roil-markets.html",
         "summary": "- Dividend-paying real estate stocks, particularly REITs, are outperforming amidst market sell-offs driven by AI fears, with the S&P 500 real estate sector rising over 8% year-to-date.  \n- Analysts predict potential 17% total returns for REITs by 2026, with particular interest in data center REITs due to growing AI-related infrastructure demands.  \n- Companies like Equinix and Welltower are highlighted for their strong positions and innovative approaches, offering solid dividend yields and growth prospects in their respective sectors.  ",
         "date": "23 Feb 2026 20:08"
-    },
-    {
-        "id": 1771966828,
-        "category": "Markets",
-        "title": "The stars are aligning for this country ETF, says Katie Stockton",
-        "link": "https://www.cnbc.com/2026/02/23/the-stars-are-aligning-for-this-country-etf-says-katie-stockton.html",
-        "summary": "- South Africa's stock market, buoyed by gold price exposure, has shown a consistent uptrend for nearly two years, positioning the iShares MSCI South Africa ETF (EZA) favorably for investors.  \n- Recent technical indicators, including bullish MACD crossovers, support continued momentum for South African equities, suggesting potential for further outperformance compared to U.S. markets through 2026.  \n- With EZA trading near all-time highs and no overhead resistance, the current market environment provides favorable conditions for risk management and entry points for investors.  ",
-        "date": "23 Feb 2026 19:00"
-    },
-    {
-        "id": 1771966833,
-        "category": "Markets",
-        "title": "NYSE insider Jay Woods is watching this key level in Nvidia as a tell for the S&P 500",
-        "link": "https://www.cnbc.com/2026/02/23/nyse-insider-jay-woods-is-watching-this-key-level-in-nvidia-as-a-tell-for-the-sp-500.html",
-        "summary": "- Nvidia's upcoming quarterly earnings are critical for market direction, as its performance significantly influences the S&P 500 due to its 7% market weight, making its price action a key indicator.\n- A successful close above $173 is essential to prevent a potential market downturn, with significant implications for the S&P 500 and Nvidia’s future valuation.\n- Software stocks, including Salesforce and Snowflake, are under pressure, making their upcoming results pivotal for gauging the sector's recovery amidst growing AI disruption.",
-        "date": "23 Feb 2026 18:02"
-    },
-    {
-        "id": 1771966839,
-        "category": "Markets",
-        "title": "A look at the utility names on Josh Brown's Best Stocks list, including one nearing a multiyear breakout",
-        "link": "https://www.cnbc.com/2026/02/23/a-look-at-the-utility-names-on-josh-browns-best-stocks-list.html",
-        "summary": "- NextEra Energy (NEE) is projected to reach multiyear highs, benefiting from its dual structure as Florida's major utility and a leading renewable energy generator, with an ambitious 8%+ EPS growth target through 2032.  \n- Duke Energy (DUK) remains under scrutiny as it attempts to regain previous highs amid mixed performance, with management forecasting 5%-7% EPS growth.  \n- FirstEnergy (FE) is showing strong upward momentum, breaking out to fresh recovery highs, driven by significant capital investments and steady earnings growth.",
-        "date": "23 Feb 2026 17:46"
-    },
-    {
-        "id": 1771966844,
-        "category": "Markets",
-        "title": "This Latin American rival to Amazon reports earnings this week. How to trade it with options",
-        "link": "https://www.cnbc.com/2026/02/23/how-to-trade-this-latin-american-rival-to-amazon-that-reports-earnings-tuesday.html",
-        "summary": "- MercadoLibre, Latin America’s leading e-commerce and fintech platform, reports Q4 2025 earnings, expected to show $7.41 billion in quarterly revenue, reflecting a 39% year-over-year increase.  \n- Significant margins are under pressure due to rising operating expenses, with analysts forecasting $28.6 billion in full-year 2025 revenue amid growth in its fintech segment.  \n- The company’s stock remains volatile, trading around $2,000, prompting considerations for options strategies to mitigate risk during earnings announcements.  ",
-        "date": "23 Feb 2026 16:02"
-    },
-    {
-        "id": 1771966850,
-        "category": "Markets",
-        "title": "Wells Fargo upgrades Google parent Alphabet, says it has '3 key traits of AI winner'",
-        "link": "https://www.cnbc.com/2026/02/23/wells-fargo-upgrades-google-parent-alphabet-says-it-has-3-key-traits-of-ai-winner.html",
-        "summary": "- Wells Fargo upgraded Alphabet to overweight, raising its price target to $387, indicating a potential upside of over 22%.\n- Analyst Ken Gawrelski highlighted Alphabet's competitive advantages in AI: data, distribution, and computing capacity.\n- The company aims to expand its AI compute capacity significantly, which could bolster its market position and drive growth, notably through its Gemini platform.",
-        "date": "23 Feb 2026 15:58"
-    },
-    {
-        "id": 1771966856,
-        "category": "Markets",
-        "title": "The 'Magnificent Seven' drove the stock market to record highs in recent years. Is the trade over?",
-        "link": "https://www.cnbc.com/2026/02/22/the-magnificent-seven-drove-the-stock-market-to-record-highs-in-recent-years-is-the-trade-over.html",
-        "summary": "- The \"Magnificent Seven\" stocks have seen significant declines to start 2026, with the Roundhill Magnificent Seven ETF down nearly 6%, reflecting concerns over high capital expenditures and disappointing earnings growth.\n- Big Tech companies are expected to spend approximately $700 billion this year, but free cash flow has decreased, raising investor skepticism about their financial health and profitability.\n- Analysts suggest a rotation toward undervalued cyclical sectors could hinder recovery for these high-growth tech stocks, as market sentiment shifts amid rising capital expenditure worries.",
-        "date": "22 Feb 2026 12:37"
-    },
-    {
-        "id": 1771966861,
-        "category": "Markets",
-        "title": "This sub $5 nuclear stock could double, but it's risky, says Canaccord Genuity",
-        "link": "https://www.cnbc.com/2026/02/22/this-nuclear-stock-could-double-says-canaccord-genuity.html",
-        "summary": "- Canaccord Genuity began coverage of Italian nuclear company Terra Innovatum with a buy rating, projecting a price target of $10, representing nearly 140% upside from its recent close.  \n- The company's \"SOLO\" micro-reactor technology may benefit from rising demand for nuclear energy amid AI-related infrastructure growth.  \n- However, Terra Innovatum faces challenges, including lengthy regulatory processes and reliance on expensive resources, which could impact its scalability and profitability.",
-        "date": "22 Feb 2026 12:40"
-    },
-    {
-        "id": 1771966866,
-        "category": "Markets",
-        "title": "Top Wall Street analysts are bullish on the growth potential of these three stocks",
-        "link": "https://www.cnbc.com/2026/02/22/top-analysts-are-bullish-on-the-growth-potential-of-these-3-stocks.html",
-        "summary": "- Analysts recommend Datadog (DDOG) due to its solid product demand and significant growth potential in AI and security, with a price target of $180, reflecting confidence in its observability market leadership.\n\n- Vertiv Holdings (VRT) received an upgraded price target of $277 following a 252% order surge in Q4 2025, as strong demand continues, projecting further growth into 2026.\n\n- Arista Networks (ANET) remains a strong supplier to Meta Platforms, with a buy rating maintained and a price target increase to $185, indicating resilience amid competitive pressures following Nvidia's announcements.",
-        "date": "22 Feb 2026 12:33"
-    },
-    {
-        "id": 1771966872,
-        "category": "Markets",
-        "title": "This week’s most overbought stocks include Deere and Quanta Services",
-        "link": "https://www.cnbc.com/2026/02/21/this-weeks-most-overbought-stocks-include-deere-and-quanta-services.html",
-        "summary": "- Investors heavily favored overbought stocks this week, notably Deere with an RSI of 78, following a strong earnings report and a 10% weekly gain.  \n- Quanta Services also saw a surge, climbing over 5% with an RSI of 73 after exceeding earnings expectations.  \n- Conversely, Blackstone and Apollo Global Management are in oversold territory, indicated by RSIs of 27 and 28, respectively, and losses of over 6% and 4%.  ",
-        "date": "21 Feb 2026 14:57"
-    },
-    {
-        "id": 1771966878,
-        "category": "Markets",
-        "title": "Bank of America names five stocks best positioned for shareholder returns",
-        "link": "https://www.cnbc.com/2026/02/21/five-stocks-for-shareholder-returns-according-to-bank-of-america.html",
-        "summary": "- Bank of America identified five stocks, including Live Nation and Evercore, as top picks for strong shareholder returns, driven by solid fundamentals and market positioning.\n- Live Nation is expected to benefit from growing demand in live entertainment, with shares rising 16% in the past month.\n- Evercore's strong earnings, coupled with its unique market position in M&A advisory, showcase its resilience and growth potential, reflected in an 11% share increase over three months.",
-        "date": "21 Feb 2026 14:46"
-    },
-    {
-        "id": 1771966883,
-        "category": "Markets",
-        "title": "Berkshire was a net seller of stocks in Buffett's final quarter as CEO",
-        "link": "https://www.cnbc.com/2026/02/21/berkshire-was-a-net-seller-of-stocks-in-buffetts-final-quarter-as-ceo.html",
-        "summary": "- In Buffett's final quarter as CEO, Berkshire Hathaway was a net seller of stocks, notably reducing its stake in Apple by over 75%, although it remains its largest investment at $60.3 billion.\n- Berkshire increased its position in Chevron by 6.6% amid rising oil prices, now valued at nearly $24 billion, while also enhancing its stake in Chubb by 9.3%.\n- PacifiCorp agreed to a $575 million settlement over wildfire-related claims, resolving nearly 90% of known claims to improve financial stability amid significant liabilities.",
-        "date": "21 Feb 2026 16:35"
-    },
-    {
-        "id": 1771966889,
-        "category": "Markets",
-        "title": "The average tax refund is up 14%. These stocks could see a boost, Bank of America says",
-        "link": "https://www.cnbc.com/2026/02/20/these-stocks-could-benefit-from-heftier-tax-refunds-bank-of-america-says.html",
-        "summary": "- The average tax refund has increased by 14.2% to $2,476, signaling potential boosts for retailers, particularly those targeting low to middle-income consumers, according to Bank of America.  \n- Bank of America predicts substantial gains for discount retailers, highlighting Ross Stores and Burlington Stores as strong candidates due to favorable economic conditions and tax-related changes.  \n- Consumer behavior may shift towards paying down debt or saving, positively impacting financial companies like Synchrony Financial and Bread Financial, with analysts projecting significant upside.",
-        "date": "20 Feb 2026 21:16"
-    },
-    {
-        "id": 1771966893,
-        "category": "Markets",
-        "title": "The chart on this generator stock signals more gains ahead, says Carter Worth",
-        "link": "https://www.cnbc.com/2026/02/20/the-chart-on-this-generator-stock-signals-more-gains-ahead-says-carter-worth.html",
-        "summary": "- Generac Holdings (GNRC) has rebounded from a significant 85% drop, recovering from a peak of $524 in 2021 to $79 earlier this year.\n- Analysts suggest continued bullish momentum, expecting the stock to approach the $325 level.\n- This outlook reflects market recovery post-Covid, indicating potential growth for investors in the generator manufacturing sector.",
-        "date": "20 Feb 2026 19:38"
-    },
-    {
-        "id": 1771966898,
-        "category": "Markets",
-        "title": "Supreme Court says Trump's tariffs aren't legal. These stocks should benefit most",
-        "link": "https://www.cnbc.com/2026/02/20/supreme-court-says-trumps-tariffs-arent-legal-these-stocks-should-benefit-most.html",
-        "summary": "- The Supreme Court's ruling against Trump's tariffs is expected to benefit retailers like Nike, Target, and Home Depot, as analysts from Wells Fargo highlight potential stock boosts from reduced trade taxes.\n- Nike and Target have cited significant challenges and price increases due to previous tariffs, while their stocks reacted positively initially but later faced fluctuations.\n- The ruling leaves some tariffs in place and introduces uncertainty about refunds for tariffs already paid, which may temper overall market optimism.",
-        "date": "20 Feb 2026 17:36"
-    },
-    {
-        "id": 1771966902,
-        "category": "Tech",
-        "title": "Discord delays global rollout of age verification after backlash",
-        "link": "https://techcrunch.com/2026/02/24/discord-delays-global-rollout-of-age-verification-after-backlash/",
-        "summary": "- Discord has postponed its global age verification rollout, originally planned for March, to the second half of 2026 following significant user backlash.\n- Approximately 90% of users will not require age verification, while new verification methods, including credit card options, will be introduced for the remaining users.\n- Discord will enhance transparency about its verification vendors and ensure all processes occur on users' devices, addressing concerns about data security and privacy.",
-        "date": "24 Feb 2026 20:48"
-    },
-    {
-        "id": 1771966907,
-        "category": "Tech",
-        "title": "Instagram head pressed on lengthy delay to launch teen safety features, like a nudity filter, court filing reveals",
-        "link": "https://techcrunch.com/2026/02/24/instagram-head-pressed-on-lengthy-delay-to-launch-teen-safety-features-like-a-nudity-filter-court-filing-reveals/",
-        "summary": "- Meta's Instagram faced scrutiny for a six-year delay in implementing vital teen safety features, including a nudity filter for direct messages, despite acknowledging the risks posed to minors in internal communications since 2018.  \n- Recent statistics reveal that a significant number of teens encountered unwanted nudity or self-harm threats on Instagram, highlighting ongoing concerns about the platform's impact on younger users.  \n- The ongoing lawsuits against major tech companies, including Meta, seek to establish accountability for potentially harmful designs that prioritize user engagement over teen safety, coinciding with increasing legislative actions on social media usage among minors.  ",
-        "date": "24 Feb 2026 20:35"
-    },
-    {
-        "id": 1771966912,
-        "category": "Tech",
-        "title": "More startups are hitting $10M ARR in 3 months than ever before",
-        "link": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
-        "summary": "- The emergence of AI has enabled startups to achieve $10 million in annual recurring revenue (ARR) within just three months, marking a significant increase compared to previous years.  \n- Stripe's report indicates that 2025 saw a 50% faster growth rate in new businesses using its platform, with more than double the number reaching $10 million ARR compared to 2024.  \n- While rapid growth is notable, investors emphasize the importance of sustainable growth and low customer churn for long-term success in the startup ecosystem.",
-        "date": "24 Feb 2026 19:39"
-    },
-    {
-        "id": 1771966916,
-        "category": "Tech",
-        "title": "Spotify and Liquid Death release a limited-edition speaker shaped like… an urn?",
-        "link": "https://techcrunch.com/2026/02/24/spotify-and-liquid-death-release-a-limited-edition-speaker-shaped-like-an-urn/",
-        "summary": "- Spotify and Liquid Death have launched the Eternal Playlist Urn, a limited-edition wireless Bluetooth speaker designed to resemble a cremation urn, priced at $495 with only 150 units available.  \n- The product allows users to create personalized playlists for the afterlife, blending humor with a commentary on death and music.  \n- This collaboration follows previous ventures by both companies into unique and provocative marketing strategies, showcasing their commitment to attention-grabbing concepts.",
-        "date": "24 Feb 2026 18:48"
-    },
-    {
-        "id": 1771966920,
-        "category": "Tech",
-        "title": "Twitch is overhauling its suspensions policy",
-        "link": "https://techcrunch.com/2026/02/24/twitch-is-overhauling-its-suspensions-policy/",
-        "summary": "- Twitch is revising its suspension policy to introduce targeted enforcement, allowing for separate streaming and chatting suspensions based on specific violations of Community Guidelines.  \n- Users will maintain access to certain platform features during minor suspensions, enhancing flexibility while still adhering to accountability measures.  \n- Serious violations may result in simultaneous suspension from both streaming and chatting, with potential for indefinite bans based on repeat offenses.",
-        "date": "24 Feb 2026 18:00"
-    },
-    {
-        "id": 1771966925,
-        "category": "Tech",
-        "title": "OpenAI COO says ‘we have not yet really seen AI penetrate enterprise business processes’",
-        "link": "https://techcrunch.com/2026/02/24/openai-coo-says-we-have-not-yet-really-seen-ai-penetrate-enterprise-business-processes/",
-        "summary": "- OpenAI's COO Brad Lightcap emphasized the slow adoption of AI in enterprise business processes despite the launch of OpenAI Frontier, aimed at facilitating AI integration in complex organizational environments.  \n- The company is experiencing growing demand, projecting over $20 billion in annual revenue by 2025, while focusing on measuring business outcomes rather than user licenses.  \n- OpenAI is expanding its presence in India, acknowledging the potential job impact of AI on the local IT and BPO sectors while planning to open new offices to support its enterprise initiatives.",
-        "date": "24 Feb 2026 17:44"
-    },
-    {
-        "id": 1771966929,
-        "category": "Tech",
-        "title": "Stripe’s valuation soars 74% to $159 billion",
-        "link": "https://techcrunch.com/2026/02/24/stripes-valuation-soars-74-to-159-billion/",
-        "summary": "- Stripe's valuation has surged 74% to $159 billion following a recent secondary transaction involving notable investors such as Thrive Capital and Andreessen Horowitz.  \n- The company reported significant growth in stablecoin payments, which doubled to approximately $400 billion, indicating a strong market demand for its crypto-related services.  \n- Stripe's strategic investments, including the acquisition of crypto wallet Privy and the launch of its blockchain, Tempo, further enhance its position in the digital payment and crypto landscape.  ",
-        "date": "24 Feb 2026 17:28"
-    },
-    {
-        "id": 1771966933,
-        "category": "Tech",
-        "title": "YouTube beefs up its $7.99/month Lite subscription with offline downloads and background play",
-        "link": "https://techcrunch.com/2026/02/24/youtube-beefs-up-its-7-99-month-lite-subscription-with-downloads-and-background-play/",
-        "summary": "- YouTube enhances its $7.99/month Premium Lite subscription by adding offline downloads and background play, previously exclusive to the $13.99 plan.  \n- The feature updates respond to user feedback, potentially increasing the Lite tier's appeal.  \n- YouTube's subscription revenue grew 17% to $13.6 billion in Q4, contributing to overall revenue of $60 billion.",
-        "date": "24 Feb 2026 17:00"
-    },
-    {
-        "id": 1771966937,
-        "category": "Tech",
-        "title": "Music generator ProducerAI joins Google Labs",
-        "link": "https://techcrunch.com/2026/02/24/music-generator-producerai-joins-google-labs/",
-        "summary": "- Google Labs has integrated the generative AI music tool ProducerAI, allowing users to generate music through natural language requests, enhancing creative collaboration with AI.  \n- The technology leverages Google DeepMind’s Lyria 3 model, recently utilized by artist Wyclef Jean for his song \"Back From Abu Dhabi.\"  \n- The rise of AI in music has sparked debate, with many artists supporting its potential while others warn against threats to human creativity and copyright infringement.",
-        "date": "24 Feb 2026 16:57"
-    },
-    {
-        "id": 1771966942,
-        "category": "Tech",
-        "title": "Marquis sues firewall provider SonicWall, alleges security failings with its firewall backup led to ransomware attack",
-        "link": "https://techcrunch.com/2026/02/24/marquis-sonicwall-lawsuit-ransomware-firewall-breach/",
-        "summary": "- Marquis is suing SonicWall for alleged security failures that exposed sensitive customer firewall information, leading to a ransomware attack and significant reputational and financial damage.  \n- The lawsuit claims vulnerability in SonicWall's backup service, allowing hackers to access critical internal configurations, compromised at least 400,000 individuals' personal data, including financial details.  \n- SonicWall admitted to the breach in September but initially misreported its severity, prompting Marquis to seek legal recourse and answers regarding the breach's root cause.  ",
-        "date": "24 Feb 2026 16:37"
-    },
-    {
-        "id": 1771966946,
-        "category": "Tech",
-        "title": "Ukraine’s startups keep building",
-        "link": "https://techcrunch.com/2026/02/24/ukraines-startups-keep-building/",
-        "summary": "- Ukrainian startups, including unicorn Preply, continue to thrive amid the war, expanding teams and innovating across various sectors, particularly in defense and mental health tech.  \n- Special status protects key startup employees from military draft, enabling firms like Aspichi to support mental health for war-affected Ukrainians.\n- Despite ongoing challenges, Kyiv and Lviv remain pivotal tech hubs, with investment activities and events like IT Arena 2025 showcasing resilience and growth.",
-        "date": "24 Feb 2026 15:48"
-    },
-    {
-        "id": 1771966951,
-        "category": "Tech",
-        "title": "Meta strikes up to $100B AMD chip deal as it chases ‘personal superintelligence’",
-        "link": "https://techcrunch.com/2026/02/24/meta-strikes-up-to-100b-amd-chip-deal-as-it-chases-personal-superintelligence/",
-        "summary": "- Meta has entered a multiyear agreement to purchase up to $100 billion in AMD chips, supporting its goal for “personal superintelligence” via advanced AI infrastructure.  \n- The deal includes performance-based warrants for AMD stock tied to company milestones, emphasizing Meta's strategy to diversify away from Nvidia.  \n- Meta is projected to invest $600 billion in U.S. data centers and AI over the next several years, driving significant growth in computational capacity.  ",
-        "date": "24 Feb 2026 15:15"
-    },
-    {
-        "id": 1771966955,
-        "category": "Tech",
-        "title": "Oura launches a proprietary AI model focused on women’s health",
-        "link": "https://techcrunch.com/2026/02/24/oura-launches-a-proprietary-ai-model-focused-on-womens-health/",
-        "summary": "- Oura has launched a proprietary AI model for its chatbot, Oura Advisor, to provide personalized insights on women's health, covering the entire reproductive spectrum from menstruation to menopause.  \n- The model integrates clinical research and biometric data, offering tailored guidance without replacing professional medical advice.  \n- This initiative addresses a growing demand for specialized health solutions, particularly among a rapidly increasing demographic of young women users.",
-        "date": "24 Feb 2026 15:08"
-    },
-    {
-        "id": 1771966959,
-        "category": "Tech",
-        "title": "Final 4 days to save up to $680 on your TechCrunch Disrupt 2026 pass",
-        "link": "https://techcrunch.com/2026/02/24/final-4-days-to-save-up-to-680-on-your-techcrunch-disrupt-2026-pass/",
-        "summary": "- The TechCrunch Disrupt 2026 event, scheduled for October 13-15, offers significant networking and insights opportunities for over 10,000 attendees, including founders, operators, and VCs.  \n- Super Early Bird pricing ends on February 27, allowing participants to save up to $680 on passes and secure access to critical industry dialogues and investment opportunities.  \n- Startup Battlefield returns with 200 pre-Series A companies competing for $100,000 in equity-free funding, highlighting innovation in the tech ecosystem.  ",
-        "date": "24 Feb 2026 15:00"
-    },
-    {
-        "id": 1771966963,
-        "category": "Tech",
-        "title": "Anthropic launches new push for enterprise agents with plug-ins for finance, engineering, and design",
-        "link": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/",
-        "summary": "- Anthropic launched its enterprise agents program, enabling businesses to deploy AI-driven plug-ins for finance, engineering, and HR, enhancing workplace efficiency.  \n- The initiative aims to expand Anthropic's client base while presenting a competitive challenge to existing SaaS solutions.  \n- New features incorporate customizable workflows and integrations with familiar tools like Gmail and DocuSign, streamlining enterprise operations.",
-        "date": "24 Feb 2026 14:45"
-    },
-    {
-        "id": 1771966967,
-        "category": "Tech",
-        "title": "Conduent data breach grows, affecting at least 25M people",
-        "link": "https://techcrunch.com/2026/02/24/conduent-data-breach-grows-affecting-at-least-25m-people/",
-        "summary": "- Conduent's data breach, stemming from a January 2025 ransomware attack, has compromised personal information of over 25 million individuals in the U.S., significantly impacting its government and corporate service operations.\n- Affected data includes names, Social Security numbers, and health information, raising concerns about privacy and identity theft among millions.\n- The company's lack of transparency regarding the breach, including limited communication and a hidden incident notice, hinders affected individuals from accessing vital information on mitigating potential risks.",
-        "date": "24 Feb 2026 14:09"
-    },
-    {
-        "id": 1771966971,
-        "category": "Tech",
-        "title": "Mogul says it has tracked $1.5B in music royalties, raised $5M in funding",
-        "link": "https://techcrunch.com/2026/02/24/mogul-tracked-1-5-billion-music-royalties-raised-5m-funding/",
-        "summary": "- Mogul has tracked $1.5 billion in music royalties since its launch, helping artists optimize earnings by managing complex royalty data.  \n- The platform secured $5 million in funding, enhancing its capabilities in catalog valuation and bulk registration, resulting in a reported 20% increase in user royalties.  \n- As the music industry navigates AI-generated content, Mogul is poised to address emerging royalty tracking challenges amid evolving regulatory frameworks.  ",
-        "date": "24 Feb 2026 14:00"
-    },
-    {
-        "id": 1771966977,
-        "category": "Finance",
-        "title": "Nike vs. On: Which Stock Is the Better Buy?",
-        "link": "https://finance.yahoo.com/news/nike-vs-stock-better-buy-122000194.html",
-        "summary": "- Nike faces challenges with a 15% stock decline over the past year but maintains industry dominance and is stabilizing under new CEO Elliott Hill, with a growing dividend yield of 2.5%.\n- In contrast, On Holding shows strong growth, achieving a 35% year-over-year sales increase, with robust performance in apparel, and an impressive gross margin rise from 60.6% to 65.7%. \n- Both companies highlight a competitive landscape in the athletic market, with Nike's established presence contrasted by On's innovative approach and premium positioning.",
-        "date": "2026-02-23T12:20"
-    },
-    {
-        "id": 1771966982,
-        "category": "Finance",
-        "title": "Job Changes and Your 401(k): 5 Hidden Ways Retirement Savings Can Slip Away",
-        "link": "https://finance.yahoo.com/news/job-changes-401-k-5-121319883.html",
-        "summary": "- Workers changing jobs risk losing retirement savings if they overlook forgotten employer-sponsored plans, which can be tracked through the U.S. Department of Labor's Retirement Savings Lost and Found Database.\n- Unrepaid loans from 401(k) plans may incur income tax and penalties, classifying the outstanding balances as withdrawals, potentially impacting financial stability.\n- Understanding employer matching contributions and vesting schedules is crucial, as missing out on these benefits can severely hinder retirement savings growth.",
-        "date": "2026-02-23T12:13"
-    },
-    {
-        "id": 1771966987,
-        "category": "Finance",
-        "title": "What a 10% Market Drop Would Mean for Retirees Living on Withdrawals Right Now",
-        "link": "https://finance.yahoo.com/news/10-market-drop-mean-retirees-121505746.html",
-        "summary": "- A 10% market drop impacts retirees' withdrawals, particularly due to sequence-of-returns risk, potentially jeopardizing the longevity of their portfolios.  \n- Retirees may need to sell more shares to maintain living expenses, exacerbating financial strain and hindering recovery.  \n- The 4% withdrawal rule becomes less sustainable in downturns, necessitating higher withdrawal rates that increase the risk of depleting retirement savings.  ",
-        "date": "2026-02-23T12:15"
-    },
-    {
-        "id": 1771966993,
-        "category": "Finance",
-        "title": "Chipotle Mexican Grill Stock: Analyst Estimates & Ratings",
-        "link": "https://finance.yahoo.com/news/chipotle-mexican-grill-stock-analyst-124210963.html",
-        "summary": "- Chipotle Mexican Grill's stock (CMG) has decreased by 29.2% over the past year, significantly underperforming the S&P 500, which gained 13%. \n- The company reported Q4 FY2025 revenue of $3 billion, with adjusted EPS flat at $0.25, despite a 2.5% decline in comparable sales due to reduced customer traffic. \n- Analyst consensus on CMG stock is a \"Moderate Buy,\" with Citi raising its price target from $48 to $49.",
-        "date": "2026-02-23T12:42"
-    },
-    {
-        "id": 1771966999,
-        "category": "Finance",
-        "title": "Ameriprise Financial Stock Outlook: Is Wall Street Bullish or Bearish?",
-        "link": "https://finance.yahoo.com/news/ameriprise-financial-stock-outlook-wall-124357956.html",
-        "summary": "- Ameriprise Financial (AMP) has underperformed the market with a 12.8% decline over the past year, contrasted by a 13% increase in the S&P 500.  \n- Despite recent challenges, Q4 2025 earnings surpassed expectations with adjusted EPS rising 16% and revenues increasing 10%, leading to a 4.3% stock price uptick.  \n- Analyst consensus on AMP is a \"Moderate Buy,\" with Jefferies raising its price target to $620, indicating renewed bullish sentiment.",
-        "date": "2026-02-23T12:43"
-    },
-    {
-        "id": 1771967003,
-        "category": "Finance",
-        "title": "Is Ethereum good enough for Wall Street? If history is any guide, the answer is clear",
-        "link": "https://finance.yahoo.com/news/ethereum-good-enough-wall-street-122923063.html",
-        "summary": "- Ethereum Denver showcased the growing interest in Ethereum as Wall Street explores blockchain solutions amid competition from alternatives like Canton, which is favored by major financial institutions for privacy.\n- Historical trends suggest that open blockchain systems, such as Ethereum, outperform proprietary solutions, potentially ensuring Ethereum's continued relevance despite current banking preferences.\n- Past attempts at creating closed blockchain systems, like the R3 initiative, have largely failed, indicating that Ethereum might ultimately remain integral to the financial sector's advancement.",
-        "date": "2026-02-23T12:29"
-    },
-    {
-        "id": 1771967009,
-        "category": "Finance",
-        "title": "Are Wall Street Analysts Predicting Assurant Stock Will Climb or Sink?",
-        "link": "https://finance.yahoo.com/news/wall-street-analysts-predicting-assurant-124600022.html",
-        "summary": "- Assurant, Inc. (AIZ), with an $11.2 billion market cap, reported a 7.9% YoY revenue increase to $3.35 billion, despite an 8.7% stock dip post-FY2025 Q4 earnings announcement.  \n- Analysts project a 6.4% YoY EPS rise to $21.04 for FY2026, with a consensus rating of \"Moderate Buy.\"  \n- BMO Capital maintains an \"Outperform\" rating, lowering the price target to $246, indicating a potential upside of 16.1%.",
-        "date": "2026-02-23T12:46"
-    },
-    {
-        "id": 1771967014,
-        "category": "Finance",
-        "title": "RS Large Cap Value Strategy’s Views on Sealed Air Corporation (SEE)",
-        "link": "https://finance.yahoo.com/news/rs-large-cap-value-strategy-125602697.html",
-        "summary": "- RS Large Cap Value Strategy reported a 5.77% net return in Q4 2025, outperforming the Russell 1000® Value Index by 1.96% due to strong stock selection in Health Care and Financials.\n- Sealed Air Corporation (NYSE:SEE) has shown robust performance, with a one-month return of 0.33% and a 52-week gain of 30.56%, reflecting its strong market position in packaging.\n- The firm identifies emerging opportunities in value-oriented stocks amidst high risk concentration, positioning them favorably for value investors in 2026.",
-        "date": "2026-02-23T12:56"
-    },
-    {
-        "id": 1771967019,
-        "category": "Finance",
-        "title": "Gold-Like Swiss Franc May Surge 17%, Morgan Stanley’s Adams Says",
-        "link": "https://finance.yahoo.com/news/gold-swiss-franc-may-surge-121056413.html",
-        "summary": "- Morgan Stanley projects the Swiss franc could appreciate up to 17% against the dollar, reaching a lifetime high of 0.64, due to its status as a safe haven amidst US policy uncertainty.  \n- The franc's strength is bolstered by Switzerland’s low inflation, fiscal stability, and a surge in hedge funds’ positive positions, indicating increased investor confidence.  \n- While a stronger franc may prompt intervention from Switzerland's central bank to manage deflation, economists suggest the bank is currently less inclined to act against its appreciation.  ",
-        "date": "2026-02-23T12:10"
-    },
-    {
-        "id": 1771967024,
-        "category": "Finance",
-        "title": "Indian telecom firm Bharti Airtel to invest $2.2 billion to expand digital lending",
-        "link": "https://finance.yahoo.com/news/indian-telecom-firm-bharti-airtel-111532339.html",
-        "summary": "- Bharti Airtel plans to invest $2.2 billion in its financial arm, Airtel Money, to enhance its digital lending capabilities following its receipt of an NBFC license from the Reserve Bank of India.\n- The investment aims to leverage Airtel's extensive customer base amid intensifying competition in India's non-bank lending sector, where rivals include Jio Financial Services and Bajaj Finance.\n- This strategic move diversifies Airtel's portfolio beyond telecom, potentially positioning it as a significant player in the lucrative financial services market.",
-        "date": "2026-02-23T11:15"
-    },
-    {
-        "id": 1771967030,
-        "category": "Finance",
-        "title": "Stocks Set to Open Lower Amid Tariff Uncertainty, Nvidia Earnings and U.S. Economic Data Awaited",
-        "link": "https://finance.yahoo.com/news/stocks-set-open-lower-amid-111401119.html",
-        "summary": "- U.S. stocks are poised to open lower amid uncertainty after President Trump's announcement of a tariff increase to 15%, following a Supreme Court ruling on trade.  \n- The core PCE index rose 0.4% month-over-month, indicating stronger inflation, while Q4 GDP growth was weaker at 1.4% annualized.  \n- Investor focus shifts to Nvidia's upcoming earnings, U.S. economic data, and comments from Federal Reserve officials, which could impact monetary policy outlook.",
-        "date": "2026-02-23T11:14"
-    },
-    {
-        "id": 1771967035,
-        "category": "Finance",
-        "title": "Comvita receives offshore interest for capital raise",
-        "link": "https://finance.yahoo.com/news/comvita-receives-offshore-interest-capital-122530149.html",
-        "summary": "- Comvita has garnered credible overseas interest for a capital raise, essential for its NZ$25 million recapitalisation plan, with a strategic investor offering to underwrite at NZ$0.80 per share.  \n- The company reported a 18.3% revenue increase to NZ$118 million and a net profit of NZ$4.6 million for the six months ended December 2025, marking a significant recovery.  \n- Comvita continues discussions with lenders to extend debt facilities and aims to maintain operational improvements while navigating its recapitalisation process.  ",
-        "date": "2026-02-23T12:25"
-    },
-    {
-        "id": 1771967041,
-        "category": "Finance",
-        "title": "Polymarket Shows 75% Odds of Bitcoin Dropping Below $55K – What Traders Need to Know",
-        "link": "https://finance.yahoo.com/news/polymarket-shows-75-odds-bitcoin-121119394.html",
-        "summary": "- Prediction market Polymarket shows a 75% likelihood of Bitcoin dropping below $55,000, following an 18% rise in bearish sentiment amid struggles to maintain $65,000 support.\n- Bitcoin's market cap has fallen to $1.31 trillion, risking its position against major assets like the Vanguard S&P 500 ETF.\n- Deviating from traditional inflation-hedge narratives, institutional Bitcoin ETF outflows and technical indicators suggest a potential deeper correction, possibly towards $50,000.",
-        "date": "2026-02-23T12:11"
-    },
-    {
-        "id": 1771967046,
-        "category": "Finance",
-        "title": "The Best Dividend Stocks to Buy and Hold Forever",
-        "link": "https://finance.yahoo.com/news/best-dividend-stocks-buy-hold-121300275.html",
-        "summary": "- Consistent dividend growth can outweigh high initial yields, particularly in the tech sector, offering long-term value to investors.\n- Broadcom’s dividend has grown at an annualized rate of 12% over five years, supported by strong AI demand, with potential yields of 2.39% and 7.43% in 10 and 20 years respectively.\n- Microsoft, known for robust profits and a 10% annual dividend increase, remains resilient in the AI market despite recent software sell-offs.",
-        "date": "2026-02-23T12:13"
-    },
-    {
-        "id": 1771967050,
-        "category": "Finance",
-        "title": "Is bitcoin's price slump an investing opportunity? Here's how to buy bitcoin.",
-        "link": "https://finance.yahoo.com/personal-finance/investing/article/how-to-buy-bitcoin-222211772.html",
-        "summary": "- Bitcoin's recent price volatility is seen by many investors as a buying opportunity, despite the high-risk nature of the asset. \n- Various methods to buy bitcoin are now available, including cryptocurrency exchanges, fintech apps, and bitcoin ETFs, enhancing accessibility and integration into traditional finance.\n- As of January 2024, bitcoin ETFs have attracted significant investment, allowing easier access for retail investors without the need for private wallets or keys.",
-        "date": "2026-02-19T22:22"
     }
 ]
