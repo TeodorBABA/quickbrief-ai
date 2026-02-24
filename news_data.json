@@ -1,5 +1,45 @@
 [
     {
+        "id": 1771954735,
+        "source": "Yahoo Finance",
+        "title": "Nvidia Earnings Are Coming. This Option Trade Sets Up A Way To Profit.",
+        "link": "https://www.investors.com/research/options/earnings-are-coming-for-nvidia-stock-this-option-trade-sets-up-a-way-to-profit/?src=A00220&yptr=yahoo",
+        "summary": "- Nvidia is expected to report earnings on Wednesday, with the options market projecting a significant 6.3% price fluctuation, indicating heightened investor anticipation.\n- Current implied volatility stands at 75%, markedly higher than its usual 45%, signaling increased risk and potential reward surrounding the earnings announcement.\n- A strategy utilizing cash-secured puts is being recommended to capitalize on this volatility, potentially allowing for profit or favorable entry points amidst market uncertainty.",
+        "date": "2026-02-24T17:20"
+    },
+    {
+        "id": 1771954732,
+        "source": "Yahoo Finance",
+        "title": "Tech news today: Countdown to Nvidia earnings begins as AI fears weigh on stocks",
+        "link": "https://finance.yahoo.com/news/live/tech-news-today-countdown-to-nvidia-earnings-begins-as-ai-fears-weigh-on-stocks-133213988.html",
+        "summary": "- Nvidia's upcoming earnings report is a critical barometer for the AI sector; strong results could bolster investor confidence, while disappointing numbers may exacerbate existing market fears surrounding AI investments and valuations.\n\n- As the most significant player in the AI chip market, Nvidia's performance heavily influences the S&P 500 and broader tech stock valuations, making it essential for executives to monitor potential shifts based on upcoming results.\n\n- Recent stock declines, illustrated by IBM's 13% drop after AI competition concerns, underscore the urgent need for businesses to assess their exposure to AI and adapt strategies in response to evolving market dynamics driven by Nvidia's performance.",
+        "date": "2026-02-24T13:32"
+    },
+    {
+        "id": 1771954725,
+        "source": "Yahoo Finance",
+        "title": "Texas Capital Bancshares Could Soar If These 2 Things Go Right",
+        "link": "https://finance.yahoo.com/news/texas-capital-bancshares-could-soar-173300272.html",
+        "summary": "- **Diverse Revenue Growth**: Texas Capital Bancshares is strategically diversifying its revenue streams, with fee-based revenues reaching a record $229 million in 2025 and a projected $160-$175 million from investment banking in 2026, enhancing its financial stability and appeal to investors.\n\n- **Strengthened Mortgage Portfolio**: The bank has fortified its mortgage finance operations, significantly reducing capital requirements through better credit structures, which could result in a 15% growth in balances in 2026, effectively generating over $275 million in regulatory capital.\n\n- **Attractive Valuation Amidst Steady Performance**: Currently trading at a forward P/E ratio of 13.5, Texas Capital's reasonable valuation reflects its improved profitability and revenue stability, although investors should be cautious of modest growth compared to broader market indices.",
+        "date": "2026-02-24T17:33"
+    },
+    {
+        "id": 1771954719,
+        "source": "TechCrunch",
+        "title": "Stripe’s valuation soars 74% to $159 billion",
+        "link": "https://techcrunch.com/2026/02/24/stripes-valuation-soars-74-to-159-billion/",
+        "summary": "- Stripe achieves significant growth with a 74% increase in valuation, reaching $159 billion amid rising investor confidence and robust demand for its payment solutions.\n- The company's strategic focus on cryptocurrency has paid off, with stablecoin payment volumes doubling to $400 billion, showcasing strong traction in the B2B sector.\n- Continued investment in innovative payment technologies, such as its own blockchain and recent acquisitions, positions Stripe as a leader in the evolving digital finance landscape.",
+        "date": "24 Feb 2026 17:28"
+    },
+    {
+        "id": 1771954715,
+        "source": "CNBC Top News",
+        "title": "Software stocks rebound as Anthropic announces new partnerships",
+        "link": "https://www.cnbc.com/2026/02/24/software-stocks-anthropic-ai.html",
+        "summary": "- **Sector Resilience:** Software stocks showed a significant rebound, driven by Anthropic's announcement of new partnerships, easing investor concerns about AI displacement within the sector.\n\n- **Integration Potential:** Anthropic's updates to Claude Cowork facilitate seamless integration with key enterprise applications (e.g., Slack, Gmail), enhancing productivity across diverse industries such as finance and HR.\n\n- **Market Surge:** Following the news, shares of Salesforce, Docusign, and LegalZoom climbed by 4%, while Thomson Reuters soared over 11%, underscoring strong investor confidence in AI-enhanced software solutions.",
+        "date": "24 Feb 2026 17:23"
+    },
+    {
         "id": 1771953654,
         "source": "Yahoo Finance",
         "title": "US software stocks climb as Anthropic announcement sparks relief rally",
@@ -203,24 +243,6 @@
         "title": "Rusia avertizează asupra unui „efect de domino” dacă SUA vor relua testele nucleare, așa cum a anunțat președintele Donald Trump",
         "link": "https://hotnews.ro/rusia-avertizeaza-asupra-unui-efect-de-domino-daca-sua-vor-relua-testele-nucleare-asa-cum-a-anuntat-presedintele-donald-trump-2178416",
         "summary": "1. Rusia avertizează că reluarea testelor nucleare de către SUA ar putea provoca un „efect de domino” și că responsabilitatea consecințelor ar reveni în totalitate Washingtonului.  \n2. SUA acuza China și Rusia de efectuarea unor teste nucleare secrete și planifică reluarea propriilor teste ca răspuns, subliniind că nu vor fi teste de amploare ca cele din trecut.  \n3. Ambasadorul rus a declarat că poziția SUA ar adăuga provocări Tratatului de interzicere totală a testelor nucleare (TICE), care nu a intrat în vigoare, având până acum doar Franța și Marea Britanie ca state ratificatoare.",
-        "date": "24-02-2026 18:44",
-        "category": "General"
-    },
-    {
-        "id": 2,
-        "source": "HotNews",
-        "title": "Administrația Prezidențială explică oficial de ce Nicușor Dan nu a promulgat încă legea care modifică pensiile magistraților, după criticile lui CTP",
-        "link": "https://hotnews.ro/administratia-prezidentiala-explica-oficial-de-ce-nicusor-dan-nu-a-promulgat-legea-care-modifica-pensiile-magistratilor-2178454",
-        "summary": "1. Administrația Prezidențială a explicat că președintele Nicușor Dan nu poate promulga legea pensiilor magistraților fără decizia Curții Constituționale care confirmă constituționalitatea acesteia.  \n2. Critica lui Cristian Tudor Popescu față de întârzierea promulgării legii a generat un număr mare de reacții pe rețelele sociale, însă președinția a clarificat că legalitatea promulgării depinde de comunicarea oficială de la CCR.  \n3. Curtea Constituțională urmează să finalizeze și să publice decizia referitoare la legea pensiilor magistraților în Monitorul Oficial, ceea ce va permite președintelui să procedeze cu promulgarea sau trimiterea legii înapoi în Parlament.  ",
-        "date": "24-02-2026 18:44",
-        "category": "General"
-    },
-    {
-        "id": 1,
-        "source": "HotNews",
-        "title": "„Aș vrea un copil. Am investit prea mult în munca mea și prea puțin în viața mea. Dacă totul se va sfârși, nu voi mai avea nimic”. Dezvăluirea făcută de una dintre cele mai mari cântărețe din Italia cu câteva ore înainte de începerea Festivalului de la Sanremo",
-        "link": "https://hotnews.ro/as-vrea-un-copil-am-investit-prea-mult-in-munca-mea-si-prea-putin-in-viata-mea-daca-totul-se-va-sfarsi-nu-voi-mai-avea-nimic-dezvaluirea-facuta-de-una-dintre-cele-mai-mari-cantar-2178460",
-        "summary": "1. Arisa, cântăreață italiană, își exprimă dorința profundă de a deveni mamă și regretă că a investit prea mult în cariera sa, neglijând viața personală.  \n2. În timpul unui interviu, ea reflectează asupra pierderilor pe care le-a suferit mama sa și cum acestea îi influențează perspectiva asupra vieții.  \n3. Festivalul de la Sanremo, la care Arisa participă ca artist, este una dintre cele mai populare destinații de divertisment din Italia, atrăgând milioane de telespectatori.",
         "date": "24-02-2026 18:44",
         "category": "General"
     }
