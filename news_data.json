@@ -184,6 +184,62 @@
         "date": "23 Feb 2026 12:27"
     },
     {
+        "category": "Markets",
+        "title": "Loop Capital upgrades this semiconductor stock as key headwinds ease and its strategy diversifies",
+        "link": "https://www.cnbc.com/2026/02/24/loop-capital-upgrades-this-semiconductor-stock-as-key-headwinds-ease-and-its-strategy-diversifies.html",
+        "summary": "- Loop Capital upgraded Qualcomm to a buy rating, increasing its price target from $140 to $185, suggesting a potential upside of 32%.  \n- Qualcomm's shares have underperformed in the chip sector, down 13% over the past year, with expectations for recovery linked to easing headwinds and diversification into non-smartphone revenue streams.  \n- The upcoming analyst day, anticipated in June, is expected to showcase Qualcomm's progress in automotive and IoT sectors, which could further stabilize and grow its revenues.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Markets",
+        "title": "Deutsche Bank downgrades private credit poster child Blue Owl after recent sell-off",
+        "link": "https://www.cnbc.com/2026/02/24/shares-of-private-credit-posterchild-blue-owl-are-falling-after-a-downgrade.html",
+        "summary": "- Deutsche Bank downgraded Blue Owl Capital to \"hold\" from \"buy,\" reducing its price target to $10 from $15, reflecting slower fee-related earnings growth.  \n- Blue Owl's shares fell 52% over the past year and 30% in 2023, amid concerns about its exposure to software industry loans and ongoing private credit sell-off.  \n- The firm has restricted withdrawals from one retail-focused debt fund and could face increased redemption requests amidst adverse market sentiment.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Markets",
+        "title": "Raymond James double upgrades this auto parts distributor ahead of planned business separation",
+        "link": "https://www.cnbc.com/2026/02/24/raymond-james-double-upgrades-this-auto-parts-distribution-ahead-of-planned-business-separation.html",
+        "summary": "- Raymond James has upgraded Genuine Parts Company to a \"strong buy,\" increasing the price target to $145, anticipating a 25% upside as it undergoes a strategic business separation.\n- The separation aims to optimize the value of its automotive (NAPA) and industrial (Motion Industries) segments, with completion expected by Q1 2027.\n- Despite current share performance down 5% annually, improved industrial data and upcoming investor days are positioned to enhance GPC's valuation.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Tech",
+        "title": "Nvidia challenger AI chip startup MatX raised $500M",
+        "link": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+        "summary": "- MatX, a chip startup founded by ex-Google engineers, raised $500 million in Series B funding led by Jane Street and Situational Awareness.  \n- The company aims to develop processors that outperform Nvidia’s GPUs for LLMs by tenfold.  \n- Founded in 2023, MatX plans to begin shipping its chips in 2027, with TSMC manufacturing support.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Tech",
+        "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
+        "link": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
+        "summary": "- Wayve, a U.K. self-driving tech startup, raised $1.2 billion in funding from notable investors including Nvidia, Uber, and three automakers, valuing the company at $8.6 billion.  \n- The company’s innovative approach employs end-to-end deep learning and does not rely on high-definition maps, focusing on a data-driven software model.  \n- Wayve's partnerships with Nissan and Uber will enhance driver-assistance systems and expand commercial trials for robotic taxis globally.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Finance",
+        "title": "Surgery Partners Stock Down 39% as One Fund Slashes Stake by $19 Million",
+        "link": "https://finance.yahoo.com/news/surgery-partners-stock-down-39-202339028.html",
+        "summary": "- Irenic Capital Management sold over 1 million shares of Surgery Partners, reducing its stake to 0.09% of its assets, with a transaction value of approximately $19.25 million.  \n- Surgery Partners' stock has decreased by 39.7% in the past year, underperforming the S&P 500 significantly.  \n- Operationally, the company reported a 6.6% revenue increase in Q3, with guidance suggesting revenue could reach $3.30 billion for the year.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Finance",
+        "title": "RE/MAX Q4 Earnings Call Highlights",
+        "link": "https://finance.yahoo.com/news/max-q4-earnings-call-highlights-202042114.html",
+        "summary": "- RE/MAX reported Q4 2025 revenue of $71.1 million, adjusted EBITDA of $22.4 million, and an agent count of over 148,500, marking significant growth, especially outside North America.  \n- The company entered 2026 with a record brokerage conversion in Canada, adding nearly 1,200 agents and observing high retention rates.  \n- Management expects 2026 revenue between $285 million and $305 million while maintaining leverage below 3.5x for growth and capital flexibility.",
+        "date": "2026-02-25 09:50"
+    },
+    {
+        "category": "Finance",
+        "title": "Da Vinci 5 Sparks Optimism Around Intuitive Surgical, Inc. (ISRG)",
+        "link": "https://finance.yahoo.com/news/da-vinci-5-sparks-optimism-203711642.html",
+        "summary": "- Intuitive Surgical, Inc. (NASDAQ:ISRG) received positive ratings upgrades, with Freedom Capital raising its price target to $610 and Barclays’ Matt Miksic elevating it to $712.  \n- The firm's 2024-2026 topline forecasts are driving optimism, particularly with the anticipated launch of the da Vinci 5 system.  \n- ISRG remains a leading player in the robotic-assisted surgery market, primarily known for its da Vinci Surgical System.",
+        "date": "2026-02-25 09:50"
+    },
+    {
         "category": "Tech",
         "title": "Uber engineers built an AI version of their boss",
         "link": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
@@ -315,61 +371,5 @@
         "link": "https://finance.yahoo.com/news/nat-gas-prices-erase-early-202156043.html",
         "summary": "• March natural gas prices fell 2.03% after forecasts predicted above-normal temperatures in the US, decreasing heating demand.  \n• US dry gas production reached 113.7 bcf/day, marking a 9% year-over-year increase, contributing to bearish price outlooks.  \n• Natural gas inventories are down 1.5% year-over-year, remaining below the 5-year average, indicating continued supply tightness despite recent production highs.",
         "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Up 40% in 2026, Is There More Upside Left in Store for RingCentral Stock?",
-        "link": "https://finance.yahoo.com/news/40-2026-more-upside-left-202622634.html",
-        "summary": "• RingCentral's stock surged 34.4% following strong Q4 results, reflecting a nearly 40% year-to-date increase, driven by enhanced AI capabilities.  \n• The company's annual recurring revenue (ARR) from AI tools doubled, contributing to an optimistic outlook that exceeds analysts' expectations.  \n• With a market cap of $3.42 billion and a lower price-to-earnings ratio compared to the industry average, RingCentral demonstrates solid growth potential.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Bitcoin ETFs are hemorrhaging billions. Here’s what investors awaiting a crypto turnaround should watch for.",
-        "link": "https://finance.yahoo.com/news/bitcoin-etfs-hemorrhaging-billions-investors-201600072.html",
-        "summary": "• Bitcoin is stuck in a range of $60,000 to $70,000, continuing its bear market, prompting investors to anticipate a prolonged downturn.  \n• U.S. bitcoin ETFs have experienced $2.6 billion in outflows since the start of 2026, contrasting with $4.3 billion in net inflows during the same period in 2025.   \n• Institutional investors are moving away from high-risk assets, contributing to ongoing bearish trends amidst economic uncertainties like rising interest rates and tariff fluctuations.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "I’m a 61-year-old retiree and sitting on $7 million – here’s my advice for anyone considering retirement",
-        "link": "https://finance.yahoo.com/news/m-61-old-retiree-sitting-201556712.html",
-        "summary": "• A Reddit user, now a $7 million retiree, emphasizes the importance of trialing retirement before making the final decision to leave the workforce, as not everyone thrives in a leisure lifestyle.  \n• He regrets not retiring earlier, noting his nest egg grew significantly post-retirement, suggesting that financial security may allow for more enjoyment in life.  \n• His advice highlights the mental challenges of retirement, urging individuals to assess their fulfillment outside of traditional work roles.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Snowflake Inc. (SNOW) Expands AI Reach With Strategic Partnerships and Industry Adoption",
-        "link": "https://finance.yahoo.com/news/snowflake-inc-snow-expands-ai-194910063.html",
-        "summary": "• Snowflake Inc. has expanded its AI capabilities through a $200 million partnership with OpenAI, allowing customers to leverage AI models for custom applications.  \n• Wolfspeed integrates Snowflake’s AI Data Cloud into its operations, enhancing manufacturing efficiency and operational transparency.  \n• These strategic moves position Snowflake as a leading player in the AI sector, enhancing its growth potential and market reach.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Got $5,000? 2 Tech Stocks to Buy and Hold for the Long Term",
-        "link": "https://finance.yahoo.com/news/got-5-000-2-tech-200600655.html",
-        "summary": "• Nvidia holds 86% market share in AI data center processors, driving a 67% year-over-year increase in data center revenue, totaling over $51 billion in Q3.  \n• Continued AI infrastructure investments, projected at over $650 billion from major tech companies, bolster Nvidia’s competitive advantage.  \n• Alphabet’s Google Cloud segment saw a 48% sales spike to $17.7 billion, further enhanced by a partnership with Apple for AI advancements.",
-        "date": "2026-02-25 07:32"
-    },
-    {
-        "category": "Finance",
-        "title": "CEVA, Inc. (CEVA) Reports Record Q4, Expanding AI Connectivity Demand",
-        "link": "https://finance.yahoo.com/news/ceva-inc-ceva-reports-record-194907165.html",
-        "summary": "• CEVA, Inc. reported record Q4 revenue of $31.3 million, a 7% year-over-year increase, bolstered by 18 new licensing agreements in AI connectivity.  \n• Royalty revenue rose 2% to $13.8 million, contributing to a full-year revenue increase to $109.6 million, with licensing revenue surging 65%.  \n• The company achieved improved operating income and reduced loss per share, highlighting effective execution and strong market demand for its AI technologies.",
-        "date": "2026-02-25 07:32"
-    },
-    {
-        "category": "Finance",
-        "title": "ServiceNow Inc (NOW) Expands AI Strategy With Key Acquisitions",
-        "link": "https://finance.yahoo.com/news/servicenow-inc-now-expands-ai-194904140.html",
-        "summary": "• ServiceNow Inc. expands its AI strategy by acquiring Pyramid Analytics, enhancing its unified AI-powered analytics and data science capabilities.  \n• This follows prior acquisitions of Data World and Veza, aimed at integrating deeper context into ServiceNow's offerings.  \n• Bernstein maintains an Outperform rating with a target price of $219, expecting strong subscription revenue growth driven by AI developments.",
-        "date": "2026-02-25 07:32"
-    },
-    {
-        "category": "Finance",
-        "title": "Amazon (AMZN) Navigates Investment Cycle and Strategic Developments",
-        "link": "https://finance.yahoo.com/news/amazon-amzn-navigates-investment-cycle-194927456.html",
-        "summary": "• Goldman Sachs identifies Amazon as a top growth stock, despite Moody's adjusting its outlook to stable from positive due to increased capital spending surpassing $200 billion.  \n• Amazon aims to expand AWS and AI capabilities yet may require external funding amidst intensified competition in AI markets.  \n• TRISO-X, backed by Amazon, secures a rare US NRC license to produce new nuclear fuel, marking a significant regulatory milestone.",
-        "date": "2026-02-25 07:32"
     }
 ]
