@@ -1,16 +1,13 @@
 import os
 import json
-from instagrapi import Client
+import requests
 
-# --- CONFIGURARE ---
 JSON_FILE = "news_data.json"
 LOG_FILE = "posted_ids.txt"
-IMAGE_FILE = "last_news_post.jpg"
 
 def get_latest_news_item():
     if not os.path.exists(LOG_FILE) or not os.path.exists(JSON_FILE):
         return None
-    
     with open(LOG_FILE, "r") as f:
         lines = f.read().splitlines()
         if not lines: return None
@@ -24,45 +21,39 @@ def get_latest_news_item():
             return item
     return None
 
-def post_to_instagram():
-    # Preluăm Session ID-ul
-    sessionid = os.getenv("IG_SESSIONID")
-
-    if not sessionid:
-        print("Eroare: Lipsește IG_SESSIONID din GitHub Secrets.")
-        return
-
-    if not os.path.exists(IMAGE_FILE):
-        print("Nu există nicio imagine nouă de postat.")
+def post_to_make():
+    webhook_url = os.getenv("MAKE_WEBHOOK_URL")
+    if not webhook_url:
+        print("Eroare: Lipsește MAKE_WEBHOOK_URL din GitHub Secrets.")
         return
 
     news_item = get_latest_news_item()
     if not news_item:
-        print("Eroare: Nu am putut găsi textul corespunzător imaginii.")
+        print("Eroare: Nu am putut găsi știrea.")
         return
 
-    # Construim descrierea
-    caption = f"🚨 {news_item.get('title')}\n\n"
-    caption += f"📊 {news_item.get('social_text')}\n\n"
-    caption += f"💼 Categorie: {news_item.get('category').upper()}\n"
-    caption += ".\n.\n.\n"
-    caption += "#businessintelligence #executivebriefing #markets #tech #finance #brieflylife #news"
-
-    print("Încercăm conectarea folosind Session ID...")
-    cl = Client()
+    # Extragem ID-ul unic al actualizării pentru a evita cache-ul
+    commit_hash = os.getenv("COMMIT_HASH", "main")
     
-    try:
-        # Ne logăm folosind cookie-ul, trecând de blocajul IP-ului
-        cl.login_by_sessionid(sessionid)
-        print("Autentificare reușită! Încărcăm imaginea...")
-        
-        media = cl.photo_upload(IMAGE_FILE, caption)
-        print(f"✅ Postare reușită! Link: https://www.instagram.com/p/{media.code}/")
-        
-        os.remove(IMAGE_FILE)
-        
-    except Exception as e:
-        print(f"❌ Eroare la postarea pe Instagram: {e}")
+    # Construim link-ul public către imaginea ta din GitHub
+    image_url = f"https://raw.githubusercontent.com/TeodorBABA/quickbrief-ai/{commit_hash}/last_news_post.jpg"
+
+    caption = f"🚨 {news_item.get('title')}\n\n📊 {news_item.get('social_text')}\n\n💼 Categorie: {news_item.get('category').upper()}\n.\n.\n.\n#businessintelligence #executivebriefing #markets #tech #finance #brieflylife #news"
+
+    payload = {
+        "image_url": image_url,
+        "caption": caption
+    }
+
+    print(f"Trimitem datele către Make.com folosind imaginea: {image_url}")
+    
+    # Trimitem datele către Webhook-ul tău
+    response = requests.post(webhook_url, json=payload)
+    
+    if response.status_code == 200:
+        print("✅ Datele au fost transmise cu succes către Make.com!")
+    else:
+        print(f"❌ Eroare la transmitere: {response.status_code} - {response.text}")
 
 if __name__ == "__main__":
-    post_to_instagram()
+    post_to_make()
