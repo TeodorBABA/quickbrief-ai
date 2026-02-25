@@ -1,6 +1,5 @@
 import feedparser
 import os
-import time
 import json
 import re
 from datetime import datetime, timedelta
@@ -46,14 +45,15 @@ def analyze_news_with_ai(title, full_text, category):
                         "You are an expert Business Intelligence Analyst.\n"
                         "Return a JSON object with EXACTLY these 3 fields:\n"
                         "1. 'is_major': boolean (true ONLY for massive global business events, M&A >$500M, or major policy shifts).\n"
-                        "2. 'summary': A detailed, comprehensive 3-paragraph summary of the article for our website. Include background, key facts, and market implications. Write at least 150 words.\n"
-                        "3. 'social_insight': A single, analytical sentence explaining WHY this matters for the market. "
-                        "CRITICAL RULES FOR 'social_insight': Use normal sentence case. DO NOT use ALL CAPS. DO NOT repeat the title. Focus strictly on the strategic impact."
+                        "2. 'summary': A detailed, comprehensive 3-paragraph summary of the article for our website. Write at least 150 words.\n"
+                        "3. 'social_text': A highly dense, information-packed paragraph (180-220 characters) for an image graphic. "
+                        "MAXIMIZE information density: include exact numbers, key names, and the core strategic impact. "
+                        "STRICT RULES: Use normal sentence case. NO ALL CAPS. Do not repeat the exact title."
                     )
                 },
                 {"role": "user", "content": f"Title: {title}\nCategory: {category}\nContent: {full_text[:2000]}"}
             ],
-            temperature=0.2 # Scăzut pentru a fi mai analitic și mai ascultător
+            temperature=0.2
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
@@ -62,8 +62,6 @@ def analyze_news_with_ai(title, full_text, category):
 
 def generate_intelligence_report(all_news):
     today_str = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d")
-    print(f"--- Attempting to generate Intelligence Report for {today_str} ---")
-    
     summaries = []
     if os.path.exists(SUMMARY_FILE):
         try:
@@ -73,45 +71,55 @@ def generate_intelligence_report(all_news):
             summaries = []
 
     if any(s.get('date') == today_str for s in summaries):
-        print("Report for today already exists. Skipping.")
         return
 
     if not all_news: return
         
-    context = "\n".join([f"- {n['title']}" for n in all_news[:20]])
+    context = "\n".join([f"- {n['title']}" for n in all_news[:25]])
     
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a Chief Business Analyst. Summarize the top 3 global business trends of the last 24 hours in 3 detailed, impactful paragraphs. Use professional English."},
-                {"role": "user", "content": f"Context headlines:\n{context}"}
+                {"role": "system", "content": "Summarize the top global business trends of the last 24 hours in 3 detailed paragraphs."},
+                {"role": "user", "content": f"Context:\n{context}"}
             ]
         )
-        report_content = response.choices[0].message.content
-        summaries.insert(0, {"date": today_str, "content": report_content})
-        
+        summaries.insert(0, {"date": today_str, "content": response.choices[0].message.content})
         with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
             json.dump(summaries[:7], f, indent=4, ensure_ascii=False)
     except Exception as e:
-        print(f"Intelligence Report Error: {e}")
+        print(f"Report Error: {e}")
 
 def fetch_all_news():
     if not os.path.exists(JSON_FILE):
         with open(JSON_FILE, "w") as f: json.dump([], f)
     with open(JSON_FILE, "r") as f: old_data = json.load(f)
 
-    existing_links = {item['link'] for item in old_data}
-    existing_keywords_list = [get_keywords(item['title']) for item in old_data]
+    # --- NOU: Curățăm datele mai vechi de 24 de ore ---
+    current_time_dt = datetime.utcnow() + timedelta(hours=2)
+    cutoff_time = current_time_dt - timedelta(hours=24)
+    
+    recent_old_data = []
+    for item in old_data:
+        try:
+            item_date = datetime.strptime(item['date'], "%Y-%m-%d %H:%M")
+            if item_date >= cutoff_time:
+                recent_old_data.append(item)
+        except: pass
+
+    existing_links = {item['link'] for item in recent_old_data}
+    existing_keywords_list = [get_keywords(item['title']) for item in recent_old_data]
     new_items = []
-    current_time_ro = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d %H:%M")
+    current_time_ro = current_time_dt.strftime("%Y-%m-%d %H:%M")
 
     print(f"--- Starting Scan at {current_time_ro} ---")
 
     for category, url in SOURCES.items():
         print(f"Scanning {category}...")
         feed = feedparser.parse(url)
-        for entry in feed.entries[:7]:
+        # Luăm primele 25 de știri din fiecare feed pentru a nu rata nimic din ultimele 24h
+        for entry in feed.entries[:25]:
             title = entry.title.strip()
             link = entry.link
             if link in existing_links or is_too_similar(title, existing_keywords_list): continue
@@ -124,15 +132,13 @@ def fetch_all_news():
                 ai_analysis = analyze_news_with_ai(title, article.text, category)
                 
                 if ai_analysis:
-                    status = "[MAJOR]" if ai_analysis.get('is_major') else "[Minor]"
-                    print(f"   {status} {title[:50]}...")
-                    
+                    print(f"   [+] {title[:50]}...")
                     new_items.append({
                         "category": category,
                         "title": title,
                         "link": link,
-                        "summary": ai_analysis.get('summary', 'Detailed summary currently unavailable.'),
-                        "social_insight": ai_analysis.get('social_insight', ''),
+                        "summary": ai_analysis.get('summary', ''),
+                        "social_text": ai_analysis.get('social_text', ''),
                         "is_major": ai_analysis.get('is_major', False),
                         "date": current_time_ro
                     })
@@ -141,9 +147,12 @@ def fetch_all_news():
             except Exception as e:
                 continue
 
-    final_list = new_items + old_data
-    with open(JSON_FILE, "w") as f: json.dump(final_list[:60], f, indent=4)
-    print("Scan complete. Data saved.")
+    # Combinăm știrile noi cu cele vechi (dar doar cele din ultimele 24h)
+    final_list = new_items + recent_old_data
+    
+    # Salvăm TOT ce este în fereastra de 24h (fără limită de număr, doar limită de timp)
+    with open(JSON_FILE, "w") as f: json.dump(final_list, f, indent=4)
+    print(f"Scan complete. {len(final_list)} items currently in the 24h window.")
     
     generate_intelligence_report(final_list)
 
