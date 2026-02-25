@@ -48,6 +48,13 @@
         }
         .filter-bar::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome */
 
+        /* Centrare filtre exclusiv pe Desktop pentru a nu strica scroll-ul pe mobile */
+        @media (min-width: 768px) {
+            .filter-bar {
+                justify-content: center;
+            }
+        }
+
         .filter-btn {
             background: transparent; border: 1px solid var(--border-color);
             color: var(--text-muted); padding: 0.5rem 1.2rem; border-radius: 20px;
