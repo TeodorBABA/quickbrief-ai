@@ -1,57 +1,16 @@
-name: Briefly Intelligence Sync
-
-on:
-  schedule:
-    - cron: '*/15 * * * *'
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-
-      - name: Install Dependencies
+- name: Commit and Push Changes
         run: |
-          pip install feedparser newspaper3k openai Pillow
-
-      - name: Run Scraper
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python main.py
-
-      - name: Run Social Poster
-        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), formatDateTime(github.event.scheduled_time, 'HH'))
-        run: python social_poster.py
-
-      - name: Commit and Push Changes
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Sincronizare forțată cu serverul
+          # SOLUȚIA: Îi spunem robotului să ignore versiunea lui veche 
+          # și să se alinieze forțat cu ce ai tu pe GitHub acum
           git fetch origin main
-          git reset --soft origin/main
+          git reset --hard origin/main
           
-          # Adăugăm tot ce s-a modificat (JSON, TXT, JPG)
+          # Acum robotul rulează din nou scripturile ca să aibă datele proaspete
+          python main.py
+          
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
-          
-          # Facem commit doar dacă există diferențe
-          if ! git diff --cached --quiet; then
-            git commit -m "Automated Sync: Intelligence Feed"
-            git push origin main
-          else
-            echo "Nothing to update."
-          fi
+          git commit -m "Forced Sync Intelligence" || exit 0
+          git push origin main --force
