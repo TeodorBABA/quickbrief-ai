@@ -17,7 +17,7 @@ def get_fonts():
         return {
             'title_big': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 75),
             'title_med': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 60),
-            'headline': ImageFont.truetype(f"{f_path}DejaVuSans.ttf", 48),
+            'headline': ImageFont.truetype(f"{f_path}DejaVuSans.ttf", 45), # Un pic mai mic sa incapa o fraza plina
             'meta_bold': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 32)
         }
     except:
@@ -26,7 +26,15 @@ def get_fonts():
 
 def create_post_image(news_item):
     title = news_item.get('title', '')
-    headline = news_item.get('short_summary', '')
+    
+    # Luăm noua cheie 'social_insight'
+    headline = news_item.get('social_insight', news_item.get('short_summary', ''))
+    
+    # 🛡️ PROTECȚIE ANTI-TABLOID: Dacă AI-ul a scris 50% sau mai mult cu MAJUSCULE, îl forțăm la normal
+    upper_count = sum(1 for c in headline if c.isupper())
+    if len(headline) > 0 and (upper_count / len(headline)) > 0.4:
+        headline = headline.capitalize()
+
     category = news_item.get('category', 'NEWS')
     date_str = news_item.get('date', '')
 
@@ -46,8 +54,8 @@ def create_post_image(news_item):
     date_w = draw.textlength(clean_date, font=fonts['meta_bold'])
     draw.text((1080 - date_w - 60, 85), clean_date, fill=TEXT_GRAY, font=fonts['meta_bold'])
 
-    # --- 2. TITLU PRINCIPAL (Centrat mai jos) ---
-    y_cursor = 360 # Am coborat punctul de start pentru a echilibra imaginea
+    # --- 2. TITLU PRINCIPAL ---
+    y_cursor = 360 
     
     active_title_font = fonts['title_big'] if len(title) < 60 else fonts['title_med']
     wrap_width = 20 if len(title) < 60 else 25
@@ -58,19 +66,19 @@ def create_post_image(news_item):
         y_cursor += active_title_font.size + 15
 
     # --- 3. LINIE SEPARATOR ---
-    y_cursor += 70 # Mai mult aer deasupra liniei
+    y_cursor += 70 
     draw.line([60, y_cursor, 300, y_cursor], fill=ACCENT_COLOR, width=8)
-    y_cursor += 100 # Mai mult aer sub linie
+    y_cursor += 100 
 
-    # --- 4. HEADLINE DE IMPACT ---
-    headline_lines = textwrap.wrap(headline, width=38)
+    # --- 4. HEADLINE DE IMPACT (Curățat) ---
+    headline_lines = textwrap.wrap(headline, width=42)
     for line in headline_lines[:4]:
         draw.text((60, y_cursor), line, fill=TEXT_GRAY, font=fonts['headline'])
         y_cursor += fonts['headline'].size + 20
 
     # --- 5. FOOTER ---
     draw.rectangle([0, 1250, 1080, 1350], fill=(18, 18, 18))
-    draw.text((60, 1285), "BRIEFLY.LIFE | MAJOR DECISION BRIEF", fill=ACCENT_COLOR, font=fonts['meta_bold'])
+    draw.text((60, 1285), "BRIEFLY.LIFE | STRATEGIC INSIGHT", fill=ACCENT_COLOR, font=fonts['meta_bold'])
 
     # --- SALVARE ---
     if not os.path.exists("posts"): os.makedirs("posts")
