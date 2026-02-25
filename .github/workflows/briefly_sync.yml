@@ -1,0 +1,49 @@
+name: Briefly Intelligence Sync
+
+on:
+  schedule:
+    # Rulează la fiecare 15 minute pentru update-ul site-ului
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Permite rularea manuală
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Permisiuni vitale pentru ca robotul să poată scrie în repo
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          pip install feedparser newspaper3k openai Pillow
+
+      - name: Run Scraper (Update Website)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python main.py
+
+      - name: Run Social Poster (Every 4 Hours)
+        # Verifică orele 0, 4, 8, 12, 16, 20 UTC
+        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), formatDateTime(github.event.scheduled_time, 'HH'))
+        run: python social_poster.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "BrieflyBot"
+          git config --global user.email "bot@briefly.life"
+          # Adăugăm toate fișierele care se modifică
+          git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
+          # Commit doar dacă există modificări, pentru a evita erorile inutile
+          git commit -m "Automated update: Intelligence & Social" || echo "No changes to commit"
+          git push
