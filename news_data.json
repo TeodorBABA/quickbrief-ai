@@ -2,7 +2,7 @@
     {
         "id": 1772000290,
         "category": "Tech",
-        "title": "India’s AI boom pushes firms to trade near-term revenue for users",
+        "title": "India\u2019s AI boom pushes firms to trade near-term revenue for users",
         "link": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
         "summary": "- India has emerged as the largest market for generative AI app downloads, with a 207% year-over-year increase, surpassing the U.S. despite low revenue generation (1% of AI app revenue).  \n- Major tech firms are transitioning from free promotional offers to paid subscriptions, testing user conversion as competition intensifies.  \n- User engagement in India still lags behind mature markets, highlighting the need for effective monetization strategies amid a price-sensitive customer base.",
         "date": "25 Feb 2026 02:00"
@@ -10,9 +10,9 @@
     {
         "id": 1772000294,
         "category": "Tech",
-        "title": "Spanish ‘soonicorn’ Multiverse Computing releases free compressed AI model",
+        "title": "Spanish \u2018soonicorn\u2019 Multiverse Computing releases free compressed AI model",
         "link": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
-        "summary": "- Spanish startup Multiverse Computing has launched a free compressed AI model, HyperNova 60B, leveraging its CompactifAI technology to make advanced models more accessible for businesses.  \n- The updated model offers significant reductions in size and latency, positioning Multiverse as a competitive alternative to notable tech firms like OpenAI and Mistral AI.  \n- Multiverse is reportedly closing in on a €500 million funding round to enhance its growth trajectory, driven by rising demand for European AI solutions.  ",
+        "summary": "- Spanish startup Multiverse Computing has launched a free compressed AI model, HyperNova 60B, leveraging its CompactifAI technology to make advanced models more accessible for businesses.  \n- The updated model offers significant reductions in size and latency, positioning Multiverse as a competitive alternative to notable tech firms like OpenAI and Mistral AI.  \n- Multiverse is reportedly closing in on a \u20ac500 million funding round to enhance its growth trajectory, driven by rising demand for European AI solutions.  ",
         "date": "24 Feb 2026 23:32"
     },
     {
@@ -34,7 +34,7 @@
     {
         "id": 1772000306,
         "category": "Tech",
-        "title": "Google’s new 1.9GW clean energy deal includes massive 100-hour battery",
+        "title": "Google\u2019s new 1.9GW clean energy deal includes massive 100-hour battery",
         "link": "https://techcrunch.com/2026/02/24/googles-new-1-9gw-clean-energy-deal-includes-massive-100-hour-battery/",
         "summary": "- Google is establishing its first Minnesota data center, supported by a groundbreaking 1.9 GW clean energy deal, featuring a 300 MW iron-air battery from Form Energy, capable of providing 100 hours of power storage.\n- This project will enhance renewable energy reliability through long-duration storage, while potentially revolutionizing battery economics by offering storage at $20 per kWh, significantly cheaper than lithium-ion alternatives.\n- The initiative introduces a novel utility fee structure to help utilities embrace clean technologies, mitigating regulatory risks while fostering renewable energy adoption in Minnesota.",
         "date": "24 Feb 2026 21:32"
@@ -50,7 +50,7 @@
     {
         "id": 1772000313,
         "category": "Tech",
-        "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
+        "title": "Anthropic won\u2019t budge as Pentagon escalates AI dispute",
         "link": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
         "summary": "- Anthropic faces a deadline from the Pentagon to grant unrestricted access to its AI model, or it may be labeled a \"supply chain risk\" or forced to comply under the Defense Production Act.\n- The dispute highlights tensions between corporate safety policies and military needs, with implications for national security and the stability of U.S. business practices.\n- The Pentagon currently relies exclusively on Anthropic for its classified AI needs, raising risks of operational setbacks should negotiations fail.",
         "date": "24 Feb 2026 21:18"
@@ -58,7 +58,7 @@
     {
         "id": 1772000317,
         "category": "Tech",
-        "title": "Instagram’s TV app is launching on Google TV devices",
+        "title": "Instagram\u2019s TV app is launching on Google TV devices",
         "link": "https://techcrunch.com/2026/02/24/instagrams-tv-app-is-launching-on-google-tv-devices/",
         "summary": "- Instagram has launched its TV app on Google TV in the U.S., following its earlier release on Amazon Fire TV, expanding Reels viewing to larger screens.  \n- The app aims to compete with YouTube by offering personalized content, allowing users to browse selected Reels organized by interests.  \n- Features include automatic playback, the ability to engage with comments, and account pairing options, enhancing user interaction and experience.",
         "date": "24 Feb 2026 19:13"
@@ -98,7 +98,7 @@
     {
         "id": 1772000240,
         "category": "Markets",
-        "title": "Tuesday's big stock stories: What’s likely to move the market in the next trading session",
+        "title": "Tuesday's big stock stories: What\u2019s likely to move the market in the next trading session",
         "link": "https://www.cnbc.com/2026/02/23/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
         "summary": "- The Dow Industrials dropped over 800 points, reflecting ongoing market volatility, particularly in the financial sector, which is now down 7.6% year-to-date.\n- Home Depot and Amer Sports will report quarterly results on Tuesday, with both companies showing differing stock performances over the last three months.\n- Consumer confidence data will be released, with economists anticipating a reading of 86.8, which may influence market sentiment.",
         "date": "24 Feb 2026 00:02"
@@ -184,6 +184,181 @@
         "date": "23 Feb 2026 12:27"
     },
     {
+        "category": "Finance",
+        "title": "Stryker Corporation (SYK) Gains Strength From Procedure Volumes and Capital Equipment Backlog",
+        "link": "https://finance.yahoo.com/news/stryker-corporation-syk-gains-strength-203815366.html",
+        "summary": "- Stryker Corporation (NYSE:SYK) has received price target hikes from Barclays and Needham, raising its targets to $469 and $454, indicating potential upsides of over 23% and nearly 20%, respectively.  \n- The company's recent quarterly performance surpassed revenue and EPS expectations, driven by high procedure volumes and a capital equipment backlog.  \n- Stryker operates in two primary segments: MedSurg & Neurotechnology and Orthopaedics, focusing on innovative medical solutions to enhance patient outcomes.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "PayPal's 'bad code' leads to unauthorized payments",
+        "link": "https://finance.yahoo.com/news/paypals-bad-code-leads-unauthorized-203912426.html",
+        "summary": "- PayPal experienced a data breach due to a faulty code in their PayPal Working Capital system, exposing customers' personally identifiable information from July to December 2022.\n- The breach led to unauthorized transactions for a few customers, prompting PayPal to issue refunds and offer two years of free credit monitoring.\n- The incident emphasizes the need for robust security measures in companies managing sensitive loan application data, as vulnerabilities can lead to long-term identity fraud risks.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "DexCom, Inc. (DXCM) Continues to Focus on Glucose Sensors Leadership",
+        "link": "https://finance.yahoo.com/news/dexcom-inc-dxcm-continues-focus-204014108.html",
+        "summary": "- DexCom, Inc. (NASDAQ:DXCM) is recognized as a top healthcare stock by hedge funds, maintaining focus on glucose sensor advancements and market leadership.\n- Analysts from Canaccord Genuity and Baird revised price targets to $95 and $87, respectively, while reaffirming positive ratings based on consistent fourth-quarter results. \n- The firm plans to launch tiered sensor solutions and enhance insurance coverage for continuous glucose monitoring (CGM) systems.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Abbott Laboratories (ABT) Likely to Benefit From Nutrition Segment Recovery",
+        "link": "https://finance.yahoo.com/news/abbott-laboratories-abt-likely-benefit-204135540.html",
+        "summary": "- Abbott Laboratories (NYSE:ABT) faces a price target reduction from Barclays to $142 but maintains an Overweight rating, suggesting a potential upside of 27%.  \n- Bernstein's Lee Hambright reaffirmed an Outperform rating with a target of $125, indicating a 12% upside despite fourth-quarter revenue misses.    \n- The company anticipates recovery in its nutrition and diagnostics segments by 2026, following recent struggles.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Analyst Report: HF Sinclair Corporation",
+        "link": "https://finance.yahoo.com/research/reports/ARGUS_3051_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+        "summary": "- HF Sinclair Corporation, based in Dallas, specializes in producing and marketing light crude products, including gasoline and renewable diesel.  \n- The company operates refineries across six states: Kansas, Oklahoma, New Mexico, Wyoming, Washington, and Utah.  \n- HF Sinclair offers transportation, terminaling, storage, and throughput services, supplying fuel to over 1,500 branded stations.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Why PayPal Rallied Today, Even as Most Financial Stocks Plunged",
+        "link": "https://finance.yahoo.com/news/why-paypal-rallied-today-even-203613577.html",
+        "summary": "- PayPal's shares rose by 6.2% amid a broader decline in the financial sector, driven by reports of potential acquisition interest.  \n- Bloomberg indicated that competitors might be looking to buy PayPal or its subsidiaries, as the company grapples with a significant valuation drop.  \n- Following a disappointing earnings report and the resignation of its CEO, PayPal's stock is trading at a low price-to-earnings ratio, suggesting a pessimistic outlook.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "GE HealthCare Technologies Inc. (GEHC) Positioned to Capitalize on Strong Demand Backlog",
+        "link": "https://finance.yahoo.com/news/ge-healthcare-technologies-inc-gehc-204322873.html",
+        "summary": "- GE HealthCare Technologies Inc. (NASDAQ:GEHC) has been identified as a strong investment choice by hedge funds, supported by a solid demand backlog.\n- Analysts have raised price targets for GEHC, with Morgan Stanley increasing it from $80 to $85, and Piper Sandler from $91 to $94, highlighting a favorable market environment.\n- The company operates in four segments, focusing on precision care in healthcare diagnostics and technology, and recently reported better-than-expected fourth-quarter results.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "BMO Alto review (2026): High-yield savings with no monthly fees or minimum deposit requirements",
+        "link": "https://finance.yahoo.com/personal-finance/banking/review/bmo-alto-review-202525025.html",
+        "summary": "- BMO Alto, the online banking division of BMO Bank N.A., launched in 2023, offers high-yield savings accounts with 3.15% APY and CDs with up to 2.5% APY, both without monthly fees or minimum deposits.  \n- All accounts are FDIC-insured, but BMO Alto lacks physical branches and a mobile app, limiting transaction methods.  \n- Customer support is available 24/7 via phone; online banking operates through major web browsers.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Here is Why Edwards Lifesciences Corporation (EW) Looks Attractive",
+        "link": "https://finance.yahoo.com/news/why-edwards-lifesciences-corporation-ew-204503028.html",
+        "summary": "- Edwards Lifesciences Corporation (NYSE:EW) is seen as a top healthcare equipment stock by hedge funds, reflecting strong performance expectations.  \n- Analysts from Truist Financial and Goldman Sachs have adjusted price targets to $89 and $95, respectively, with both maintaining positive ratings.   \n- The company's fourth-quarter revenue exceeded expectations due to double-digit growth in TAVR, although profit growth was not realized.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Finance",
+        "title": "O5 Adoption Leads to Bullish Views Around Insulet Corporation (PODD)",
+        "link": "https://finance.yahoo.com/news/o5-adoption-leads-bullish-views-204618646.html",
+        "summary": "- Insulet Corporation (NASDAQ:PODD) is recognized as one of the top healthcare equipment stocks by hedge funds, reflecting strong investor confidence.\n- Stifel revised its price target for PODD down to $350, while maintaining a Buy rating, indicating an expected upside of nearly 45%.\n- Analyst Mathew Blackman downgraded PODD from Buy to Hold, estimating a target price of $294 with an upside potential of over 21%, citing competitive market challenges.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Jamie Dimon says AI is already reshaping JPMorgan Chase's workforce as bank plans 'huge redeployment\u2019",
+        "link": "https://www.cnbc.com/2026/02/24/jpm-ceo-jamie-dimon-ai-reshaping-workforce-redeployment.html",
+        "summary": "- Jamie Dimon, CEO of JPMorgan Chase, announced plans for a significant redeployment of employees as AI impacts the workforce, emphasizing the need for a societal response to automation's challenges.  \n- The bank's tech budget reaches nearly $20 billion, with ongoing initiatives to adapt its operations for the AI era.  \n- Workforce adjustments include a 4% decrease in operations and support roles, while revenue-generating positions increased by 4%.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Spirit Airlines plans to slash flights, fleet in bid to emerge from bankruptcy as early as spring",
+        "link": "https://www.cnbc.com/2026/02/24/spirit-airlines-bankruptcy-flights.html",
+        "summary": "- Spirit Airlines plans to significantly reduce its flights and fleet while focusing on profitable routes, particularly from Florida and the New York area, amid its second bankruptcy proceedings.  \n- The airline's restructuring will lower its debt from $7.4 billion to $2.1 billion, while expanding premium seating options in an effort to attract higher-paying customers.  \n- Cost reduction strategies include eliminating unprofitable flights and potentially reverting to an older Airbus fleet, with significant operational adjustments anticipated by late spring or early summer.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Cava reports surprise same-store sales growth, driven by menu prices",
+        "link": "https://www.cnbc.com/2026/02/24/cava-q4-2025-earnings.html",
+        "summary": "- Cava reported a surprise 0.5% same-store sales growth in Q4 and achieved record revenue exceeding $1 billion for FY 2025, with a 21% year-over-year revenue increase.  \n- Shares rose approximately 10% in after-hours trading following the announcement, despite a decline in foot traffic.  \n- The company plans to open 74-76 new locations in FY 2026 and anticipates a 3-5% increase in same-store sales.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Lucid widely misses earnings expectations, forecasts continued EV growth in 2026",
+        "link": "https://www.cnbc.com/2026/02/24/lucid-lcid-q4-2025-results-.html",
+        "summary": "- Lucid Group reported a Q4 loss per share of $3.62, exceeding Wall Street expectations, but revenue of $523 million surpassed estimates by 12%.  \n- The company laid off 12% of its U.S. salaried workforce to improve operational efficiency.  \n- Lucid revised 2025 vehicle production down to 17,840 units but aims for a 40-51% increase in 2026, targeting 25,000 to 27,000 units.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Novo Nordisk to slash GLP-1 list prices by up to 50% in U.S. to cut costs for insured patients",
+        "link": "https://www.cnbc.com/2026/02/24/novo-nordisk-to-slash-wegovy-ozempic-us-list-prices-by-up-to-50percent.html",
+        "summary": "- Novo Nordisk will reduce list prices of its obesity and diabetes drugs by up to 50% in the U.S., effective January 1, 2027.  \n- New monthly prices will be set at $675, down from approximately $1,350 for Wegovy and $1,027 for diabetes medications.  \n- The price cuts aim to alleviate out-of-pocket costs for insured patients and enhance access, competing with Eli Lilly in the GLP-1 market.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "WBD says Paramount raised its bid to $31 per share, board will weigh offer against Netflix deal",
+        "link": "https://www.cnbc.com/2026/02/24/warner-bros-discovery-paramount-higher-bid-netflix.html",
+        "summary": "- Warner Bros. Discovery (WBD) is reviewing a revised $31 per share takeover offer from Paramount, which includes a $7 billion breakup fee if the merger fails regulatory approval.\n- WBD is also bound by an agreement with Netflix to sell its studio and streaming assets for $27.75 per share, valued at approximately $72 billion.\n- The board has yet to determine if Paramount's offer is superior to the Netflix deal, which remains under consideration alongside potential regulatory challenges for both transactions.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Home Depot tops earnings estimates for the first time in a year as demand for projects remains muted",
+        "link": "https://www.cnbc.com/2026/02/24/home-depot-hd-q4-2025-earnings-.html",
+        "summary": "- Home Depot reported a 4% decline in quarterly sales but exceeded Wall Street estimates with adjusted earnings per share of $2.72 and revenue of $38.20 billion.  \n- The company maintained its fiscal year sales growth forecast between 2.5% and 4.5%, with comparable sales growth expected to be flat to 2%.  \n- Despite economic pressures, Home Depot's stock rose 2%, signaling investor optimism ahead of the crucial spring selling season.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Jamie Dimon says 'watch out\u2019 as lofty asset prices add to economic risks: \u2018My anxiety is high\u2019",
+        "link": "https://www.cnbc.com/2026/02/23/jamie-dimon-says-watch-out-as-high-asset-prices-add-to-economic-risks-my-anxiety-is-high.html",
+        "summary": "- JPMorgan CEO Jamie Dimon expressed heightened anxiety about the U.S. economy due to elevated asset prices, likening the current environment to pre-2008 crisis conditions.  \n- He cautioned that high expectations could precede economic downturns, leading to increased borrower defaults across various sectors.  \n- Recent market fluctuations, particularly related to AI-related loans, have raised concerns about stability in private credit and potential broader credit downturns.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Epstein files highlight how the wealthy borrow against art collections",
+        "link": "https://www.cnbc.com/2026/02/24/epstein-files-wealthy-borrow-against-art-collections.html",
+        "summary": "- The global art loan market, currently valued at $38-$45 billion, is projected to exceed $50 billion by 2028, growing at 12% annually as wealthy collectors leverage art for liquidity.  \n- Billionaire Leon Black's $484 million loan, backed by prestigious artworks, exemplifies the lucrative trend of art loans in wealth management.  \n- Art lending offers significant tax advantages, as it avoids capital gains tax implications associated with selling, consolidating its appeal among affluent investors.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Cruise companies cancel Puerto Vallarta stops after violence in Mexico",
+        "link": "https://www.cnbc.com/2026/02/23/cruises-puerto-vallarta-mexico.html",
+        "summary": "- Following the killing of cartel leader \"El Mencho,\" cruise lines including Carnival and Norwegian have canceled stops in Puerto Vallarta, with many flights and shore excursions also affected.  \n- The U.S. State Department has issued broader travel warnings for various popular tourist areas in Mexico due to escalating violence.  \n- Airbnb activated its \"major disruptive events policy\" in affected regions, allowing cancellations without penalties, while analysts highlighted significant exposure for hotel brands like Hyatt and Marriott.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "How Domino's is trying to double its business during a rough patch for big pizza rivals",
+        "link": "https://www.cnbc.com/2026/02/23/dominos-ceo-i-think-we-can-double-this-business.html",
+        "summary": "- Domino's reported a 3.7% increase in same-store sales and $1.54 billion in revenue, surpassing analyst projections amid industry challenges.  \n- The company aims to double its market share, capitalizing on its value offerings particularly among lower-income customers.  \n- CEO Russell Weiner emphasized sustainable profitability through strategic pricing and growth in consumer purchases, distinct from competitors facing difficulties.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Mortgage rates just dropped below 6%, matching lowest level since 2022",
+        "link": "https://www.cnbc.com/2026/02/23/mortgage-rates-below-6percent-lowest-in-4-years.html",
+        "summary": "- Mortgage rates for a 30-year fixed loan fell to 5.99%, matching the lowest levels since 2022, driven by a sell-off in the stock market.  \n- This decline follows last year's rate of 6.89% and is attributed to uncertainty over tariffs and signs of cooling inflation.  \n- Refinancing applications surged 130% year-over-year due to the drop in mortgage rates, highlighting increased market activity.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Blizzard cripples East Coast airports, with flights canceled through Tuesday",
+        "link": "https://www.cnbc.com/2026/02/21/blizzard-prompts-airlines-waive-flight-change-fees.html",
+        "summary": "- A major blizzard disrupted air travel on the East Coast, causing over 4,900 flight cancellations on Monday, equating to nearly 20% of scheduled departures.  \n- Airports in New York City, Boston, Philadelphia, and New Jersey reported significant cancellations, with LaGuardia, Logan, and Philadelphia experiencing over 80% to 90% of flights scrubbed.  \n- Cancelations continued into Tuesday, with airlines like American Airlines resuming operations as conditions improved, particularly at Reagan and Philadelphia airports.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "Eli Lilly launches new form of obesity drug Zepbound with a month\u2019s worth of doses in one pen",
+        "link": "https://www.cnbc.com/2026/02/23/eli-lilly-launches-zepbound-obesity-drug-pen-one-month-doses.html",
+        "summary": "- Eli Lilly has launched a new multi-dose injection pen for its obesity drug, Zepbound, providing a month's supply in a single device.  \n- The KwikPen is available for cash-paying patients at $299 per month for the lowest dose via Lilly's direct-to-consumer platform, LillyDirect.  \n- This innovation aims to enhance convenience for patients and sustain the growing demand for Zepbound since its market introduction in late 2023.",
+        "date": "2026-02-25 10:03"
+    },
+    {
+        "category": "Business",
+        "title": "New Jeep Cherokee set to lead Stellantis' U.S. sales turnaround",
+        "link": "https://www.cnbc.com/2026/02/23/new-jeep-cherokee-set-to-lead-stellantis-us-sales-turnaround.html",
+        "summary": "- Stellantis plans to boost U.S. sales by 25% to 1.15 million vehicles by 2026, with the 2026 Jeep Cherokee expected to be a key driver in achieving this target.  \n- The Cherokee, marking Jeep\u2019s first traditional hybrid model, returns after a three-year hiatus and aims to regain lost market share amid significant sales declines.  \n- Production expansion plans for the Cherokee are underway, with plans to increase output at the Illinois plant starting next year.",
+        "date": "2026-02-25 10:03"
+    },
+    {
         "category": "Markets",
         "title": "Loop Capital upgrades this semiconductor stock as key headwinds ease and its strategy diversifies",
         "link": "https://www.cnbc.com/2026/02/24/loop-capital-upgrades-this-semiconductor-stock-as-key-headwinds-ease-and-its-strategy-diversifies.html",
@@ -208,14 +383,14 @@
         "category": "Tech",
         "title": "Nvidia challenger AI chip startup MatX raised $500M",
         "link": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
-        "summary": "- MatX, a chip startup founded by ex-Google engineers, raised $500 million in Series B funding led by Jane Street and Situational Awareness.  \n- The company aims to develop processors that outperform Nvidia’s GPUs for LLMs by tenfold.  \n- Founded in 2023, MatX plans to begin shipping its chips in 2027, with TSMC manufacturing support.",
+        "summary": "- MatX, a chip startup founded by ex-Google engineers, raised $500 million in Series B funding led by Jane Street and Situational Awareness.  \n- The company aims to develop processors that outperform Nvidia\u2019s GPUs for LLMs by tenfold.  \n- Founded in 2023, MatX plans to begin shipping its chips in 2027, with TSMC manufacturing support.",
         "date": "2026-02-25 09:50"
     },
     {
         "category": "Tech",
         "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
         "link": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
-        "summary": "- Wayve, a U.K. self-driving tech startup, raised $1.2 billion in funding from notable investors including Nvidia, Uber, and three automakers, valuing the company at $8.6 billion.  \n- The company’s innovative approach employs end-to-end deep learning and does not rely on high-definition maps, focusing on a data-driven software model.  \n- Wayve's partnerships with Nissan and Uber will enhance driver-assistance systems and expand commercial trials for robotic taxis globally.",
+        "summary": "- Wayve, a U.K. self-driving tech startup, raised $1.2 billion in funding from notable investors including Nvidia, Uber, and three automakers, valuing the company at $8.6 billion.  \n- The company\u2019s innovative approach employs end-to-end deep learning and does not rely on high-definition maps, focusing on a data-driven software model.  \n- Wayve's partnerships with Nissan and Uber will enhance driver-assistance systems and expand commercial trials for robotic taxis globally.",
         "date": "2026-02-25 09:50"
     },
     {
@@ -236,140 +411,35 @@
         "category": "Finance",
         "title": "Da Vinci 5 Sparks Optimism Around Intuitive Surgical, Inc. (ISRG)",
         "link": "https://finance.yahoo.com/news/da-vinci-5-sparks-optimism-203711642.html",
-        "summary": "- Intuitive Surgical, Inc. (NASDAQ:ISRG) received positive ratings upgrades, with Freedom Capital raising its price target to $610 and Barclays’ Matt Miksic elevating it to $712.  \n- The firm's 2024-2026 topline forecasts are driving optimism, particularly with the anticipated launch of the da Vinci 5 system.  \n- ISRG remains a leading player in the robotic-assisted surgery market, primarily known for its da Vinci Surgical System.",
+        "summary": "- Intuitive Surgical, Inc. (NASDAQ:ISRG) received positive ratings upgrades, with Freedom Capital raising its price target to $610 and Barclays\u2019 Matt Miksic elevating it to $712.  \n- The firm's 2024-2026 topline forecasts are driving optimism, particularly with the anticipated launch of the da Vinci 5 system.  \n- ISRG remains a leading player in the robotic-assisted surgery market, primarily known for its da Vinci Surgical System.",
         "date": "2026-02-25 09:50"
     },
     {
         "category": "Tech",
         "title": "Uber engineers built an AI version of their boss",
         "link": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
-        "summary": "• Uber engineers have developed a chatbot named \"Dara AI\" to facilitate presentation prep for upper management, reflecting the company's integration of AI into operational workflows.  \n• Approximately 90% of Uber's software engineers are utilizing AI, with 30% identified as \"power users,\" driving significant architectural advancements within the company.  \n• CEO Dara Khosrowshahi highlighted this AI utilization as a transformative factor in productivity, surpassing previous benchmarks.",
+        "summary": "\u2022 Uber engineers have developed a chatbot named \"Dara AI\" to facilitate presentation prep for upper management, reflecting the company's integration of AI into operational workflows.  \n\u2022 Approximately 90% of Uber's software engineers are utilizing AI, with 30% identified as \"power users,\" driving significant architectural advancements within the company.  \n\u2022 CEO Dara Khosrowshahi highlighted this AI utilization as a transformative factor in productivity, surpassing previous benchmarks.",
         "date": "2026-02-25 07:44"
     },
     {
         "category": "Tech",
         "title": "Former L3Harris Trenchant boss jailed for selling hacking tools to Russian broker",
         "link": "https://techcrunch.com/2026/02/24/former-l3harris-trenchant-boss-jailed-for-selling-hacking-tools-to-russian-broker/",
-        "summary": "• Peter Williams, former general manager of L3Harris Trenchant, was sentenced to seven years for selling hacking tools to Russian broker Operation Zero, jeopardizing global cybersecurity.  \n• The U.S. Treasury imposed sanctions on Operation Zero, which buys security vulnerabilities and resells them to the Russian government.  \n• Williams pled guilty and earned $1.3 million in cryptocurrency from these illicit sales, impacting national security partnerships.",
+        "summary": "\u2022 Peter Williams, former general manager of L3Harris Trenchant, was sentenced to seven years for selling hacking tools to Russian broker Operation Zero, jeopardizing global cybersecurity.  \n\u2022 The U.S. Treasury imposed sanctions on Operation Zero, which buys security vulnerabilities and resells them to the Russian government.  \n\u2022 Williams pled guilty and earned $1.3 million in cryptocurrency from these illicit sales, impacting national security partnerships.",
         "date": "2026-02-25 07:44"
     },
     {
         "category": "Tech",
         "title": "Discord delays global rollout of age verification after backlash",
         "link": "https://techcrunch.com/2026/02/24/discord-delays-global-rollout-of-age-verification-after-backlash/",
-        "summary": "• Discord has postponed the global rollout of its age verification system until late 2026, following significant user backlash regarding privacy concerns.  \n• Only 10% of users will need to verify their age; most can continue using the platform without changes, as existing safety systems assess user age through account activity.  \n• Discord will introduce diverse verification methods, emphasizing user privacy by ensuring all processes occur on-device and clarifying partnered vendors' data practices.",
+        "summary": "\u2022 Discord has postponed the global rollout of its age verification system until late 2026, following significant user backlash regarding privacy concerns.  \n\u2022 Only 10% of users will need to verify their age; most can continue using the platform without changes, as existing safety systems assess user age through account activity.  \n\u2022 Discord will introduce diverse verification methods, emphasizing user privacy by ensuring all processes occur on-device and clarifying partnered vendors' data practices.",
         "date": "2026-02-25 07:44"
     },
     {
         "category": "Tech",
         "title": "Instagram head pressed on lengthy delay to launch teen safety features, like a nudity filter, court filing reveals",
         "link": "https://techcrunch.com/2026/02/24/instagram-head-pressed-on-lengthy-delay-to-launch-teen-safety-features-like-a-nudity-filter-court-filing-reveals/",
-        "summary": "• Instagram's head, Adam Mosseri, faced scrutiny over the delayed rollout of safety features, like a nudity filter for teens, revealing awareness of risks since 2018 but not acting until 2024.  \n• Court filings indicate that nearly 20% of teens reported exposure to unwanted sexual content, highlighting ongoing concerns about platform safety.  \n• Multiple lawsuits aim to hold tech companies accountable for potential harm to minors, with implications for future regulation of social media usage among youth.",
+        "summary": "\u2022 Instagram's head, Adam Mosseri, faced scrutiny over the delayed rollout of safety features, like a nudity filter for teens, revealing awareness of risks since 2018 but not acting until 2024.  \n\u2022 Court filings indicate that nearly 20% of teens reported exposure to unwanted sexual content, highlighting ongoing concerns about platform safety.  \n\u2022 Multiple lawsuits aim to hold tech companies accountable for potential harm to minors, with implications for future regulation of social media usage among youth.",
         "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Tech",
-        "title": "More startups are hitting $10M ARR in 3 months than ever before",
-        "link": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
-        "summary": "• A surge in startups achieving $10M ARR within three months highlights the rapid impact of AI on business growth, with a notable 50% increase in this metric from 2024 to 2025.  \n• Stripe reports a significant rise in new businesses using its products, with 57% of these startups located outside the U.S.  \n• The emergence of fast-growing startups emphasizes the need for sustainable growth over temporary spikes in revenue, with investors prioritizing customer retention.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Play the ‘SaaS Apocalypse’ Selloff in Palantir Stock With This 1 Winning, Protective Options Trade",
-        "link": "https://finance.yahoo.com/news/play-saas-apocalypse-selloff-palantir-200225512.html",
-        "summary": "• Palantir (PLTR) shares fell 26% in 2026 and 39% since November, amid a broader selloff in SaaS stocks, provoking concerns about the viability of traditional software models.  \n• This \"SaaSpocalypse\" has led to over $1 trillion lost in market value across the sector, affecting major players like Salesforce and Microsoft.  \n• Despite this, Palantir's hybrid AI-driven model positions it favorably against market fears, providing resilience through long-term contracts and high-margin services.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Surging Winter Wheat Prices Are Lifting Grain Futures Across the Board. What to Watch Next.",
-        "link": "https://finance.yahoo.com/news/surging-winter-wheat-prices-lifting-200002489.html",
-        "summary": "• May soft red winter and hard red winter wheat futures reached six and seven-month highs, respectively, reflecting bullish market sentiment despite being technically overbought.  \n• A Supreme Court ruling against previous U.S. tariffs introduces uncertainty in grain markets, potentially jeopardizing new trade agreements.  \n• Corn prices showed modest gains, with traders closely monitoring wheat for directional cues amidst South American corn crop concerns.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Medtronic plc (MDT) Gains Momentum Through Diabetes and Cardiovascular Operations",
-        "link": "https://finance.yahoo.com/news/medtronic-plc-mdt-gains-momentum-203336333.html",
-        "summary": "• Medtronic plc (MDT) is recognized as a top healthcare equipment stock, driven by solid performance in its Diabetes and Cardiovascular divisions, despite weaker Neurosciences results.  \n• Analysts have mixed views; Truist lowered its price target to $103 while maintaining a Hold rating, whereas Barclays raised the target to $118 with an Overweight rating.  \n• The company reaffirmed its FY26 outlook, with third-quarter earnings exceeding expectations in three out of four segments.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Dollar Weakens and Gold Surges on US Trade Uncertainty",
-        "link": "https://finance.yahoo.com/news/dollar-weakens-gold-surges-us-203449106.html",
-        "summary": "• The dollar index fell by 0.10%, pressured by concerns over increased tariffs following President Trump's executive order, potentially deterring foreign investment.  \n• The Chicago Fed National Activity Index rose to a 9-month high, while the Dallas Fed manufacturing outlook unexpectedly improved, providing limited support for the dollar.  \n• Market expectations suggest a 5% chance of a rate cut by the Fed in March, while the ECB maintains a low probability of changing rates.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "When will mortgage rates go down? With Fed rate cuts on hold, 4-year lows may be the bottom for now",
-        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/when-will-mortgage-rates-go-down-february-23-2026-190610655.html",
-        "summary": "• The average 30-year fixed mortgage rate has decreased to 6.01%, marking a significant drop from the previous year, but the Federal Reserve's rates remain unchanged, limiting potential further reductions.  \n• Experts predict that while mortgage rates may stabilize, significant decreases are unlikely without substantial Fed actions or market shifts.  \n• Ongoing housing demand with limited supply continues to challenge affordability, as home prices remain high despite falling mortgage rates.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Here is Why Boston Scientific Corporation (BSX) is Highly Favored by Hedge Funds",
-        "link": "https://finance.yahoo.com/news/why-boston-scientific-corporation-bsx-203522267.html",
-        "summary": "• Boston Scientific Corporation (BSX) remains a top pick among hedge funds despite recent price target reductions by analysts at Canaccord Genuity and Bernstein, signaling confidence in long-term upside potential.  \n• Canaccord analyst reiterated a Buy rating with a new target of $109, indicating over 46% upside, while Bernstein maintained an Outperform rating at $112, showing over 50% potential.  \n• Analysts cite organizational changes and sales performance concerns, specifically regarding U.S. EP sales, which fell short of expectations despite a stable year-on-year revenue.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Analyst Report: Global Payments, Inc.",
-        "link": "https://finance.yahoo.com/research/reports/ARGUS_4042_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-        "summary": "• Stephen Biggar, a seasoned analyst with over 20 years of experience in financial services, manages research on large global banks and credit card companies.  \n• He contributes to the Argus Investment Policy Committee and Senior Portfolio Group, providing insights on equity markets.  \n• Previously, he served as global director of equity research for S&P Capital IQ, further enhancing his expertise in the field.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Finance",
-        "title": "Crypto.com gets conditional US approval for national trust bank charter",
-        "link": "https://finance.yahoo.com/news/crypto-com-gets-conditional-us-203614159.html",
-        "summary": "• Crypto.com has received conditional approval for a national trust bank charter from the Office of the Comptroller of the Currency, enabling it to operate as a federally regulated custodian.  \n• This charter allows the firm to manage client assets and trade settlements under federal oversight, enhancing institutional adoption of cryptocurrency.  \n• The decision aligns with a more crypto-friendly regulatory environment in the U.S., facilitating deeper integration of digital assets into traditional finance.",
-        "date": "2026-02-25 07:44"
-    },
-    {
-        "category": "Markets",
-        "title": "BlackRock’s Rick Rieder is locking in attractive yields in this corner of the bond market before the opportunity slips away",
-        "link": "https://www.cnbc.com/2026/02/24/blackrocks-rick-rieder-is-locking-in-attractive-yields-in-this-corner-of-the-bond-market.html",
-        "summary": "• BlackRock's Rick Rieder emphasizes the limited window for investing in emerging market bonds, noting double-digit yields that are attractive amid rising global demand.  \n• With $2.7 trillion in assets under management, Rieder identifies Mexico, South Africa, and Brazil as key opportunities while advising caution on currency and political risks.  \n• He anticipates solid yields for the near future but foresees upcoming Federal Reserve rate cuts, which could reshape investment strategies in 2026.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Markets",
-        "title": "The violent software sell-off pauses. Wall Street says bet on these stocks to bounce",
-        "link": "https://www.cnbc.com/2026/02/24/the-violent-software-sell-off-pauses-wall-street-says-bet-on-these-stocks-to-bounce.html",
-        "summary": "• Wall Street sees potential buying opportunities in software stocks post historic sell-off, especially for Intuit and CrowdStrike, amid concerns over AI's impact on pricing power and margins.  \n• The iShares Expanded Tech-Software Sector ETF rose nearly 1.8% after AI tool updates from Anthropic, although it remains down over 25% year-to-date.  \n• Analysts suggest companies in traditional software and cybersecurity may offer attractive entry points, indicating a shift in investor sentiment towards AI-resilient vendors.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Markets",
-        "title": "Bitcoin mining is no longer profitable after crypto's latest downward turn, analyst says",
-        "link": "https://www.cnbc.com/2026/02/24/bitcoin-mining-is-no-longer-profitable-after-cryptos-latest-downward-turn.html",
-        "summary": "• Bitcoin mining has become unprofitable for most miners due to a 26% year-to-date decline in BTC value, currently trading around $64,143.  \n• The bitcoin hash price has dropped approximately 30% over the past three months, exacerbating the financial strain on miners.  \n• Mining companies are pivoting towards high-performance computing (HPC) services as a strategy to mitigate losses and improve profitability.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Markets",
-        "title": "The big market rotation may lead to gains in this health care name. Trading it with options",
-        "link": "https://www.cnbc.com/2026/02/24/the-big-market-rotation-may-lead-to-gains-in-this-health-care-name-trading-it-with-options.html",
-        "summary": "• Historical seasonality indicates February typically leads to market weakness, prompting a sector rotation where institutional funds move from high-beta tech to more defensive sectors like health care.  \n• The State Street Health Care Select Sector SPDR ETF (XLV) shows health care is emerging as a leading sector despite broader market volatility.  \n• Illumina Inc. (ILMN) presents a bullish trade opportunity with a bull call spread strategy, targeting a potential profit as market momentum shifts in its favor.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Alkami Stock Down 50%, But This New $49 Million Stake Signals Conviction in a Turnaround",
-        "link": "https://finance.yahoo.com/news/alkami-stock-down-50-49-201552477.html",
-        "summary": "• Irenic Capital Management LP acquired 2,106,448 shares of Alkami Technology, valuing its stake at approximately $48.60 million, as disclosed in an SEC filing on February 17, 2026.  \n• Alkami's stock price is down 50% year-over-year, despite a robust revenue growth of 31.5%, raising questions about market perception.  \n• The investment signals confidence in Alkami’s turnaround potential, with upcoming earnings reports expected to be crucial for long-term investors.",
-        "date": "2026-02-25 07:38"
-    },
-    {
-        "category": "Finance",
-        "title": "Nat-Gas Prices Erase Early Gains as US Weather Forecasts Warm",
-        "link": "https://finance.yahoo.com/news/nat-gas-prices-erase-early-202156043.html",
-        "summary": "• March natural gas prices fell 2.03% after forecasts predicted above-normal temperatures in the US, decreasing heating demand.  \n• US dry gas production reached 113.7 bcf/day, marking a 9% year-over-year increase, contributing to bearish price outlooks.  \n• Natural gas inventories are down 1.5% year-over-year, remaining below the 5-year average, indicating continued supply tightness despite recent production highs.",
-        "date": "2026-02-25 07:38"
     }
 ]
