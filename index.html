@@ -89,17 +89,20 @@
         let newsData = [];
 
         async function init() {
-            try {
-                // Adăugăm timestamp pentru a evita cache-ul
-                const response = await fetch('news_data.json?t=' + new Date().getTime());
-                newsData = await response.json();
-                
-                // Forțăm randarea pe 'All' imediat după ce datele sunt descărcate
-                renderNews('All');
-            } catch (err) {
-                document.getElementById('news-feed').innerHTML = "Error loading intelligence stream.";
-            }
-        }
+    try {
+        const response = await fetch('news_data.json?t=' + new Date().getTime());
+        if (!response.ok) throw new Error('Network response was not ok');
+        newsData = await response.json();
+        
+        console.log("Data loaded:", newsData.length, "items"); // Verifică în consolă
+        
+        // Randăm imediat
+        renderNews('All');
+    } catch (err) {
+        console.error("Failed to load news:", err);
+        document.getElementById('news-feed').innerHTML = "Failed to sync with terminal.";
+    }
+}
 
         function renderNews(filter) {
             const container = document.getElementById('news-feed');
@@ -172,3 +175,4 @@
     </script>
 </body>
 </html>
+
