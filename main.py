@@ -35,10 +35,6 @@ def is_too_similar(new_title, existing_titles_keywords):
     return False
 
 def analyze_news_with_ai(title, full_text, category):
-    """
-    Analizează știrea pentru a determina dacă este MAJORĂ și generează
-    conținut structurat pentru site și Instagram, cu reguli stricte de formatare.
-    """
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
@@ -47,18 +43,17 @@ def analyze_news_with_ai(title, full_text, category):
                 {
                     "role": "system", 
                     "content": (
-                        "You are an elite Business Intelligence Analyst. Your job is to filter noise."
-                        "Determine if this news constitutes a MAJOR GLOBAL BUSINESS EVENT "
-                        "(e.g., M&A >$500M, C-suite change at Fortune 500, significant policy shift, major breakthrough)."
-                        "\n\nReturn a JSON object with exactly these fields:\n"
-                        "1. 'is_major': boolean (true ONLY if it's a huge, impactful deal/event)\n"
-                        "2. 'website_summary': 'A professional 3-bullet point summary for a website (max 60 words total).'\n"
-                        "3. 'social_headline': 'ONE single, punchy sentence under 120 chars providing the crucial data point or impact. STRICT RULES: Use standard sentence case (NOT ALL CAPS), NO exclamation marks, and DO NOT repeat the exact words from the title.'"
+                        "You are an expert Business Intelligence Analyst.\n"
+                        "Return a JSON object with EXACTLY these 3 fields:\n"
+                        "1. 'is_major': boolean (true ONLY for massive global business events, M&A >$500M, or major policy shifts).\n"
+                        "2. 'summary': A detailed, comprehensive 3-paragraph summary of the article for our website. Include background, key facts, and market implications. Write at least 150 words.\n"
+                        "3. 'social_insight': A single, analytical sentence explaining WHY this matters for the market. "
+                        "CRITICAL RULES FOR 'social_insight': Use normal sentence case. DO NOT use ALL CAPS. DO NOT repeat the title. Focus strictly on the strategic impact."
                     )
                 },
-                {"role": "user", "content": f"Title: {title}\nNews Category: {category}\nContent excerpt: {full_text[:1500]}"}
+                {"role": "user", "content": f"Title: {title}\nCategory: {category}\nContent: {full_text[:2000]}"}
             ],
-            temperature=0.3
+            temperature=0.2 # Scăzut pentru a fi mai analitic și mai ascultător
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
@@ -66,7 +61,6 @@ def analyze_news_with_ai(title, full_text, category):
         return None
 
 def generate_intelligence_report(all_news):
-    """Generează un rezumat global al zilei pentru site"""
     today_str = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d")
     print(f"--- Attempting to generate Intelligence Report for {today_str} ---")
     
@@ -87,11 +81,10 @@ def generate_intelligence_report(all_news):
     context = "\n".join([f"- {n['title']}" for n in all_news[:20]])
     
     try:
-        print("Calling OpenAI for Daily Synthesis...")
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a Chief Business Analyst. Summarize the top 3 global business/tech trends of the last 24 hours in 3 sharp, impactful paragraphs. Use professional, executive English."},
+                {"role": "system", "content": "You are a Chief Business Analyst. Summarize the top 3 global business trends of the last 24 hours in 3 detailed, impactful paragraphs. Use professional English."},
                 {"role": "user", "content": f"Context headlines:\n{context}"}
             ]
         )
@@ -100,7 +93,6 @@ def generate_intelligence_report(all_news):
         
         with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
             json.dump(summaries[:7], f, indent=4, ensure_ascii=False)
-        print(f"Successfully created/updated {SUMMARY_FILE}")
     except Exception as e:
         print(f"Intelligence Report Error: {e}")
 
@@ -139,8 +131,8 @@ def fetch_all_news():
                         "category": category,
                         "title": title,
                         "link": link,
-                        "summary": ai_analysis.get('website_summary', ''),
-                        "short_summary": ai_analysis.get('social_headline', ''),
+                        "summary": ai_analysis.get('summary', 'Detailed summary currently unavailable.'),
+                        "social_insight": ai_analysis.get('social_insight', ''),
                         "is_major": ai_analysis.get('is_major', False),
                         "date": current_time_ro
                     })
