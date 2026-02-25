@@ -49,32 +49,58 @@ def summarize_with_ai(title, full_text, category):
         return None
 
 def generate_intelligence_report(all_news):
-    """Generează un rezumat global al zilei"""
+    """Generează un rezumat global al zilei și asigură existența fișierului"""
+    # Ora României pentru ID-ul raportului
     today_str = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d")
+    print(f"--- Attempting to generate Intelligence Report for {today_str} ---")
+    
+    summaries = []
+    
+    # 1. Încercăm să citim fișierul existent
+    if os.path.exists(SUMMARY_FILE):
+        try:
+            with open(SUMMARY_FILE, "r", encoding="utf-8") as f:
+                summaries = json.load(f)
+        except Exception as e:
+            print(f"Error reading summary file: {e}")
+            summaries = []
+
+    # 2. Verificăm dacă raportul de azi există deja
+    if any(s.get('date') == today_str for s in summaries):
+        print("Report for today already exists. Skipping.")
+        return
+
+    # 3. Luăm contextul pentru AI (doar dacă avem știri)
+    if not all_news:
+        print("No news available to summarize.")
+        return
+        
+    context = "\n".join([f"- {n['title']}" for n in all_news[:20]])
     
     try:
-        if os.path.exists(SUMMARY_FILE):
-            with open(SUMMARY_FILE, "r") as f: summaries = json.load(f)
-        else: summaries = []
-        
-        if any(s['date'] == today_str for s in summaries): return
-
-        # Luăm primele 15 titluri pentru context
-        context = "\n".join([f"- {n['title']}" for n in all_news[:15]])
-        
+        print("Calling OpenAI for Daily Synthesis...")
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a Chief Analyst. Summarize the top 3 global business/tech trends of the last 24 hours in impactful paragraphs. Be executive and sharp."},
-                {"role": "user", "content": f"Analyze these headlines:\n{context}"}
+                {"role": "system", "content": "You are a Chief Business Analyst. Summarize the top 3 global business/tech trends of the last 24 hours in 3 sharp, impactful paragraphs. Use professional, executive English."},
+                {"role": "user", "content": f"Context headlines:\n{context}"}
             ]
         )
         
-        new_summary = {"date": today_str, "content": response.choices[0].message.content}
+        report_content = response.choices[0].message.content
+        new_summary = {"date": today_str, "content": report_content}
+        
+        # Inserăm la începutul listei
         summaries.insert(0, new_summary)
-        with open(SUMMARY_FILE, "w") as f: json.dump(summaries[:7], f, indent=4)
-    except Exception as e: print(f"Report Error: {e}")
+        
+        # 4. SALVARE FORȚATĂ
+        with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
+            json.dump(summaries[:7], f, indent=4, ensure_ascii=False)
+            
+        print(f"Successfully created/updated {SUMMARY_FILE}")
 
+    except Exception as e:
+        print(f"Critical AI Report Error: {e}")
 def fetch_all_news():
     if not os.path.exists(JSON_FILE):
         with open(JSON_FILE, "w") as f: json.dump([], f)
