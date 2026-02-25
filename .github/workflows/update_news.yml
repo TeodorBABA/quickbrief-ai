@@ -2,9 +2,8 @@ name: QuickBrief Pro Auto-Update
 
 on:
   schedule:
-    # Rulează la fiecare 15 minute
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite declanșarea manuală
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,14 +31,16 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python main.py
 
+    - name: Generate Social Media Image
+      run: python social_poster.py
+
     - name: Save changes to GitHub
       run: |
         git config --global user.name 'QuickBrief-Bot'
         git config --global user.email 'bot@quickbrief.pro'
         
-        # IMPORTANT: Adăugăm ambele fișiere generate de script
-        git add news_data.json daily_summaries.json
+        # Adăugăm JSON-urile și imaginea generată
+        git add news_data.json daily_summaries.json last_news_post.jpg
         
-        # Commit doar dacă există schimbări, evităm erorile dacă nu sunt știri noi
-        git commit -m "Automated Update: Global Business Intelligence & Daily Report" || exit 0
+        git commit -m "Automated Update: News & Social Image Generated" || exit 0
         git push
