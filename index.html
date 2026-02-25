@@ -10,32 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <style>
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #050505; 
-            color: #fafafa; 
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .glass-nav { 
-            background: rgba(5, 5, 5, 0.8); 
-            backdrop-filter: blur(20px); 
-            border-bottom: 1px solid #1a1a1a; 
-        }
-
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #fafafa; -webkit-font-smoothing: antialiased; }
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid #1a1a1a; }
         .logo-text { font-weight: 800; letter-spacing: -0.05em; color: #fff; }
         .logo-ext { color: #3b82f6; font-weight: 700; }
         
-        /* CARD DESIGN RE-ACTIVAT */
         .news-card { 
             background: #0f0f0f; 
             border: 1px solid #1a1a1a; 
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
-            position: relative;
-            overflow: hidden;
         }
         
-        /* Efectul de hover cu bordură albastră și umbră */
         @media (min-width: 768px) {
             .news-card:hover { 
                 border-color: #3b82f6; 
@@ -45,10 +30,6 @@
             }
         }
 
-        /* Mobile feedback */
-        .news-card:active { background: #161616; transform: scale(0.98); }
-
-        /* Meniu scrollabil pe mobil */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
@@ -70,38 +51,11 @@
             box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); 
         }
 
-        /* Stil Bullets */
-        .summary-list li { 
-            position: relative; 
-            padding-left: 1.5rem; 
-            margin-bottom: 0.75rem; 
-            color: #a3a3a3; 
-            font-size: 0.9rem; 
-            line-height: 1.6; 
-        }
-        .summary-list li::before { 
-            content: "→"; 
-            position: absolute; 
-            left: 0; 
-            color: #3b82f6; 
-            font-weight: 800; 
-        }
+        .summary-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #a3a3a3; font-size: 0.9rem; line-height: 1.6; }
+        .summary-list li::before { content: "→"; position: absolute; left: 0; color: #3b82f6; font-weight: 800; }
         
-        .pulse-dot { 
-            width: 8px; 
-            height: 8px; 
-            background-color: #22c55e; 
-            border-radius: 50%; 
-            display: inline-block; 
-            margin-right: 6px; 
-            box-shadow: 0 0 8px #22c55e; 
-            animation: pulse 2s infinite; 
-        }
-        @keyframes pulse { 
-            0% { transform: scale(0.95); opacity: 1; } 
-            50% { transform: scale(1.05); opacity: 0.5; } 
-            100% { transform: scale(0.95); opacity: 1; } 
-        }
+        .pulse-dot { width: 8px; height: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; margin-right: 6px; box-shadow: 0 0 8px #22c55e; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(0.95); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.5; } 100% { transform: scale(0.95); opacity: 1; } }
     </style>
 </head>
 <body>
@@ -109,15 +63,13 @@
     <nav class="glass-nav sticky top-0 z-50 p-4">
         <div class="max-w-2xl mx-auto">
             <div class="flex justify-between items-center mb-6">
-                <div class="logo-text text-2xl uppercase tracking-tighter">
-                    BRIEFLY<span style="color:#3b82f6">.</span><span class="logo-ext">LIFE</span>
-                </div>
+                <div class="logo-text text-2xl uppercase tracking-tighter">BRIEFLY<span style="color:#3b82f6">.</span><span class="logo-ext">LIFE</span></div>
                 <div class="text-[10px] font-bold text-green-500 tracking-[0.2em] flex items-center bg-green-500/5 px-3 py-1 rounded-full border border-green-500/10">
                     <span class="pulse-dot"></span> LIVE TERMINAL
                 </div>
             </div>
             
-            <div class="flex overflow-x-auto space-x-2 no-scrollbar">
+            <div class="flex overflow-x-auto space-x-2 no-scrollbar" id="filter-bar">
                 <button onclick="changeFilter('All', this)" class="filter-btn active px-5 py-2.5 rounded-full">All</button>
                 <button onclick="changeFilter('Markets', this)" class="filter-btn px-5 py-2.5 rounded-full">Markets</button>
                 <button onclick="changeFilter('Tech', this)" class="filter-btn px-5 py-2.5 rounded-full">Tech</button>
@@ -129,9 +81,7 @@
 
     <main class="max-w-2xl mx-auto p-4 pt-10">
         <div id="news-feed" class="space-y-8 pb-24 text-center">
-            <div class="py-20 text-neutral-600 text-[10px] font-bold uppercase tracking-[0.4em] animate-pulse">
-                Establishing Secure Link...
-            </div>
+            <div class="py-20 text-neutral-600 text-[10px] font-bold uppercase tracking-[0.4em] animate-pulse">Initializing Newsroom...</div>
         </div>
     </main>
 
@@ -140,11 +90,14 @@
 
         async function init() {
             try {
-                const response = await fetch('news_data.json?t=' + Date.now());
+                // Adăugăm timestamp pentru a evita cache-ul
+                const response = await fetch('news_data.json?t=' + new Date().getTime());
                 newsData = await response.json();
-                renderNews(document.querySelector('.filter-btn.active').innerText);
+                
+                // Forțăm randarea pe 'All' imediat după ce datele sunt descărcate
+                renderNews('All');
             } catch (err) {
-                console.error("Stream sync error");
+                document.getElementById('news-feed').innerHTML = "Error loading intelligence stream.";
             }
         }
 
@@ -152,22 +105,34 @@
             const container = document.getElementById('news-feed');
             container.innerHTML = '';
             
-            let filtered = filter === 'All' ? newsData : newsData.filter(n => n.category === filter);
+            const now = new Date();
+            const oneDayInMs = 24 * 60 * 60 * 1000;
 
-            // SORTARE CRONOLOGICĂ
+            // 1. FILTRARE: Categorie + Ultimele 24 de ore
+            let filtered = newsData.filter(item => {
+                const itemDate = new Date(item.date);
+                const isWithin24h = (now - itemDate) < oneDayInMs;
+                const matchesCategory = filter === 'All' || item.category === filter;
+                return matchesCategory && isWithin24h;
+            });
+
+            // 2. SORTARE CRONOLOGICĂ STRICTĂ
             filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
 
             if (filtered.length === 0) {
-                container.innerHTML = `<div class="py-20 text-neutral-800 border border-dashed border-white/5 rounded-3xl text-xs uppercase tracking-widest font-bold">No updates in ${filter}</div>`;
+                container.innerHTML = `
+                    <div class="py-20 text-neutral-800 border border-dashed border-white/5 rounded-3xl text-xs uppercase tracking-widest font-bold">
+                        No intel received in the last 24h for ${filter}
+                    </div>`;
                 return;
             }
 
             filtered.forEach(item => {
                 const dateObj = new Date(item.date);
                 
-                // REPARARE ORĂ: Afișăm ora locală a utilizatorului (România)
-                const timeStr = dateObj.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' });
-                const dateStr = dateObj.toLocaleDateString('ro-RO', { day: '2-digit', month: 'short' });
+                // Formatare care se adaptează la fusul orar al browserului (România)
+                const timeStr = dateObj.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+                const dateStr = dateObj.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
 
                 const card = document.createElement('div');
                 card.className = "news-card p-8 rounded-3xl text-left";
@@ -184,10 +149,9 @@
                     <ul class="summary-list mb-8">${listHtml}</ul>
                     <div class="flex justify-between items-center">
                         <a href="${item.link}" target="_blank" class="text-[10px] font-black text-neutral-500 hover:text-blue-400 uppercase tracking-[0.2em] transition-all flex items-center group">
-                            READ REPORT
+                            READ SOURCE
                             <svg class="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                         </a>
-                        <span class="text-[8px] text-neutral-800 font-bold uppercase tracking-tighter italic font-black">briefly.life v1.0</span>
                     </div>
                 `;
                 container.appendChild(card);
@@ -201,7 +165,9 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        // Pornim procesul
         init();
+        // Refresh automat la fiecare 5 minute
         setInterval(init, 300000);
     </script>
 </body>
