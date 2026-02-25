@@ -26,7 +26,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
 
       - name: Install Dependencies
-        run: pip install feedparser newspaper3k openai Pillow
+        # AICI ESTE REPARAȚIA: am adăugat lxml_html_clean și nltk
+        run: pip install feedparser newspaper3k openai Pillow lxml_html_clean nltk && python -m nltk.downloader punkt punkt_tab
 
       - name: Run Scraper (Always)
         env:
