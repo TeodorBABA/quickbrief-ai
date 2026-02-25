@@ -185,6 +185,41 @@
     },
     {
         "category": "Finance",
+        "title": "Got $5,000? 2 Tech Stocks to Buy and Hold for the Long Term",
+        "link": "https://finance.yahoo.com/news/got-5-000-2-tech-200600655.html",
+        "summary": "• Nvidia holds 86% market share in AI data center processors, driving a 67% year-over-year increase in data center revenue, totaling over $51 billion in Q3.  \n• Continued AI infrastructure investments, projected at over $650 billion from major tech companies, bolster Nvidia’s competitive advantage.  \n• Alphabet’s Google Cloud segment saw a 48% sales spike to $17.7 billion, further enhanced by a partnership with Apple for AI advancements.",
+        "date": "2026-02-25 07:32"
+    },
+    {
+        "category": "Finance",
+        "title": "CEVA, Inc. (CEVA) Reports Record Q4, Expanding AI Connectivity Demand",
+        "link": "https://finance.yahoo.com/news/ceva-inc-ceva-reports-record-194907165.html",
+        "summary": "• CEVA, Inc. reported record Q4 revenue of $31.3 million, a 7% year-over-year increase, bolstered by 18 new licensing agreements in AI connectivity.  \n• Royalty revenue rose 2% to $13.8 million, contributing to a full-year revenue increase to $109.6 million, with licensing revenue surging 65%.  \n• The company achieved improved operating income and reduced loss per share, highlighting effective execution and strong market demand for its AI technologies.",
+        "date": "2026-02-25 07:32"
+    },
+    {
+        "category": "Finance",
+        "title": "ServiceNow Inc (NOW) Expands AI Strategy With Key Acquisitions",
+        "link": "https://finance.yahoo.com/news/servicenow-inc-now-expands-ai-194904140.html",
+        "summary": "• ServiceNow Inc. expands its AI strategy by acquiring Pyramid Analytics, enhancing its unified AI-powered analytics and data science capabilities.  \n• This follows prior acquisitions of Data World and Veza, aimed at integrating deeper context into ServiceNow's offerings.  \n• Bernstein maintains an Outperform rating with a target price of $219, expecting strong subscription revenue growth driven by AI developments.",
+        "date": "2026-02-25 07:32"
+    },
+    {
+        "category": "Finance",
+        "title": "Amazon (AMZN) Navigates Investment Cycle and Strategic Developments",
+        "link": "https://finance.yahoo.com/news/amazon-amzn-navigates-investment-cycle-194927456.html",
+        "summary": "• Goldman Sachs identifies Amazon as a top growth stock, despite Moody's adjusting its outlook to stable from positive due to increased capital spending surpassing $200 billion.  \n• Amazon aims to expand AWS and AI capabilities yet may require external funding amidst intensified competition in AI markets.  \n• TRISO-X, backed by Amazon, secures a rare US NRC license to produce new nuclear fuel, marking a significant regulatory milestone.",
+        "date": "2026-02-25 07:32"
+    },
+    {
+        "category": "Finance",
+        "title": "Anthropic’s Claude Code Security launch rattles cybersecurity stocks, Wedbush sees selloff as overreaction",
+        "link": "https://finance.yahoo.com/news/anthropic-claude-code-security-launch-200400637.html",
+        "summary": "• Anthropic's launch of Claude Code Security has caused significant volatility in cybersecurity stocks, with declines seen in major companies like CrowdStrike, Zscaler, and Palo Alto Networks.  \n• Analysts at Wedbush believe the market's negative reaction is overblown, predicting that established cybersecurity vendors will benefit from AI advancements.  \n• The firm maintains a positive outlook for CrowdStrike, Palo Alto Networks, and Zscaler, citing their resilience and growth potential amidst evolving cyber threats.",
+        "date": "2026-02-25 07:31"
+    },
+    {
+        "category": "Finance",
         "title": "Lam Research (LRCX) Expands Footprint Amid Industry Momentum",
         "link": "https://finance.yahoo.com/news/lam-research-lrcx-expands-footprint-195111981.html",
         "summary": "• Lam Research Corporation (LRCX) opened a new 9,200 sq. ft. office in Boise, Idaho, aiming to enhance collaboration with major customer Micron Technology and support advanced memory chip manufacturing.  \n• The expansion is integral to the company's strategy in a thriving semiconductor industry.  \n• Lam's Board approved a quarterly cash dividend of $0.26 per share, reflecting continued financial strength.",
@@ -336,41 +371,5 @@
         "link": "https://finance.yahoo.com/news/black-swan-taleb-warns-software-195809956.html",
         "summary": "• Nassim Taleb warns investors of rising volatility and potential bankruptcies within the software sector, particularly influenced by the artificial intelligence boom entering a fragile phase.  \n• He highlights that current AI leaders may face significant challenges, with historical trends indicating they are often displaced.  \n• The S&P 500 Index is showing signs of vulnerability, falling approximately 1% amid escalating market uncertainties and geopolitical tensions.",
         "date": "2026-02-25 07:25"
-    },
-    {
-        "category": "Markets",
-        "title": "BlackRock’s Rick Rieder is locking in attractive yields in this corner of the bond market before the opportunity slips away",
-        "link": "https://www.cnbc.com/2026/02/24/blackrocks-rick-rieder-is-locking-in-attractive-yields-in-this-corner-of-the-bond-market.html",
-        "summary": "• BlackRock’s Rick Rieder highlights a critical opportunity in emerging market bonds, locking in double-digit yields as interest rates stabilize globally.  \n• Emerging market debt comprises nearly 15% of the iShares Flexible Income Active ETF, with significant holdings in Brazil and Mexico.  \n• Rieder anticipates future rate cuts by the Federal Reserve, potentially shifting investment focus while acknowledging that current high yields may not last forever.",
-        "date": "2026-02-25 07:24"
-    },
-    {
-        "category": "Markets",
-        "title": "The violent software sell-off pauses. Wall Street says bet on these stocks to bounce",
-        "link": "https://www.cnbc.com/2026/02/24/the-violent-software-sell-off-pauses-wall-street-says-bet-on-these-stocks-to-bounce.html",
-        "summary": "• Wall Street identifies potential recovery in software stocks amid a significant sell-off, with Intuit and CrowdStrike highlighted as resilient options.  \n• The software sector remains down over 25% year-to-date, driven by fears of AI's impact on traditional pricing models.  \n• Analysts suggest investing in cybersecurity firms, like CrowdStrike, as AI tools transform enterprise security needs and create new growth opportunities.",
-        "date": "2026-02-25 07:24"
-    },
-    {
-        "category": "Markets",
-        "title": "Bitcoin mining is no longer profitable after crypto's latest downward turn, analyst says",
-        "link": "https://www.cnbc.com/2026/02/24/bitcoin-mining-is-no-longer-profitable-after-cryptos-latest-downward-turn.html",
-        "summary": "• Bitcoin miners are facing unprofitability as the cryptocurrency trades around $64,143, down 26% year-to-date, with hash prices declining 30% in three months.  \n• Many firms, including Bitmine Immersion Technologies, are experiencing significant dips in performance, further exacerbated by low mining revenues.  \n• Some mining operations are pivoting to high-performance computing (HPC) services to mitigate losses, with improved demand offering potential financial relief.",
-        "date": "2026-02-25 07:24"
-    },
-    {
-        "category": "Markets",
-        "title": "The big market rotation may lead to gains in this health care name. Trading it with options",
-        "link": "https://www.cnbc.com/2026/02/24/the-big-market-rotation-may-lead-to-gains-in-this-health-care-name-trading-it-with-options.html",
-        "summary": "• The S&P 500 historically experiences a dip every February, with current market movements illustrating a sector rotation away from high-beta tech towards more defensive sectors like health care.  \n• Illumina Inc. (ILMN) has shown promising technical signals, including a bullish shift in the directional movement index and a break above the relative strength index’s threshold.  \n• A bull call spread strategy targeting a $120-$125 range on ILMN could capitalize on this bullish outlook, with potential profits aligning with improved market conditions.",
-        "date": "2026-02-25 07:24"
-    },
-    {
-        "id": 1772000403,
-        "category": "Finance",
-        "title": "Analyst Report: HF Sinclair Corporation",
-        "link": "https://finance.yahoo.com/research/reports/ARGUS_3051_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-        "summary": "- HF Sinclair Corporation, based in Dallas, specializes in producing and marketing light crude products, including gasoline and renewable diesel.  \n- The company operates multiple refineries across several states and offers crude oil transportation, storage, and terminaling services.  \n- HF Sinclair fuels over 1,500 branded stations, highlighting its significant presence in the petroleum industry.  ",
-        "date": "2026-02-24T18:13"
     }
 ]
