@@ -11,15 +11,15 @@ from openai import OpenAI
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-# Surse testate și stabile
 SOURCES = {
     "Markets": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069",
     "Tech": "https://techcrunch.com/feed/",
     "Finance": "https://finance.yahoo.com/news/rssindex",
-    "Business": "https://finance.yahoo.com/news/rssbusiness" # Schimbat pentru stabilitate
+    "Business": "https://www.cnbc.com/id/10001147/device/rss/rss.html"
 }
 
 JSON_FILE = "news_data.json"
+SUMMARY_FILE = "daily_summaries.json"
 
 def get_keywords(text):
     words = re.findall(r'\w{4,}', text.lower())
@@ -48,67 +48,77 @@ def summarize_with_ai(title, full_text, category):
     except:
         return None
 
+def generate_intelligence_report(all_news):
+    """Generează un rezumat global al zilei"""
+    today_str = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d")
+    
+    try:
+        if os.path.exists(SUMMARY_FILE):
+            with open(SUMMARY_FILE, "r") as f: summaries = json.load(f)
+        else: summaries = []
+        
+        if any(s['date'] == today_str for s in summaries): return
+
+        # Luăm primele 15 titluri pentru context
+        context = "\n".join([f"- {n['title']}" for n in all_news[:15]])
+        
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a Chief Analyst. Summarize the top 3 global business/tech trends of the last 24 hours in impactful paragraphs. Be executive and sharp."},
+                {"role": "user", "content": f"Analyze these headlines:\n{context}"}
+            ]
+        )
+        
+        new_summary = {"date": today_str, "content": response.choices[0].message.content}
+        summaries.insert(0, new_summary)
+        with open(SUMMARY_FILE, "w") as f: json.dump(summaries[:7], f, indent=4)
+    except Exception as e: print(f"Report Error: {e}")
+
 def fetch_all_news():
     if not os.path.exists(JSON_FILE):
         with open(JSON_FILE, "w") as f: json.dump([], f)
-    
-    with open(JSON_FILE, "r", encoding="utf-8") as f:
-        old_data = json.load(f)
+    with open(JSON_FILE, "r") as f: old_data = json.load(f)
 
     existing_links = {item['link'] for item in old_data}
     existing_keywords_list = [get_keywords(item['title']) for item in old_data]
     new_items = []
-
-    # REGLARE ORĂ ROMÂNIA (UTC + 2)
-    # Vercel e pe UTC, așa că adunăm 2 ore manual pentru a salva ora RO în JSON
-    romania_time = datetime.utcnow() + timedelta(hours=2)
-    clean_date = romania_time.strftime("%Y-%m-%d %H:%M")
+    
+    # Ora României
+    current_time_ro = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d %H:%M")
 
     for category, url in SOURCES.items():
         print(f"Scanning {category}...")
         feed = feedparser.parse(url)
-        
-        for entry in feed.entries[:10]:
+        for entry in feed.entries[:15]:
             title = entry.title.strip()
             link = entry.link
+            if link in existing_links or is_too_similar(title, existing_keywords_list): continue
             
-            if link in existing_links: continue
-            if is_too_similar(title, existing_keywords_list): continue
-                
             try:
                 article = Article(link)
-                article.download()
-                article.parse()
-                
+                article.download(); article.parse()
                 if len(article.text) < 300: continue
                 
                 summary = summarize_with_ai(title, article.text, category)
-                if not summary: continue
+                if summary:
+                    new_items.append({
+                        "category": category,
+                        "title": title,
+                        "link": link,
+                        "summary": summary,
+                        "date": current_time_ro
+                    })
+                    existing_keywords_list.append(get_keywords(title))
+                    existing_links.add(link)
+                    print(f"   [+] {title[:40]}")
+            except: continue
 
-                new_news = {
-                    "category": category,
-                    "title": title,
-                    "link": link,
-                    "summary": summary,
-                    "date": clean_date # Ora României salvată direct
-                }
-                
-                new_items.append(new_news)
-                existing_keywords_list.append(get_keywords(title))
-                existing_links.add(link)
-                print(f"   [ADDED] {category}")
-                time.sleep(1) 
-            except:
-                continue
-
-    # Combinăm, sortăm și păstrăm doar ultimele 24h în JSON (opțional, dar recomandat)
     final_list = new_items + old_data
-    # Sortare descrescătoare
     final_list.sort(key=lambda x: x['date'], reverse=True)
-
-    with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(final_list[:50], f, indent=4, ensure_ascii=False)
+    
+    with open(JSON_FILE, "w") as f: json.dump(final_list[:60], f, indent=4)
+    generate_intelligence_report(final_list)
 
 if __name__ == "__main__":
-    if api_key:
-        fetch_all_news()
+    if api_key: fetch_all_news()
