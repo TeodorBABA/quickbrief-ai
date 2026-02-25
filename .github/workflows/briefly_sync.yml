@@ -2,11 +2,9 @@ name: Briefly Intelligence Sync
 
 on:
   schedule:
-    # Rulează la fiecare 15 minute pentru a menține site-ul LIVE
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite rularea manuală
+  workflow_dispatch:
 
-# VITAL: Îi dăm voie robotului să modifice fișierele (git push)
 permissions:
   contents: write
 
@@ -20,38 +18,26 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          # Python 3.10 este necesar pentru instagrapi
           python-version: '3.10'
 
       - name: Install System Fonts (Pillow Fix)
         run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
 
       - name: Install Dependencies
-        # Include absolut toate librăriile necesare, inclusiv lxml_html_clean și instagrapi
-        run: pip install feedparser newspaper3k openai Pillow lxml_html_clean instagrapi nltk && python -m nltk.downloader punkt punkt_tab
+        # Am adăugat librăria "requests" necesară noului script
+        run: pip install feedparser newspaper3k openai Pillow lxml_html_clean nltk requests && python -m nltk.downloader punkt punkt_tab
 
       - name: Run Scraper (Always)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python main.py
 
-      - name: Run Social Poster & Instagram Post (Every 4 Hours or Manual)
-        env:
-          # Folosim noul secret pentru logarea sigură cu Session ID
-          IG_SESSIONID: ${{ secrets.IG_SESSIONID }}
+      - name: Run Social Poster (Image Gen)
         run: |
-          # Preluăm ora curentă în format UTC (00-23)
           CURRENT_HOUR=$(date -u +"%H")
-          
-          # Rulăm dacă acțiunea e manuală SAU dacă este una dintre orele vizate
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || [[ "$CURRENT_HOUR" =~ ^(00|04|08|12|16|20)$ ]]; then
-            echo "1. Executăm social_poster.py (generare imagine)..."
+            echo "Executăm social_poster.py (generare imagine)..."
             python social_poster.py
-            
-            echo "2. Executăm instagram_poster.py (postare pe IG)..."
-            python instagram_poster.py
-          else
-            echo "Sărim peste generarea și postarea de imagini sociale. (Ora UTC: $CURRENT_HOUR)"
           fi
 
       - name: Commit and Push Changes
@@ -59,11 +45,19 @@ jobs:
           git config --global user.name "BrieflyBot"
           git config --global user.email "bot@briefly.life"
           
-          # "|| true" previne eroarea dacă unul din fișiere nu a fost creat încă
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg || true
-          
           git commit -m "Auto-update: 24H Intelligence & Social Assets" || exit 0
-          
-          # Ne asigurăm că suntem sincronizați înainte de push
           git pull --rebase origin main
           git push
+
+      - name: Post to Instagram via Webhook (After Push)
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: |
+          CURRENT_HOUR=$(date -u +"%H")
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || [[ "$CURRENT_HOUR" =~ ^(00|04|08|12|16|20)$ ]]; then
+            # Preluăm ID-ul noului cod încărcat pe GitHub
+            export COMMIT_HASH=$(git rev-parse HEAD)
+            echo "Trimitem datele către Make.com (Hash: $COMMIT_HASH)..."
+            python instagram_poster.py
+          fi
