@@ -9,13 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Permisiune explicită la nivel de job
+      contents: write
       
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true
+          fetch-depth: 0 # Aduce tot istoricul pentru a evita conflictele de push
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -26,22 +26,29 @@ jobs:
         run: |
           pip install feedparser newspaper3k openai Pillow
 
-      - name: Run Scraper (Update Website)
+      - name: Run Scraper
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python main.py
 
-      - name: Run Social Poster (Every 4 Hours)
-        # Folosim o logică mai simplă pentru filtrarea orei
-        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), github.event.schedule && formatDateTime(github.event.scheduled_time, 'HH') || '00')
+      - name: Run Social Poster
+        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), formatDateTime(github.event.scheduled_time, 'HH'))
         run: python social_poster.py
 
       - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Folosim token-ul sistemului pentru push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Actualizăm local repository-ul pentru a evita "Updates were rejected"
+          git pull origin main --rebase
+          
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
-          git commit -m "Automated update: Data & Social assets" || echo "No changes to commit"
-          git push origin main
+          
+          # Verificăm dacă există ceva de salvat
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Automated synchronization"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
