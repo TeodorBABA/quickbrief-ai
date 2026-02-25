@@ -3,7 +3,7 @@ import os
 import json
 import re
 from datetime import datetime, timedelta
-from newspaper import Article
+from newspaper import Article, Config
 from openai import OpenAI
 
 # --- CONFIGURARE ---
@@ -19,6 +19,7 @@ SOURCES = {
 
 JSON_FILE = "news_data.json"
 SUMMARY_FILE = "daily_summaries.json"
+MAX_AI_CALLS_PER_RUN = 10 # Salvăm resursele și prevenim blocajele
 
 def get_keywords(text):
     words = re.findall(r'\w{4,}', text.lower())
@@ -53,7 +54,8 @@ def analyze_news_with_ai(title, full_text, category):
                 },
                 {"role": "user", "content": f"Title: {title}\nCategory: {category}\nContent: {full_text[:2000]}"}
             ],
-            temperature=0.2
+            temperature=0.2,
+            timeout=15 # Timeout pentru OpenAI
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
@@ -83,7 +85,8 @@ def generate_intelligence_report(all_news):
             messages=[
                 {"role": "system", "content": "Summarize the top global business trends of the last 24 hours in 3 detailed paragraphs."},
                 {"role": "user", "content": f"Context:\n{context}"}
-            ]
+            ],
+            timeout=20
         )
         summaries.insert(0, {"date": today_str, "content": response.choices[0].message.content})
         with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
@@ -96,7 +99,7 @@ def fetch_all_news():
         with open(JSON_FILE, "w") as f: json.dump([], f)
     with open(JSON_FILE, "r") as f: old_data = json.load(f)
 
-    # --- NOU: Curățăm datele mai vechi de 24 de ore ---
+    # Curățăm datele mai vechi de 24 de ore
     current_time_dt = datetime.utcnow() + timedelta(hours=2)
     cutoff_time = current_time_dt - timedelta(hours=24)
     
@@ -113,23 +116,39 @@ def fetch_all_news():
     new_items = []
     current_time_ro = current_time_dt.strftime("%Y-%m-%d %H:%M")
 
+    # Configurare strictă pentru descărcare web
+    news_config = Config()
+    news_config.browser_user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    news_config.request_timeout = 10 # Maxim 10 secunde de așteptare pe site
+
     print(f"--- Starting Scan at {current_time_ro} ---")
+    ai_calls_made = 0
 
     for category, url in SOURCES.items():
+        if ai_calls_made >= MAX_AI_CALLS_PER_RUN:
+            break
+
         print(f"Scanning {category}...")
         feed = feedparser.parse(url)
-        # Luăm primele 25 de știri din fiecare feed pentru a nu rata nimic din ultimele 24h
+        
         for entry in feed.entries[:25]:
+            if ai_calls_made >= MAX_AI_CALLS_PER_RUN:
+                print("Limita de siguranță AI atinsă. Restul știrilor vor fi preluate la următoarea rulare.")
+                break
+
             title = entry.title.strip()
             link = entry.link
             if link in existing_links or is_too_similar(title, existing_keywords_list): continue
             
             try:
-                article = Article(link)
-                article.download(); article.parse()
+                # Folosim noua configurare cu timeout
+                article = Article(link, config=news_config)
+                article.download()
+                article.parse()
                 if len(article.text) < 300: continue
                 
                 ai_analysis = analyze_news_with_ai(title, article.text, category)
+                ai_calls_made += 1 # Contorizăm apelul
                 
                 if ai_analysis:
                     print(f"   [+] {title[:50]}...")
@@ -145,12 +164,10 @@ def fetch_all_news():
                     existing_keywords_list.append(get_keywords(title))
                     existing_links.add(link)
             except Exception as e:
+                print(f"   [SKIP] Timeout sau eroare la {link[:40]}...")
                 continue
 
-    # Combinăm știrile noi cu cele vechi (dar doar cele din ultimele 24h)
     final_list = new_items + recent_old_data
-    
-    # Salvăm TOT ce este în fereastra de 24h (fără limită de număr, doar limită de timp)
     with open(JSON_FILE, "w") as f: json.dump(final_list, f, indent=4)
     print(f"Scan complete. {len(final_list)} items currently in the 24h window.")
     
