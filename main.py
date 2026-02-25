@@ -19,6 +19,7 @@ SOURCES = {
 }
 
 JSON_FILE = "news_data.json"
+SUMMARY_FILE = "daily_summaries.json" # Am adus inapoi fisierul de sinteza
 
 def get_keywords(text):
     words = re.findall(r'\w{4,}', text.lower())
@@ -57,12 +58,51 @@ def analyze_news_with_ai(title, full_text, category):
                 },
                 {"role": "user", "content": f"Title: {title}\nNews Category: {category}\nContent excerpt: {full_text[:1500]}"}
             ],
-            temperature=0.3 # Mai puțin creativ, mai analitic
+            temperature=0.3
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
         print(f"AI Analysis Error: {e}")
         return None
+
+def generate_intelligence_report(all_news):
+    """Generează un rezumat global al zilei pentru site"""
+    today_str = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d")
+    print(f"--- Attempting to generate Intelligence Report for {today_str} ---")
+    
+    summaries = []
+    if os.path.exists(SUMMARY_FILE):
+        try:
+            with open(SUMMARY_FILE, "r", encoding="utf-8") as f:
+                summaries = json.load(f)
+        except:
+            summaries = []
+
+    if any(s.get('date') == today_str for s in summaries):
+        print("Report for today already exists. Skipping.")
+        return
+
+    if not all_news: return
+        
+    context = "\n".join([f"- {n['title']}" for n in all_news[:20]])
+    
+    try:
+        print("Calling OpenAI for Daily Synthesis...")
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a Chief Business Analyst. Summarize the top 3 global business/tech trends of the last 24 hours in 3 sharp, impactful paragraphs. Use professional, executive English."},
+                {"role": "user", "content": f"Context headlines:\n{context}"}
+            ]
+        )
+        report_content = response.choices[0].message.content
+        summaries.insert(0, {"date": today_str, "content": report_content})
+        
+        with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
+            json.dump(summaries[:7], f, indent=4, ensure_ascii=False)
+        print(f"Successfully created/updated {SUMMARY_FILE}")
+    except Exception as e:
+        print(f"Intelligence Report Error: {e}")
 
 def fetch_all_news():
     if not os.path.exists(JSON_FILE):
@@ -72,7 +112,6 @@ def fetch_all_news():
     existing_links = {item['link'] for item in old_data}
     existing_keywords_list = [get_keywords(item['title']) for item in old_data]
     new_items = []
-    # Ora României
     current_time_ro = (datetime.utcnow() + timedelta(hours=2)).strftime("%Y-%m-%d %H:%M")
 
     print(f"--- Starting Scan at {current_time_ro} ---")
@@ -80,7 +119,6 @@ def fetch_all_news():
     for category, url in SOURCES.items():
         print(f"Scanning {category}...")
         feed = feedparser.parse(url)
-        # Scanăm doar primele 7 pentru eficiență, căutăm doar "crema"
         for entry in feed.entries[:7]:
             title = entry.title.strip()
             link = entry.link
@@ -91,34 +129,33 @@ def fetch_all_news():
                 article.download(); article.parse()
                 if len(article.text) < 300: continue
                 
-                # Analizăm cu AI
                 ai_analysis = analyze_news_with_ai(title, article.text, category)
                 
                 if ai_analysis:
-                    status = "[MAJOR]" if ai_analysis['is_major'] else "[Minor]"
+                    status = "[MAJOR]" if ai_analysis.get('is_major') else "[Minor]"
                     print(f"   {status} {title[:50]}...")
                     
                     new_items.append({
                         "category": category,
                         "title": title,
                         "link": link,
-                        # Salvăm datele structurate
-                        "summary": ai_analysis['website_summary'],
-                        "short_summary": ai_analysis['social_headline'], # Asta merge pe poză
-                        "is_major": ai_analysis['is_major'],
+                        "summary": ai_analysis.get('website_summary', ''),
+                        "short_summary": ai_analysis.get('social_headline', ''),
+                        "is_major": ai_analysis.get('is_major', False),
                         "date": current_time_ro
                     })
                     existing_keywords_list.append(get_keywords(title))
                     existing_links.add(link)
             except Exception as e:
-                print(f"Error processing {link}: {e}")
                 continue
 
-    # Adăugăm cele noi la începutul listei
     final_list = new_items + old_data
-    # Păstrăm doar ultimele 50 de știri în JSON pentru a nu-l aglomera
-    with open(JSON_FILE, "w") as f: json.dump(final_list[:50], f, indent=4)
+    # Salvăm lista actualizată
+    with open(JSON_FILE, "w") as f: json.dump(final_list[:60], f, indent=4)
     print("Scan complete. Data saved.")
+    
+    # Generăm raportul zilnic după ce am descărcat noile știri
+    generate_intelligence_report(final_list)
 
 if __name__ == "__main__":
     if api_key: fetch_all_news()
