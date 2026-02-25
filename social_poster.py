@@ -14,7 +14,7 @@ TEXT_WHITE = (250, 250, 250)
 TEXT_GRAY = (163, 163, 163)
 
 def get_fonts():
-    # Folosim calea standard din GitHub Actions sau fontul local dacă l-ai urcat
+    # Acum va găsi garantat fontul datorită instalării din fișierul .yml
     f_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
     f_path_reg = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
     try:
@@ -24,6 +24,7 @@ def get_fonts():
             'meta': ImageFont.truetype(f_path, 30)
         }
     except:
+        print("Avertisment: Fonturile custom nu au fost găsite. Se folosește fontul default.")
         return {'title': ImageFont.load_default(), 'body': ImageFont.load_default(), 'meta': ImageFont.load_default()}
 
 def generate_social_image(news_item):
@@ -37,12 +38,12 @@ def generate_social_image(news_item):
     y_cursor = 100
 
     # 1. Header: Categorie și "MAJOR"
-    category_text = f"{news_item['category'].upper()} • EXECUTIVE INTELLIGENCE"
+    category_text = f"{news_item.get('category', 'ALERT').upper()} • EXECUTIVE INTELLIGENCE"
     draw.text((margin, y_cursor), category_text, fill=ACCENT_COLOR, font=fonts['meta'])
     
     # 2. Titlu
     y_cursor += 80
-    title_lines = textwrap.wrap(news_item['title'], width=22)
+    title_lines = textwrap.wrap(news_item.get('title', 'No Title'), width=22)
     for line in title_lines[:3]:
         draw.text((margin, y_cursor), line, fill=TEXT_WHITE, font=fonts['title'])
         y_cursor += 90
@@ -72,29 +73,30 @@ if __name__ == "__main__":
         print("Eroare: news_data.json nu există.")
         exit()
 
-    with open(JSON_FILE, "r", encoding="utf-8") as f:
-        news_list = json.load(f)
+    try:
+        with open(JSON_FILE, "r", encoding="utf-8") as f:
+            news_list = json.load(f)
+    except Exception as e:
+        print(f"Eroare la citirea JSON: {e}")
+        exit()
 
     # Căutăm cea mai recentă știre MAJORĂ care nu a fost încă postată
-    # news_data.json este deja sortat cu cele mai noi primele
     target_news = None
-    
     posted_ids = []
+    
     if os.path.exists(POSTED_LOG):
         with open(POSTED_LOG, "r") as f:
             posted_ids = f.read().splitlines()
 
     for item in news_list:
-        # Verificăm dacă e majoră ȘI dacă link-ul (ID-ul) nu e în lista de postate
         if item.get('is_major') == True and item.get('link') not in posted_ids:
             target_news = item
-            break # Am găsit-o pe cea mai nouă, ne oprim
+            break 
 
     if target_news:
-        print(f"Postăm știrea majoră: {target_news['title']}")
+        print(f"Postăm știrea majoră: {target_news.get('title', 'Unknown')}")
         if generate_social_image(target_news):
-            # Salvăm ID-ul ca să nu o mai postăm o dată peste 4 ore
             with open(POSTED_LOG, "a") as f:
-                f.write(target_news['link'] + "\n")
+                f.write(target_news.get('link', '') + "\n")
     else:
         print("Nu s-a găsit nicio știre majoră nouă în ultimele 4 ore.")
