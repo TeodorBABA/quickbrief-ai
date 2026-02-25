@@ -3,64 +3,77 @@ import os
 import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
-def create_post_image(title, category, date_str):
-    # 1. Configurare Canvas (1080x1080 pentru Instagram)
-    width, height = 1080, 1080
-    bg_color = (10, 10, 10)      # Negru mat
-    accent_color = (59, 130, 246) # Albastru Briefly
-    text_color = (255, 255, 255)  # Alb pur
+def create_post_image(title, summary, category, date_str):
+    # 1. Format Instagram Portrait (4:5 Ratio)
+    width, height = 1080, 1350
+    bg_color = (15, 15, 15)       # Fundal negru texturat
+    accent_color = (59, 130, 246)  # Albastru Briefly
+    text_white = (255, 255, 255)
+    text_gray = (180, 180, 180)
 
     img = Image.new('RGB', (width, height), color=bg_color)
     draw = ImageDraw.Draw(img)
 
-    # 2. Gestionare Fonturi (Soluție anti-eroare pentru GitHub Actions)
+    # 2. Incarcare Fonturi (Fallback pentru GitHub Actions)
     try:
-        # Încercăm să folosim un font de sistem dacă există, altfel fallback la 60px
-        font_title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 65)
-        font_meta = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 35)
+        font_title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 70)
+        font_summary = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 40)
+        font_meta = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
     except:
-        # Dacă nu sunt fonturi instalate pe serverul GitHub, Pillow va folosi fontul default
-        # (Aici e problema de vizibilitate, dar codul nu va mai crăpa)
         font_title = ImageFont.load_default()
+        font_summary = font_title
         font_meta = font_title
 
-    # 3. Desenare Header (Categorie și Dată)
-    # Chenar pentru categorie
-    draw.rectangle([60, 60, 220, 110], outline=accent_color, width=3)
-    draw.text((85, 72), category.upper(), fill=accent_color, font=font_meta)
+    # 3. Header: Categorie (Pila albastra)
+    draw.rectangle([60, 80, 250, 130], fill=accent_color)
+    draw.text((80, 90), category.upper(), fill=text_white, font=font_meta)
     
-    # Dată în dreapta
-    draw.text((780, 72), date_str.split(' ')[0], fill=(150, 150, 150), font=font_meta)
+    # Data (Sus in dreapta)
+    draw.text((820, 90), date_str.split(' ')[0], fill=text_gray, font=font_meta)
 
-    # 4. Desenare Titlu (cu auto-wrap pentru a nu ieși din cadru)
+    # 4. Titlu (Wrap lat)
     margin = 60
-    offset = 250
-    # wrap la ~20 caractere pentru a păstra textul mare și lizibil
-    wrapped_lines = textwrap.wrap(title, width=22) 
+    y_cursor = 220
+    title_lines = textwrap.wrap(title, width=20)
+    for line in title_lines:
+        draw.text((margin, y_cursor), line, fill=text_white, font=font_title)
+        y_cursor += 90
 
-    for line in wrapped_lines:
-        draw.text((margin, offset), line, fill=text_color, font=font_title)
-        offset += 90 # Spațiere între rânduri
+    # 5. Linie de separare fină
+    y_cursor += 40
+    draw.line([60, y_cursor, 400, y_cursor], fill=accent_color, width=5)
+    y_cursor += 60
 
-    # 5. Adăugare Branding Briefly.life jos
-    draw.text((60, 950), "BRIEFLY.LIFE", fill=accent_color, font=font_meta)
-    draw.rectangle([60, 930, 1020, 932], fill=(30, 30, 30)) # Linie separatoare fină
+    # 6. Rezumat (Summary)
+    summary_lines = textwrap.wrap(summary, width=45)
+    for line in summary_lines:
+        draw.text((margin, y_cursor), line, fill=text_gray, font=font_summary)
+        y_cursor += 55
 
-    # Salvare
-    img.save("last_news_post.jpg", quality=95)
-    print("Succes! Imaginea a fost generată: last_news_post.jpg")
+    # 7. Footer: Branding
+    draw.rectangle([0, 1250, 1080, 1350], fill=(25, 25, 25))
+    draw.text((60, 1285), "BRIEFLY.LIFE | Intelligence Report", fill=accent_color, font=font_meta)
+
+    # 8. Salvare in folderul 'posts'
+    if not os.path.exists("posts"):
+        os.makedirs("posts")
+    
+    filename = f"posts/post_{date_str.replace(':', '-').replace(' ', '_')}.jpg"
+    img.save(filename, quality=95)
+    img.save("last_news_post.jpg", quality=95) # Copie pentru acces rapid
+    
+    print(f"Imagine generata: {filename}")
 
 if __name__ == "__main__":
     if os.path.exists("news_data.json"):
         with open("news_data.json", "r", encoding="utf-8") as f:
             news_list = json.load(f)
             if news_list:
-                # Luăm cea mai proaspătă știre
-                top_news = news_list[0]
+                latest = news_list[0]
+                # Extragem si 'summary' din JSON-ul tau
                 create_post_image(
-                    title=top_news['title'],
-                    category=top_news['category'],
-                    date_str=top_news['date']
+                    title=latest.get('title', 'No Title'),
+                    summary=latest.get('summary', 'No summary available.'),
+                    category=latest.get('category', 'News'),
+                    date_str=latest.get('date', '2026-02-25')
                 )
-    else:
-        print("Eroare: news_data.json nu a fost găsit!")
