@@ -2,11 +2,9 @@ name: Briefly Intelligence Sync
 
 on:
   schedule:
-    # Rulează la fiecare 15 minute pentru a menține site-ul LIVE
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite rularea manuală
+  workflow_dispatch:
 
-# VITAL: Îi dăm voie robotului să modifice fișierele (git push)
 permissions:
   contents: write
 
@@ -26,25 +24,30 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
 
       - name: Install Dependencies
-        # AICI ESTE REPARAȚIA: am adăugat lxml_html_clean și nltk
-        run: pip install feedparser newspaper3k openai Pillow lxml_html_clean nltk && python -m nltk.downloader punkt punkt_tab
+        # AICI am adăugat instagrapi în lista de instalare
+        run: pip install feedparser newspaper3k openai Pillow lxml_html_clean instagrapi nltk && python -m nltk.downloader punkt punkt_tab
 
       - name: Run Scraper (Always)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python main.py
 
-      - name: Run Social Poster (Every 4 Hours or Manual)
+      - name: Run Social Poster & Instagram Post (Every 4 Hours or Manual)
+        # Am expus credențialele ca variabile de mediu
+        env:
+          IG_USERNAME: ${{ secrets.IG_USERNAME }}
+          IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
         run: |
-          # Preluăm ora curentă în format UTC (00-23)
           CURRENT_HOUR=$(date -u +"%H")
           
-          # Rulăm dacă acțiunea e manuală SAU dacă este una dintre orele vizate
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || [[ "$CURRENT_HOUR" =~ ^(00|04|08|12|16|20)$ ]]; then
-            echo "Executăm social_poster.py (Ora UTC: $CURRENT_HOUR)"
+            echo "1. Executăm social_poster.py (generare imagine)..."
             python social_poster.py
+            
+            echo "2. Executăm instagram_poster.py (postare pe IG)..."
+            python instagram_poster.py
           else
-            echo "Sărim peste generarea de imagini sociale. (Ora UTC: $CURRENT_HOUR)"
+            echo "Sărim peste generarea și postarea de imagini sociale. (Ora UTC: $CURRENT_HOUR)"
           fi
 
       - name: Commit and Push Changes
@@ -52,11 +55,7 @@ jobs:
           git config --global user.name "BrieflyBot"
           git config --global user.email "bot@briefly.life"
           
-          # "|| true" previne eroarea dacă unul din fișiere nu a fost creat încă
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg || true
-          
           git commit -m "Auto-update: 24H Intelligence & Social Assets" || exit 0
-          
-          # Ne asigurăm că suntem sincronizați înainte de push
           git pull --rebase origin main
           git push
