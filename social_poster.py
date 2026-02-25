@@ -4,97 +4,97 @@ import textwrap
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
-CANVAS_SIZE = (1080, 1350) 
+# --- CONFIGURARE ȘI MEMORIE ---
+POSTED_LOG = "posted_ids.txt"
+JSON_FILE = "news_data.json"
+# Culorile tale premium
 BG_COLOR = (10, 10, 10)    
 ACCENT_COLOR = (59, 130, 246) 
-TEXT_WHITE = (255, 255, 255)
-TEXT_GRAY = (180, 180, 180)
+TEXT_WHITE = (250, 250, 250)
+TEXT_GRAY = (163, 163, 163)
 
 def get_fonts():
-    f_path = "/usr/share/fonts/truetype/dejavu/"
+    # Folosim calea standard din GitHub Actions sau fontul local dacă l-ai urcat
+    f_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+    f_path_reg = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
     try:
         return {
-            'title_big': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 75),
-            'title_med': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 60),
-            'headline': ImageFont.truetype(f"{f_path}DejaVuSans.ttf", 44), # Perfect size for a dense paragraph
-            'meta_bold': ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 32)
+            'title': ImageFont.truetype(f_path, 72),
+            'body': ImageFont.truetype(f_path_reg, 42),
+            'meta': ImageFont.truetype(f_path, 30)
         }
     except:
-        default = ImageFont.load_default()
-        return {'title_big': default, 'title_med': default, 'headline': default, 'meta_bold': default}
+        return {'title': ImageFont.load_default(), 'body': ImageFont.load_default(), 'meta': ImageFont.load_default()}
 
-def create_post_image(news_item):
-    title = news_item.get('title', '')
-    
-    # Luăm noul câmp 'social_text'
-    headline = news_item.get('social_text', news_item.get('social_insight', ''))
-    
-    # Siguranță Anti-Majuscule (Dacă o ia razna)
-    upper_count = sum(1 for c in headline if c.isupper())
-    if len(headline) > 0 and (upper_count / len(headline)) > 0.3:
-        headline = headline.capitalize()
-
-    category = news_item.get('category', 'NEWS')
-    date_str = news_item.get('date', '')
-
-    img = Image.new('RGB', CANVAS_SIZE, color=BG_COLOR)
+def generate_social_image(news_item):
+    # Dimensiune Portrait Instagram (4:5)
+    img = Image.new('RGB', (1080, 1350), color=BG_COLOR)
     draw = ImageDraw.Draw(img)
     fonts = get_fonts()
 
-    # --- 1. HEADER ---
-    try:
-        dt = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
-        clean_date = dt.strftime("%d %b").upper()
-    except: clean_date = "RECENT"
+    # Margini și layout
+    margin = 80
+    y_cursor = 100
 
-    draw.rectangle([60, 70, 260, 130], fill=ACCENT_COLOR)
-    draw.text((85, 85), category.upper(), fill=TEXT_WHITE, font=fonts['meta_bold'])
+    # 1. Header: Categorie și "MAJOR"
+    category_text = f"{news_item['category'].upper()} • EXECUTIVE INTELLIGENCE"
+    draw.text((margin, y_cursor), category_text, fill=ACCENT_COLOR, font=fonts['meta'])
     
-    date_w = draw.textlength(clean_date, font=fonts['meta_bold'])
-    draw.text((1080 - date_w - 60, 85), clean_date, fill=TEXT_GRAY, font=fonts['meta_bold'])
+    # 2. Titlu
+    y_cursor += 80
+    title_lines = textwrap.wrap(news_item['title'], width=22)
+    for line in title_lines[:3]:
+        draw.text((margin, y_cursor), line, fill=TEXT_WHITE, font=fonts['title'])
+        y_cursor += 90
 
-    # --- 2. TITLU PRINCIPAL ---
-    y_cursor = 330 # Ridicat usor ca sa faca loc paragrafului mare
+    # 3. Linie Accent
+    y_cursor += 60
+    draw.line([margin, y_cursor, margin + 150, y_cursor], fill=ACCENT_COLOR, width=10)
     
-    active_title_font = fonts['title_big'] if len(title) < 60 else fonts['title_med']
-    wrap_width = 20 if len(title) < 60 else 25
-    
-    title_lines = textwrap.wrap(title, width=wrap_width)
-    for line in title_lines[:4]: # Max 4 linii pentru titlu
-        draw.text((60, y_cursor), line, fill=TEXT_WHITE, font=active_title_font)
-        y_cursor += active_title_font.size + 15
+    # 4. Body (social_text generat de AI)
+    y_cursor += 100
+    body_text = news_item.get('social_text', "No strategic briefing available.")
+    body_lines = textwrap.wrap(body_text, width=40)
+    for line in body_lines[:8]:
+        draw.text((margin, y_cursor), line, fill=TEXT_GRAY, font=fonts['body'])
+        y_cursor += 55
 
-    # --- 3. LINIE SEPARATOR ---
-    y_cursor += 60 
-    draw.line([60, y_cursor, 300, y_cursor], fill=ACCENT_COLOR, width=8)
-    y_cursor += 80 
+    # 5. Footer Branding
+    draw.rectangle([0, 1230, 1080, 1350], fill=(15, 15, 15))
+    draw.text((margin, 1270), "BRIEFLY.LIFE", fill=TEXT_WHITE, font=fonts['meta'])
+    draw.text((800, 1270), "TERMINAL LIVE", fill=ACCENT_COLOR, font=fonts['meta'])
 
-    # --- 4. TEXT DENS (Maximizare spatiu) ---
-    headline_lines = textwrap.wrap(headline, width=42)
-    for line in headline_lines[:7]: # Permitem pana la 7 linii pline de informatie
-        draw.text((60, y_cursor), line, fill=TEXT_GRAY, font=fonts['headline'])
-        y_cursor += fonts['headline'].size + 18
-
-    # --- 5. FOOTER ---
-    draw.rectangle([0, 1250, 1080, 1350], fill=(18, 18, 18))
-    draw.text((60, 1285), "BRIEFLY.LIFE | STRATEGIC INSIGHT", fill=ACCENT_COLOR, font=fonts['meta_bold'])
-
-    if not os.path.exists("posts"): os.makedirs("posts")
-    img.save("last_news_post.jpg", quality=100)
-    
-    archive_name = f"posts/major_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
-    img.save(archive_name, quality=95)
-    print(f"Image generated: {archive_name}")
+    img.save("last_news_post.jpg", quality=95)
     return True
 
 if __name__ == "__main__":
-    if os.path.exists("news_data.json"):
-        with open("news_data.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-            
-            major_news_item = next((item for item in data if item.get('is_major') == True), None)
-            
-            if major_news_item:
-                create_post_image(major_news_item)
-            else:
-                print("No MAJOR news detected in the current 24h window.")
+    if not os.path.exists(JSON_FILE):
+        print("Eroare: news_data.json nu există.")
+        exit()
+
+    with open(JSON_FILE, "r", encoding="utf-8") as f:
+        news_list = json.load(f)
+
+    # Căutăm cea mai recentă știre MAJORĂ care nu a fost încă postată
+    # news_data.json este deja sortat cu cele mai noi primele
+    target_news = None
+    
+    posted_ids = []
+    if os.path.exists(POSTED_LOG):
+        with open(POSTED_LOG, "r") as f:
+            posted_ids = f.read().splitlines()
+
+    for item in news_list:
+        # Verificăm dacă e majoră ȘI dacă link-ul (ID-ul) nu e în lista de postate
+        if item.get('is_major') == True and item.get('link') not in posted_ids:
+            target_news = item
+            break # Am găsit-o pe cea mai nouă, ne oprim
+
+    if target_news:
+        print(f"Postăm știrea majoră: {target_news['title']}")
+        if generate_social_image(target_news):
+            # Salvăm ID-ul ca să nu o mai postăm o dată peste 4 ore
+            with open(POSTED_LOG, "a") as f:
+                f.write(target_news['link'] + "\n")
+    else:
+        print("Nu s-a găsit nicio știre majoră nouă în ultimele 4 ore.")
