@@ -11,9 +11,57 @@ def create_post_image(title, short_summary, category, date_str):
     img = Image.new('RGB', (width, height), color=bg_color)
     draw = ImageDraw.Draw(img)
 
-    # Curățăm data (YYYY-MM-DD)
-    clean_date = date_str.split(' ')[0]
+    # Formatare data curata (Ex: 25 FEB)
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
+        clean_date = dt.strftime("%d %b").upper()
+    except:
+        clean_date = date_str.split(' ')[0]
 
+    # Incarcare fonturi cu marimi dinamice
+    f_path = "/usr/share/fonts/truetype/dejavu/"
+    # Daca titlul e lung (>50 caractere), micsoram fontul
+    title_size = 75 if len(title) < 50 else 62
+    font_title = ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", title_size)
+    font_body = ImageFont.truetype(f"{f_path}DejaVuSans.ttf", 38)
+    font_meta = ImageFont.truetype(f"{f_path}DejaVuSans-Bold.ttf", 32)
+
+    # --- HEADER ---
+    draw.rectangle([60, 70, 260, 130], fill=accent_color)
+    draw.text((85, 85), category.upper(), fill=(255,255,255), font=font_meta)
+    
+    # Aliniere data la dreapta
+    date_w = draw.textlength(clean_date, font=font_meta)
+    draw.text((1020 - date_w, 85), clean_date, fill=(150, 150, 150), font=font_meta)
+
+    # --- TITLU DINAMIC ---
+    y_cursor = 220
+    # Ajustam width in functie de marimea fontului
+    wrap_width = 20 if title_size == 75 else 25
+    title_lines = textwrap.wrap(title, width=wrap_width)
+    for line in title_lines[:4]: # Permitem pana la 4 randuri acum
+        draw.text((60, y_cursor), line, fill=(255, 255, 255), font=font_title)
+        y_cursor += (title_size + 15)
+
+    # Linie decorativa
+    y_cursor += 40
+    draw.line([60, y_cursor, 400, y_cursor], fill=accent_color, width=8)
+    y_cursor += 70
+
+    # --- REZUMAT (Mai aerisit) ---
+    # Curatam short_summary de eventuale bullet-uri puse de AI
+    clean_summary = short_summary.replace("•", "").replace("- ", "").strip()
+    summary_lines = textwrap.wrap(clean_summary, width=45)
+    
+    for line in summary_lines[:5]: # Max 5 randuri pentru a nu aglomera
+        draw.text((60, y_cursor), f"• {line}", fill=(200, 200, 200), font=font_body)
+        y_cursor += 60
+
+    # --- FOOTER ---
+    draw.rectangle([0, 1250, 1080, 1350], fill=(18, 18, 18))
+    draw.text((60, 1285), "BRIEFLY.LIFE | INTELLIGENCE REPORT", fill=accent_color, font=font_meta)
+
+    img.save("last_news_post.jpg", quality=100)
     # Fonturi
     try:
         f_path = "/usr/share/fonts/truetype/dejavu/"
