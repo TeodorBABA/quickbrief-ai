@@ -19,7 +19,7 @@ SOURCES = {
 }
 
 JSON_FILE = "news_data.json"
-SUMMARY_FILE = "daily_summaries.json" # Am adus inapoi fisierul de sinteza
+SUMMARY_FILE = "daily_summaries.json"
 
 def get_keywords(text):
     words = re.findall(r'\w{4,}', text.lower())
@@ -37,12 +37,12 @@ def is_too_similar(new_title, existing_titles_keywords):
 def analyze_news_with_ai(title, full_text, category):
     """
     Analizează știrea pentru a determina dacă este MAJORĂ și generează
-    conținut structurat pentru site și Instagram.
+    conținut structurat pentru site și Instagram, cu reguli stricte de formatare.
     """
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
-            response_format={ "type": "json_object" }, # Forțăm răspuns JSON strict
+            response_format={ "type": "json_object" },
             messages=[
                 {
                     "role": "system", 
@@ -53,7 +53,7 @@ def analyze_news_with_ai(title, full_text, category):
                         "\n\nReturn a JSON object with exactly these fields:\n"
                         "1. 'is_major': boolean (true ONLY if it's a huge, impactful deal/event)\n"
                         "2. 'website_summary': 'A professional 3-bullet point summary for a website (max 60 words total).'\n"
-                        "3. 'social_headline': 'ONE single, powerful, uppercase sentence under 120 chars that encapsulates the impact for an Instagram image. Do NOT use bullet points.'"
+                        "3. 'social_headline': 'ONE single, punchy sentence under 120 chars providing the crucial data point or impact. STRICT RULES: Use standard sentence case (NOT ALL CAPS), NO exclamation marks, and DO NOT repeat the exact words from the title.'"
                     )
                 },
                 {"role": "user", "content": f"Title: {title}\nNews Category: {category}\nContent excerpt: {full_text[:1500]}"}
@@ -150,11 +150,9 @@ def fetch_all_news():
                 continue
 
     final_list = new_items + old_data
-    # Salvăm lista actualizată
     with open(JSON_FILE, "w") as f: json.dump(final_list[:60], f, indent=4)
     print("Scan complete. Data saved.")
     
-    # Generăm raportul zilnic după ce am descărcat noile știri
     generate_intelligence_report(final_list)
 
 if __name__ == "__main__":
