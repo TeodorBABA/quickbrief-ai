@@ -1,46 +1,41 @@
-name: QuickBrief Pro Auto-Update
+name: Briefly Intelligence Sync
 
 on:
   schedule:
+    # Rulează la fiecare 15 minute
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
-  build:
+  update_and_post:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
-
     steps:
-    - name: Checkout repository code
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: Install required libraries
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install Dependencies
+        run: |
+          pip install feedparser newspaper3k openai Pillow
 
-    - name: Run News Scraper & AI Summarizer
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      run: python main.py
+      - name: Run Scraper (Always)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python main.py
 
-    - name: Generate Social Media Image
-      run: python social_poster.py
+      - name: Run Social Poster (Every 4 Hours Only)
+        # Verifică dacă ora UTC este 0, 4, 8, 12, 16, 20
+        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), github.event.schedule && formatDateTime(github.event.scheduled_time, 'HH') || '00')
+        run: python social_poster.py
 
-    - name: Save changes to GitHub
-      run: |
-        git config --global user.name 'QuickBrief-Bot'
-        git config --global user.email 'bot@quickbrief.pro'
-        
-        # Adăugăm JSON-urile și imaginea generată
-        git add news_data.json daily_summaries.json last_news_post.jpg
-        
-        git commit -m "Automated Update: News & Social Image Generated" || exit 0
-        git push
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "BrieflyBot"
+          git config --global user.email "bot@briefly.life"
+          git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg posts/
+          git commit -m "Auto-update: Intelligence data and social media assets" || exit 0
+          git push
