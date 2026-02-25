@@ -1,16 +1,48 @@
-- name: Commit and Push Changes
+name: Briefly Intelligence Sync
+
+on:
+  schedule:
+    # Rulează la fiecare 15 minute pentru a menține site-ul LIVE
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Permite rularea manuală din butonul "Run workflow"
+
+jobs:
+  update_and_post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install System Fonts (Pillow Fix)
+        # Instalăm fonturile DejaVu pentru a garanta calitatea imaginilor generate
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
+
+      - name: Install Dependencies
+        # Dacă ai configurat requirements.txt, poți înlocui asta cu: pip install -r requirements.txt
+        run: pip install feedparser newspaper3k openai Pillow
+
+      - name: Run Scraper (Always)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python main.py
+
+      - name: Run Social Poster (Every 4 Hours)
+        # Verifică dacă ora UTC este 0, 4, 8, 12, 16 sau 20
+        if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), github.event.schedule && formatDateTime(github.event.scheduled_time, 'HH') || '00')
+        run: python social_poster.py
+
+      - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # SOLUȚIA: Îi spunem robotului să ignore versiunea lui veche 
-          # și să se alinieze forțat cu ce ai tu pe GitHub acum
-          git fetch origin main
-          git reset --hard origin/main
-          
-          # Acum robotul rulează din nou scripturile ca să aibă datele proaspete
-          python main.py
-          
+          git config --global user.name "BrieflyBot"
+          git config --global user.email "bot@briefly.life"
+          # Am eliminat folderul posts/ care nu există în structura ta
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
-          git commit -m "Forced Sync Intelligence" || exit 0
-          git push origin main --force
+          git commit -m "Auto-update: 24H Intelligence & Social Assets" || exit 0
+          # Prevenim erorile de tip "Updates were rejected because the remote contains work that you do not have locally"
+          git pull --rebase origin main
+          git push
