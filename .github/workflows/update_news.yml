@@ -2,15 +2,14 @@ name: QuickBrief Pro Auto-Update
 
 on:
   schedule:
-    # Rulează la fiecare 15 minute (0, 15, 30, 45)
+    # Rulează la fiecare 15 minute
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite declanșarea manuală din tab-ul Actions
+  workflow_dispatch: # Permite declanșarea manuală
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
-    # Oferă robotului permisiunea de a scrie modificările în fișierul JSON
     permissions:
       contents: write
 
@@ -30,7 +29,6 @@ jobs:
 
     - name: Run News Scraper & AI Summarizer
       env:
-        # Trage cheia din GitHub Secrets
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python main.py
 
@@ -38,7 +36,10 @@ jobs:
       run: |
         git config --global user.name 'QuickBrief-Bot'
         git config --global user.email 'bot@quickbrief.pro'
-        git add news_data.json
-        # Commit doar dacă există schimbări (știri noi), altfel nu dă eroare
-        git commit -m "Automated Update: Global Business Intelligence" || exit 0
+        
+        # IMPORTANT: Adăugăm ambele fișiere generate de script
+        git add news_data.json daily_summaries.json
+        
+        # Commit doar dacă există schimbări, evităm erorile dacă nu sunt știri noi
+        git commit -m "Automated Update: Global Business Intelligence & Daily Report" || exit 0
         git push
