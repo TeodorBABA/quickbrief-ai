@@ -15,7 +15,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Aduce tot istoricul pentru a evita conflictele de push
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -37,18 +38,20 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Actualizăm local repository-ul pentru a evita "Updates were rejected"
-          git pull origin main --rebase
+          # Sincronizare forțată cu serverul
+          git fetch origin main
+          git reset --soft origin/main
           
+          # Adăugăm tot ce s-a modificat (JSON, TXT, JPG)
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
           
-          # Verificăm dacă există ceva de salvat
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Automated synchronization"
+          # Facem commit doar dacă există diferențe
+          if ! git diff --cached --quiet; then
+            git commit -m "Automated Sync: Intelligence Feed"
             git push origin main
           else
-            echo "No changes to commit"
+            echo "Nothing to update."
           fi
