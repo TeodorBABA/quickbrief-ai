@@ -1,11 +1,91 @@
 [
     {
+        "id": 1772000290,
+        "category": "Tech",
+        "title": "India’s AI boom pushes firms to trade near-term revenue for users",
+        "link": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
+        "summary": "- India has emerged as the largest market for generative AI app downloads, with a 207% year-over-year increase, surpassing the U.S. despite low revenue generation (1% of AI app revenue).  \n- Major tech firms are transitioning from free promotional offers to paid subscriptions, testing user conversion as competition intensifies.  \n- User engagement in India still lags behind mature markets, highlighting the need for effective monetization strategies amid a price-sensitive customer base.",
+        "date": "25 Feb 2026 02:00"
+    },
+    {
+        "id": 1772000294,
+        "category": "Tech",
+        "title": "Spanish ‘soonicorn’ Multiverse Computing releases free compressed AI model",
+        "link": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+        "summary": "- Spanish startup Multiverse Computing has launched a free compressed AI model, HyperNova 60B, leveraging its CompactifAI technology to make advanced models more accessible for businesses.  \n- The updated model offers significant reductions in size and latency, positioning Multiverse as a competitive alternative to notable tech firms like OpenAI and Mistral AI.  \n- Multiverse is reportedly closing in on a €500 million funding round to enhance its growth trajectory, driven by rising demand for European AI solutions.  ",
+        "date": "24 Feb 2026 23:32"
+    },
+    {
+        "id": 1772000297,
+        "category": "Tech",
+        "title": "Apple rolls out age-verification tools worldwide to comply with growing web of child safety laws",
+        "link": "https://techcrunch.com/2026/02/24/apple-rolls-out-age-verification-tools-worldwide-to-comply-with-growing-web-of-child-safety-laws/",
+        "summary": "- Apple is implementing global age-verification tools to adhere to increasing child safety laws, blocking 18+ app downloads in Australia, Brazil, and Singapore until age confirmation is provided.  \n- The Declared Age Range API enables developers to gauge users' age categories without accessing personal data, facilitating compliance with specific regulations in Utah and Louisiana.  \n- Updates in Brazil will alter age ratings for games with loot boxes to restrict access for minors, reflecting a proactive approach to safeguarding children online.",
+        "date": "24 Feb 2026 23:21"
+    },
+    {
+        "id": 1772000301,
+        "category": "Tech",
+        "title": "Stripe is reportedly eyeing deal to buy some or all of PayPal",
+        "link": "https://techcrunch.com/2026/02/24/stripe-is-reportedly-eyeing-deal-to-buy-some-or-all-of-paypal/",
+        "summary": "- Stripe is reportedly considering acquiring some or all of PayPal Holdings as part of early-stage negotiations, potentially reshaping the payment processing landscape.\n- Simultaneously, Stripe announced a substantial tender offer valuing the company at $159 billion, reflecting a 74% valuation increase from the previous year.\n- PayPal's stock experienced a slight uptick following news of Stripe's exploratory talks, indicating investor interest and potential market impact.",
+        "date": "24 Feb 2026 22:35"
+    },
+    {
+        "id": 1772000306,
+        "category": "Tech",
+        "title": "Google’s new 1.9GW clean energy deal includes massive 100-hour battery",
+        "link": "https://techcrunch.com/2026/02/24/googles-new-1-9gw-clean-energy-deal-includes-massive-100-hour-battery/",
+        "summary": "- Google is establishing its first Minnesota data center, supported by a groundbreaking 1.9 GW clean energy deal, featuring a 300 MW iron-air battery from Form Energy, capable of providing 100 hours of power storage.\n- This project will enhance renewable energy reliability through long-duration storage, while potentially revolutionizing battery economics by offering storage at $20 per kWh, significantly cheaper than lithium-ion alternatives.\n- The initiative introduces a novel utility fee structure to help utilities embrace clean technologies, mitigating regulatory risks while fostering renewable energy adoption in Minnesota.",
+        "date": "24 Feb 2026 21:32"
+    },
+    {
+        "id": 1772000309,
+        "category": "Tech",
+        "title": "CarGurus data breach affects 12.5 million accounts",
+        "link": "https://techcrunch.com/2026/02/24/cargurus-data-breach-affects-12-5-million-accounts/",
+        "summary": "- CarGurus experienced a significant data breach affecting 12.5 million customer accounts, compromising personal information such as names, email addresses, and phone numbers.\n- The breach was linked to the ShinyHunters hacking group, known for sophisticated social engineering tactics.\n- This incident marks the second automotive data breach report in 2023, following a breach at CarMax involving 431,000 accounts.",
+        "date": "24 Feb 2026 21:27"
+    },
+    {
+        "id": 1772000313,
+        "category": "Tech",
+        "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
+        "link": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+        "summary": "- Anthropic faces a deadline from the Pentagon to grant unrestricted access to its AI model, or it may be labeled a \"supply chain risk\" or forced to comply under the Defense Production Act.\n- The dispute highlights tensions between corporate safety policies and military needs, with implications for national security and the stability of U.S. business practices.\n- The Pentagon currently relies exclusively on Anthropic for its classified AI needs, raising risks of operational setbacks should negotiations fail.",
+        "date": "24 Feb 2026 21:18"
+    },
+    {
+        "id": 1772000317,
+        "category": "Tech",
+        "title": "Instagram’s TV app is launching on Google TV devices",
+        "link": "https://techcrunch.com/2026/02/24/instagrams-tv-app-is-launching-on-google-tv-devices/",
+        "summary": "- Instagram has launched its TV app on Google TV in the U.S., following its earlier release on Amazon Fire TV, expanding Reels viewing to larger screens.  \n- The app aims to compete with YouTube by offering personalized content, allowing users to browse selected Reels organized by interests.  \n- Features include automatic playback, the ability to engage with comments, and account pairing options, enhancing user interaction and experience.",
+        "date": "24 Feb 2026 19:13"
+    },
+    {
         "id": 1772000223,
         "category": "Markets",
         "title": "Watch these chart formations for clues into what's next for market volatility",
         "link": "https://www.cnbc.com/2026/02/24/watch-these-chart-formations-for-clues-into-whats-next-for-market-volatility.html",
         "summary": "- The Nasdaq 100 remains close to all-time highs, with analysts observing potential support in key growth/value rotation charts, indicating possible market stabilization after recent volatility.  \n- Consumer discretionary stocks show resilience, led by strong performances from companies like Home Depot, while notable earnings reports from Nvidia and MercadoLibre may influence market direction.  \n- A declining U.S. 10-Year Treasury yield could benefit consumer spending and growth stocks, potentially leading to a risk-on environment and encouraging further index gains.  ",
         "date": "24 Feb 2026 19:07"
+    },
+    {
+        "id": 1772000321,
+        "category": "Tech",
+        "title": "Treasury sanctions Russian zero-day broker accused of buying exploits stolen from US defense contractor",
+        "link": "https://techcrunch.com/2026/02/24/treasury-sanctions-russian-zero-day-broker-accused-of-buying-exploits-stolen-from-u-s-defense-contractor/",
+        "summary": "- The U.S. Treasury sanctioned Russian firm Operation Zero and its founder, Sergey Zelenyuk, for acquiring and reselling zero-day exploits, posing a significant threat to national security.\n- Operation Zero reportedly acquired stolen proprietary cyber tools from a U.S. defense contractor, further endangering U.S. interests.\n- Sanctions also target associated entities and individuals, highlighting ongoing concerns over cybercrime and foreign espionage.",
+        "date": "24 Feb 2026 19:01"
+    },
+    {
+        "id": 1772000325,
+        "category": "Tech",
+        "title": "Google adds a way to create automated workflows to Opal",
+        "link": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
+        "summary": "- Google has introduced new automated workflows in its Opal app, enabling users to create mini-apps that execute tasks using text prompts without requiring technical skills.  \n- The feature utilizes the Gemini 3 Flash model to autonomously select tools like Google Sheets, enhancing productivity and user experience.  \n- Opal's expansion to over 160 countries highlights its global reach, alongside competition from similar tools by startups like Lovable and Replit.",
+        "date": "24 Feb 2026 19:00"
     },
     {
         "id": 1772000228,
@@ -16,20 +96,20 @@
         "date": "24 Feb 2026 17:22"
     },
     {
-        "id": 1772000234,
-        "category": "Markets",
-        "title": "Trading volumes have surged in leveraged funds, options since the pandemic, data shows",
-        "link": "https://www.cnbc.com/2026/02/23/leveraged-fund-options-trading-covid-investing-direxion.html",
-        "summary": "- Average daily trading volumes for leveraged and inverse funds are projected to reach 1.41 billion in 2025, marking a significant increase of over 130% from 2024 and 250% since 2020.  \n- Daily options volume is expected to hit 58 million in 2025, reflecting a 26% rise from the previous year and more than doubling since 2020.  \n- Retail investor engagement in complex financial instruments has surged, indicating a strong demand for riskier trading options in the market post-pandemic.  ",
-        "date": "23 Feb 2026 23:06"
-    },
-    {
         "id": 1772000240,
         "category": "Markets",
         "title": "Tuesday's big stock stories: What’s likely to move the market in the next trading session",
         "link": "https://www.cnbc.com/2026/02/23/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
         "summary": "- The Dow Industrials dropped over 800 points, reflecting ongoing market volatility, particularly in the financial sector, which is now down 7.6% year-to-date.\n- Home Depot and Amer Sports will report quarterly results on Tuesday, with both companies showing differing stock performances over the last three months.\n- Consumer confidence data will be released, with economists anticipating a reading of 86.8, which may influence market sentiment.",
         "date": "24 Feb 2026 00:02"
+    },
+    {
+        "id": 1772000234,
+        "category": "Markets",
+        "title": "Trading volumes have surged in leveraged funds, options since the pandemic, data shows",
+        "link": "https://www.cnbc.com/2026/02/23/leveraged-fund-options-trading-covid-investing-direxion.html",
+        "summary": "- Average daily trading volumes for leveraged and inverse funds are projected to reach 1.41 billion in 2025, marking a significant increase of over 130% from 2024 and 250% since 2020.  \n- Daily options volume is expected to hit 58 million in 2025, reflecting a 26% rise from the previous year and more than doubling since 2020.  \n- Retail investor engagement in complex financial instruments has surged, indicating a strong demand for riskier trading options in the market post-pandemic.  ",
+        "date": "23 Feb 2026 23:06"
     },
     {
         "id": 1772000245,
@@ -104,204 +184,186 @@
         "date": "23 Feb 2026 12:27"
     },
     {
-        "id": 1772000290,
+        "category": "Finance",
+        "title": "Lam Research (LRCX) Expands Footprint Amid Industry Momentum",
+        "link": "https://finance.yahoo.com/news/lam-research-lrcx-expands-footprint-195111981.html",
+        "summary": "• Lam Research Corporation (LRCX) opened a new 9,200 sq. ft. office in Boise, Idaho, aiming to enhance collaboration with major customer Micron Technology and support advanced memory chip manufacturing.  \n• The expansion is integral to the company's strategy in a thriving semiconductor industry.  \n• Lam's Board approved a quarterly cash dividend of $0.26 per share, reflecting continued financial strength.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Eli Lilly (LLY) Expands Pipeline With Positive Trial Data and New Licensing Deal",
+        "link": "https://finance.yahoo.com/news/eli-lilly-lly-expands-pipeline-195109949.html",
+        "summary": "• Eli Lilly's Phase 3b TOGETHER-PsO study indicates that combining Taltz with Zepbound offers superior treatment for moderate-to-severe plaque psoriasis in overweight adults, supporting the viability of new therapeutic approaches.  \n• The company secured an exclusive licensing agreement with CSL Limited for clazakizumab, enhancing its pipeline while paying a $100 million upfront fee and potential royalties.  \n• Eli Lilly continues to position itself as a leader in developing treatments across several therapeutic areas, raising its investment appeal.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Mastercard (MA) Strengthens Banking Ties, Maintains Dividends",
+        "link": "https://finance.yahoo.com/news/mastercard-ma-strengthens-banking-ties-194916701.html",
+        "summary": "• Mastercard’s open finance technology underpins Truist Financial’s inaugural open banking platform, enhancing security and consumer control over data access.  \n• The partnership positions Mastercard to capitalize on projected 100 million US consumers utilizing third-party financial apps, with open banking usage expected to double by 2027.  \n• Mastercard's Board declared a quarterly dividend of $0.87 per share, demonstrating financial stability amidst strategic growth initiatives.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Why Did XRP See a 4% Drop This Weekend?",
+        "link": "https://finance.yahoo.com/news/why-did-xrp-see-4-195808983.html",
+        "summary": "• XRP experienced a 4.2% decline over the weekend, influenced by a broader market downturn that saw a 3.4% drop in total cryptocurrency market capitalization.  \n• Investor sentiment shifted towards safe-haven assets due to heightened uncertainty regarding trade policies under the Trump administration.  \n• Despite the decline, positive fundamentals, including a 40% jump in on-chain engagement and strong community support, suggest possible future recovery for XRP.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Salesforce Inc (CRM) Expands AI Capabilities With Momentum Acquisition",
+        "link": "https://finance.yahoo.com/news/salesforce-inc-crm-expands-ai-194905846.html",
+        "summary": "• Salesforce Inc. has acquired Momentum to enhance its AI capabilities, integrating conversation data analysis into Agentforce 360 and Slackbot.  \n• This merger aims to improve customer interaction insights and streamline complex workflows, positioning Salesforce competitively in the AI sector.  \n• UBS has lowered Salesforce's price target amidst mixed customer feedback, highlighting improved sentiments but cautioning on rising backlog concerns.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Upstart Holdings Inc. (UPST) Counters Unreliable and Predatory Credit Lines with Cash Line",
+        "link": "https://finance.yahoo.com/news/upstart-holdings-inc-upst-counters-194909813.html",
+        "summary": "• Upstart Holdings Inc. launched Cash Line, a flexible credit solution offering up to $5,000 with no expedited fees, targeting consumers needing reliable funding.  \n• This product counters predatory lending practices, featuring a guaranteed minimum credit access of $200 and a unique repayment control option, Rest Mode.  \n• Goldman Sachs upgraded Upstart's stock to Neutral, indicating improved risk-reward potential for investors amid its ongoing shift in lending practices.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Finance",
+        "title": "Broadcom (AVGO) Draws Investor Interest Amid AI Growth Expectations",
+        "link": "https://finance.yahoo.com/news/broadcom-avgo-draws-investor-interest-194928256.html",
+        "summary": "• Goldman Sachs includes Broadcom (AVGO) as a top growth stock, attracting interest from major investors like ARK ETF, which purchased $7.87 million in shares.  \n• UBS analyst projects Broadcom’s TPU shipments will rise significantly, reaching over 5 million in 2027, contributing to substantial revenue growth.  \n• AI revenue for Broadcom is forecasted to reach approximately $60 billion in FY2026, growing to around $150 billion by FY2028, marking a substantial increase.",
+        "date": "2026-02-25 07:26"
+    },
+    {
+        "category": "Markets",
+        "title": "Loop Capital upgrades this semiconductor stock as key headwinds ease and its strategy diversifies",
+        "link": "https://www.cnbc.com/2026/02/24/loop-capital-upgrades-this-semiconductor-stock-as-key-headwinds-ease-and-its-strategy-diversifies.html",
+        "summary": "• Loop Capital upgraded Qualcomm to a buy rating, raising the price target to $185 from $140, indicating a potential 32% upside.  \n• Analyst expects easing headwinds, including stabilized sales to Samsung and reduced dependency on Apple, contributing to revenue diversification.  \n• Anticipation of catalysts from Qualcomm's upcoming analyst day, focusing on non-smartphone revenues and data center developments, suggests improved investor confidence.",
+        "date": "2026-02-25 07:25"
+    },
+    {
+        "category": "Markets",
+        "title": "Deutsche Bank downgrades private credit poster child Blue Owl after recent sell-off",
+        "link": "https://www.cnbc.com/2026/02/24/shares-of-private-credit-posterchild-blue-owl-are-falling-after-a-downgrade.html",
+        "summary": "• Deutsche Bank downgraded Blue Owl Capital to hold from buy, slashing the price target to $10 from $15, reflecting concerns over slower fee-related earnings growth and market volatility.  \n• Blue Owl's shares have experienced a significant decline of 52% over the past year, largely influenced by broader sell-off trends in the private credit sector.  \n• The firm faces challenges, including restricted withdrawals from a retail-focused debt fund, potentially leading to increased redemption requests and slower sales in the near term.",
+        "date": "2026-02-25 07:25"
+    },
+    {
+        "category": "Markets",
+        "title": "Raymond James double upgrades this auto parts distributor ahead of planned business separation",
+        "link": "https://www.cnbc.com/2026/02/24/raymond-james-double-upgrades-this-auto-parts-distribution-ahead-of-planned-business-separation.html",
+        "summary": "• Raymond James has upgraded Genuine Parts Company to a strong buy rating, expecting the planned business separation to unlock significant shareholder value.  \n• A price target of $145 implies a 25% upside, despite a ~20% decline in shares since Q4.  \n• The separation of automotive and industrial divisions is expected to enhance valuation, with investor guidance scheduled for late 2026.",
+        "date": "2026-02-25 07:25"
+    },
+    {
         "category": "Tech",
-        "title": "India’s AI boom pushes firms to trade near-term revenue for users",
-        "link": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
-        "summary": "- India has emerged as the largest market for generative AI app downloads, with a 207% year-over-year increase, surpassing the U.S. despite low revenue generation (1% of AI app revenue).  \n- Major tech firms are transitioning from free promotional offers to paid subscriptions, testing user conversion as competition intensifies.  \n- User engagement in India still lags behind mature markets, highlighting the need for effective monetization strategies amid a price-sensitive customer base.",
-        "date": "25 Feb 2026 02:00"
+        "title": "Nvidia challenger AI chip startup MatX raised $500M",
+        "link": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+        "summary": "• MatX, an AI chip startup founded by ex-Google engineers, raised $500 million in a Series B funding round, aiming to enhance processor performance for training LLMs compared to Nvidia’s GPUs.  \n• The investment round included notable backers such as Jane Street, Situational Awareness, and founders from Stripe, reflecting strong interest in AI hardware innovation.  \n• The funding will enable MatX to collaborate with TSMC on chip production, with plans to ship its products by 2027.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000294,
         "category": "Tech",
-        "title": "Spanish ‘soonicorn’ Multiverse Computing releases free compressed AI model",
-        "link": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
-        "summary": "- Spanish startup Multiverse Computing has launched a free compressed AI model, HyperNova 60B, leveraging its CompactifAI technology to make advanced models more accessible for businesses.  \n- The updated model offers significant reductions in size and latency, positioning Multiverse as a competitive alternative to notable tech firms like OpenAI and Mistral AI.  \n- Multiverse is reportedly closing in on a €500 million funding round to enhance its growth trajectory, driven by rising demand for European AI solutions.  ",
-        "date": "24 Feb 2026 23:32"
+        "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
+        "link": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
+        "summary": "• Wayve, a UK self-driving tech startup, has raised $1.2 billion from notable investors including Nvidia, Uber, and three global automakers, increasing its total valuation to $8.6 billion.  \n• The company’s innovative approach uses end-to-end deep learning for autonomous driving, enabling a flexible, agnostic software platform compatible with existing vehicle technologies.  \n• With partnerships established for commercial trials, including collaborations with Uber and Nissan, Wayve aims to leverage a scalable business model focused on selling its AI-driven software instead of directly operating vehicles.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000297,
         "category": "Tech",
-        "title": "Apple rolls out age-verification tools worldwide to comply with growing web of child safety laws",
-        "link": "https://techcrunch.com/2026/02/24/apple-rolls-out-age-verification-tools-worldwide-to-comply-with-growing-web-of-child-safety-laws/",
-        "summary": "- Apple is implementing global age-verification tools to adhere to increasing child safety laws, blocking 18+ app downloads in Australia, Brazil, and Singapore until age confirmation is provided.  \n- The Declared Age Range API enables developers to gauge users' age categories without accessing personal data, facilitating compliance with specific regulations in Utah and Louisiana.  \n- Updates in Brazil will alter age ratings for games with loot boxes to restrict access for minors, reflecting a proactive approach to safeguarding children online.",
-        "date": "24 Feb 2026 23:21"
+        "title": "Uber engineers built an AI version of their boss",
+        "link": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
+        "summary": "• Uber engineers have developed a chatbot named \"Dara AI,\" enabling teams to optimize presentations before meeting with CEO Dara Khosrowshahi.  \n• Approximately 90% of Uber's software engineers are integrating AI into their workflows, with 30% classified as \"power users.\"  \n• Khosrowshahi claims this AI integration significantly enhances productivity and redefines the company’s architectural approach.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000301,
         "category": "Tech",
-        "title": "Stripe is reportedly eyeing deal to buy some or all of PayPal",
-        "link": "https://techcrunch.com/2026/02/24/stripe-is-reportedly-eyeing-deal-to-buy-some-or-all-of-paypal/",
-        "summary": "- Stripe is reportedly considering acquiring some or all of PayPal Holdings as part of early-stage negotiations, potentially reshaping the payment processing landscape.\n- Simultaneously, Stripe announced a substantial tender offer valuing the company at $159 billion, reflecting a 74% valuation increase from the previous year.\n- PayPal's stock experienced a slight uptick following news of Stripe's exploratory talks, indicating investor interest and potential market impact.",
-        "date": "24 Feb 2026 22:35"
+        "title": "Former L3Harris Trenchant boss jailed for selling hacking tools to Russian broker",
+        "link": "https://techcrunch.com/2026/02/24/former-l3harris-trenchant-boss-jailed-for-selling-hacking-tools-to-russian-broker/",
+        "summary": "• Peter Williams, former general manager of L3Harris’s Trenchant division, was sentenced to seven years for selling hacking tools to a Russian broker, Operation Zero.  \n• He pleaded guilty to trafficking seven trade secrets, earning $1.3 million in cryptocurrency.  \n• The stolen tools could compromise millions of global devices, prompting U.S. sanctions against Operation Zero.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000306,
         "category": "Tech",
-        "title": "Google’s new 1.9GW clean energy deal includes massive 100-hour battery",
-        "link": "https://techcrunch.com/2026/02/24/googles-new-1-9gw-clean-energy-deal-includes-massive-100-hour-battery/",
-        "summary": "- Google is establishing its first Minnesota data center, supported by a groundbreaking 1.9 GW clean energy deal, featuring a 300 MW iron-air battery from Form Energy, capable of providing 100 hours of power storage.\n- This project will enhance renewable energy reliability through long-duration storage, while potentially revolutionizing battery economics by offering storage at $20 per kWh, significantly cheaper than lithium-ion alternatives.\n- The initiative introduces a novel utility fee structure to help utilities embrace clean technologies, mitigating regulatory risks while fostering renewable energy adoption in Minnesota.",
-        "date": "24 Feb 2026 21:32"
+        "title": "Discord delays global rollout of age verification after backlash",
+        "link": "https://techcrunch.com/2026/02/24/discord-delays-global-rollout-of-age-verification-after-backlash/",
+        "summary": "• Discord has postponed its global age verification rollout until the second half of 2026 following user backlash regarding privacy concerns and potential mandatory identification requirements.  \n• The company clarified that 90% of users will not need to verify their age, allowing them to continue using the platform without significant changes.  \n• Discord aims to improve transparency by publishing details about verification vendors and ensuring all processes occur on users' devices.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000309,
         "category": "Tech",
-        "title": "CarGurus data breach affects 12.5 million accounts",
-        "link": "https://techcrunch.com/2026/02/24/cargurus-data-breach-affects-12-5-million-accounts/",
-        "summary": "- CarGurus experienced a significant data breach affecting 12.5 million customer accounts, compromising personal information such as names, email addresses, and phone numbers.\n- The breach was linked to the ShinyHunters hacking group, known for sophisticated social engineering tactics.\n- This incident marks the second automotive data breach report in 2023, following a breach at CarMax involving 431,000 accounts.",
-        "date": "24 Feb 2026 21:27"
+        "title": "Instagram head pressed on lengthy delay to launch teen safety features, like a nudity filter, court filing reveals",
+        "link": "https://techcrunch.com/2026/02/24/instagram-head-pressed-on-lengthy-delay-to-launch-teen-safety-features-like-a-nudity-filter-court-filing-reveals/",
+        "summary": "• Meta delayed the rollout of key teen safety features like a nudity filter until April 2024, despite knowing of related risks as early as 2018.  \n• 19.2% of surveyed teens reported encountering unwanted nudity on Instagram, highlighting ongoing concerns around the platform's impact on youth mental health.  \n• Lawsuits against Meta and other tech firms aim to hold them accountable for prioritizing engagement over user safety, coinciding with increasing regulatory scrutiny.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000313,
         "category": "Tech",
-        "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
-        "link": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
-        "summary": "- Anthropic faces a deadline from the Pentagon to grant unrestricted access to its AI model, or it may be labeled a \"supply chain risk\" or forced to comply under the Defense Production Act.\n- The dispute highlights tensions between corporate safety policies and military needs, with implications for national security and the stability of U.S. business practices.\n- The Pentagon currently relies exclusively on Anthropic for its classified AI needs, raising risks of operational setbacks should negotiations fail.",
-        "date": "24 Feb 2026 21:18"
+        "title": "More startups are hitting $10M ARR in 3 months than ever before",
+        "link": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
+        "summary": "• Startups are increasingly achieving $10 million ARR within three months, with double the number compared to 2024, highlighting accelerated business growth.  \n• Stripe's report indicates that over 50% of new startups using its platform in 2025 are outside the U.S., reflecting global expansion trends.  \n• However, investors emphasize the importance of sustainable growth over rapid gains, seeking long-term customer retention in emerging companies.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000317,
-        "category": "Tech",
-        "title": "Instagram’s TV app is launching on Google TV devices",
-        "link": "https://techcrunch.com/2026/02/24/instagrams-tv-app-is-launching-on-google-tv-devices/",
-        "summary": "- Instagram has launched its TV app on Google TV in the U.S., following its earlier release on Amazon Fire TV, expanding Reels viewing to larger screens.  \n- The app aims to compete with YouTube by offering personalized content, allowing users to browse selected Reels organized by interests.  \n- Features include automatic playback, the ability to engage with comments, and account pairing options, enhancing user interaction and experience.",
-        "date": "24 Feb 2026 19:13"
-    },
-    {
-        "id": 1772000321,
-        "category": "Tech",
-        "title": "Treasury sanctions Russian zero-day broker accused of buying exploits stolen from US defense contractor",
-        "link": "https://techcrunch.com/2026/02/24/treasury-sanctions-russian-zero-day-broker-accused-of-buying-exploits-stolen-from-u-s-defense-contractor/",
-        "summary": "- The U.S. Treasury sanctioned Russian firm Operation Zero and its founder, Sergey Zelenyuk, for acquiring and reselling zero-day exploits, posing a significant threat to national security.\n- Operation Zero reportedly acquired stolen proprietary cyber tools from a U.S. defense contractor, further endangering U.S. interests.\n- Sanctions also target associated entities and individuals, highlighting ongoing concerns over cybercrime and foreign espionage.",
-        "date": "24 Feb 2026 19:01"
-    },
-    {
-        "id": 1772000325,
-        "category": "Tech",
-        "title": "Google adds a way to create automated workflows to Opal",
-        "link": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
-        "summary": "- Google has introduced new automated workflows in its Opal app, enabling users to create mini-apps that execute tasks using text prompts without requiring technical skills.  \n- The feature utilizes the Gemini 3 Flash model to autonomously select tools like Google Sheets, enhancing productivity and user experience.  \n- Opal's expansion to over 160 countries highlights its global reach, alongside competition from similar tools by startups like Lovable and Replit.",
-        "date": "24 Feb 2026 19:00"
-    },
-    {
-        "id": 1772000330,
         "category": "Finance",
-        "title": "Home Depot Earnings Is Just a Day Away -- And Nearly 86% of Prediction Markets Expect Good News",
-        "link": "https://finance.yahoo.com/news/home-depot-earnings-just-day-184000772.html",
-        "summary": "- Home Depot's Q4 earnings report is anticipated on February 24, with 86% of prediction market bettors expecting the company to surpass analyst expectations of $2.52 in adjusted earnings per share.  \n- The retailer faces pressure from a sluggish housing market and high mortgage rates, with projected revenue decline of 4% to $38.1 billion.  \n- Recent favorable Supreme Court rulings against tariffs may help reduce import costs, aiding potential earnings recovery.",
-        "date": "2026-02-23T18:40"
+        "title": "Surging Winter Wheat Prices Are Lifting Grain Futures Across the Board. What to Watch Next.",
+        "link": "https://finance.yahoo.com/news/surging-winter-wheat-prices-lifting-200002489.html",
+        "summary": "• May soft red and hard red winter wheat futures reached 6.5-month and 7-month highs, respectively, amid bullish trading activity, but are overbought and due for corrections.  \n• The recent Supreme Court decision against the Trump administration's tariffs introduces uncertainty in grain markets, potentially jeopardizing existing trade agreements.  \n• Corn futures are reliant on wheat market trends for price direction, while South America's corn production remains under close scrutiny due to suboptimal planting conditions.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000335,
         "category": "Finance",
-        "title": "UBS Increases Target Price on Amer Sports (AS) to $60, Post Q4 Results",
-        "link": "https://finance.yahoo.com/news/ubs-increases-target-price-amer-184801104.html",
-        "summary": "- UBS raised its target price for Amer Sports (NYSE:AS) by 3.4% to $60, maintaining a Buy rating ahead of Q4 earnings, scheduled for February 24.  \n- This increase follows a prior adjustment in January reflecting resilience in the U.S. consumer and trends in health and wellness.  \n- Amer Sports anticipates 2025 revenue growth of 23-24% YoY, driven primarily by technical apparel and outdoor performance segments.  ",
-        "date": "2026-02-23T18:48"
+        "title": "Play the ‘SaaS Apocalypse’ Selloff in Palantir Stock With This 1 Winning, Protective Options Trade",
+        "link": "https://finance.yahoo.com/news/play-saas-apocalypse-selloff-palantir-200225512.html",
+        "summary": "• Palantir (PLTR) shares have plummeted 26% in 2026 and 39% since November, amidst a broader selloff in software-as-a-service (SaaS) stocks, leading to significant investor anxiety.  \n• The recent market decline has wiped out over $1 trillion in value, triggering terms like “SaaSpocalypse” among investors.  \n• Despite the turmoil, Palantir operates a hybrid model that guards it against risks associated with traditional SaaS subscriptions, positioning it for potential resilience and growth.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000340,
         "category": "Finance",
-        "title": "Jeffries Thinks DraftKings (DKNG) Share Decline Is Nearing End, Keeps Buy Rating",
-        "link": "https://finance.yahoo.com/news/jeffries-thinks-draftkings-dkng-share-184542233.html",
-        "summary": "- Jefferies analyst David Katz maintains a \"Buy\" rating on DraftKings (DKNG) despite reducing the price target by 8% to $46, indicating confidence in the stock's recovery amid a significant year-to-date decline.  \n- The company's Q4 2025 results showed a notable net income rebound to $136.4 million, driven by 12.3% YoY sportsbook volume growth, though 2026 revenue guidance disappointed analysts.  \n- Katz forecasts continued growth in US sports betting and views DraftKings as a leader in the sector, despite the expected costs associated with new product launches and market entries.",
-        "date": "2026-02-23T18:45"
+        "title": "When will mortgage rates go down? With Fed rate cuts on hold, 4-year lows may be the bottom for now",
+        "link": "https://finance.yahoo.com/personal-finance/mortgages/article/when-will-mortgage-rates-go-down-february-23-2026-190610655.html",
+        "summary": "• The national average 30-year mortgage rate has decreased to 6.01%, representing a four-year low and 84 basis points lower than the previous year.  \n• The Federal Reserve is unlikely to cut its federal funds rate soon, impacting future mortgage rate trends.  \n• The housing market remains competitive, with high demand keeping home prices elevated despite falling mortgage rates.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000345,
         "category": "Finance",
-        "title": "Strong Earnings from Nvidia Could Help End the 'AI Ghost Trade.' Should You Bet on NVDA Stock Now?",
-        "link": "https://finance.yahoo.com/news/strong-earnings-nvidia-could-help-184202655.html",
-        "summary": "- Nvidia's upcoming fiscal Q4 earnings report on February 25 is crucial for the AI sector, potentially revitalizing investor confidence amid concerns of AI startups undermining established tech firms.\n- Analysts project Nvidia's Q4 revenue at $65.74 billion, marking a 67% year-over-year increase, with future revenue expected to soar to $327.34 billion by 2027.\n- A strong earnings performance may reverse the current decline in AI investments, as market fears transition from uncertainty to renewed optimism.",
-        "date": "2026-02-23T18:42"
+        "title": "Meta (META) Strengthens Investor Appeal With Dividend Payout and Platform Expansion Efforts",
+        "link": "https://finance.yahoo.com/news/meta-meta-strengthens-investor-appeal-195107672.html",
+        "summary": "• Meta Platforms declared a quarterly cash dividend of $0.525 per share, reinforcing investor confidence and scheduled for payment on March 26, 2026.  \n• The company is partnering with Allegro.eu to trial ads from local sellers on Facebook Marketplace, potentially enhancing cross-platform integration.  \n• Citizens rated Meta as Market Outperform with a $900 target, driven by heightened engagement on Instagram, showcasing consistent user growth.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000349,
         "category": "Finance",
-        "title": "DA Davidson Trims Airbnb (ABNB) Target Price to $150",
-        "link": "https://finance.yahoo.com/news/da-davidson-trims-airbnb-abnb-184450787.html",
-        "summary": "- DA Davidson reduced Airbnb's target price by 3.2% to $150 while maintaining a Buy rating, citing market-wide valuation concerns related to AI.  \n- Despite robust Q4 2025 results, with a 12% YoY revenue increase, AI pressures dominated analyst inquiries during the earnings call.  \n- CEO Brian Chesky highlighted ongoing AI initiatives, including a custom support agent and the appointment of a new CTO from Meta, aimed to enhance user experience.",
-        "date": "2026-02-23T18:44"
+        "title": "Black Swan’s Taleb Warns on Software Bankruptcies, More Volatility",
+        "link": "https://finance.yahoo.com/news/black-swan-taleb-warns-software-195809956.html",
+        "summary": "• Nassim Taleb warns investors of rising volatility and potential bankruptcies within the software sector, particularly influenced by the artificial intelligence boom entering a fragile phase.  \n• He highlights that current AI leaders may face significant challenges, with historical trends indicating they are often displaced.  \n• The S&P 500 Index is showing signs of vulnerability, falling approximately 1% amid escalating market uncertainties and geopolitical tensions.",
+        "date": "2026-02-25 07:25"
     },
     {
-        "id": 1772000354,
-        "category": "Finance",
-        "title": "Domino’s just revealed how it plans to win the pizza wars after Pizza Hut’s store closures—it’s good news for fast food lovers",
-        "link": "https://finance.yahoo.com/news/domino-just-revealed-plans-win-183000708.html",
-        "summary": "- Domino's reported fourth-quarter revenue of $1.54 billion, surpassing estimates and marking a 15% dividend increase, despite a slight miss on earnings per share.\n- The company witnessed 3.7% same-store sales growth in Q4 2025, leveraging competitor store closures to enhance market share.\n- Shares rose 6.4% in morning trading, reflecting investor confidence in the \"Hungry for MORE\" strategy amidst a mature pizza market.",
-        "date": "2026-02-23T18:30"
+        "category": "Markets",
+        "title": "BlackRock’s Rick Rieder is locking in attractive yields in this corner of the bond market before the opportunity slips away",
+        "link": "https://www.cnbc.com/2026/02/24/blackrocks-rick-rieder-is-locking-in-attractive-yields-in-this-corner-of-the-bond-market.html",
+        "summary": "• BlackRock’s Rick Rieder highlights a critical opportunity in emerging market bonds, locking in double-digit yields as interest rates stabilize globally.  \n• Emerging market debt comprises nearly 15% of the iShares Flexible Income Active ETF, with significant holdings in Brazil and Mexico.  \n• Rieder anticipates future rate cuts by the Federal Reserve, potentially shifting investment focus while acknowledging that current high yields may not last forever.",
+        "date": "2026-02-25 07:24"
     },
     {
-        "id": 1772000359,
-        "category": "Finance",
-        "title": "Taiwan Semi Stock Is Soaring Above AI Bubble Fears. Where Options Data Says It Is Headed Next.",
-        "link": "https://finance.yahoo.com/news/taiwan-semi-stock-soaring-above-183002987.html",
-        "summary": "- Taiwan Semiconductor Manufacturing Company (TSMC) has achieved a 22% year-to-date stock increase and maintains a 100% Strong Buy rating from Barchart.  \n- As a foundry, TSMC benefits from rising AI demand by manufacturing chipsets for other designers rather than competing directly.  \n- Recent options data shows bullish sentiment among institutional investors, indicating strong market confidence in TSMC's future performance.",
-        "date": "2026-02-23T18:30"
+        "category": "Markets",
+        "title": "The violent software sell-off pauses. Wall Street says bet on these stocks to bounce",
+        "link": "https://www.cnbc.com/2026/02/24/the-violent-software-sell-off-pauses-wall-street-says-bet-on-these-stocks-to-bounce.html",
+        "summary": "• Wall Street identifies potential recovery in software stocks amid a significant sell-off, with Intuit and CrowdStrike highlighted as resilient options.  \n• The software sector remains down over 25% year-to-date, driven by fears of AI's impact on traditional pricing models.  \n• Analysts suggest investing in cybersecurity firms, like CrowdStrike, as AI tools transform enterprise security needs and create new growth opportunities.",
+        "date": "2026-02-25 07:24"
     },
     {
-        "id": 1772000364,
-        "category": "Finance",
-        "title": "Truist Raises Target Price on Etsy (ETSY) to $83, Following Q4 Results",
-        "link": "https://finance.yahoo.com/news/truist-raises-target-price-etsy-184624947.html",
-        "summary": "- Truist raised Etsy's target price by 3.8% to $83, affirming its \"Buy\" rating, citing strong Q4 2025 results and positive Q1 2026 guidance.\n- Etsy experienced revenue growth of 6.6% YoY, marked by a recovery in gross merchandise sales (GMS) and gains in its mobile app segment.\n- The company's take rate increased significantly to 24.5%, bolstered by the divestiture of Reverb and enhanced advertising revenue.",
-        "date": "2026-02-23T18:46"
+        "category": "Markets",
+        "title": "Bitcoin mining is no longer profitable after crypto's latest downward turn, analyst says",
+        "link": "https://www.cnbc.com/2026/02/24/bitcoin-mining-is-no-longer-profitable-after-cryptos-latest-downward-turn.html",
+        "summary": "• Bitcoin miners are facing unprofitability as the cryptocurrency trades around $64,143, down 26% year-to-date, with hash prices declining 30% in three months.  \n• Many firms, including Bitmine Immersion Technologies, are experiencing significant dips in performance, further exacerbated by low mining revenues.  \n• Some mining operations are pivoting to high-performance computing (HPC) services to mitigate losses, with improved demand offering potential financial relief.",
+        "date": "2026-02-25 07:24"
     },
     {
-        "id": 1772000368,
-        "category": "Finance",
-        "title": "Wells Fargo Still Overweight on Wynn Resorts (WYNN), Following Q4 2025 Results",
-        "link": "https://finance.yahoo.com/news/wells-fargo-still-overweight-wynn-185122113.html",
-        "summary": "- Wells Fargo reduced its target price for Wynn Resorts from $152 to $147, reflecting weaker-than-expected performance and EBITDA misses in Q4 2025.\n- The company's Q4 net income fell 63.9% year-over-year, attributed to a 6.2% drop in room revenue and declining hold rates across all regions.\n- Despite these setbacks, Wells Fargo maintains an Overweight rating, citing strong long-term growth potential with developments like the Wynn Al Marjan Island.",
-        "date": "2026-02-23T18:51"
-    },
-    {
-        "id": 1772000373,
-        "category": "Finance",
-        "title": "BTIG Positive on Ralph Lauren (RL), Citing Margin Expansion",
-        "link": "https://finance.yahoo.com/news/btig-positive-ralph-lauren-rl-184948009.html",
-        "summary": "- BTIG analysts raised Ralph Lauren's target price by 8.8% to $435, maintaining a \"Buy\" rating, citing significant margin expansion in Q3 FY2026.\n- The company's net income rose 21.6% year-over-year to $361.6 million, driven by 12% revenue growth, particularly strong in Asia (22% YoY).\n- Margin improvements were attributed to a favorable product mix and lower cotton prices, offsetting the impact of higher US tariffs.",
-        "date": "2026-02-23T18:49"
-    },
-    {
-        "id": 1772000379,
-        "category": "Finance",
-        "title": "Kodiak Sciences Stock Up 480% as One Fund Discloses $53 Million Buy",
-        "link": "https://finance.yahoo.com/news/kodiak-sciences-stock-480-one-184026720.html",
-        "summary": "- Baker Bros. Advisors LP purchased 2.6 million shares of Kodiak Sciences for approximately $53.42 million, boosting the firm's stake and signaling strong confidence in the company’s prospects.  \n- Kodiak's share price surged 480% over the past year, significantly outperforming the S&P 500, driven by advancements in clinical trials for retinal disease therapies.  \n- Kodiak’s market cap is now $1.6 billion, with ongoing Phase 3 trials that could position the company to capture a share of the $15 billion anti-VEGF market.",
-        "date": "2026-02-23T18:40"
-    },
-    {
-        "id": 1772000384,
-        "category": "Finance",
-        "title": "Morgan Stanley Trims Rollins (ROL) Target Price to $70",
-        "link": "https://finance.yahoo.com/news/morgan-stanley-trims-rollins-rol-185205483.html",
-        "summary": "- Morgan Stanley reduced its target price for Rollins Inc. (ROL) from $72 to $70, marking a 2.9% decrease while maintaining an Overweight rating.  \n- The adjustment follows Rollins' Q4 2025 earnings report, which exhibited a 5.7% organic revenue growth, underperforming due to adverse weather.  \n- Rollins management forecasts 9% to 11% YoY revenue growth for 2026, with aims to enhance EBITDA margins to 25%-30% by 2026.  ",
-        "date": "2026-02-23T18:52"
-    },
-    {
-        "id": 1772000388,
-        "category": "Finance",
-        "title": "Morgan Stanly Lowers Target Price on Las Vegas Sands (LVS) to $66 Due to Weak Macau Results",
-        "link": "https://finance.yahoo.com/news/morgan-stanly-lowers-target-price-185033374.html",
-        "summary": "- Morgan Stanley reduced its target price for Las Vegas Sands (LVS) to $66, citing strong performance in Singapore but disappointing results in Macau.\n- LVS reported a 49.6% year-over-year increase in adjusted net income in Q4 2025, driven by its Singapore operations, while Macau's EBITDA growth was only 6.5%.\n- The mixed results highlight the ongoing challenges in Macau's gaming market, impacting investor sentiment.",
-        "date": "2026-02-23T18:50"
-    },
-    {
-        "id": 1772000394,
-        "category": "Finance",
-        "title": "Size Doesn’t Matter to Warren Buffett – He Warns Managers Focus Too Much on the ‘Yardstick of Size’ and Not Enough on ‘Profitability’",
-        "link": "https://finance.yahoo.com/news/size-doesn-t-matter-warren-182642613.html",
-        "summary": "- Warren Buffett cautions that companies prioritize size over profitability, which can lead to misleading perceptions of success and sustainability.\n- He emphasizes the importance of focusing on strong fundamentals and consistent returns instead of mere revenue growth.\n- Buffett's investment strategy prioritizes highly profitable companies with durable competitive advantages, steering clear of overhyped stocks.",
-        "date": "2026-02-23T18:26"
-    },
-    {
-        "id": 1772000399,
-        "category": "Finance",
-        "title": "High-yield savings account vs. money market fund: Which is better?",
-        "link": "https://finance.yahoo.com/news/high-yield-savings-account-vs-174243584.html",
-        "summary": "- High-yield savings accounts (HYSAs) often offer APYs significantly above traditional savings accounts, with some reaching 5% or more, while money market accounts average 0.67%.\n- HYSAs typically have low or no minimum deposit and monthly fees, making them more accessible for savers compared to money market accounts, which usually require higher initial deposits.\n- Accessibility differs; money market accounts allow easy cash withdrawals via checks or debit cards, while HYSAs restrict access to electronic transfers only.",
-        "date": "2026-02-23T18:20"
+        "category": "Markets",
+        "title": "The big market rotation may lead to gains in this health care name. Trading it with options",
+        "link": "https://www.cnbc.com/2026/02/24/the-big-market-rotation-may-lead-to-gains-in-this-health-care-name-trading-it-with-options.html",
+        "summary": "• The S&P 500 historically experiences a dip every February, with current market movements illustrating a sector rotation away from high-beta tech towards more defensive sectors like health care.  \n• Illumina Inc. (ILMN) has shown promising technical signals, including a bullish shift in the directional movement index and a break above the relative strength index’s threshold.  \n• A bull call spread strategy targeting a $120-$125 range on ILMN could capitalize on this bullish outlook, with potential profits aligning with improved market conditions.",
+        "date": "2026-02-25 07:24"
     },
     {
         "id": 1772000403,
@@ -310,93 +372,5 @@
         "link": "https://finance.yahoo.com/research/reports/ARGUS_3051_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
         "summary": "- HF Sinclair Corporation, based in Dallas, specializes in producing and marketing light crude products, including gasoline and renewable diesel.  \n- The company operates multiple refineries across several states and offers crude oil transportation, storage, and terminaling services.  \n- HF Sinclair fuels over 1,500 branded stations, highlighting its significant presence in the petroleum industry.  ",
         "date": "2026-02-24T18:13"
-    },
-    {
-        "id": 1772000408,
-        "category": "Finance",
-        "title": "Tencent Music’s Revenue Model Shifts Beyond Virtual Gifting as China’s Paid Music Market Expands",
-        "link": "https://finance.yahoo.com/news/tencent-music-revenue-model-shifts-183823988.html",
-        "summary": "- Keystone Investors fully divested its 6.1% stake in Tencent Music Entertainment Group, selling 2.24 million shares valued at approximately $52.37 million in Q4 2026.\n- Tencent Music's stock rose 21.1% over the past year, exceeding S&P 500 growth by 8.2 percentage points, signaling positive market sentiment.\n- The company's strategic pivot from free streaming to paid subscriptions highlights its central role in China's evolving music market, leveraging interactive and social entertainment to drive revenue.",
-        "date": "2026-02-23T18:38"
-    },
-    {
-        "id": 1772000412,
-        "category": "Finance",
-        "title": "United Airlines Stock Sees RS Rating Take Off",
-        "link": "https://www.investors.com/news/united-airlines-stock-sees-rs-rating-take-off/?src=A00220&yptr=yahoo",
-        "summary": "- United Airlines (UAL) saw its Relative Strength (RS) Rating increase from 79 to 82, reflecting improved market performance.  \n- The RS Rating is a key measure from Investor's Business Daily, indicating market leadership on a scale of 1 to 99.  \n- This positive rating could attract investor interest and enhance United Airlines' stock appeal.  ",
-        "date": "2026-02-23T18:20"
-    },
-    {
-        "id": 1772000417,
-        "category": "Finance",
-        "title": "Daiwa Upgrades Verizon (VZ) as Subscriber Growth Signals Strong Momentum",
-        "link": "https://finance.yahoo.com/news/daiwa-upgrades-verizon-vz-subscriber-181437974.html",
-        "summary": "- Daiwa upgraded Verizon to a \"Buy\" rating, citing strong subscriber growth and a price target increase to $58, reflecting robust Q4 results with 616,000 net postpaid phone additions.  \n- CEO Daniel Schulman announced a $5 billion OpEx savings initiative through workforce restructuring and operational efficiencies, aiming for enhanced profitability.  \n- Verizon completed its Frontier acquisition, expanding its fiber coverage and targeting 40-50 million fiber passings by 2028, with anticipated cost synergies exceeding $1 billion.  ",
-        "date": "2026-02-23T18:14"
-    },
-    {
-        "id": 1772000422,
-        "category": "Finance",
-        "title": "Barclays Initiates Bristol Myers (BMY) with Overweight Rating on Pipeline Potential",
-        "link": "https://finance.yahoo.com/news/barclays-initiates-bristol-myers-bmy-181358443.html",
-        "summary": "- Barclays initiated Bristol-Myers Squibb (NYSE:BMY) with an Overweight rating and a $75 target, citing promising developments in its drug pipeline despite impending patent expirations.\n- The company projects 2026 revenue between $46 billion and $47.5 billion, surpassing analyst expectations, driven by strategies to maintain Eliquis sales amid price negotiations.\n- Despite anticipated revenue declines for Eliquis in 2027, Bristol-Myers forecasts adjusted earnings per share that exceed consensus estimates.",
-        "date": "2026-02-23T18:13"
-    },
-    {
-        "id": 1772000427,
-        "category": "Finance",
-        "title": "Erste Group Sees NextEra Energy (NEE) Benefiting From Rising Electricity Demand",
-        "link": "https://finance.yahoo.com/news/erste-group-sees-nextera-energy-181425298.html",
-        "summary": "- Erste Group upgraded NextEra Energy (NYSE: NEE) to 'Buy,' citing a strengthened long-term growth outlook with expected EPS growth of 8% through 2035, driven by rising electricity demand.  \n- The company announced a quarterly dividend increase of 10%, reflecting its consistent strategy of 10% annual growth through 2026.  \n- NextEra Energy maintains strong financial metrics, with ROE and operating margins exceeding industry peers, indicating robust investment potential.  ",
-        "date": "2026-02-23T18:14"
-    },
-    {
-        "id": 1772000432,
-        "category": "Finance",
-        "title": "Analyst Report: Regency Centers Corporation",
-        "link": "https://finance.yahoo.com/research/reports/ARGUS_3356_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-        "summary": "- Regency Centers Corporation owns and manages approximately 481 properties across the U.S., totaling over 58 million square feet of gross leasable area, with a focus on urban and suburban open-air shopping centers.  \n- In 2025, the company's revenues reached $1.55 billion, with 97% derived from lease income.  \n- As of early 2026, a significant portion of its portfolio is concentrated in California, Florida, Connecticut, and New York.",
-        "date": "2026-02-24T18:13"
-    },
-    {
-        "id": 1772000437,
-        "category": "Finance",
-        "title": "Gold on track for longest winning streak in history",
-        "link": "https://finance.yahoo.com/news/gold-track-longest-winning-streak-183526728.html",
-        "summary": "- Gold is poised for its longest recorded winning streak, nearing an eighth consecutive monthly gain by February 2026, with prices around $5,062 per ounce.  \n- January 2026 saw gold reach an all-time intraday high of $5,589.38 before a 9% drop, highlighting extreme volatility yet significant recovery in demand.  \n- The surge is attributed to broad-based investor interest, marking gold's strongest start to a year since 1980 with a 19.5% year-to-date increase.",
-        "date": "2026-02-23T18:35"
-    },
-    {
-        "id": 1772000442,
-        "category": "Finance",
-        "title": "Erste Group Upgrade Reflects Confidence in Procter & Gamble’s (PG) Financial Strength",
-        "link": "https://finance.yahoo.com/news/erste-group-upgrade-reflects-confidence-181336891.html",
-        "summary": "- Erste Group upgraded Procter & Gamble (PG) to 'Buy' from 'Hold', citing improved sales and earnings growth prospects for FY, alongside a significant $14B-$15B capital return plan.\n- Despite flat Q2 sales amidst economic pressures, PG's robust cash flow of $8 billion in H1 supports consistent dividend payments, marking 69 years of annual increases.\n- PG maintains a strong market presence and plans to enhance its product lineup, positioning it for steady long-term growth despite cautious consumer sentiment.",
-        "date": "2026-02-23T18:13"
-    },
-    {
-        "id": 1772000446,
-        "category": "Finance",
-        "title": "Barclays Initiates AbbVie (ABBV) with Overweight Rating on Growth Potential",
-        "link": "https://finance.yahoo.com/news/barclays-initiates-abbvie-abbv-overweight-181348738.html",
-        "summary": "- Barclays initiates coverage on AbbVie (ABBV) with an Overweight rating and a price target of $275, citing significant growth potential driven by operating leverage.  \n- AbbVie received FDA approval for its VENCLEXTA and acalabrutinib combination therapy for chronic lymphocytic leukemia, enhancing treatment options for patients.  \n- This combination therapy is the first all-oral, fixed-duration regimen for untreated CLL patients, potentially improving patient outcomes and providing doctors with a more targeted treatment option.",
-        "date": "2026-02-23T18:13"
-    },
-    {
-        "id": 1772000452,
-        "category": "Finance",
-        "title": "RBC Capital Raises AT&T Target on Fiber-Driven Growth Outlook",
-        "link": "https://finance.yahoo.com/news/rbc-capital-raises-t-target-181408464.html",
-        "summary": "- RBC Capital increased its price target for AT&T Inc. to $31, highlighting growth potential from fiber expansion and reduced competition risk in the wireless sector.  \n- AT&T reported over 1.5 million postpaid phone customer additions in 2025 and significant fiber growth with 1 million net additions for the eighth consecutive year.  \n- The company anticipates reaching over 40 million fiber locations by year-end, bolstered by recent acquisitions and a robust capital return strategy exceeding $12 billion.",
-        "date": "2026-02-23T18:14"
-    },
-    {
-        "id": 1772000457,
-        "category": "Finance",
-        "title": "Erste Group Sees McDonald’s (MCD) Benefiting from Strong Financial Profile",
-        "link": "https://finance.yahoo.com/news/erste-group-sees-mcdonald-mcd-181331345.html",
-        "summary": "- Erste Group upgraded McDonald's (NYSE:MCD) to a \"Buy\" rating, anticipating stronger sales growth in 2026 driven by the company's robust financial profile and high profitability.  \n- McDonald's reported a 5.7% increase in global same-store sales in Q4, exceeding analyst expectations and highlighting the effectiveness of its value-focused strategy.  \n- The U.S. market saw a significant 6.8% rise in comparable sales, marking the strongest increase in nearly two years, driven by successful promotional efforts.  ",
-        "date": "2026-02-23T18:13"
     }
 ]
