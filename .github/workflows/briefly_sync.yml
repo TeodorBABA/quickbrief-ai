@@ -18,13 +18,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          # AICI ESTE MODIFICAREA: Am trecut de la 3.9 la 3.10
+          python-version: '3.10'
 
       - name: Install System Fonts (Pillow Fix)
         run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
 
       - name: Install Dependencies
-        # AICI am adăugat instagrapi în lista de instalare
         run: pip install feedparser newspaper3k openai Pillow lxml_html_clean instagrapi nltk && python -m nltk.downloader punkt punkt_tab
 
       - name: Run Scraper (Always)
@@ -33,7 +33,6 @@ jobs:
         run: python main.py
 
       - name: Run Social Poster & Instagram Post (Every 4 Hours or Manual)
-        # Am expus credențialele ca variabile de mediu
         env:
           IG_USERNAME: ${{ secrets.IG_USERNAME }}
           IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
