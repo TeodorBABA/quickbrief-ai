@@ -1,6 +1,96 @@
 [
     {
         "category": "Markets",
+        "title": "Direct-to-consumer sales for obesity drugs are about to boom. JPMorgan sees Eli Lilly as big winner",
+        "link": "https://www.cnbc.com/2026/02/25/dtc-sales-for-glp-1s-are-growing-jpmorgan-sees-eli-lilly-as-winner.html",
+        "summary": "Eli Lilly is poised to lead the GLP-1 market, benefiting from direct-to-consumer sales. Analysts predict a significant increase in patient uptake by 2030. The company's oral drug and upcoming Medicare coverage will further enhance its market position.",
+        "short_summary": "Eli Lilly is expected to thrive in the growing obesity drug market, driven by direct-to-consumer sales.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Tech",
+        "title": "Have hard-won scaling lessons to share? Take the stage at TechCrunch Founder Summit 2026",
+        "link": "https://techcrunch.com/2026/02/25/have-hard-won-scaling-lessons-to-share-take-the-stage-at-techcrunch-founder-summit/",
+        "summary": "TechCrunch Founder Summit 2026 invites founders and investors to share scaling experiences. The event will feature interactive discussions focused on real-world growth challenges. Applications for speakers are open until April 17.",
+        "short_summary": "TechCrunch Founder Summit 2026 aims to connect over 1,000 founders and investors for growth discussions.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Tech",
+        "title": "Americans now listen to podcasts more often than talk radio, study shows",
+        "link": "https://techcrunch.com/2026/02/25/americans-now-listen-to-podcasts-more-often-than-talk-radio-study-shows/",
+        "summary": "Podcasts have surpassed AM/FM talk radio in popularity, capturing 40% of listening time. This shift highlights the growing influence of digital audio content. Major platforms like Netflix are investing in podcasting, signaling a trend towards integrating podcasts with traditional media.",
+        "short_summary": "Podcasts now account for 40% of spoken word audio listening, surpassing traditional radio for the first time.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Tech",
+        "title": "Harbinger acquires autonomous driving company Phantom AI",
+        "link": "https://techcrunch.com/2026/02/25/harbinger-acquires-autonomous-driving-company-phantom-ai/",
+        "summary": "Harbinger acquires Phantom AI to enhance its technology portfolio. This marks Harbinger's first acquisition as it aims to expand revenue streams. ZF Group will license the new tech for passenger vehicles.",
+        "short_summary": "Harbinger's acquisition of Phantom AI marks a strategic move to boost its tech offerings and revenue potential.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Tech",
+        "title": "Jira\u2019s latest update allows AI agents and humans to work side by side",
+        "link": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
+        "summary": "Atlassian launches 'agents in Jira' for enhanced collaboration between AI and human workers. This feature allows task assignment and tracking from a unified dashboard. The update aims to improve productivity while maintaining oversight.",
+        "short_summary": "Atlassian introduces AI agents in Jira to streamline team collaboration and boost productivity.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Oric Pharmaceuticals price target raised to $25 from $23 at H.C. Wainwright",
+        "link": "https://finance.yahoo.com/news/oric-pharmaceuticals-price-target-raised-155536018.html",
+        "summary": "H.C. Wainwright raises Oric Pharmaceuticals' price target to $25 from $23. The firm maintains a Buy rating. Analysts anticipate a catalyst-rich year ahead for the company.",
+        "short_summary": "Analysts expect a pivotal year for Oric Pharmaceuticals as price target rises to $25.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Stock market today: Dow, S&P 500, Nasdaq rise with Nvidia earnings looming as gut check for AI trade",
+        "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-with-nvidia-earnings-looming-as-gut-check-for-ai-trade-143448982.html",
+        "summary": "President Trump expresses hope for a diplomatic deal with Iran regarding nuclear weapons. Tensions rise as US military presence increases in the Gulf region. The situation could impact global oil trade, particularly through the Strait of Hormuz.",
+        "short_summary": "Trump seeks a nuclear deal with Iran amid rising tensions and increased US military presence in the Gulf.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Loop Capital Upgrades Qualcomm (QCOM) to Buy, Sees Stock Nearing Turning Point",
+        "link": "https://finance.yahoo.com/news/loop-capital-upgrades-qualcomm-qcom-154640634.html",
+        "summary": "Loop Capital upgrades Qualcomm to 'Buy', predicting a 32% stock price increase. Analyst cites easing pressures and new growth opportunities. Upcoming analyst day in June may provide further insights.",
+        "short_summary": "Qualcomm receives a 'Buy' upgrade from Loop Capital, signaling potential stock recovery ahead.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Moderately bullish activity in Wal-Mart with shares up 1.15%",
+        "link": "https://finance.yahoo.com/news/moderately-bullish-activity-wal-mart-155113487.html",
+        "summary": "Wal-Mart shares rise 1.15% amid light options trading. The put/call ratio indicates a shift towards downside protection. A downgrade to Hold by HSBC influences market sentiment.",
+        "short_summary": "Wal-Mart shares see a modest increase as market sentiment shifts after a downgrade by HSBC.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Finance",
+        "title": "Accenture (ACN) Targets Infrastructure Growth in Latin America with Verum Acquisition",
+        "link": "https://finance.yahoo.com/news/accenture-acn-targets-infrastructure-growth-154229088.html",
+        "summary": "Accenture acquires Verum Partners to enhance infrastructure capabilities in Latin America. The acquisition aims to improve project efficiency through advanced AI and digital solutions. Verum's expertise will bolster Accenture's operational depth in the region.",
+        "short_summary": "Accenture expands its infrastructure capabilities in Latin America with the acquisition of Verum Partners.",
+        "is_major": false,
+        "date": "2026-02-25 18:03"
+    },
+    {
+        "category": "Markets",
         "title": "Reddit sell-off creates asymmetric upside opportunity, says Loop Capital",
         "link": "https://www.cnbc.com/2026/02/25/reddit-sell-off-creates-asymmetric-upside-opportunity-says-loop-capital.html",
         "summary": "Loop Capital sees significant upside potential for Reddit, raising its price target to $260. The stock is currently undervalued amid a broader sell-off in tech. Analysts believe this presents a prime buying opportunity for investors in digital advertising.",
