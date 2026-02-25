@@ -1,5 +1,50 @@
 [
     {
+        "category": "Finance",
+        "title": "Geron Q4 Earnings Call Highlights",
+        "link": "https://finance.yahoo.com/news/geron-q4-earnings-call-highlights-160300303.html",
+        "summary": "Geron Corporation's recent Q4 earnings call highlighted the company's strategic initiatives and market positioning for its drug RYTELO, particularly in the context of second-line treatment for lower-risk myelodysplastic syndromes (MDS). Management emphasized a multi-faceted marketing approach, termed '3D surround sound,' which integrates digital promotion and educational outreach to enhance awareness and adoption of RYTELO among healthcare providers. This strategy aims to solidify RYTELO as a standard-of-care option for appropriate patients, regardless of their RS status, thereby expanding its market presence and driving demand growth in the upcoming years.\n\nThe company reported a 9% increase in demand for RYTELO compared to the previous quarter, alongside a 13% rise in prescribing accounts, which now total approximately 1,300. Geron\u2019s Chief Commercial Officer, Ahmed ElNawawi, noted that the recent shifts in the competitive landscape, particularly the movement of luspatercept into first-line treatment, have clarified the opportunity for RYTELO in the second-line setting. With an estimated 8,000 eligible patients in the U.S., Geron is focusing its commercial efforts on this demographic, anticipating significant revenue growth in 2026, with projected net revenues of $220 million to $240 million.\n\nOverall, Geron\u2019s performance in Q4 aligns with its expectations, with a reported net revenue of $48 million for the quarter. The company is optimistic about sustaining quarter-over-quarter growth, particularly in the latter half of 2026. This outlook reflects confidence in the market dynamics for RYTELO and the company's ability to capitalize on its strategic initiatives, positioning itself favorably in a competitive landscape as it seeks to enhance its footprint in the oncology market.",
+        "social_insight": "The strategic focus on digital marketing and targeted engagement indicates Geron's commitment to capturing a significant share of the second-line MDS treatment market, which could enhance its competitive positioning and revenue potential.",
+        "is_major": false,
+        "date": "2026-02-25 18:14"
+    },
+    {
+        "category": "Finance",
+        "title": "TD Cowen Adjusts Broadcom (AVGO) Valuation, Highlights Long-Term AI Tailwinds",
+        "link": "https://finance.yahoo.com/news/td-cowen-adjusts-broadcom-avgo-155805770.html",
+        "summary": "TD Cowen has revised its price target for Broadcom Inc. (NASDAQ:AVGO) from $450 to $405 while maintaining a Buy rating, reflecting a cautious yet optimistic outlook on the semiconductor giant. The adjustment comes amid a backdrop of increasing investment in artificial intelligence (AI) infrastructure, which TD Cowen believes will bolster semiconductor estimates for 2026 and 2027. Despite the recent pullback in share valuations, the firm sees this as a potential buying opportunity for investors, particularly given the ongoing demand for AI-related technologies. The report highlights that Broadcom's growth trajectory is closely tied to its advancements in AI, particularly through its application-specific integrated circuits (ASICs) designed to accelerate AI workloads.\n\nBroadcom has strategically diversified its revenue streams by expanding into infrastructure software, notably through its acquisition of VMware. This move has allowed the company to strengthen its relationships with large data center customers by offering integrated solutions that combine both hardware and software. As a result, Broadcom has positioned itself favorably within the competitive landscape of the semiconductor industry, making its offerings more indispensable to clients. The company's AI chip sales surged by 65% to $20 billion in fiscal 2025, representing 31% of its total revenue, underscoring the critical role of AI in its business model.\n\nLooking ahead, Broadcom anticipates that its AI chip revenue could skyrocket to between $60 billion and $90 billion annually by fiscal 2027. This projection indicates a significant growth opportunity for the company as demand for AI technologies continues to rise. The firm's focus on both semiconductor and software solutions not only mitigates risks associated with traditional semiconductor cycles but also positions Broadcom as a key player in the evolving tech landscape. As the market increasingly shifts towards AI-driven solutions, Broadcom's strategic initiatives could yield substantial long-term benefits for its shareholders.",
+        "social_insight": "The adjustment in Broadcom's valuation reflects the growing importance of AI technologies in driving future revenue growth, which could significantly impact investor sentiment and market positioning.",
+        "is_major": false,
+        "date": "2026-02-25 18:14"
+    },
+    {
+        "category": "Finance",
+        "title": "Energea Launches Latin America Solar Portfolio With $100-Million Investment",
+        "link": "https://finance.yahoo.com/news/energea-launches-latin-america-solar-155719092.html",
+        "summary": "Energea, a global renewable energy developer, has announced the launch of its LATAM Energy Portfolio, marking its fourth investment strategy focused on distributed solar power projects across Latin America. The company has secured a $100-million credit facility with Helios Energ\u00eda S.A.S. E.S.P., a public utility in Colombia, to support off-grid solar initiatives aimed at providing electricity to rural and indigenous communities. This strategic move is designed to address the growing electricity demand in the region, which is currently hindered by limited financing options and high capital costs, thus presenting a unique opportunity for yield-oriented investors. Energea's co-founder, Mike Silvestrini, emphasized that the LATAM Energy Portfolio is a compelling risk-adjusted opportunity in the global energy transition, highlighting the importance of filling the financing gap while ensuring revenue generation through energy sales and loan repayments.\n\nThe anchor investment in Colombia's Zonas No Interconectadas is particularly significant, as these areas have historically lacked access to reliable electricity due to the economic impracticality of extending the traditional power grid. Helios Energ\u00eda has been managing over 20,000 government-subsidized subscribers in regions that have been underserved by conventional energy solutions. By focusing on these off-grid projects, Energea aims to not only provide essential energy services to marginalized communities but also to create a sustainable business model that emphasizes durability and financial discipline. This initiative aligns with the broader goals of the renewable energy sector, which seeks to enhance energy access while promoting environmental sustainability.\n\nThe launch of the LATAM Energy Portfolio is expected to have significant market implications, as it underscores the increasing attractiveness of renewable energy investments in Latin America. As countries in the region strive to meet their energy needs amidst growing demand, projects like Energea's can catalyze further investment and innovation in the sector. Additionally, this move could encourage other investors to explore similar opportunities in underserved markets, potentially leading to a shift in how energy is produced and consumed in Latin America. The focus on off-grid solutions not only addresses immediate energy access challenges but also positions Energea as a leader in the transition towards a more sustainable energy future in the region.",
+        "social_insight": "This investment highlights the growing recognition of renewable energy as a viable solution to energy access challenges in underserved markets, potentially attracting further investments in the sector.",
+        "is_major": false,
+        "date": "2026-02-25 18:14"
+    },
+    {
+        "category": "Finance",
+        "title": "Eli Lilly (LLY) Seen Resilient as BofA Downplays Novo Nordisk GLP-1 Price Impact",
+        "link": "https://finance.yahoo.com/news/eli-lilly-lly-seen-resilient-155533053.html",
+        "summary": "Eli Lilly and Company (NYSE: LLY) has recently been highlighted by Bank of America (BofA) as a resilient player in the pharmaceutical market, particularly in the context of Novo Nordisk's recent decision to reduce list prices for GLP-1 medications. BofA suggests that while this price cut may attract attention, it is unlikely to significantly impact the U.S. market dynamics for GLP-1 drugs. The firm emphasizes that the price adjustments are primarily aimed at reducing out-of-pocket costs for patients, especially those whose expenses are linked to list prices. However, BofA's analysis indicates that Eli Lilly's position remains strong, as there is no substantial evidence that Novo Nordisk is lowering net prices in the commercial insurance sector, which is crucial for market stability.\n\nIn a related development, Eli Lilly has received FDA approval for a new four-dose KwikPen for its weight-loss drug Zepbound, a significant innovation that allows patients to manage their treatment more conveniently. This new delivery system contrasts with Novo Nordisk's Wegovy, which is administered as a weekly autoinjector. The KwikPen will be available at a starting price of $299 per month for cash-paying customers, and it will come in various dosage levels, catering to a broader range of patient needs. This strategic move not only enhances patient accessibility but also positions Eli Lilly favorably against its competitors in the weight-loss medication market.\n\nOverall, BofA's endorsement of Eli Lilly, coupled with the launch of the Zepbound KwikPen, suggests a positive outlook for the company amidst competitive pricing pressures. The firm maintains a 'Buy' rating on Eli Lilly, reflecting confidence in its ability to navigate the evolving landscape of GLP-1 therapies. As reimbursement trends continue to shift, Eli Lilly is expected to benefit from increasing demand in cash-pay and U.S. government channels, further solidifying its market presence and potential for growth in the pharmaceutical sector.",
+        "social_insight": "Eli Lilly's ability to innovate and maintain a strong market position despite competitive pricing pressures underscores its resilience and potential for continued growth in the pharmaceutical industry.",
+        "is_major": false,
+        "date": "2026-02-25 18:14"
+    },
+    {
+        "category": "Finance",
+        "title": "Resolute Mining Conference: CEO says 2025 turnaround can extend into 2026 as Doropo build nears",
+        "link": "https://finance.yahoo.com/news/resolute-mining-conference-ceo-says-160301250.html",
+        "summary": "Resolute Mining's recent conference highlighted the company's optimistic outlook for its Doropo project, which it acquired from AngloGold Ashanti for $150 million in 2022. CEO Eger emphasized the robust updated economics of the project, projecting a reserve of 2.5 million ounces of gold at a $2,000 price per ounce, with potential increases to 3.5 to 4 million ounces if gold prices rise to between $3,000 and $4,000. This suggests a mine life extending beyond 13 years, which is a significant factor for long-term planning and investment in the region. The company is on track to meet key milestones in 2025, including the hiring of a project team and updating the definitive feasibility study, which will further solidify the project's viability.\n\nEger also provided insights into Resolute's production expectations, forecasting similar output levels in 2026 and 2027 before ramping up to over 500,000 ounces annually once the Doropo project comes online in 2028. The company aims to increase production to 750,000 ounces by the end of the decade, leveraging expansion opportunities across its assets in C\u00f4te d'Ivoire. With current production levels at approximately 275,000 ounces annually, the anticipated EBITDA for 2025 is projected to exceed $380 million, with free cash flow expected to surpass $200 million, excluding capital expenditures for the Doropo project.\n\nThe turnaround plan initiated at the beginning of 2025 has been credited with restoring Resolute's operational stability after a challenging 2024. Eger highlighted the importance of skilled teams, improved relationships with government stakeholders, and a strategic pivot that diversifies the company's portfolio. This proactive approach not only positions Resolute for growth but also enhances its resilience in a fluctuating gold market, making it a noteworthy player in the mining sector as it navigates future challenges and opportunities.",
+        "social_insight": "The successful execution of Resolute's turnaround strategy and the promising outlook for the Doropo project could significantly enhance investor confidence and attract further investment in the gold mining sector.",
+        "is_major": false,
+        "date": "2026-02-25 18:14"
+    },
+    {
         "category": "Markets",
         "title": "Direct-to-consumer sales for obesity drugs are about to boom. JPMorgan sees Eli Lilly as big winner",
         "link": "https://www.cnbc.com/2026/02/25/dtc-sales-for-glp-1s-are-growing-jpmorgan-sees-eli-lilly-as-winner.html",
@@ -505,66 +550,6 @@
             "Tepper calls for accountability and suggests bringing in outside partners to avert further financial losses."
         ],
         "short_summary": "David Tepper challenges Whirlpool\u2019s leadership on value mismanagement amid a plummeting stock. Time for change!",
-        "date": "2026-02-25 17:46"
-    },
-    {
-        "category": "Business",
-        "title": "David Ellison has a rocky history at the box office. Buying Warner Bros. could fix that",
-        "link": "https://www.cnbc.com/2026/02/25/paramount-wbd-david-ellison-box-office-history.html",
-        "summary": [
-            "David Ellison seeks to enhance Skydance's box office performance by acquiring Warner Bros., leveraging its legendary franchises.",
-            "Despite producing blockbuster hits like 'Top Gun: Maverick,' Skydance's consistency is challenged, highlighting the need for strong IP.",
-            "A merger would potentially provide Skydance and Paramount with unmatched brand power and revenue opportunities in a competitive landscape."
-        ],
-        "short_summary": "David Ellison aims to boost box office success by acquiring Warner Bros. for franchise power and revenue potential.",
-        "date": "2026-02-25 17:46"
-    },
-    {
-        "category": "Business",
-        "title": "Lowe's CEO says the housing market is under pressure, even as the retailer's sales jump more than 10%",
-        "link": "https://www.cnbc.com/2026/02/25/lowes-low-q4-2025-earnings.html",
-        "summary": [
-            "Lowe's reports over 10% year-over-year sales growth, surpassing Wall Street expectations despite housing market challenges.",
-            "CEO Marvin Ellison highlights enduring pressures from inflation, economic uncertainty, and mortgage rates impacting housing turnover.",
-            "The company's favorable strategy and acquisitions position it well for future recovery in the housing market and continued growth."
-        ],
-        "short_summary": "Lowe's sales soar over 10% despite housing market pressures; a strong strategy sets the stage for recovery.",
-        "date": "2026-02-25 17:46"
-    },
-    {
-        "category": "Business",
-        "title": "Lucid widely misses earnings expectations, forecasts slowing EV growth in 2026",
-        "link": "https://www.cnbc.com/2026/02/24/lucid-lcid-q4-2025-results-.html",
-        "summary": [
-            "Lucid Group reported a disappointing loss of $3.62 per share, surpassing revenue expectations by 12% with $523 million.",
-            "The company announced a revised production target of 17,840 vehicles for 2025, citing internal validation challenges.",
-            "Interim CEO Marc Winterhoff emphasized the need for workforce realignment while forecasting a conservative production increase by 40-51% for 2026."
-        ],
-        "short_summary": "Lucid Group's Q4 results disappoint as they adjust 2025 targets amid workforce realignment and forecast modest 2026 growth.",
-        "date": "2026-02-25 17:46"
-    },
-    {
-        "category": "Business",
-        "title": "Novo Nordisk to slash GLP-1 list prices by up to 50% in U.S. to cut costs for insured patients",
-        "link": "https://www.cnbc.com/2026/02/24/novo-nordisk-to-slash-wegovy-ozempic-us-list-prices-by-up-to-50percent.html",
-        "summary": [
-            "Novo Nordisk plans to reduce GLP-1 drug prices by up to 50% in the U.S., effective Jan. 1, 2027.",
-            "New monthly prices for Wegovy and Ozempic will be $675, making treatments more accessible for insured patients.",
-            "The price cuts aim to reduce out-of-pocket costs for patients with high-deductible plans, enhancing access to diabetes and obesity care."
-        ],
-        "short_summary": "Novo Nordisk to cut GLP-1 drug prices by 50% in 2027, improving access for insured patients ahead of competition.",
-        "date": "2026-02-25 17:46"
-    },
-    {
-        "category": "Business",
-        "title": "WBD says Paramount raised its bid to $31 per share, board will weigh offer against Netflix deal",
-        "link": "https://www.cnbc.com/2026/02/24/warner-bros-discovery-paramount-higher-bid-netflix.html",
-        "summary": [
-            "Paramount Skydance has increased its acquisition bid for Warner Bros. Discovery to $31 per share, competing with Netflix.",
-            "WBD's board is currently evaluating the new proposal against an existing deal with Netflix, valued at $27.75 per share.",
-            "If WBD finds the Paramount offer superior, Netflix will be given four days to enhance its own proposal."
-        ],
-        "short_summary": "Paramount raises offer to $31 per share for WBD, challenging Netflix's deal. A critical decision ahead!",
         "date": "2026-02-25 17:46"
     }
 ]
