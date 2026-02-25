@@ -2,14 +2,14 @@ name: Briefly Intelligence Sync
 
 on:
   schedule:
-    # Rulează la fiecare 15 minute pentru update-ul site-ului
+    # Update website every 15 minutes
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite rularea manuală
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Permisiuni vitale pentru ca robotul să poată scrie în repo
+    # ESSENTIAL: This block gives the bot permission to save changes to your repo
     permissions:
       contents: write
       
@@ -34,7 +34,7 @@ jobs:
         run: python main.py
 
       - name: Run Social Poster (Every 4 Hours)
-        # Verifică orele 0, 4, 8, 12, 16, 20 UTC
+        # Check for UTC hours: 00, 04, 08, 12, 16, 20
         if: contains(fromJSON('["00", "04", "08", "12", "16", "20"]'), formatDateTime(github.event.scheduled_time, 'HH'))
         run: python social_poster.py
 
@@ -42,8 +42,8 @@ jobs:
         run: |
           git config --global user.name "BrieflyBot"
           git config --global user.email "bot@briefly.life"
-          # Adăugăm toate fișierele care se modifică
+          # Track the data files, the tracking list, and the generated image
           git add news_data.json daily_summaries.json posted_ids.txt last_news_post.jpg
-          # Commit doar dacă există modificări, pentru a evita erorile inutile
-          git commit -m "Automated update: Intelligence & Social" || echo "No changes to commit"
+          # Only commit if there are actual changes to avoid errors
+          git commit -m "Automated update: Intelligence Data & Social Media Assets" || echo "No changes to commit"
           git push
