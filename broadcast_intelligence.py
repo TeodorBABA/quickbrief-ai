@@ -17,9 +17,9 @@ def get_latest_posted_news():
             return None
         with open(JSON_FILE, "r", encoding="utf-8") as f:
             news_list = json.load(f)
-            # Căutăm ultima știre marcată ca majoră
+            # Luăm ultima știre care a fost marcată ca majoră
             for item in reversed(news_list):
-                if item.get('is_major') == True:
+                if item.get('is_major'):
                     return item
     except Exception as e:
         print(f"Eroare citire JSON: {e}")
@@ -28,21 +28,22 @@ def get_latest_posted_news():
 def send_to_discord(news):
     if not DISCORD_WEBHOOK: return
     
-    # Folosim .get() pentru a evita KeyError
-    social_description = news.get('social_text', "Detailed strategic briefing available in the link below.")
+    social_desc = news.get('social_text', "Strategic briefing available in the link below.")
     
     payload = {
         "embeds": [{
             "title": f"🚨 {news.get('title', 'Intelligence Update')}",
-            "description": social_description,
+            "description": social_desc,
             "url": news.get('link', 'https://briefly.life'),
-            "color": 3869166,
+            "color": 3869166, # Albastru Accent (59, 130, 246)
             "footer": {"text": "Briefly Intelligence Sync • Executive Briefing"}
         }]
     }
     
     try:
+        # Trimitem Textul (Embed)
         requests.post(DISCORD_WEBHOOK, json=payload)
+        # Trimitem Imaginea separat (Discord permite direct file upload)
         if os.path.exists(IMAGE_PATH):
             with open(IMAGE_PATH, 'rb') as f:
                 requests.post(DISCORD_WEBHOOK, files={'file': f})
@@ -75,16 +76,24 @@ def send_to_x(news):
         "Authorization": f"Bearer {TWITTER_BEARER_TOKEN}",
         "Content-Type": "application/json"
     }
-    title = news.get('title', 'No Title')
-    link = news.get('link', '')
     
-    tweet_text = f"🚨 {title}\n\nRead more: {link}\n#BrieflyIntelligence #TechNews"
+    title = news.get('title', 'Intelligence Update')
+    # Limităm social text ca să fim siguri că nu depășim 280 chars total
+    desc = news.get('social_text', 'Strategic briefing available.')[:130]
+    link = news.get('link', '')
+    tags = news.get('hashtags', '#BrieflyIntelligence #Business')
+    
+    tweet_text = f"🚨 {title}\n\n{desc}...\n\nRead more: {link}\n{tags}"
     
     try:
         payload = {"text": tweet_text[:280]}
-        requests.post(url, json=payload, headers=headers)
+        response = requests.post(url, json=payload, headers=headers)
+        if response.status_code == 201:
+            print("Postat cu succes pe X.")
+        else:
+            print(f"Eroare X API: {response.text}")
     except Exception as e:
-        print(f"X Error: {e}")
+        print(f"Eroare X: {e}")
 
 if __name__ == "__main__":
     news_item = get_latest_posted_news()
@@ -94,4 +103,4 @@ if __name__ == "__main__":
         send_to_telegram(news_item)
         send_to_x(news_item)
     else:
-        print("Nu există știre majoră nouă de distribuit.")
+        print("Nu există știre nouă de distribuit.")
