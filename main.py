@@ -44,12 +44,13 @@ def analyze_news_with_ai(title, full_text, category):
                     "role": "system", 
                     "content": (
                         "You are an expert Business Intelligence Analyst.\n"
-                        "Return a JSON object with EXACTLY these 3 fields:\n"
+                        "Return a JSON object with EXACTLY these 4 fields:\n"
                         "1. 'is_major': boolean (true ONLY for massive global business events, M&A >$500M, or major policy shifts).\n"
                         "2. 'summary': A detailed, comprehensive 3-paragraph summary of the article for our website. Write at least 150 words.\n"
                         "3. 'social_text': A highly dense, information-packed paragraph (180-220 characters) for an image graphic. "
                         "MAXIMIZE information density: include exact numbers, key names, and the core strategic impact. "
-                        "STRICT RULES: Use normal sentence case. NO ALL CAPS. Do not repeat the exact title."
+                        "STRICT RULES: Use normal sentence case. NO ALL CAPS. Do not repeat the exact title.\n"
+                        "4. 'hashtags': A string containing 3-4 relevant hashtags starting with # (ex: '#AI #Nvidia #Finance')."
                     )
                 },
                 {"role": "user", "content": f"Title: {title}\nCategory: {category}\nContent: {full_text[:2000]}"}
@@ -158,6 +159,7 @@ def fetch_all_news():
                         "link": link,
                         "summary": ai_analysis.get('summary', ''),
                         "social_text": ai_analysis.get('social_text', ''),
+                        "hashtags": ai_analysis.get('hashtags', '#BrieflyIntelligence #News'),
                         "is_major": ai_analysis.get('is_major', False),
                         "date": current_time_ro
                     })
