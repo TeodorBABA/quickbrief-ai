@@ -3,3 +3,4 @@ newspaper3k
 openai
 lxml_html_clean
 Pillow
+requests_oauthlib
