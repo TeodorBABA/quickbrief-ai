@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Briefly.life | Strategic Executive Terminal</title>
+    <title>Briefly.life | Executive Intelligence</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-dark: #000000;
-            --bg-card: #0a0a0a;
-            --bg-card-hover: #111111;
-            --accent-volt: #ccff00; 
-            --text-main: #ffffff;
-            --text-muted: #8a8a8a;
-            --border-dim: #1a1a1a;
-            --border-focus: #333333;
-            --danger-accent: #ff003c;
-            
-            --font-main: 'Inter', sans-serif;
-            --font-mono: 'Space Mono', monospace;
+            /* Premium Dark Theme */
+            --bg-dark: #09090b;
+            --bg-card: #18181b;
+            --bg-card-hover: #27272a;
+            --accent-blue: #38bdf8;
+            --accent-blue-dim: rgba(56, 189, 248, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #a1a1aa;
+            --border-color: #27272a;
+            --border-light: #3f3f46;
+            --danger-bg: rgba(239, 68, 68, 0.15);
+            --danger-text: #fca5a5;
         }
 
         body {
             margin: 0; padding: 0;
             background-color: var(--bg-dark);
             color: var(--text-main);
-            font-family: var(--font-main);
+            font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 
         /* HEADER & NAVIGATION */
         header {
-            border-bottom: 1px solid var(--border-dim);
-            padding: 1.5rem 1rem;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.2rem 1rem;
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(12px);
             position: sticky; top: 0; z-index: 100;
         }
 
         .nav-content {
             max-width: 800px; margin: 0 auto;
-            display: flex; flex-direction: column; align-items: center; gap: 1rem;
+            display: flex; flex-direction: column; align-items: center; gap: 1.2rem;
         }
 
-        .logo { 
-            font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; 
-            letter-spacing: -2px; text-decoration: none; color: var(--text-main); text-transform: uppercase;
-        }
-        .logo span { color: var(--accent-volt); }
+        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.05em; text-decoration: none; color: var(--text-main); }
+        .logo span { color: var(--accent-blue); }
 
         .filter-bar {
             display: flex; gap: 0.5rem; overflow-x: auto; width: 100%;
@@ -59,93 +56,82 @@
         @media (min-width: 768px) { .filter-bar { justify-content: center; } }
 
         .filter-btn {
-            background: transparent; border: 1px solid var(--border-dim);
-            color: var(--text-muted); padding: 0.4rem 1.2rem; border-radius: 2px;
-            font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; 
-            text-transform: uppercase; cursor: pointer; transition: 0.2s; white-space: nowrap;
+            background: transparent; border: 1px solid var(--border-color);
+            color: var(--text-muted); padding: 0.4rem 1.2rem; border-radius: 999px;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em;
+            text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; white-space: nowrap;
         }
-        .filter-btn:hover { border-color: var(--text-muted); color: var(--text-main); }
-        .filter-btn.active { 
-            background: var(--accent-volt); color: #000; 
-            border-color: var(--accent-volt); box-shadow: 0 0 10px rgba(204, 255, 0, 0.1);
-        }
+        .filter-btn:hover { border-color: var(--border-light); color: var(--text-main); }
+        .filter-btn.active { background: var(--text-main); color: var(--bg-dark); border-color: var(--text-main); }
 
-        /* SEARCH & SORT CONTROLS */
+        /* SEARCH & SORT */
         .controls-bar {
-            display: flex; gap: 0.5rem; width: 100%; max-width: 800px; margin: 0 auto;
+            display: flex; gap: 0.8rem; width: 100%; max-width: 800px; margin: 0 auto;
         }
         .search-input, .sort-select {
-            background: var(--bg-card); border: 1px solid var(--border-dim);
-            color: var(--text-main); font-family: var(--font-mono); font-size: 0.75rem;
-            padding: 0.6rem 1rem; border-radius: 2px; outline: none; transition: 0.2s;
+            background: var(--bg-dark); border: 1px solid var(--border-color);
+            color: var(--text-main); font-family: 'Inter', sans-serif; font-size: 0.85rem;
+            padding: 0.7rem 1rem; border-radius: 8px; outline: none; transition: 0.2s;
         }
         .search-input { flex-grow: 1; }
-        .search-input:focus, .sort-select:focus { border-color: var(--accent-volt); }
+        .search-input:focus, .sort-select:focus { border-color: var(--accent-blue); }
 
         /* CONTAINER */
         .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
 
         /* REPORT CARD */
         .report-card {
-            background: var(--bg-card); border: 1px solid var(--border-dim);
-            border-top: 3px solid var(--accent-volt); border-radius: 4px; 
-            padding: 2.5rem; margin-bottom: 2rem; position: relative;
+            background: linear-gradient(180deg, var(--bg-card) 0%, rgba(24, 24, 27, 0.4) 100%);
+            border: 1px solid var(--border-color); border-left: 4px solid var(--accent-blue);
+            border-radius: 12px; padding: 2rem; margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
         }
-        .report-card h2 { font-size: 1.6rem; letter-spacing: -1px; margin: 0 0 1.2rem 0; font-weight: 800; }
+        .report-card h2 { font-size: 1.4rem; letter-spacing: -0.02em; margin: 0 0 1rem 0; font-weight: 600; }
 
         /* NEWS GRID */
-        .news-grid { display: flex; flex-direction: column; gap: 1rem; }
+        .news-grid { display: flex; flex-direction: column; gap: 1.2rem; }
 
         .news-card {
-            background-color: transparent; border: 1px solid var(--border-dim);
-            border-radius: 4px; padding: 1.5rem; transition: 0.2s ease;
+            background-color: var(--bg-card); border: 1px solid var(--border-color);
+            border-radius: 12px; padding: 1.5rem; transition: all 0.2s ease;
         }
         .news-card.read-state { opacity: 0.6; }
         .news-card.read-state:hover { opacity: 1; }
-        @media (min-width: 768px) { .news-card:hover { border-color: var(--border-focus); background-color: var(--bg-card-hover); } }
+        @media (min-width: 768px) { 
+            .news-card:hover { border-color: var(--border-light); background-color: var(--bg-card-hover); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); } 
+        }
 
-        .card-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; font-family: var(--font-mono); font-size: 0.7rem; }
-        
-        .category-tag { color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .category-tag::before { content: '[ '; color: var(--border-focus); }
-        .category-tag::after { content: ' ]'; color: var(--border-focus); }
-        
-        .major-badge { background: var(--danger-accent); color: #fff; padding: 2px 6px; font-weight: 700; margin-left: 8px; text-transform: uppercase; }
-        .read-time-badge { color: var(--accent-volt); margin-left: 8px; }
+        .card-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.75rem; }
+        .category-tag { background: var(--accent-blue-dim); color: var(--accent-blue); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 10px; border-radius: 6px; }
+        .major-badge { background: var(--danger-bg); color: var(--danger-text); padding: 4px 8px; border-radius: 6px; font-weight: 700; letter-spacing: 0.05em; margin-left: 8px; border: 1px solid rgba(239, 68, 68, 0.2); }
+        .read-time-badge { color: var(--text-muted); margin-left: 8px; font-weight: 500; }
 
-        h3 { margin: 0 0 0.8rem 0; font-size: 1.15rem; line-height: 1.5; font-weight: 600; }
+        h3 { margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.4; font-weight: 600; letter-spacing: -0.01em; }
         p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; white-space: pre-line; }
 
-        /* ACTION BAR */
-        .action-bar {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--border-dim);
-        }
-        .action-group { display: flex; gap: 1rem; }
+        /* ACTION BAR (Bottom of cards) */
+        .action-bar { display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border-color); }
+        .action-group { display: flex; gap: 0.5rem; }
         
-        .action-btn {
-            background: none; border: none; color: var(--text-muted);
-            font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700;
-            text-transform: uppercase; cursor: pointer; transition: 0.2s; padding: 0; letter-spacing: 1px;
+        .source-link { color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.85rem; transition: color 0.2s; }
+        .source-link:hover { color: var(--accent-blue); }
+
+        .action-btn { 
+            background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); 
+            padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; 
+            cursor: pointer; transition: 0.2s; font-family: 'Inter', sans-serif;
         }
-        .action-btn:hover { color: var(--accent-volt); }
-        .action-btn.active { color: var(--accent-volt); }
-        
-        .source-link { 
-            color: var(--text-main); font-family: var(--font-mono); text-decoration: none; 
-            font-weight: 700; font-size: 0.75rem; text-transform: uppercase; border-bottom: 1px solid var(--accent-volt);
-        }
-        .source-link:hover { color: var(--accent-volt); }
+        .action-btn:hover { border-color: var(--border-light); color: var(--text-main); }
+        .action-btn.active { background: var(--text-main); color: var(--bg-dark); border-color: var(--text-main); }
 
         .load-more-btn {
-            display: block; width: 100%; padding: 1rem; margin-top: 2rem;
-            background: var(--bg-card); border: 1px dashed var(--border-focus);
-            color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase;
-            cursor: pointer; transition: 0.2s;
+            display: block; width: 100%; padding: 1rem; margin-top: 2rem; border-radius: 8px;
+            background: var(--bg-card); border: 1px solid var(--border-color);
+            color: var(--text-main); font-weight: 600; cursor: pointer; transition: 0.2s;
         }
-        .load-more-btn:hover { border-color: var(--accent-volt); color: var(--accent-volt); }
+        .load-more-btn:hover { background: var(--bg-card-hover); border-color: var(--border-light); }
 
-        footer { text-align: center; padding: 3rem 1rem; color: #333; font-family: var(--font-mono); font-size: 0.75rem; border-top: 1px solid var(--border-dim); margin-top: 3rem; text-transform: uppercase; }
+        footer { text-align: center; padding: 3rem 1rem; color: #52525b; font-size: 0.85rem; border-top: 1px solid var(--border-color); margin-top: 2rem; }
     </style>
 </head>
 <body>
@@ -158,11 +144,11 @@
                 <button class="filter-btn" data-cat="Markets" onclick="setCategory('Markets', this)">Markets</button>
                 <button class="filter-btn" data-cat="Tech" onclick="setCategory('Tech', this)">Tech</button>
                 <button class="filter-btn" data-cat="Business" onclick="setCategory('Business', this)">Business</button>
-                <button class="filter-btn" data-cat="Saved" onclick="setCategory('Saved', this)">[ Saved ]</button>
+                <button class="filter-btn" data-cat="Saved" onclick="setCategory('Saved', this)">Saved</button>
                 <button class="filter-btn" onclick="loadArchive(this)">Archive</button>
             </div>
             <div class="controls-bar" id="controls-bar">
-                <input type="text" class="search-input" id="search-input" placeholder="> Search DB..." oninput="applyFilters()">
+                <input type="text" class="search-input" id="search-input" placeholder="Search articles..." oninput="applyFilters()">
                 <select class="sort-select" id="sort-select" onchange="applyFilters()">
                     <option value="newest">Newest First</option>
                     <option value="oldest">Oldest First</option>
@@ -175,14 +161,14 @@
     <div class="container">
         <div id="daily-report-container"></div>
         <div id="news-container" class="news-grid">
-            <div style="text-align: center; padding: 4rem; color: var(--border-focus); font-family: var(--font-mono); text-transform: uppercase; font-size: 0.8rem;">
-                > Synchronizing Intelligence...
+            <div style="text-align: center; padding: 4rem; color: var(--text-muted); font-size: 0.85rem;">
+                Synchronizing Intelligence...
             </div>
         </div>
-        <button id="load-more" class="load-more-btn" style="display:none;" onclick="loadMore()">[ Load More Data ]</button>
+        <button id="load-more" class="load-more-btn" style="display:none;" onclick="loadMore()">Load More</button>
     </div>
 
-    <footer>&copy; 2026 Briefly.life | Core Systems Online</footer>
+    <footer>&copy; 2026 Briefly.life | Strategic Executive Intelligence</footer>
 
     <script>
         // --- DATA & STATE ---
@@ -213,37 +199,37 @@
                 allNews = await newsRes.json();
                 summaries = await reportRes.json();
                 
-                // Generăm un ID simplu din titlu pentru tracking intern, în caz că nu există
-                allNews.forEach((item, index) => { item.id = item.id || btoa(encodeURIComponent(item.title)).substring(0,15); });
+                // Generare ID unic pt tracking
+                allNews.forEach((item) => { 
+                    item.id = item.id || btoa(encodeURIComponent(item.title)).substring(0,15); 
+                });
 
                 renderDailyReport();
                 applyFilters();
             } catch (e) {
-                document.getElementById('news-container').innerHTML = '<div style="color:var(--danger-accent); font-family:var(--font-mono); text-align:center; padding:2rem;">[ ERR: DB OFFLINE ]</div>';
+                document.getElementById('news-container').innerHTML = '<div style="color:var(--danger-text); text-align:center; padding: 2rem; background: var(--danger-bg); border-radius: 8px;">Connection Error. Check JSON files.</div>';
             }
         }
 
         // --- LOGIC ---
         function calculateReadTime(text) {
             const words = text.split(/\s+/).length;
-            const mins = Math.ceil(words / 200); // Viteză medie 200 cuv/min
-            return mins;
+            return Math.ceil(words / 200); 
         }
 
-        function toggleSave(id) {
+        function toggleSave(id, btn) {
             const index = state.savedIds.indexOf(id);
-            if (index > -1) state.savedIds.splice(index, 1);
-            else state.savedIds.push(id);
-            
-            localStorage.setItem('briefly_saved', JSON.stringify(state.savedIds));
-            
-            // Update vizual buton
-            const btn = document.getElementById(`btn-save-${id}`);
-            if(btn) {
-                btn.classList.toggle('active');
-                btn.innerText = state.savedIds.includes(id) ? '[ SAVED ]' : '[ SAVE ]';
+            if (index > -1) {
+                state.savedIds.splice(index, 1);
+                btn.classList.remove('active');
+                btn.innerText = 'Save';
+            } else {
+                state.savedIds.push(id);
+                btn.classList.add('active');
+                btn.innerText = 'Saved';
             }
-            if(state.category === 'Saved') applyFilters(); // Re-randăm dacă suntem pe tabul Saved
+            localStorage.setItem('briefly_saved', JSON.stringify(state.savedIds));
+            if(state.category === 'Saved') applyFilters();
         }
 
         function markAsRead(id, link) {
@@ -256,36 +242,59 @@
             window.open(link, '_blank');
         }
 
-        async function shareItem(title, text, url) {
-            if (navigator.share) {
-                try { await navigator.share({ title, text, url }); } catch (err) { console.log('Share canceled'); }
+        async function shareItem(btn, url) {
+            const originalText = btn.innerText;
+            
+            // Daca are HTTPS si e pe un dispozitiv compatibil (ex: mobil)
+            if (navigator.share && window.location.protocol === 'https:') {
+                try { 
+                    await navigator.share({ url: url }); 
+                } catch (err) { 
+                    console.log('Share canceled'); 
+                }
             } else {
-                navigator.clipboard.writeText(`${title} - ${url}`);
-                alert('[ LINK COPIED TO CLIPBOARD ]');
+                // Fallback robust: Copiaza linkul in memorie
+                try {
+                    await navigator.clipboard.writeText(url);
+                    btn.innerText = 'Copied!';
+                    setTimeout(() => { btn.innerText = originalText; }, 2000);
+                } catch (err) {
+                    alert('Copy failed. Manual link: ' + url);
+                }
             }
         }
 
-        function playTTS(text, btnId) {
-            const btn = document.getElementById(btnId);
+        function toggleTTS(btn) {
+            const textToRead = btn.getAttribute('data-text');
+            
             if (synth.speaking) {
                 synth.cancel();
-                // Reset toate butoanele de listen
-                document.querySelectorAll('.btn-listen').forEach(b => b.innerText = '[ LISTEN ]');
+                document.querySelectorAll('.btn-listen').forEach(b => {
+                    b.innerText = 'Listen';
+                    b.classList.remove('active');
+                });
+                
                 if (btn.dataset.playing === "true") {
                     btn.dataset.playing = "false";
-                    return; // Dacă am dat click pe același buton, doar oprește
+                    return; // Opreste daca am apasat pe acelasi buton
                 }
             }
             
+            // Reseteaza state-ul celorlalte butoane
             document.querySelectorAll('.btn-listen').forEach(b => b.dataset.playing = "false");
             
-            const utterance = new SpeechSynthesisUtterance(text);
+            const utterance = new SpeechSynthesisUtterance(textToRead);
             utterance.lang = 'en-US';
-            utterance.rate = 1.05; // Ușor mai rapid pentru executivi
+            utterance.rate = 1.05;
             
-            utterance.onend = () => { btn.innerText = '[ LISTEN ]'; btn.dataset.playing = "false"; };
+            utterance.onend = () => { 
+                btn.innerText = 'Listen'; 
+                btn.classList.remove('active');
+                btn.dataset.playing = "false"; 
+            };
             
-            btn.innerText = '[ STOP ]';
+            btn.innerText = 'Stop';
+            btn.classList.add('active');
             btn.dataset.playing = "true";
             synth.speak(utterance);
         }
@@ -298,7 +307,6 @@
             btnElement.classList.add('active');
             document.getElementById('controls-bar').style.display = 'flex';
             document.getElementById('daily-report-container').style.display = (cat === 'All') ? 'block' : 'none';
-            
             applyFilters();
         }
 
@@ -308,12 +316,10 @@
             state.searchQuery = document.getElementById('search-input').value.toLowerCase();
             state.sortMode = document.getElementById('sort-select').value;
 
-            // 1. Filtrare Categorie
             filteredData = (state.category === 'All') ? [...allNews] : 
                            (state.category === 'Saved') ? allNews.filter(n => state.savedIds.includes(n.id)) :
                            allNews.filter(n => n.category === state.category);
 
-            // 2. Filtrare Search
             if (state.searchQuery) {
                 filteredData = filteredData.filter(n => 
                     n.title.toLowerCase().includes(state.searchQuery) || 
@@ -321,14 +327,10 @@
                 );
             }
 
-            // 3. Sortare
-            if (state.sortMode === 'oldest') {
-                filteredData.reverse(); // Presupunând că default e newest
-            } else if (state.sortMode === 'major') {
-                filteredData = filteredData.filter(n => n.is_major);
-            }
+            if (state.sortMode === 'oldest') filteredData.reverse();
+            else if (state.sortMode === 'major') filteredData = filteredData.filter(n => n.is_major);
 
-            renderNewsGrid(true); // reset container
+            renderNewsGrid(true);
         }
 
         function renderDailyReport() {
@@ -336,18 +338,17 @@
             if (summaries.length > 0) {
                 const latest = summaries[0];
                 const readTime = calculateReadTime(latest.content);
-                // Escapăm ghilimelele pt TTS
-                const safeText = latest.content.replace(/"/g, "'"); 
+                const safeText = latest.content.replace(/"/g, "'").replace(/\n/g, " "); 
                 
                 container.innerHTML = `
                     <div class="report-card">
-                        <div style="color:var(--text-muted); font-family:var(--font-mono); font-size:0.7rem; font-weight:700; margin-bottom:1.5rem; text-transform:uppercase;">
-                            // Chief Analyst Briefing • ${latest.date} <span class="read-time-badge">⏳ ${readTime} MIN READ</span>
+                        <div style="color:var(--accent-blue); font-size:0.75rem; font-weight:700; margin-bottom:1rem; letter-spacing:0.1em; text-transform:uppercase;">
+                            Chief Analyst Briefing • ${latest.date} <span class="read-time-badge">• ${readTime} min read</span>
                         </div>
                         <h2>The Daily Synthesis</h2>
                         <p>${latest.content}</p>
-                        <div class="action-bar" style="border-top:none; padding-top:1rem; margin-top:0;">
-                            <button id="tts-report" class="action-btn btn-listen" onclick="playTTS(\`${safeText}\`, 'tts-report')">[ LISTEN ]</button>
+                        <div class="action-bar" style="border-top:none; padding-top:0.5rem; margin-top:1rem;">
+                            <button class="action-btn btn-listen" data-text="${safeText}" onclick="toggleTTS(this)">Listen</button>
                         </div>
                     </div>`;
             }
@@ -358,7 +359,7 @@
             if (reset) container.innerHTML = '';
             
             if (filteredData.length === 0 && reset) {
-                container.innerHTML = '<div style="text-align:center; padding:4rem; color:var(--text-muted); font-family:var(--font-mono);">[ NO DATA FOUND IN CURRENT PARAMETERS ]</div>';
+                container.innerHTML = '<div style="text-align:center; padding:3rem; color:var(--text-muted);">No signals detected in current parameters.</div>';
                 document.getElementById('load-more').style.display = 'none';
                 return;
             }
@@ -371,7 +372,7 @@
                 const readTime = calculateReadTime(item.summary);
                 const isSaved = state.savedIds.includes(item.id);
                 const isRead = state.readIds.includes(item.id);
-                const safeTitle = item.title.replace(/"/g, "&quot;");
+                // Evitam erorile din HTML escapand ghilimelele
                 const safeSummary = item.summary.replace(/"/g, "&quot;").replace(/\n/g, " ");
 
                 const card = document.createElement('div');
@@ -381,31 +382,26 @@
                     <div class="card-meta">
                         <div>
                             <span class="category-tag">${item.category}</span>
-                            ${item.is_major ? '<span class="major-badge">Major</span>' : ''}
-                            <span class="read-time-badge">⏳ ${readTime}m</span>
+                            ${item.is_major ? '<span class="major-badge">MAJOR</span>' : ''}
+                            <span class="read-time-badge">${readTime} min read</span>
                         </div>
-                        <span style="color:var(--text-muted);">${item.date}</span>
+                        <span style="color:var(--text-muted); font-weight: 500;">${item.date}</span>
                     </div>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
                     <div class="action-bar">
-                        <a href="javascript:void(0)" onclick="markAsRead('${item.id}', '${item.link}')" class="source-link">READ REPORT_</a>
+                        <a href="javascript:void(0)" onclick="markAsRead('${item.id}', '${item.link}')" class="source-link">Read Full Report →</a>
                         <div class="action-group">
-                            <button class="action-btn btn-listen" id="tts-${item.id}" onclick="playTTS('${safeSummary}', 'tts-${item.id}')">[ LISTEN ]</button>
-                            <button class="action-btn" onclick="shareItem('${safeTitle}', '${safeSummary}', '${item.link}')">[ SHARE ]</button>
-                            <button class="action-btn ${isSaved ? 'active' : ''}" id="btn-save-${item.id}" onclick="toggleSave('${item.id}')">${isSaved ? '[ SAVED ]' : '[ SAVE ]'}</button>
+                            <button class="action-btn btn-listen" data-text="${safeSummary}" onclick="toggleTTS(this)">Listen</button>
+                            <button class="action-btn" onclick="shareItem(this, '${item.link}')">Share</button>
+                            <button class="action-btn ${isSaved ? 'active' : ''}" onclick="toggleSave('${item.id}', this)">${isSaved ? 'Saved' : 'Save'}</button>
                         </div>
                     </div>`;
                 container.appendChild(card);
             });
 
-            // Toggle Buton Load More
             const loadMoreBtn = document.getElementById('load-more');
-            if (endIndex < filteredData.length) {
-                loadMoreBtn.style.display = 'block';
-            } else {
-                loadMoreBtn.style.display = 'none';
-            }
+            loadMoreBtn.style.display = (endIndex < filteredData.length) ? 'block' : 'none';
         }
 
         function loadMore() {
@@ -423,27 +419,25 @@
             document.getElementById('load-more').style.display = 'none';
             
             const container = document.getElementById('news-container');
-            container.innerHTML = '<h2 style="text-align:center; color:var(--text-muted); font-family:var(--font-mono); font-size:0.8rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:3rem;">[ ARCHIVE: PREVIOUS 7 DAYS ]</h2>';
+            container.innerHTML = '<h2 style="text-align:center; color:var(--text-muted); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:2rem; font-weight:600;">7-Day Historical Archive</h2>';
             
-            summaries.slice(1).forEach((report, index) => {
-                const safeText = report.content.replace(/"/g, "'");
+            summaries.slice(1).forEach((report) => {
+                const safeText = report.content.replace(/"/g, "'").replace(/\n/g, " ");
                 const div = document.createElement('div');
                 div.className = 'news-card';
-                div.style.opacity = '0.8';
+                div.style.opacity = '0.7';
                 div.innerHTML = `
-                    <div class="card-meta"><span class="category-tag" style="color:var(--accent-volt)">${report.date}</span></div>
+                    <div class="category-tag" style="display:inline-block; margin-bottom:1rem;">${report.date}</div>
                     <p>${report.content}</p>
-                    <div class="action-bar" style="border-top:none; padding-top:1rem; margin-top:0;">
-                         <button id="tts-arch-${index}" class="action-btn btn-listen" onclick="playTTS(\`${safeText}\`, 'tts-arch-${index}')">[ LISTEN ]</button>
+                    <div class="action-bar" style="border-top:none; padding-top:0.5rem; margin-top:1rem;">
+                        <button class="action-btn btn-listen" data-text="${safeText}" onclick="toggleTTS(this)">Listen</button>
                     </div>`;
                 container.appendChild(div);
             });
         }
 
-        // --- KICKOFF ---
         init();
         
-        // Refresh silențios la fiecare 5 minute doar dacă nu suntem în Arhivă sau nu scriem în Search
         setInterval(() => {
             if(!state.isArchive && state.searchQuery === '') init();
         }, 300000); 
