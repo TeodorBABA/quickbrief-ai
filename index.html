@@ -5,91 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Briefly.life | Executive Intelligence</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-dark: #050505;
-            --bg-card: #0f0f0f;
-            --accent-blue: #3b82f6;
-            --text-main: #fafafa;
-            --text-muted: #a3a3a3;
-            --border-color: #1a1a1a;
+            /* Modern Dark Theme Palette (Zinc/Slate tones) */
+            --bg-dark: #09090b;
+            --bg-card: #18181b;
+            --bg-card-hover: #27272a;
+            --accent-blue: #38bdf8; /* Sleek sky blue */
+            --accent-blue-dim: rgba(56, 189, 248, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #a1a1aa;
+            --border-color: #27272a;
+            --border-light: #3f3f46;
+            --danger-bg: rgba(239, 68, 68, 0.15);
+            --danger-text: #fca5a5;
         }
 
         body {
             margin: 0; padding: 0;
             background-color: var(--bg-dark);
             color: var(--text-main);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         /* NAVIGATION & FILTERS */
         header {
             border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 1rem;
-            background: rgba(5, 5, 5, 0.9);
-            backdrop-filter: blur(15px);
+            padding: 1.2rem 1rem;
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             position: sticky; top: 0; z-index: 100;
         }
 
         .nav-content {
             max-width: 800px; margin: 0 auto;
-            display: flex; flex-direction: column; align-items: center; gap: 1rem;
+            display: flex; flex-direction: column; align-items: center; gap: 1.2rem;
         }
 
-        .logo { font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; text-decoration: none; color: white; }
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            letter-spacing: -0.05em; 
+            text-decoration: none; 
+            color: var(--text-main); 
+        }
         .logo span { color: var(--accent-blue); }
 
         .filter-bar {
             display: flex; gap: 0.5rem; overflow-x: auto; width: 100%;
-            padding-bottom: 5px; scrollbar-width: none; /* Hide scrollbar Firefox */
+            padding-bottom: 4px; scrollbar-width: none;
         }
-        .filter-bar::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome */
+        .filter-bar::-webkit-scrollbar { display: none; }
 
-        /* Centrare filtre exclusiv pe Desktop pentru a nu strica scroll-ul pe mobile */
         @media (min-width: 768px) {
-            .filter-bar {
-                justify-content: center;
-            }
+            .filter-bar { justify-content: center; }
         }
 
         .filter-btn {
-            background: transparent; border: 1px solid var(--border-color);
-            color: var(--text-muted); padding: 0.5rem 1.2rem; border-radius: 20px;
-            font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
-            cursor: pointer; transition: 0.2s; white-space: nowrap;
+            background: transparent; 
+            border: 1px solid var(--border-color);
+            color: var(--text-muted); 
+            padding: 0.4rem 1.2rem; 
+            border-radius: 999px; /* Pill shape */
+            font-size: 0.75rem; 
+            font-weight: 600; 
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            cursor: pointer; 
+            transition: all 0.2s ease; 
+            white-space: nowrap;
         }
-        .filter-btn.active { background: var(--accent-blue); color: white; border-color: var(--accent-blue); }
+        .filter-btn:hover {
+            border-color: var(--border-light);
+            color: var(--text-main);
+        }
+        .filter-btn.active { 
+            background: var(--text-main); 
+            color: var(--bg-dark); 
+            border-color: var(--text-main); 
+        }
 
         /* CONTAINER */
         .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
 
+        /* REPORT CARD */
         .report-card {
-            background: linear-gradient(145deg, #0f0f0f 0%, #0a1425 100%);
+            background: linear-gradient(180deg, var(--bg-card) 0%, rgba(24, 24, 27, 0.4) 100%);
+            border: 1px solid var(--border-color);
             border-left: 4px solid var(--accent-blue);
-            border-radius: 12px; padding: 2rem; margin-bottom: 2.5rem;
+            border-radius: 12px; 
+            padding: 2rem; 
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .report-card h2 {
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
         }
 
-        .news-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+        /* NEWS GRID */
+        .news-grid { display: flex; flex-direction: column; gap: 1.2rem; }
 
         .news-card {
-            background-color: var(--bg-card); border: 1px solid var(--border-color);
-            border-radius: 12px; padding: 1.5rem; transition: 0.3s;
+            background-color: var(--bg-card); 
+            border: 1px solid var(--border-color);
+            border-radius: 12px; 
+            padding: 1.5rem; 
+            transition: all 0.2s ease;
         }
-        @media (min-width: 768px) { .news-card:hover { border-color: var(--accent-blue); transform: translateY(-3px); } }
+        @media (min-width: 768px) { 
+            .news-card:hover { 
+                border-color: var(--border-light); 
+                background-color: var(--bg-card-hover);
+                transform: translateY(-2px); 
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            } 
+        }
 
-        .card-meta { display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 0.75rem; }
-        .category-tag { color: var(--accent-blue); font-weight: 800; text-transform: uppercase; }
-        .major-badge { background: #7f1d1d; color: #fecaca; padding: 2px 8px; border-radius: 4px; font-weight: 900; margin-left: 8px; }
+        .card-meta { 
+            display: flex; justify-content: space-between; align-items: center; 
+            margin-bottom: 1rem; font-size: 0.75rem; 
+        }
+        
+        .category-tag { 
+            background: var(--accent-blue-dim);
+            color: var(--accent-blue); 
+            font-weight: 600; 
+            letter-spacing: 0.05em;
+            text-transform: uppercase; 
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        
+        .major-badge { 
+            background: var(--danger-bg); 
+            color: var(--danger-text); 
+            padding: 4px 8px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            letter-spacing: 0.05em;
+            margin-left: 8px; 
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
 
-        h3 { margin: 0 0 1rem 0; font-size: 1.3rem; line-height: 1.3; }
-        p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; white-space: pre-line; }
+        h3 { 
+            margin: 0 0 0.75rem 0; 
+            font-size: 1.15rem; 
+            line-height: 1.4; 
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--text-main);
+        }
+        
+        p { 
+            color: var(--text-muted); 
+            font-size: 0.95rem; 
+            line-height: 1.6; 
+            margin: 0;
+            white-space: pre-line; 
+        }
 
-        .source-link { color: var(--accent-blue); text-decoration: none; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+        .source-link { 
+            color: var(--text-muted); 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 0.8rem; 
+            transition: color 0.2s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .source-link:hover { color: var(--accent-blue); }
 
-        footer { text-align: center; padding: 3rem; color: #404040; font-size: 0.8rem; border-top: 1px solid var(--border-color); }
+        footer { 
+            text-align: center; 
+            padding: 3rem 1rem; 
+            color: #52525b; 
+            font-size: 0.85rem; 
+            border-top: 1px solid var(--border-color); 
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +205,7 @@
                 <button class="filter-btn" onclick="filterNews('Tech', this)">Tech</button>
                 <button class="filter-btn" onclick="filterNews('Finance', this)">Finance</button>
                 <button class="filter-btn" onclick="filterNews('Business', this)">Business</button>
-                <button class="filter-btn" style="border-style: dashed;" onclick="loadArchive(this)">Archive</button>
+                <button class="filter-btn" onclick="loadArchive(this)">Archive</button>
             </div>
         </div>
     </header>
@@ -111,7 +213,7 @@
     <div class="container">
         <div id="daily-report-container"></div>
         <div id="news-container" class="news-grid">
-            <div style="text-align: center; padding: 4rem; color: #444; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem;">
+            <div style="text-align: center; padding: 4rem; color: #52525b; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 600;">
                 Synchronizing Intelligence...
             </div>
         </div>
@@ -135,7 +237,7 @@
                 renderDailyReport();
                 renderNews(allNews);
             } catch (e) {
-                document.getElementById('news-container').innerHTML = '<div style="color:red; text-align:center;">Connection Error. Check JSON files.</div>';
+                document.getElementById('news-container').innerHTML = '<div style="color:var(--danger-text); text-align:center; padding: 2rem; background: var(--danger-bg); border-radius: 8px;">Connection Error. Check JSON files.</div>';
             }
         }
 
@@ -145,8 +247,10 @@
                 const latest = summaries[0];
                 container.innerHTML = `
                     <div class="report-card">
-                        <div style="color:var(--accent-blue); font-size:0.7rem; font-weight:900; margin-bottom:1rem; letter-spacing:2px; text-transform:uppercase;">Chief Analyst Briefing • ${latest.date}</div>
-                        <h2 style="margin:0 0 1.5rem 0; font-style:italic;">The Daily Synthesis</h2>
+                        <div style="color:var(--accent-blue); font-size:0.75rem; font-weight:700; margin-bottom:1rem; letter-spacing:0.1em; text-transform:uppercase;">
+                            Chief Analyst Briefing • ${latest.date}
+                        </div>
+                        <h2>The Daily Synthesis</h2>
                         <p>${latest.content}</p>
                     </div>`;
             }
@@ -154,7 +258,7 @@
 
         function renderNews(data) {
             const container = document.getElementById('news-container');
-            container.innerHTML = data.length ? '' : '<div style="text-align:center; padding:3rem; color:#444;">No signals detected in this category.</div>';
+            container.innerHTML = data.length ? '' : '<div style="text-align:center; padding:3rem; color:var(--text-muted);">No signals detected in this category.</div>';
             
             data.forEach(item => {
                 const card = document.createElement('div');
@@ -165,12 +269,12 @@
                             <span class="category-tag">${item.category}</span>
                             ${item.is_major ? '<span class="major-badge">MAJOR</span>' : ''}
                         </div>
-                        <span style="color:#555;">${item.date}</span>
+                        <span style="color:var(--text-muted); font-weight: 500;">${item.date}</span>
                     </div>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
-                    <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid #1a1a1a;">
-                        <a href="${item.link}" target="_blank" class="source-link">Access Source →</a>
+                    <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-color);">
+                        <a href="${item.link}" target="_blank" class="source-link">Read Full Report →</a>
                     </div>`;
                 container.appendChild(card);
             });
@@ -187,13 +291,13 @@
             updateButtons(btn);
             document.getElementById('daily-report-container').style.display = 'none';
             const container = document.getElementById('news-container');
-            container.innerHTML = '<h2 style="text-align:center; color:#333; font-size:0.8rem; text-transform:uppercase; letter-spacing:4px; margin-bottom:2rem;">7-Day Historical Archive</h2>';
+            container.innerHTML = '<h2 style="text-align:center; color:var(--text-muted); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:2rem; font-weight:600;">7-Day Historical Archive</h2>';
             
             summaries.slice(1).forEach(report => {
                 const div = document.createElement('div');
                 div.className = 'news-card';
-                div.style.opacity = '0.6';
-                div.innerHTML = `<div class="category-tag" style="margin-bottom:1rem;">${report.date}</div><p>${report.content}</p>`;
+                div.style.opacity = '0.7';
+                div.innerHTML = `<div class="category-tag" style="display:inline-block; margin-bottom:1rem;">${report.date}</div><p>${report.content}</p>`;
                 container.appendChild(div);
             });
         }
