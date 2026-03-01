@@ -1,5 +1,25 @@
 [
     {
+        "category": "Finance",
+        "title": "Perpetua Resources President Sells $12M Worth of Shares Amid Upcoming Q4 Earnings",
+        "link": "https://finance.yahoo.com/news/perpetua-resources-president-sells-12m-224508107.html",
+        "summary": "On February 12, 2026, Margaret McKinsey Lyon, Senior Vice President of External Affairs at Perpetua Resources Corp. (NASDAQ:PPTA), executed a significant sale of 43,722 common shares valued at approximately $1.21 million. This transaction was reported through a SEC Form 4 filing and represents the largest single-day sale by an insider, accounting for 23.08% of her direct holdings. The shares were sold primarily to cover tax withholding obligations following the vesting and settlement of equity awards, including Restricted Share Units and Performance Share Units. Post-transaction, Lyon retains 145,746 shares, valued at around $4 million based on the weighted average purchase price of $27.57 on the date of the sale.\n\nPerpetua Resources Corp. operates in the mineral exploration and development sector, focusing on acquiring mining properties and exploring for critical minerals such as gold, silver, and antimony. The company's market capitalization stands at approximately $4.59 billion, with a notable one-year price change of 332.12%. Despite a net loss of $44.29 million over the trailing twelve months, the rising demand for critical minerals, particularly in light of geopolitical tensions and supply chain issues, positions Perpetua as a key player in the industry. The recent investment by the Pentagon of $4.5 billion into the critical minerals market further underscores the growing importance of these resources.\n\nFor investors, this transaction may signal confidence in the company's future prospects, especially as the mineral industry continues to gain traction. The increasing value of gold and antimony, driven by their applications in technology and energy sectors, suggests that Perpetua Resources could benefit from heightened interest and investment in these critical minerals. As the market evolves, stakeholders will be keen to monitor how such insider transactions reflect broader trends and investor sentiment within the mineral exploration landscape.",
+        "social_text": "Margaret McKinsey Lyon sold 43,722 shares of Perpetua Resources for $1.21M, covering tax obligations after equity awards. This sale is 23.08% of her holdings, with post-sale shares valued at $4M. Market cap: $4.59B.",
+        "hashtags": "#PerpetuaResources #MineralExploration #Investing #CriticalMinerals",
+        "is_major": false,
+        "date": "2026-03-02 00:57"
+    },
+    {
+        "category": "Finance",
+        "title": "Gold Is Sending A Message We Haven't Heard Since 2008",
+        "link": "https://finance.yahoo.com/news/gold-sending-message-havent-heard-223041837.html",
+        "summary": "Gold has shown a remarkable resurgence in the market, outperforming the S&P 500 Index for seven consecutive months, marking the longest streak since February 2008. This period is significant as it precedes the global financial crisis, which was characterized by a gradual buildup of stress in the financial system. In early 2008, while the crisis was still largely unrecognized, gold began to signal trouble ahead, highlighting its role as a safe haven asset during times of uncertainty. Investors at that time were largely unaware of the impending systemic failures, believing the issues were confined to the subprime mortgage sector.\n\nThe current market conditions, while seemingly stable, echo the pre-crisis environment of 2008. Although there is no immediate housing crisis or banking panic, the performance of gold suggests that underlying economic stress may be present. The historical parallel drawn between today and early 2008 raises concerns about potential vulnerabilities in the financial system that could lead to significant market disruptions. Investors are advised to pay close attention to gold's performance as it may serve as an early warning signal.\n\nAs gold continues to outperform equities, it prompts a reevaluation of investment strategies. The historical context of gold's performance during previous crises underscores its importance as a hedge against market volatility. With the current economic landscape showing signs of strain, the message from gold could be a precursor to more significant market shifts. Investors should consider the implications of this trend and remain vigilant in their asset allocation strategies to navigate potential future challenges.",
+        "social_text": "Gold has outperformed the S&P 500 for seven months, the longest streak since February 2008, signaling potential underlying economic stress reminiscent of the pre-2008 financial crisis. Investors should take note.",
+        "hashtags": "#Gold #Finance #Investment #MarketTrends",
+        "is_major": false,
+        "date": "2026-03-02 00:57"
+    },
+    {
         "category": "Markets",
         "title": "These steady income-paying stocks could be on their way to becoming dividend aristocrats, Wolfe says",
         "link": "https://www.cnbc.com/2026/02/26/these-stocks-are-emerging-dividend-aristocrats-wolfe-says.html",
@@ -3508,35 +3528,5 @@
         "hashtags": "#OilPrices #IranConflict #GasPrices #EnergyMarket",
         "is_major": true,
         "date": "2026-03-01 01:13"
-    },
-    {
-        "category": "Finance",
-        "title": "The Biggest Bottleneck in AI Isn't Chips Anymore; It's Power. These 2 Stocks Could Soar in 2026.",
-        "link": "https://finance.yahoo.com/news/biggest-bottleneck-ai-isnt-chips-223500476.html",
-        "summary": "The demand for artificial intelligence (AI) applications is rapidly increasing, leading to a significant rise in power consumption required to support AI data centers. According to Rand Corp., global AI data center power demand is projected to reach 68 gigawatts by next year and soar to 327 gigawatts by 2030. This surge in energy needs highlights the importance of not only focusing on chipmakers like Nvidia and Broadcom but also on the companies that can provide the necessary power infrastructure to support these AI advancements.\n\nNextEra Energy, a leading utility company in the U.S., is well-positioned to capitalize on this growing demand for electricity. With its Florida Power & Light subsidiary serving over 12 million customers, NextEra is actively engaging with major tech players, including a recent partnership with Google Cloud to build and power new AI data centers. This collaboration not only emphasizes NextEra's role in the AI ecosystem but also showcases its commitment to modernizing its operations through AI technology.\n\nAs AI continues to evolve, the intersection of energy and technology will become increasingly critical. Investors should consider companies like NextEra Energy that are strategically positioned to benefit from the expanding power requirements of AI applications. By focusing on both the technological and infrastructural aspects of AI, investors can uncover lucrative opportunities in this burgeoning market, ensuring they are not leaving potential profits on the table.",
-        "social_text": "NextEra Energy is set to thrive as AI data center power demand skyrockets from 68 GW in 2024 to 327 GW by 2030. Partnering with Google Cloud, it aims to modernize energy solutions for AI applications.",
-        "hashtags": "#AI #NextEraEnergy #PowerDemand #DataCenters",
-        "is_major": false,
-        "date": "2026-03-01 00:54"
-    },
-    {
-        "category": "Finance",
-        "title": "OpenAI just raised $110 billion and it still may not be enough",
-        "link": "https://finance.yahoo.com/news/openai-just-raised-110-billion-223300355.html",
-        "summary": "OpenAI has made headlines by raising an unprecedented $110 billion in its latest funding round, nearly tripling its previous record of $41 billion set in March 2025. This new funding round, which values the company at $730 billion pre-money and $840 billion fully diluted, has attracted significant investments from major players in the tech industry. Amazon leads the charge with a staggering $50 billion investment, while Nvidia and SoftBank each contribute $30 billion. This funding surge reflects the growing demand for AI technologies and the need for substantial computing power to support this transformation across various sectors.\n\nDuring a recent appearance on CNBC, OpenAI CEO Sam Altman expressed enthusiasm about the new partnerships formed through this funding round. He emphasized the importance of collaboration with tech giants like Amazon and Microsoft, stating that AI is set to revolutionize the economy. The deal not only provides OpenAI with the necessary capital but also establishes strategic alliances that will enhance its competitive edge in the cloud computing and AI infrastructure markets.\n\nThe funding round remains open, with expectations of attracting an additional $10 billion from sovereign wealth funds and venture capital firms before its closure at the end of March. Each of the primary investors has secured strategic partnerships, reshaping the landscape of AI and cloud services. For instance, Amazon's investment includes becoming the exclusive third-party cloud provider for OpenAI's enterprise platform, Frontier, and significantly expanding its existing agreement with OpenAI, highlighting the strategic implications of this massive funding round.",
-        "social_text": "OpenAI raised $110 billion led by Amazon's $50 billion, Nvidia's $30 billion, and SoftBank's $30 billion. Valued at $730 billion, this funding reshapes AI and cloud computing landscapes, with AWS becoming OpenAI's exclusive cloud provider.",
-        "hashtags": "#OpenAI #Amazon #Nvidia #AI",
-        "is_major": true,
-        "date": "2026-03-01 00:54"
-    },
-    {
-        "category": "Finance",
-        "title": "Excluding the \"Magnificent Seven\" Stocks, Here's How the Market Is Performing in 2026",
-        "link": "https://finance.yahoo.com/news/excluding-magnificent-seven-stocks-heres-222300285.html",
-        "summary": "The performance of the stock market in 2026 has shown a significant divergence between the 'Magnificent Seven' tech stocks and the rest of the S&P 500. The Magnificent Seven, which includes major players like Nvidia and Intel, have been the driving force behind the stock market's rise over the past few years, particularly following the AI boom initiated by the launch of ChatGPT in late 2022. However, in 2026, these stocks have faced a downturn, with the Roundhill Magnificent Seven ETF reporting a decline of approximately 4.9% year-to-date. This shift has raised concerns among investors about the sustainability of the AI-driven rally, leading to a cautious approach towards these heavily invested stocks.\n\nIn contrast, the remaining 493 stocks in the S&P 500, now referred to as the 'Impressive 493,' are experiencing a positive trend. The Defiance Large Cap ex-Mag 7 ETF indicates a 2.9% increase for these stocks in 2026, highlighting a market rotation away from the concentrated gains of the Magnificent Seven. The broader S&P 500 index has also shown modest growth of about 1.7%, while the Nasdaq Composite remains nearly flat, indicating a shift in investor sentiment and capital allocation.\n\nMarket analyst Edward Yardeni has noted this rotation, suggesting that the market's heavy reliance on a few tech giants is unsustainable. He previously ended his buy call for tech stocks, emphasizing the need for diversification beyond the Magnificent Seven. This evolving landscape reflects a broader trend in the market, where investors are increasingly looking for opportunities outside the dominant tech sector, signaling a potential shift in investment strategies moving forward.",
-        "social_text": "In 2026, the Magnificent Seven stocks are down 4.9%, while the Impressive 493 in the S&P 500 are up 2.9%. This marks a significant market rotation as investors seek diversification beyond top tech stocks.",
-        "hashtags": "#Finance #StockMarket #Investing",
-        "is_major": false,
-        "date": "2026-03-01 00:54"
     }
 ]
