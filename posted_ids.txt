@@ -248,3 +248,4 @@ https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/
 https://finance.yahoo.com/economy/policy/articles/us-inflation-seen-spiking-first-200000098.html
 https://finance.yahoo.com/economy/policy/articles/washingtons-millionaires-tax-drive-rich-213204367.html
 https://finance.yahoo.com/markets/stocks/articles/analysis-blockbuster-spacex-listing-could-100746304.html
+https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/
